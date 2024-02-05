@@ -1,0 +1,62 @@
+[
+    {
+        "id": "49",
+        "recipe_name": "Apple Crumb Pie",
+        "ingredients_similarity": 0.8218727356495322,
+        "directions_similarity": 0.8723548371774316
+    },
+    {
+        "id": "99",
+        "recipe_name": "Easy Apple Cider",
+        "ingredients_similarity": 0.7207281716734707,
+        "directions_similarity": 0.7135398021642272
+    },
+    {
+        "id": "713",
+        "recipe_name": "Chamoyada",
+        "ingredients_similarity": 0.7947681336509178,
+        "directions_similarity": 0.7871611404240597
+    },
+    {
+        "id": "887",
+        "recipe_name": "Energy Bars",
+        "ingredients_similarity": 0.7803122199616553,
+        "directions_similarity": 0.7884391441345537
+    },
+    {
+        "id": "651",
+        "recipe_name": "Pavlova Deluxe",
+        "ingredients_similarity": 0.7890102957311794,
+        "directions_similarity": 0.7393279077445523
+    },
+    {
+        "id": "678",
+        "recipe_name": "Spicy Mango Sauce",
+        "ingredients_similarity": 0.8370720946521513,
+        "directions_similarity": 0.7265855652521609
+    },
+    {
+        "id": "244",
+        "recipe_name": "Slow Cooker Cranberry Fig Pork",
+        "ingredients_similarity": 0.7768210469451372,
+        "directions_similarity": 0.7873152041506651
+    },
+    {
+        "id": "90",
+        "recipe_name": "Apple Strudel Muffins",
+        "ingredients_similarity": 0.942314888947174,
+        "directions_similarity": 0.9106474466165974
+    },
+    {
+        "id": "393",
+        "recipe_name": "Banana Peach Bread",
+        "ingredients_similarity": 0.8229892154822961,
+        "directions_similarity": 0.8853057383591499
+    },
+    {
+        "id": "581",
+        "recipe_name": "Banana Chocolate Chip Bread",
+        "ingredients_similarity": 0.9145774556430518,
+        "directions_similarity": 0.8863599712848428
+    }
+]
