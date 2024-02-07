@@ -3,60 +3,80 @@
         "id": "49",
         "recipe_name": "Apple Crumb Pie",
         "ingredients_similarity": 0.8218727356495322,
-        "directions_similarity": 0.8723548371774316
+        "directions_similarity": 0.8723548371774316,
+        "gpt4_1106_recipe_total_calories": 366,
+        "original_recpie_total_calories": 431
     },
     {
         "id": "99",
         "recipe_name": "Easy Apple Cider",
         "ingredients_similarity": 0.7207281716734707,
-        "directions_similarity": 0.7135398021642272
+        "directions_similarity": 0.7135398021642272,
+        "gpt4_1106_recipe_total_calories": 124,
+        "original_recpie_total_calories": 172
     },
     {
         "id": "713",
         "recipe_name": "Chamoyada",
         "ingredients_similarity": 0.7947681336509178,
-        "directions_similarity": 0.7871611404240597
+        "directions_similarity": 0.7871611404240597,
+        "gpt4_1106_recipe_total_calories": null,
+        "original_recpie_total_calories": 258
     },
     {
         "id": "887",
         "recipe_name": "Energy Bars",
         "ingredients_similarity": 0.7803122199616553,
-        "directions_similarity": 0.7884391441345537
+        "directions_similarity": 0.7884391441345537,
+        "gpt4_1106_recipe_total_calories": 160,
+        "original_recpie_total_calories": 331
     },
     {
         "id": "651",
         "recipe_name": "Pavlova Deluxe",
         "ingredients_similarity": 0.7890102957311794,
-        "directions_similarity": 0.7393279077445523
+        "directions_similarity": 0.7393279077445523,
+        "gpt4_1106_recipe_total_calories": 163,
+        "original_recpie_total_calories": 262
     },
     {
         "id": "678",
         "recipe_name": "Spicy Mango Sauce",
         "ingredients_similarity": 0.8370720946521513,
-        "directions_similarity": 0.7265855652521609
+        "directions_similarity": 0.7265855652521609,
+        "gpt4_1106_recipe_total_calories": null,
+        "original_recpie_total_calories": 97
     },
     {
         "id": "244",
         "recipe_name": "Slow Cooker Cranberry Fig Pork",
         "ingredients_similarity": 0.7768210469451372,
-        "directions_similarity": 0.7873152041506651
+        "directions_similarity": 0.7873152041506651,
+        "gpt4_1106_recipe_total_calories": 340,
+        "original_recpie_total_calories": 164
     },
     {
         "id": "90",
         "recipe_name": "Apple Strudel Muffins",
         "ingredients_similarity": 0.942314888947174,
-        "directions_similarity": 0.9106474466165974
+        "directions_similarity": 0.9106474466165974,
+        "gpt4_1106_recipe_total_calories": 196,
+        "original_recpie_total_calories": 266
     },
     {
         "id": "393",
         "recipe_name": "Banana Peach Bread",
         "ingredients_similarity": 0.8229892154822961,
-        "directions_similarity": 0.8853057383591499
+        "directions_similarity": 0.8853057383591499,
+        "gpt4_1106_recipe_total_calories": 351,
+        "original_recpie_total_calories": 209
     },
     {
         "id": "581",
         "recipe_name": "Banana Chocolate Chip Bread",
         "ingredients_similarity": 0.9145774556430518,
-        "directions_similarity": 0.8863599712848428
+        "directions_similarity": 0.8863599712848428,
+        "gpt4_1106_recipe_total_calories": 387,
+        "original_recpie_total_calories": 396
     }
 ]
