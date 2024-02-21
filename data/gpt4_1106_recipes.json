@@ -1,0 +1,114 @@
+{
+    "recipes": [
+        {
+            "id": "49",
+            "recipe_name": "Apple Crumb Pie",
+            "ingredients": "1 pie crust (store-bought or homemade), 6 cups thinly sliced apples (such as Granny Smith or a combination of tart and sweet apples), 3/4 cup granulated sugar, 2 tbsp all-purpose flour, 1 tsp ground cinnamon, 1/4 tsp ground nutmeg, 1/4 tsp salt, 1 tsp vanilla extract, 1/2 cup unsalted butter (cold and cut into small pieces), 3/4 cup all-purpose flour (for crumb topping), 1/2 cup brown sugar (packed, for crumb topping), 1/4 tsp baking powder (for crumb topping), 1/4 tsp salt (for crumb topping), Optional: Vanilla ice cream or whipped cream for serving",
+            "directions": "Preheat the oven to 375 degrees F (190 degrees C). Place the pie crust into a 9-inch pie dish and crimp the edges as desired.\nIn a large bowl, combine the sliced apples, granulated sugar, 2 tbsp flour, cinnamon, nutmeg, 1/4 tsp salt, and vanilla extract. Toss until the apples are evenly coated.\nPour the apple mixture into the pie crust and spread it out evenly.\nIn a separate bowl, prepare the crumb topping by mixing together 3/4 cup flour, brown sugar, baking powder, and 1/4 tsp salt. Add the cold butter pieces and use your fingers, a pastry cutter, or two knives to mix the butter into the dry ingredients until the mixture resembles coarse crumbs.\nSprinkle the crumb topping evenly over the apples in the pie dish.\nPlace the pie on a baking sheet to catch any drips and bake in the preheated oven for 45 to 50 minutes, or until the crumb topping is golden brown and the apple filling is bubbly.\nIf the edges of the crust begin to brown too quickly, cover them with aluminum foil.\nRemove the pie from the oven and let it cool on a wire rack. Serve warm or at room temperature with vanilla ice cream or whipped cream, if desired.",
+            "nutrition": {
+                "fat": "14g",
+                "protein": "2g",
+                "carbohydrate": "58g"
+            }
+        },
+        {
+            "id": "99",
+            "recipe_name": "Easy Apple Cider",
+            "ingredients": "10 medium-sized apples, assorted types (like Fuji, Gala, Honeycrisp), quartered, \n½ orange, quartered (leave peel on),\n4 sticks of cinnamon, \n1 teaspoon whole cloves, \n1 nutmeg, halved, \n10 cups water, \n½ to 1 cup granulated sugar (depending on desired sweetness),\nOptional: additional cinnamon sticks for serving.",
+            "directions": "Place the quartered apples and orange pieces into a large pot. Add the cinnamon sticks, whole cloves, and nutmeg. Pour in the water—the water should cover the fruit, but it's okay if a few pieces poke out above the water.\nBring the pot to a boil. Boil uncovered for about one hour, checking occasionally. You want to make sure it doesn't boil down too much. If the water gets low, add more to cover the fruit.\nAfter boiling for an hour, cover the pot, reduce the heat, and simmer the apple cider for another two hours.\nUse a potato masher or a large spoon to mash the apples and orange down to release more flavor.\nStrain the mixture through a fine-mesh sieve or cheese cloth into a clean container. Use the back of a spoon to press the solids to extract as much liquid as possible. Discard the solids.\nStir in ½ cup of sugar, taste and add more if desired.\nServe the cider hot with optional additional cinnamon sticks for garnish. The cider can be kept in the refrigerator for up to five days or frozen for later use.",
+            "nutrition": {
+                "fat": "0g",
+                "protein": "0g",
+                "carbohydrate": "31g"
+            }
+        },
+        {
+            "id": "713",
+            "recipe_name": "Chamoyada",
+            "ingredients": "- 3 cups of ice\n- 2 cups of mango, peeled and chopped (or frozen mango)\n- 1/2 cup of chamoy sauce (plus additional for rimming the glasses)\n- 1/4 cup of lime juice\n- 2 tablespoons of sugar (optional, depending on the sweetness of the mango)\n- Tajín seasoning (for rimming the glasses)\n- Lime wedges (for serving)\n- Fresh mango chunks (for garnish)\n- Optional: Tamarind candy straws or sticks for garnish",
+            "directions": "Begin by preparing your serving glasses. Rub the rim of each glass with a lime wedge and dip it in Tajín seasoning to coat.\nIn a blender, combine the ice, chopped mango, chamoy sauce, lime juice, and sugar (if using). Blend until the mixture reaches a slushy consistency.\nPour a small amount of chamoy sauce onto a small plate. Dip the rim of each glass into the chamoy to coat the edge.\nFill the glasses with the blended chamoyada mixture.\nTop each glass with additional chamoy sauce if desired.\nGarnish with a lime wedge on the rim, fresh mango chunks, and optionally, a tamarind candy straw.\nServe immediately and enjoy your refreshing Chamoyada!",
+            "nutrition": {
+                "fat": null,
+                "protein": null,
+                "carbohydrate": null
+            }
+        },
+        {
+            "id": "887",
+            "recipe_name": "Homemade Energy Bars",
+            "ingredients": "1 cup rolled oats, \n1/2 cup raw almonds, chopped, \n1/2 cup dried cranberries, \n1/4 cup pumpkin seeds, \n1/4 cup sunflower seeds, \n1/4 cup honey, \n1/4 cup peanut butter or almond butter, \n1 teaspoon vanilla extract, \n1/2 teaspoon ground cinnamon, \nA pinch of salt",
+            "directions": "Preheat oven to 350 degrees F (175 degrees C). Line an 8-inch square baking pan with parchment paper, leaving some overhang for easy removal.\nSpread the oats and almonds on a baking sheet and toast in the oven for about 10 minutes, until lightly browned and fragrant.\nIn a large mixing bowl, combine the toasted oats and almonds, dried cranberries, pumpkin seeds, and sunflower seeds.\nIn a small saucepan over medium heat, stir together the honey, peanut butter or almond butter, vanilla extract, cinnamon, and a pinch of salt. Heat until the mixture is well combined and slightly runny.\nPour the warm honey mixture over the dry ingredients in the bowl. Mix thoroughly until all ingredients are well coated.\nTransfer the mixture to the prepared baking pan. Press firmly into an even layer, using the bottom of a measuring cup or your hands to compact it well (this helps the bars stick together).\nBake in the preheated oven for about 20-25 minutes, or until the edges are golden brown.\nLet the bars cool completely in the pan on a wire rack. Once cool, use the parchment overhang to lift the bars from the pan. Cut into squares or rectangles as desired.",
+            "nutrition": {
+                "fat": "8g",
+                "protein": "4g",
+                "carbohydrate": "18g"
+            }
+        },
+        {
+            "id": "651",
+            "recipe_name": "Pavlova Deluxe",
+            "ingredients": "4 large egg whites (room temperature), 1 cup superfine sugar, 1 teaspoon white vinegar, 1 teaspoon cornstarch, 1 teaspoon pure vanilla extract, 1 cup heavy cream, 2 tablespoons confectioners' sugar (plus more for dusting), 2 cups mixed berries (strawberries, blueberries, raspberries, etc.), mint leaves for garnish (optional)",
+            "directions": "Preheat oven to 300°F (150°C) and line a baking sheet with parchment paper. Draw a 9-inch circle on the parchment paper as a guide for the Pavlova base.\nIn a clean, dry bowl of a stand mixer fitted with the whisk attachment, beat the egg whites on medium speed until soft peaks form. Gradually add the superfine sugar, about 1 tablespoon at a time, continuing to beat until the egg whites are glossy and stiff peaks form. \nWhisk in the cornstarch, vinegar, and vanilla extract until just combined.\nSpoon the meringue onto the center of the circle on the parchment paper. Using a spatula or the back of a spoon, shape the meringue into a disc, keeping within the circle and creating a slight well in the center.\nPlace in the oven and reduce the temperature to 250°F (120°C). Bake for 60 minutes, or until the meringue is crisp on the outside and dry on the inside. Turn off the oven, leave the door ajar, and allow the Pavlova to cool completely inside.\nBefore serving, whip the heavy cream with the confectioners' sugar until soft peaks form. Spoon the whipped cream into the well of the cooled meringue. Top with mixed berries and dust with additional confectioners' sugar. Garnish with mint leaves if desired. Serve immediately.",
+            "nutrition": {
+                "fat": "7g",
+                "protein": "2g",
+                "carbohydrate": "23g"
+            }
+        },
+        {
+            "id": "678",
+            "recipe_name": "Spicy Mango Sauce",
+            "ingredients": "2 ripe mangoes, peeled and pitted, 1 small red chili (like a serrano or Thai chili), seeds removed and minced, 2 tablespoons fresh lime juice, 2 teaspoons honey, or to taste, 1 small clove garlic, minced, 1/4 teaspoon ground cumin, 1/4 teaspoon salt, or to taste, 2 tablespoons freshly chopped cilantro, Optional: 1 teaspoon grated fresh ginger",
+            "directions": "In a food processor or blender, combine the mangoes, minced chili, lime juice, honey, garlic, cumin, and salt. Blend until smooth.\nTaste and adjust the seasoning, adding more honey if it’s too tart or more salt if necessary. If you've opted for ginger, blend it in as well.\nPour the sauce into a bowl and stir in the chopped cilantro. If you’d like a thinner consistency, mix in a little water until desired thickness is reached.\nLet the sauce sit for at least 30 minutes before serving to allow the flavors to meld together. This sauce can be used immediately or stored in an airtight container in the refrigerator for up to 5 days.\nServe the spicy mango sauce with grilled chicken, fish, tacos, or as a dipping sauce for spring rolls or crudité.",
+            "nutrition": {
+                "fat": null,
+                "protein": null,
+                "carbohydrate": null
+            }
+        },
+        {
+            "id": "244",
+            "recipe_name": "Slow Cooker Cranberry Fig Pork",
+            "ingredients": "2 pounds pork tenderloin, \n1 teaspoon salt, \n1/2 teaspoon black pepper, \n1 tablespoon olive oil, \n1 cup dried figs, stems removed and quartered, \n1 cup fresh or frozen cranberries, \n1/2 cup brown sugar, \n1/4 cup balsamic vinegar, \n1/4 cup water, \n2 cloves garlic, minced, \n1 teaspoon dried rosemary, \n1/2 teaspoon dried thyme,\nOptional: Fresh rosemary sprigs for garnish",
+            "directions": "Season the pork tenderloin all over with salt and pepper. Heat olive oil in a skillet over medium-high heat. Add the pork and sear until brown on all sides, about 3 minutes per side. Transfer the pork to the slow cooker.\nIn a bowl, mix together dried figs, cranberries, brown sugar, balsamic vinegar, water, minced garlic, dried rosemary, and dried thyme. Pour this mixture over the pork in the slow cooker.\nCover and cook on low for 6 to 8 hours or on high for 3 to 4 hours, until pork is tender and cooked through.\nTransfer the pork to a serving dish and let it rest for a few minutes. Meanwhile, skim off any excess fat from the sauce in the slow cooker if needed. Pour the fruit sauce over the pork or serve on the side.\nIf desired, garnish with fresh rosemary sprigs before serving.",
+            "nutrition": {
+                "fat": "8g",
+                "protein": "32g",
+                "carbohydrate": "35g"
+            }
+        },
+        {
+            "id": "90",
+            "recipe_name": "Apple Strudel Muffins",
+            "ingredients": "2 cups all-purpose flour, 1 teaspoon baking powder, 1/2 teaspoon baking soda, 1/2 teaspoon salt, 1/2 teaspoon ground cinnamon, 1/2 cup butter at room temperature, 1 cup white sugar, 2 eggs, 1 1/4 teaspoons vanilla extract, 1 1/2 cups chopped apples, 1/3 cup packed brown sugar, 1 tablespoon all-purpose flour, 1/8 teaspoon ground cinnamon, 1 tablespoon butter",
+            "directions": "Preheat the oven to 375 degrees F (190 degrees C). Grease a 12 cup muffin pan or line with paper muffin liners.\nIn a medium bowl, mix together 2 cups of flour, baking powder, baking soda, salt, and 1/2 teaspoon of cinnamon. Set aside.\nIn a large bowl, beat together butter, white sugar, and eggs until smooth. Mix in vanilla extract. Stir in the chopped apples, and gradually blend in the flour mixture. Spoon the mixture into the prepared muffin pan.\nIn a small bowl, mix brown sugar, 1 tablespoon of flour, and 1/8 teaspoon of cinnamon. Cut in 1 tablespoon of butter until mixture is like coarse crumbs. Sprinkle over the tops of the mixture in the muffin pan.\nBake for 20 minutes in the preheated oven, or until a toothpick inserted in the center of a muffin comes out clean. Allow to sit for 5 minutes before removing muffins from pan. Cool on a wire rack.",
+            "nutrition": {
+                "fat": "8g",
+                "protein": "2g",
+                "carbohydrate": "29g"
+            }
+        },
+        {
+            "id": "393",
+            "recipe_name": "Banana Peach Bread",
+            "ingredients": "1 1/2 cups all-purpose flour, 1 teaspoon baking soda, 1 teaspoon ground cinnamon, 1/2 teaspoon salt, 1 cup granulated sugar, 2 eggs, 1/2 cup vegetable oil, 3 ripe bananas, mashed, 1 teaspoon vanilla extract, 1 cup peaches, peeled and diced, 1/2 cup chopped walnuts (optional)",
+            "directions": "Preheat your oven to 350 degrees F (175 degrees C). Grease and flour a 9x5-inch loaf pan.\nIn a medium bowl, whisk together the flour, baking soda, cinnamon, and salt. Set aside.\nIn a large bowl, beat together the sugar and eggs until light and fluffy. Gradually add the vegetable oil, continuing to beat. Stir in the mashed bananas and vanilla extract until well combined.\nGradually add the dry ingredients to the banana mixture, stirring just until the flour is incorporated. Do not overmix.\nFold in the diced peaches and chopped walnuts, if using. Pour the batter into the prepared loaf pan.\nBake in the preheated oven for 60-70 minutes, or until a toothpick inserted into the center of the bread comes out clean.\nAllow bread to cool in the pan for 10 minutes, then turn out onto a wire rack to cool completely. Serve as is or with a dollop of whipped cream or a scoop of vanilla ice cream.",
+            "nutrition": {
+                "fat": "15g",
+                "protein": "4g",
+                "carbohydrate": "50g"
+            }
+        },
+        {
+            "id": "581",
+            "recipe_name": "Banana Chocolate Chip Bread",
+            "ingredients": "1 cup granulated sugar, 2 cups all-purpose flour, 1 teaspoon baking powder, ½ teaspoon baking soda, ½ teaspoon salt, ½ cup unsalted butter, softened, 2 large eggs, 4 ripe bananas, mashed, 1 teaspoon vanilla extract, 1 cup semisweet chocolate chips, Optional: ½ cup chopped walnuts or pecans",
+            "directions": "Preheat oven to 350 degrees F (175 degrees C). Grease a 9x5-inch loaf pan.\nIn a large bowl, whisk together sugar, flour, baking powder, baking soda, and salt. In a separate bowl, cream together butter and eggs until light and fluffy. Stir in mashed bananas and vanilla extract until well mixed.\nFold the wet ingredients into the dry ingredients until just combined. Be careful not to overmix. Gently stir in the chocolate chips, and if desired, the chopped nuts.\nPour the batter into the prepared loaf pan. Bake in the preheated oven until a toothpick inserted into the center comes out clean, about 60 to 70 minutes.\nAllow bread to cool in the pan for 10 minutes, then turn out onto a wire rack to cool completely before slicing.",
+            "nutrition": {
+                "fat": "15g",
+                "protein": "5g",
+                "carbohydrate": "58g"
+            }
+        }
+    ]
+}

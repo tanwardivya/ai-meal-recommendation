@@ -1,0 +1,114 @@
+{
+    "recipes": [
+        {
+            "id": "8",
+            "recipe_name": "Chicken sausage meatballs",
+            "ingredients": "1/4 large onion, chopped, 1 3/4 teaspoon minced garlic, 1/4 cup grated Parmesan cheese, 3/4 teaspoon Italian seasoning, 3/4 teaspoon ground fennel, 1/4 teaspoon kosher salt, 1/8 teaspoon ground black pepper, 1 pound ground chicken breast",
+            "directions": "Heat the oven to 350 F. In a small saucepan, saute the onions and garlic until tender, about 5 to 7 minutes. Remove from heat and place in a medium bowl. Add the cheese, Italian seasoning, fennel, salt and pepper; mix well. Add the chicken and gently mix with hands until just combined. Form mixture into 1-inch meatballs —about 3/4 ounces each. Place on a greased baking sheet and bake until the internal temperature of the meatballs reach 165 F, about 15 minutes.",
+            "nutrition": {
+                "fat": "4g",
+                "protein": "30g",
+                "carbohydrate": "2g"
+            }
+        },
+        {
+            "id": "9",
+            "recipe_name": "Fresh fruit kebabs",
+            "ingredients": "6 ounces low-fat, sugar-free lemon yogurt, 1 teaspoon fresh lime juice, 1 teaspoon lime zest, 4 pineapple chunks (about 1/2 inch each), 4 strawberries, 1 kiwi, peeled and quartered, 1/2 banana, cut into 4 1/2-inch chunks, 4 red grapes, 4 wooden skewers",
+            "directions": "In a small bowl, whisk together the yogurt, lime juice and lime zest. Cover and refrigerate until needed. Thread 1 of each fruit onto the skewer. Repeat with the other skewers until the fruit is gone. Serve with the lemon lime dip.",
+            "nutrition": {
+                "fat": "2g",
+                "protein": "4g",
+                "carbohydrate": "39g"
+            }
+        },
+        {
+            "id": "11",
+            "recipe_name": "Fresh fruit smoothie",
+            "ingredients": "1 cup fresh pineapple chunks, 1/2 cup cantaloupe or other melon chunks, 1 cup fresh strawberries, Juice of 2 oranges, 1 cup cold water, 1 tablespoon honey",
+            "directions": "Remove rind from pineapple and melon. Cut into chunks. Remove stems from strawberries. Place all ingredients in blender and puree until smooth. Serve cold.",
+            "nutrition": {
+                "fat": "0g",
+                "protein": "1g",
+                "carbohydrate": "17g"
+            }
+        },
+        {
+            "id": "10",
+            "recipe_name": "Chicken fajitas",
+            "ingredients": "1/4 cup lime juice, 1 or 2 cloves garlic, minced, 1 teaspoon chili powder, 1/2 teaspoon ground cumin, 3 pounds boneless, skinless chicken breasts, cut in 1/4-inch strips, 1 large onion, sliced, Half a green sweet bell pepper, slivered, Half a red sweet bell pepper, slivered, 12 low-fat, whole-wheat 8-inch tortillas, 1/2 cup salsa, 1/2 cup fat-free sour cream, 1/2 cup low-fat shredded cheddar cheese",
+            "directions": "Combine the first four ingredients in a large bowl. Add chicken slices and stir until chicken is well-coated. Marinate for 15 minutes. Cook chicken in pan on grill or stovetop for 3 minutes, or until no longer pink. Stir in onions and peppers. Cook 3 to 5 minutes, or until done to your liking. Divide mixture evenly among tortillas. Top each with 2 teaspoons salsa, 2 teaspoons sour cream and 2 teaspoons shredded cheese. Roll up and serve.",
+            "nutrition": {
+                "fat": "4g",
+                "protein": "30g",
+                "carbohydrate": "16g"
+            }
+        },
+        {
+            "id": "4",
+            "recipe_name": "Baked oatmeal",
+            "ingredients": "1 tablespoon canola oil, 1/2 cup unsweetened applesauce, 1/3 cup brown sugar, Egg substitute equivalent to 2 eggs, or 4 egg whites, 3 cups uncooked rolled oats, 2 teaspoons baking powder, 1 teaspoon cinnamon, 1 cup skim milk",
+            "directions": "In a good-sized bowl, stir together oil, applesauce, sugar and eggs. Add dry ingredients and milk. Mix well. Spray a 9-by-13 baking pan generously with cooking spray. Spoon oatmeal mixture into pan. Bake uncovered at 350 F for 30 minutes",
+            "nutrition": {
+                "fat": "4g",
+                "protein": "8g",
+                "carbohydrate": "34g"
+            }
+        },
+        {
+            "id": "5",
+            "recipe_name": "Beef and vegetable kebabs",
+            "ingredients": "1/2 cup brown rice, 2 cups water, 4 ounces top sirloin (choice), 1 tablespoon fat-free Italian dressing, 1 green pepper, seeded and cut into 4 pieces, 4 cherry tomatoes, 1 small onion, cut into 4 wedges, 2 wooden skewers, soaked in water for 30 minutes, or metal skewers",
+            "directions": "In a saucepan over high heat, combine the rice and water. Bring to a boil. Reduce the heat to low, cover and simmer until the water is absorbed and the rice is tender, about 30 to 45 minutes. Add more water if necessary to keep the rice from drying out. Transfer to a small bowl to keep warm. Cut the meat into 4 equal portions. Put the meat in a small bowl and pour Italian dressing over the top. Rub the dressing into each piece. Cover and place in the refrigerator for at least 20 minutes to marinate, turning as needed. Prepare a hot fire in a charcoal grill or heat a gas grill or a broiler. Away from the heat source, lightly coat the grill rack or broiler pan with cooking spray. Position the cooking rack 4 to 6 inches from the heat source. Thread 2 cubes of meat, 2 green pepper pieces, 2 cherry tomatoes and 2 onion wedges onto each skewer. Place the kebabs on the grill rack or broiler pan. Grill or broil the kebabs for about 5 to 10 minutes, turning as needed. Divide the rice onto individual plates. Top with 1 kebab and serve immediately.",
+            "nutrition": {
+                "fat": "4g",
+                "protein": "18g",
+                "carbohydrate": "54g"
+            }
+        },
+        {
+            "id": "7",
+            "recipe_name": "Beef fajitas",
+            "ingredients": "1 tablespoon chili powder, 1/2 teaspoon ground oregano, 1/2 teaspoon paprika, 1/4 teaspoon garlic powder, 1/8 teaspoon salt, Ground black pepper, to taste, 12 ounces beef sirloin, select grade, cut into strips 1/2 inch wide and 2 inches long, 1 red onion, cut into strips, 1 green bell pepper, cut into strips, 4 whole-wheat tortillas, about 8 inches in diameter, warmed in the microwave, 1/4 cup shredded sharp cheddar cheese, 2 medium tomatoes, diced, 2 cups shredded lettuce, 1/2 cup salsa",
+            "directions": "In a small bowl, stir together the chili powder, oregano, paprika, garlic powder, salt and pepper. Dredge the sirloin pieces in the seasonings, coating completely. In a nonstick frying pan, cook the sirloin strips over medium heat until slightly pink, about 8 minutes. Add the onion and green pepper strips and saute until the vegetables are tender, about 5 minutes. To serve, spread an equal amount of the meat and vegetable mixture on each tortilla. Top each with 1 tablespoon cheese, 1/4 of the diced tomatoes, 1/2 cup shredded lettuce and 2 tablespoons salsa. Fold both sides of each tortilla up over the filling, and then roll to close. Serve immediately.",
+            "nutrition": {
+                "fat": "6g",
+                "protein": "24g",
+                "carbohydrate": "23g"
+            }
+        },
+        {
+            "id": "6",
+            "recipe_name": "Black bean quesadillas",
+            "ingredients": "1 1/2 cups reduced sodium black beans, drained and rinsed, 1 cup finely diced zucchini, 1 cup frozen sweet corn kernels, thawed, 2/3 cup finely diced red onion, 1/2 cup shredded 2% sharp cheddar cheese, 1/4 cup chopped fresh cilantro, 1 teaspoon cumin, 1/2 teaspoon salt, Pinch of black pepper, 1/4 teaspoon Tabasco sauce, 2 whole-wheat tortillas, 12 inches in diameter",
+            "directions": "Heat oven to 350 F. In a large bowl, combine the beans, zucchini, corn, red onion, cheese, cilantro, cumin, salt, pepper and Tabasco sauce. Heat a large, nonstick skillet to medium heat and coat with cooking spray. Place one tortilla in the pan to warm. Place half the bean mixture on one side of the tortilla and fold over to cover. Cook for 1 to 2 minutes then flip the quesadilla and cook for another 1 to 2 minutes. Remove from heat and place on a baking sheet. Repeat with the other tortilla. Bake for 5 to 8 minutes or until cheese has completely melted. Cut each quesadilla into 4 even slices and serve with your choice of condiments.",
+            "nutrition": {
+                "fat": "8g",
+                "protein": "14g",
+                "carbohydrate": "41g"
+            }
+        },
+        {
+            "id": "2",
+            "recipe_name": "Almond crusted chicken",
+            "ingredients": "3/4 cup ground almonds, 1/2 cup all-purpose flour, 1 teaspoon dry thyme, 1 teaspoon onion powder, 1 teaspoon garlic powder, 1/2 teaspoon salt, 1/2 teaspoon pepper, 1/2 cup skim milk, 4 boneless, skinless, chicken breast, 4 ounces each, 1 tablespoon olive oil",
+            "directions": "Heat oven to 400 F. Lightly coat a baking sheet with cooking spray. In a medium bowl, combine the ground almonds, flour, thyme, onion powder, garlic powder, salt and pepper. Pour the milk in a separate medium-sized bowl. Coat each chicken breast in the almond mixture, then into the milk, and back into the almond mixture, and place on the baking sheet.Preheat a nonstick saute pan on medium-high heat, and add the olive oil to the pan. Once the pan is hot, place the chicken breasts in the pan and reduce heat to medium. Sear the chicken breasts on one side until they are golden brown, then sear on the other side for 1 minute. Place chicken back on the greased baking sheet and bake in the oven for about 10 minutes or until the internal temperature reaches 165 F.",
+            "nutrition": {
+                "fat": "11g",
+                "protein": "28g",
+                "carbohydrate": "9g"
+            }
+        },
+        {
+            "id": "3",
+            "recipe_name": "Balsamic feta chicken",
+            "ingredients": "6 chicken breasts, 4 ounces each, 1/2 cup balsamic vinegar, 2 tablespoons brown sugar, 1 tablespoon olive oil, 1 tablespoon paprika, 1 teaspoon chopped fresh thyme, 1/2 teaspoon kosher salt, 1/4 teaspoon dry mustard, 6 tablespoons crumbled feta cheese",
+            "directions": "Heat the oven to 375 F. Lightly coat a baking sheet or baking dish with cooking spray or olive oil.In a medium bowl, combine the chicken breasts, vinegar, brown sugar, oil, paprika, thyme, salt and mustard. Using tongs, coat the chicken. Marinate the chicken breasts for at least 20 minutes in the refrigerator. Place the marinaded chicken breasts on the baking sheet and bake for 15 minutes or until chicken reaches an internal temperature of 165 F. Sprinkle each chicken breast with 1 tablespoon cheese and serve.",
+            "nutrition": {
+                "fat": "15g",
+                "protein": "25g",
+                "carbohydrate": "9g"
+            }
+        }
+    ]
+}
