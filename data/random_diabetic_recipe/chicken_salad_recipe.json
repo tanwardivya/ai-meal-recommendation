@@ -1,0 +1,342 @@
+{
+    "recpies_authenticity": [
+        {
+            "id": "8",
+            "recipe_name": "grilled chicken salad with strawberry vinaigrette",
+            "ingredients": "2 boneless, skinless chicken breasts, 6 cups mixed salad greens, 1 cup sliced strawberries, 1/4 cup slivered almonds, toasted, 1/4 red onion, thinly sliced, 1/4 cup crumbled feta cheese, 2 tablespoons balsamic vinegar, 1 tablespoon olive oil, 1 teaspoon Dijon mustard, 1/2 teaspoon honey, Salt and pepper, to taste",
+            "ingredients_ner": [
+                "chicken breasts",
+                "mixed salad greens",
+                "strawberries",
+                "slivered almonds",
+                "red onion",
+                "feta cheese",
+                "balsamic vinegar",
+                "olive oil",
+                "Dijon mustard",
+                "honey",
+                "Salt",
+                "pepper"
+            ],
+            "matched_recipes": [
+                {
+                    "id": "177",
+                    "recipe_name": "cherry chicken salad",
+                    "ingredients": "3  cooked, boneless chicken breast halves, diced, ⅓ cup  dried cherries, ⅓ cup diced celery, ⅓ cup toasted, chopped pecans, ⅓ cup low-fat mayonnaise, 1 tablespoon buttermilk, ½ teaspoon salt, ½ teaspoon ground black pepper, ⅓ cup cubed apples (Optional)",
+                    "ingredients_ner": [
+                        "cooked chicken breast",
+                        "dried cherries",
+                        "celery",
+                        "pecans",
+                        "mayonnaise",
+                        "buttermilk",
+                        "salt",
+                        "ground black pepper",
+                        "apples"
+                    ],
+                    "matched_percentage": 22.22222222222222,
+                    "matched_words": [
+                        "chicken",
+                        "pepper"
+                    ]
+                },
+                {
+                    "id": "721",
+                    "recipe_name": "chicken, avocado and mango salad",
+                    "ingredients": "2 tablespoons brown sugar, ¼ cup water, ⅓ cup lime juice, ½ cup chili garlic sauce, 4 cups shredded, cooked chicken, 2 medium mangos - peeled, seeded and diced, 2  avocados - peeled, pitted and diced, 1 (10 ounce) package spring lettuce mix",
+                    "ingredients_ner": [
+                        "brown sugar",
+                        "water",
+                        "lime juice",
+                        "chili garlic sauce",
+                        "shredded, cooked chicken",
+                        "mangos",
+                        "avocados",
+                        "spring lettuce mix"
+                    ],
+                    "matched_percentage": 12.5,
+                    "matched_words": [
+                        "chicken"
+                    ]
+                },
+                {
+                    "id": "817",
+                    "recipe_name": "spinach salad with chicken, avocado, and goat cheese",
+                    "ingredients": "¼ cup pine nuts, 8 cups chopped spinach, 1 cup halved cherry tomatoes, 1 ½ cups chopped cooked chicken , 1 large avocado - peeled, pitted, and sliced, ½ cup corn kernels, ⅓ cup crumbled goat cheese",
+                    "ingredients_ner": [
+                        "pine nuts",
+                        "chopped spinach",
+                        "cherry tomatoes",
+                        "chopped cooked chicken",
+                        "avocado",
+                        "corn kernels",
+                        "crumbled goat cheese"
+                    ],
+                    "matched_percentage": 28.57142857142857,
+                    "matched_words": [
+                        "chicken",
+                        "cheese"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "9",
+            "recipe_name": "grilled lemon-herb chicken salad",
+            "ingredients": "4 boneless, skinless chicken breasts, 1 tablespoon olive oil, 1 lemon, juiced and zested, 2 cloves garlic, minced, 1 teaspoon dried oregano, 1/4 teaspoon salt, Ground black pepper, to taste, 6 cups mixed salad greens, 1 cup cherry tomatoes, halved, 1/2 cucumber, sliced, 1/4 red onion, thinly sliced, 1/4 cup kalamata olives, pitted, 2 tablespoons feta cheese, crumbled, 1 tablespoon red wine vinegar, 2 tablespoons extra virgin olive oil",
+            "ingredients_ner": [
+                "boneless, skinless chicken breasts",
+                "olive oil",
+                "lemon",
+                "garlic",
+                "dried oregano",
+                "salt",
+                "black pepper",
+                "mixed salad greens",
+                "cherry tomatoes",
+                "cucumber",
+                "red onion",
+                "kalamata olives",
+                "feta cheese",
+                "red wine vinegar",
+                "extra virgin olive oil"
+            ],
+            "matched_recipes": [
+                {
+                    "id": "177",
+                    "recipe_name": "cherry chicken salad",
+                    "ingredients": "3  cooked, boneless chicken breast halves, diced, ⅓ cup  dried cherries, ⅓ cup diced celery, ⅓ cup toasted, chopped pecans, ⅓ cup low-fat mayonnaise, 1 tablespoon buttermilk, ½ teaspoon salt, ½ teaspoon ground black pepper, ⅓ cup cubed apples (Optional)",
+                    "ingredients_ner": [
+                        "cooked chicken breast",
+                        "dried cherries",
+                        "celery",
+                        "pecans",
+                        "mayonnaise",
+                        "buttermilk",
+                        "salt",
+                        "ground black pepper",
+                        "apples"
+                    ],
+                    "matched_percentage": 55.55555555555556,
+                    "matched_words": [
+                        "black",
+                        "salt",
+                        "chicken",
+                        "pepper",
+                        "dried"
+                    ]
+                },
+                {
+                    "id": "721",
+                    "recipe_name": "chicken, avocado and mango salad",
+                    "ingredients": "2 tablespoons brown sugar, ¼ cup water, ⅓ cup lime juice, ½ cup chili garlic sauce, 4 cups shredded, cooked chicken, 2 medium mangos - peeled, seeded and diced, 2  avocados - peeled, pitted and diced, 1 (10 ounce) package spring lettuce mix",
+                    "ingredients_ner": [
+                        "brown sugar",
+                        "water",
+                        "lime juice",
+                        "chili garlic sauce",
+                        "shredded, cooked chicken",
+                        "mangos",
+                        "avocados",
+                        "spring lettuce mix"
+                    ],
+                    "matched_percentage": 25.0,
+                    "matched_words": [
+                        "chicken",
+                        "garlic"
+                    ]
+                },
+                {
+                    "id": "817",
+                    "recipe_name": "spinach salad with chicken, avocado, and goat cheese",
+                    "ingredients": "¼ cup pine nuts, 8 cups chopped spinach, 1 cup halved cherry tomatoes, 1 ½ cups chopped cooked chicken , 1 large avocado - peeled, pitted, and sliced, ½ cup corn kernels, ⅓ cup crumbled goat cheese",
+                    "ingredients_ner": [
+                        "pine nuts",
+                        "chopped spinach",
+                        "cherry tomatoes",
+                        "chopped cooked chicken",
+                        "avocado",
+                        "corn kernels",
+                        "crumbled goat cheese"
+                    ],
+                    "matched_percentage": 57.14285714285714,
+                    "matched_words": [
+                        "tomatoes",
+                        "chicken",
+                        "cheese",
+                        "cherry"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "4",
+            "recipe_name": "grilled chicken salad with orange vinaigrette",
+            "ingredients": "2 boneless, skinless chicken breasts, 6 cups mixed salad greens, 1 cup cherry tomatoes, halved, 1/2 cucumber, thinly sliced, 1 orange, peeled and segmented, 1/4 red onion, thinly sliced, 1/4 cup sliced almonds, toasted, For the vinaigrette: 1/4 cup fresh orange juice, 2 tablespoons olive oil, 1 tablespoon white wine vinegar, 1 teaspoon honey, 1/2 teaspoon Dijon mustard, Salt and pepper, to taste",
+            "ingredients_ner": [
+                "chicken breasts",
+                "mixed salad greens",
+                "cherry tomatoes",
+                "cucumber",
+                "orange",
+                "red onion",
+                "sliced almonds",
+                "orange juice",
+                "olive oil",
+                "white wine vinegar",
+                "honey",
+                "Dijon mustard",
+                "Salt",
+                "pepper"
+            ],
+            "matched_recipes": [
+                {
+                    "id": "177",
+                    "recipe_name": "cherry chicken salad",
+                    "ingredients": "3  cooked, boneless chicken breast halves, diced, ⅓ cup  dried cherries, ⅓ cup diced celery, ⅓ cup toasted, chopped pecans, ⅓ cup low-fat mayonnaise, 1 tablespoon buttermilk, ½ teaspoon salt, ½ teaspoon ground black pepper, ⅓ cup cubed apples (Optional)",
+                    "ingredients_ner": [
+                        "cooked chicken breast",
+                        "dried cherries",
+                        "celery",
+                        "pecans",
+                        "mayonnaise",
+                        "buttermilk",
+                        "salt",
+                        "ground black pepper",
+                        "apples"
+                    ],
+                    "matched_percentage": 22.22222222222222,
+                    "matched_words": [
+                        "chicken",
+                        "pepper"
+                    ]
+                },
+                {
+                    "id": "721",
+                    "recipe_name": "chicken, avocado and mango salad",
+                    "ingredients": "2 tablespoons brown sugar, ¼ cup water, ⅓ cup lime juice, ½ cup chili garlic sauce, 4 cups shredded, cooked chicken, 2 medium mangos - peeled, seeded and diced, 2  avocados - peeled, pitted and diced, 1 (10 ounce) package spring lettuce mix",
+                    "ingredients_ner": [
+                        "brown sugar",
+                        "water",
+                        "lime juice",
+                        "chili garlic sauce",
+                        "shredded, cooked chicken",
+                        "mangos",
+                        "avocados",
+                        "spring lettuce mix"
+                    ],
+                    "matched_percentage": 25.0,
+                    "matched_words": [
+                        "chicken",
+                        "juice"
+                    ]
+                },
+                {
+                    "id": "817",
+                    "recipe_name": "spinach salad with chicken, avocado, and goat cheese",
+                    "ingredients": "¼ cup pine nuts, 8 cups chopped spinach, 1 cup halved cherry tomatoes, 1 ½ cups chopped cooked chicken , 1 large avocado - peeled, pitted, and sliced, ½ cup corn kernels, ⅓ cup crumbled goat cheese",
+                    "ingredients_ner": [
+                        "pine nuts",
+                        "chopped spinach",
+                        "cherry tomatoes",
+                        "chopped cooked chicken",
+                        "avocado",
+                        "corn kernels",
+                        "crumbled goat cheese"
+                    ],
+                    "matched_percentage": 42.857142857142854,
+                    "matched_words": [
+                        "tomatoes",
+                        "chicken",
+                        "cherry"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "5",
+            "recipe_name": "grilled chicken salad with avocado dressing",
+            "ingredients": "2 boneless, skinless chicken breasts, 1 teaspoon olive oil, Salt and pepper, to taste, 4 cups mixed salad greens, 1/2 cucumber, sliced, 1/2 bell pepper, chopped, 1/4 red onion, thinly sliced, 1/2 avocado, 1/4 cup fresh cilantro, 1/4 cup Greek yogurt, 2 tablespoons lime juice, 1 garlic clove",
+            "ingredients_ner": [
+                "chicken breasts",
+                "olive oil",
+                "salt",
+                "pepper",
+                "mixed salad greens",
+                "cucumber",
+                "bell pepper",
+                "red onion",
+                "avocado",
+                "fresh cilantro",
+                "Greek yogurt",
+                "lime juice",
+                "garlic clove"
+            ],
+            "matched_recipes": [
+                {
+                    "id": "177",
+                    "recipe_name": "cherry chicken salad",
+                    "ingredients": "3  cooked, boneless chicken breast halves, diced, ⅓ cup  dried cherries, ⅓ cup diced celery, ⅓ cup toasted, chopped pecans, ⅓ cup low-fat mayonnaise, 1 tablespoon buttermilk, ½ teaspoon salt, ½ teaspoon ground black pepper, ⅓ cup cubed apples (Optional)",
+                    "ingredients_ner": [
+                        "cooked chicken breast",
+                        "dried cherries",
+                        "celery",
+                        "pecans",
+                        "mayonnaise",
+                        "buttermilk",
+                        "salt",
+                        "ground black pepper",
+                        "apples"
+                    ],
+                    "matched_percentage": 33.33333333333333,
+                    "matched_words": [
+                        "chicken",
+                        "salt",
+                        "pepper"
+                    ]
+                },
+                {
+                    "id": "721",
+                    "recipe_name": "chicken, avocado and mango salad",
+                    "ingredients": "2 tablespoons brown sugar, ¼ cup water, ⅓ cup lime juice, ½ cup chili garlic sauce, 4 cups shredded, cooked chicken, 2 medium mangos - peeled, seeded and diced, 2  avocados - peeled, pitted and diced, 1 (10 ounce) package spring lettuce mix",
+                    "ingredients_ner": [
+                        "brown sugar",
+                        "water",
+                        "lime juice",
+                        "chili garlic sauce",
+                        "shredded, cooked chicken",
+                        "mangos",
+                        "avocados",
+                        "spring lettuce mix"
+                    ],
+                    "matched_percentage": 50.0,
+                    "matched_words": [
+                        "lime",
+                        "chicken",
+                        "juice",
+                        "garlic"
+                    ]
+                },
+                {
+                    "id": "817",
+                    "recipe_name": "spinach salad with chicken, avocado, and goat cheese",
+                    "ingredients": "¼ cup pine nuts, 8 cups chopped spinach, 1 cup halved cherry tomatoes, 1 ½ cups chopped cooked chicken , 1 large avocado - peeled, pitted, and sliced, ½ cup corn kernels, ⅓ cup crumbled goat cheese",
+                    "ingredients_ner": [
+                        "pine nuts",
+                        "chopped spinach",
+                        "cherry tomatoes",
+                        "chopped cooked chicken",
+                        "avocado",
+                        "corn kernels",
+                        "crumbled goat cheese"
+                    ],
+                    "matched_percentage": 28.57142857142857,
+                    "matched_words": [
+                        "chicken",
+                        "avocado"
+                    ]
+                }
+            ]
+        }
+    ]
+}

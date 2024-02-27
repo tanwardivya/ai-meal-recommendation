@@ -1,0 +1,114 @@
+{
+    "recipes": [
+        {
+            "id": "8",
+            "recipe_name": "Grilled Chicken Salad with Strawberry Vinaigrette",
+            "ingredients": "2 boneless, skinless chicken breasts, 6 cups mixed salad greens, 1 cup sliced strawberries, 1/4 cup slivered almonds, toasted, 1/4 red onion, thinly sliced, 1/4 cup crumbled feta cheese, 2 tablespoons balsamic vinegar, 1 tablespoon olive oil, 1 teaspoon Dijon mustard, 1/2 teaspoon honey, Salt and pepper, to taste",
+            "directions": "Preheat grill to medium-high heat. Season chicken breasts with salt and pepper; grill until cooked through, about 6 minutes per side. Let cool, then slice into strips. In a large bowl, combine salad greens, sliced strawberries, slivered almonds, and red onion. In a small bowl, whisk together balsamic vinegar, olive oil, Dijon mustard, and honey for the dressing. Season with salt and pepper to taste. Pour dressing over salad and toss to coat. Divide salad onto plates and top with sliced grilled chicken and crumbled feta cheese. Serve immediately.",
+            "nutrition": {
+                "fat": "15g",
+                "protein": "29g",
+                "carbohydrate": "12g"
+            }
+        },
+        {
+            "id": "9",
+            "recipe_name": "Grilled Lemon-Herb Chicken Salad",
+            "ingredients": "4 boneless, skinless chicken breasts, 1 tablespoon olive oil, 1 lemon, juiced and zested, 2 cloves garlic, minced, 1 teaspoon dried oregano, 1/4 teaspoon salt, Ground black pepper, to taste, 6 cups mixed salad greens, 1 cup cherry tomatoes, halved, 1/2 cucumber, sliced, 1/4 red onion, thinly sliced, 1/4 cup kalamata olives, pitted, 2 tablespoons feta cheese, crumbled, 1 tablespoon red wine vinegar, 2 tablespoons extra virgin olive oil",
+            "directions": "Preheat grill to medium-high heat. In a small bowl, whisk together 1 tablespoon olive oil, lemon juice and zest, minced garlic, oregano, salt, and pepper. Place chicken breasts in a shallow dish and pour the marinade over them. Let marinate for at least 15 minutes, Turn the chicken occasionally to coat both sides, Grill chicken for about 5-6 minutes on each side until fully cooked through and no longer pink in the center. Remove from grill and let rest for 5 minutes before slicing into strips, In a large bowl, combine the salad greens, cherry tomatoes, cucumber, red onion, and kalamata olives. Toss with red wine vinegar and 2 tablespoons of extra virgin olive oil, Divide the salad among plates, top with sliced grilled chicken, and sprinkle with crumbled feta cheese. Serve immediately.",
+            "nutrition": {
+                "fat": "15g",
+                "protein": "30g",
+                "carbohydrate": "8g"
+            }
+        },
+        {
+            "id": "10",
+            "recipe_name": "Mediterranean Quinoa Salad",
+            "ingredients": "1 cup quinoa, 2 cups water, 1 cup cherry tomatoes, halved, 1 cucumber, diced, 1/2 cup kalamata olives, pitted and halved, 1/2 red onion, finely chopped, 1/4 cup feta cheese, crumbled, 1/4 cup fresh parsley, chopped, 3 tablespoons extra virgin olive oil, 2 tablespoons red wine vinegar, 1 lemon, juiced, 1 teaspoon dried oregano, Salt and pepper, to taste",
+            "directions": "In a medium saucepan, combine quinoa and water. Bring to a boil, then reduce heat to low, cover, and simmer for 15 minutes or until quinoa is cooked through. Fluff with a fork and allow to cool, In a large bowl, combine cooled quinoa, cherry tomatoes, cucumber, kalamata olives, red onion, feta cheese, and parsley, In a small bowl, whisk together olive oil, red wine vinegar, lemon juice, dried oregano, salt, and pepper. Pour over the quinoa mixture and toss to coat evenly, Chill in the refrigerator for at least 30 minutes before serving to allow flavors to meld. Serve chilled or at room temperature.",
+            "nutrition": {
+                "fat": "10g",
+                "protein": "6g",
+                "carbohydrate": "24g"
+            }
+        },
+        {
+            "id": "4",
+            "recipe_name": "Grilled Chicken Salad with Orange Vinaigrette",
+            "ingredients": "2 boneless, skinless chicken breasts, 6 cups mixed salad greens, 1 cup cherry tomatoes, halved, 1/2 cucumber, thinly sliced, 1 orange, peeled and segmented, 1/4 red onion, thinly sliced, 1/4 cup sliced almonds, toasted, For the vinaigrette: 1/4 cup fresh orange juice, 2 tablespoons olive oil, 1 tablespoon white wine vinegar, 1 teaspoon honey, 1/2 teaspoon Dijon mustard, Salt and pepper, to taste",
+            "directions": "Preheat grill to medium-high heat. Season the chicken breasts with salt and pepper, and grill until cooked through, about 5-7 minutes per side. Let them rest for a few minutes before slicing, In a large bowl, combine salad greens, cherry tomatoes, cucumber slices, orange segments, and red onion, In a small bowl, whisk together the orange juice, olive oil, white wine vinegar, honey, Dijon mustard, salt, and pepper to create the vinaigrette, Add the grilled chicken slices onto the salad, drizzle with orange vinaigrette, and sprinkle with toasted almonds. Toss everything together gently and serve immediately.",
+            "nutrition": {
+                "fat": "14g",
+                "protein": "28g",
+                "carbohydrate": "12g"
+            }
+        },
+        {
+            "id": "5",
+            "recipe_name": "Grilled Chicken Salad with Avocado Dressing",
+            "ingredients": "2 boneless, skinless chicken breasts, 1 teaspoon olive oil, Salt and pepper, to taste, 4 cups mixed salad greens, 1/2 cucumber, sliced, 1/2 bell pepper, chopped, 1/4 red onion, thinly sliced, 1/2 avocado, 1/4 cup fresh cilantro, 1/4 cup Greek yogurt, 2 tablespoons lime juice, 1 garlic clove",
+            "directions": "Preheat grill to medium-high heat. Brush chicken breasts with olive oil and season with salt and pepper. Grill chicken for 5-7 minutes on each side or until cooked through and juices run clear. Let it rest for 5 minutes and then slice, In a blender, combine avocado, cilantro, Greek yogurt, lime juice, garlic, and a pinch of salt. Blend until smooth to make the dressing, Arrange mixed salad greens on a plate and top with cucumber, bell pepper, and red onion. Place sliced chicken on top of the salad, Drizzle with avocado dressing and serve immediately.",
+            "nutrition": {
+                "fat": "14g",
+                "protein": "35g",
+                "carbohydrate": "12g"
+            }
+        },
+        {
+            "id": "7",
+            "recipe_name": "Grilled Mediterranean Vegetable Salad",
+            "ingredients": "1 medium eggplant, sliced into 1/2-inch rounds, 2 medium zucchinis, sliced lengthwise into 1/4-inch strips, 1 red bell pepper, cut into quarters, 1 yellow bell pepper, cut into quarters, 1 red onion, cut into 1/2-inch rounds, 1/4 cup olive oil, 2 tablespoons balsamic vinegar, 2 garlic cloves, minced, 1 teaspoon dried oregano, 1 teaspoon dried basil, Salt and freshly ground black pepper, to taste, 1/4 cup crumbled feta cheese, 1/4 cup fresh basil leaves, torn",
+            "directions": "Preheat grill to medium-high heat. In a small bowl, whisk together olive oil, balsamic vinegar, garlic, oregano, and basil. Season with salt and pepper. Brush this mixture over the eggplant, zucchini, bell peppers, and red onion, Grill the vegetables in batches until tender and charred in spots, about 3 to 4 minutes per side. As they finish cooking, transfer the vegetables to a cutting board, Once cool enough to handle, chop the vegetables into bite-sized pieces and place them in a large bowl. Add the feta cheese and fresh basil, toss to combine. Adjust seasoning with more salt and pepper if needed. Serve salad at room temperature or chilled.",
+            "nutrition": {
+                "fat": "12g",
+                "protein": "4g",
+                "carbohydrate": "16g"
+            }
+        },
+        {
+            "id": "6",
+            "recipe_name": "Grilled Chicken with Spinach and Pine Nut Pesto",
+            "ingredients": "4 boneless, skinless chicken breasts, 1 tablespoon olive oil, 1/2 teaspoon salt, Ground black pepper, to taste, 2 cups fresh spinach leaves, 1/4 cup pine nuts, toasted, 2 tablespoons freshly grated Parmesan cheese, 1 tablespoon extra-virgin olive oil, 2 cloves garlic, minced, 1 teaspoon lemon zest, 1 tablespoon lemon juice",
+            "directions": "Preheat grill to medium-high heat. Brush chicken breasts with 1 tablespoon olive oil and season with 1/2 teaspoon salt and black pepper. Grill chicken for about 6-8 minutes on each side or until fully cooked and juices run clear. Meanwhile, combine spinach leaves, pine nuts, Parmesan cheese, extra-virgin olive oil, garlic, lemon zest, and lemon juice in a food processor. Pulse until ingredients form a coarse paste, creating the pesto. Remove chicken from grill and let it rest for a few minutes. Top each chicken breast with a spoonful of the spinach and pine nut pesto before serving.",
+            "nutrition": {
+                "fat": "15g",
+                "protein": "34g",
+                "carbohydrate": "3g"
+            }
+        },
+        {
+            "id": "2",
+            "recipe_name": "Spinach and Feta Egg Muffins",
+            "ingredients": "8 large eggs, 1 cup fresh spinach, chopped, 1/2 cup feta cheese, crumbled, 1/2 cup diced tomatoes, 1/4 cup green onions, chopped, Salt and pepper, to taste, Cooking spray",
+            "directions": "Preheat your oven to 350°F (175°C). Spray a muffin tin with cooking spray or line with muffin liners, In a large bowl, whisk the eggs until smooth. Add the chopped spinach, feta cheese, diced tomatoes, green onions, salt, and pepper to the egg mixture and stir to combine, Pour the egg mixture evenly into the muffin cups, filling each about two-thirds full. Bake in the preheated oven for 20-25 minutes, or until the tops are firm to the touch and eggs are cooked through, Allow the muffins to cool for a few minutes in the muffin tin before removing. Serve warm.",
+            "nutrition": {
+                "fat": "7g",
+                "protein": "9g",
+                "carbohydrate": "2g"
+            }
+        },
+        {
+            "id": "3",
+            "recipe_name": "Spinach and Feta Omelette",
+            "ingredients": "2 large eggs, 1/4 cup chopped spinach, 1 tablespoon crumbled feta cheese, 1/4 teaspoon dried oregano, 1/4 teaspoon black pepper, 1/2 teaspoon olive oil, 1 tablespoon diced tomatoes, 1 tablespoon chopped red onion, Fresh herbs for garnish (optional)",
+            "directions": "In a small bowl, beat the eggs with the dried oregano and black pepper. Set aside. Heat the olive oil in a nonstick skillet over medium heat. Sauté the chopped red onion until translucent, about 2 minutes. Add the chopped spinach and diced tomatoes and cook until the spinach is wilted, about 1-2 minutes. Pour in the beaten eggs. Cook for a few minutes until the eggs start to set at the edges. Sprinkle the crumbled feta cheese over half of the omelette. Using a spatula, gently fold the other half over the cheese. Continue cooking for another minute or until the feta is slightly melted and the eggs are cooked to your liking. Slide the omelette onto a plate and garnish with fresh herbs if desired. Serve immediately.",
+            "nutrition": {
+                "fat": "15g",
+                "protein": "19g",
+                "carbohydrate": "4g"
+            }
+        },
+        {
+            "id": "1",
+            "recipe_name": "Spinach and Feta Breakfast Scramble",
+            "ingredients": "4 large eggs, 2 large egg whites, 2 tablespoons water, 1/2 cup crumbled feta cheese, 2 cups fresh spinach, roughly chopped, 1/2 cup diced tomatoes, 2 tablespoons chopped chives, 1/4 teaspoon black pepper, 1 tablespoon olive oil",
+            "directions": "In a bowl, whisk together the eggs, egg whites, and water until well combined. Stir in the feta cheese, spinach, tomatoes, chives, and pepper, and set aside. Heat the olive oil in a non-stick skillet over medium heat. Pour the egg mixture into the skillet. Let it sit, without stirring, for about 20 seconds. Start scrambling the eggs, folding them over from the bottom and the sides of the skillet. Continue to cook and scramble until the eggs are just set but still soft. Remove from heat immediately to prevent overcooking. Serve the scramble hot.",
+            "nutrition": {
+                "fat": "15g",
+                "protein": "19g",
+                "carbohydrate": "4g"
+            }
+        }
+    ]
+}
