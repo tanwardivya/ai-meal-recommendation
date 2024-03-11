@@ -1,0 +1,390 @@
+{
+    "recpies_authenticity": [
+        {
+            "id": "4",
+            "recipe_name": "spinach and mushroom frittata",
+            "ingredients": "8 large eggs, 1/2 cup milk (preferably almond or skim), 2 cups baby spinach, 1 cup sliced mushrooms, 1 medium onion, diced, 1/2 teaspoon salt, 1/4 teaspoon ground black pepper, 1/2 teaspoon dried oregano, 1/4 cup grated Parmesan cheese, 1 tablespoon olive oil",
+            "ingredients_ner": [
+                "eggs",
+                "milk",
+                "baby spinach",
+                "mushrooms",
+                "onion",
+                "salt",
+                "ground black pepper",
+                "dried oregano",
+                "grated Parmesan cheese",
+                "olive oil"
+            ],
+            "matched_recipes": [
+                {
+                    "id": "286",
+                    "recipe_name": "smoky frittata",
+                    "ingredients": "1 small head cauliflower, cut into medium florets,6 eggs,1/4 cup light sour cream,2 tablespoons Dijon mustard,2 teaspoons paprika,3 tablespoons finely chopped chives,1/4 cup shredded 2% sharp cheddar cheese,1/2 cup shredded smoked Gouda cheese,1/4 teaspoon salt,1/4 teaspoon ground black pepper,1 teaspoon olive oil",
+                    "ingredients_ner": [
+                        "cauliflower",
+                        "eggs",
+                        "light sour cream",
+                        "Dijon mustard",
+                        "paprika",
+                        "chives",
+                        "sharp cheddar cheese",
+                        "smoked Gouda cheese",
+                        "salt",
+                        "ground black pepper",
+                        "olive oil"
+                    ],
+                    "matched_percentage": 72.72727272727273,
+                    "matched_words": [
+                        "olive",
+                        "pepper",
+                        "ground",
+                        "black",
+                        "oil",
+                        "eggs",
+                        "cheese",
+                        "salt"
+                    ]
+                },
+                {
+                    "id": "290",
+                    "recipe_name": "southwestern frittata",
+                    "ingredients": "1/2 green or red bell pepper, diced,4 fresh mushrooms, sliced (about 1/2 cup),6 egg whites,1/2 cup salsa, reserve 2 tablespoons for garnish,1/2 cup shredded cheddar cheese",
+                    "ingredients_ner": [
+                        "green bell pepper",
+                        "red bell pepper",
+                        "mushrooms",
+                        "egg whites",
+                        "salsa",
+                        "cheddar cheese"
+                    ],
+                    "matched_percentage": 50.0,
+                    "matched_words": [
+                        "pepper",
+                        "mushrooms",
+                        "cheese"
+                    ]
+                },
+                {
+                    "id": "295",
+                    "recipe_name": "spinach and mushroom frittata",
+                    "ingredients": "3 cloves of garlic, minced,1 cup chopped onion,1 teaspoon olive oil,1/2 pound fresh mushrooms, sliced,1/2 teaspoon dried thyme,10-ounce bag fresh spinach,1 tablespoon water,Egg substitute equivalent to 10 eggs,1 teaspoon dried dill or 1 tablespoon fresh dill,1/4 teaspoon black pepper,1/4 cup feta cheese",
+                    "ingredients_ner": [
+                        "garlic",
+                        "onion",
+                        "olive oil",
+                        "fresh mushrooms",
+                        "dried thyme",
+                        "fresh spinach",
+                        "water",
+                        "Egg substitute",
+                        "dried dill",
+                        "fresh dill",
+                        "black pepper",
+                        "feta cheese"
+                    ],
+                    "matched_percentage": 75.0,
+                    "matched_words": [
+                        "spinach",
+                        "olive",
+                        "pepper",
+                        "mushrooms",
+                        "black",
+                        "onion",
+                        "dried",
+                        "oil",
+                        "cheese"
+                    ]
+                },
+                {
+                    "id": "297",
+                    "recipe_name": "spinach frittata",
+                    "ingredients": "1 teaspoon olive oil,1 garlic clove, minced,3 cups baby spinach leaves,3 whole eggs, plus 4 egg whites,1/4 teaspoon freshly ground black pepper,1/2 yellow onion, chopped (about 1/2 cup),1/4 cup minced red bell pepper,2 waxy red or white potatoes, about 3/4 pound total weight, peeled and shredded,2 tablespoons chopped fresh basil,1/4 cup shredded part-skim mozzarella or provolone cheese",
+                    "ingredients_ner": [
+                        "olive oil",
+                        "garlic clove",
+                        "baby spinach leaves",
+                        "whole eggs",
+                        "egg whites",
+                        "black pepper",
+                        "yellow onion",
+                        "red bell pepper",
+                        "potatoes",
+                        "fresh basil",
+                        "mozzarella cheese",
+                        "provolone cheese"
+                    ],
+                    "matched_percentage": 75.0,
+                    "matched_words": [
+                        "spinach",
+                        "olive",
+                        "pepper",
+                        "black",
+                        "baby",
+                        "onion",
+                        "oil",
+                        "eggs",
+                        "cheese"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "7",
+            "recipe_name": "spinach and mushroom egg white frittata",
+            "ingredients": "1 cup fresh spinach, chopped, 1 cup mushrooms, sliced, 1/2 cup onions, diced, 1 teaspoon olive oil, 4 egg whites, 1/4 cup low-fat milk, 1/4 teaspoon salt, Ground black pepper, to taste, 1/4 cup reduced-fat feta cheese, crumbled, Fresh herbs (such as parsley or chives), for garnish",
+            "ingredients_ner": [
+                "spinach",
+                "mushrooms",
+                "onions",
+                "olive oil",
+                "egg whites",
+                "low-fat milk",
+                "salt",
+                "black pepper",
+                "feta cheese",
+                "fresh herbs"
+            ],
+            "matched_recipes": [
+                {
+                    "id": "286",
+                    "recipe_name": "smoky frittata",
+                    "ingredients": "1 small head cauliflower, cut into medium florets,6 eggs,1/4 cup light sour cream,2 tablespoons Dijon mustard,2 teaspoons paprika,3 tablespoons finely chopped chives,1/4 cup shredded 2% sharp cheddar cheese,1/2 cup shredded smoked Gouda cheese,1/4 teaspoon salt,1/4 teaspoon ground black pepper,1 teaspoon olive oil",
+                    "ingredients_ner": [
+                        "cauliflower",
+                        "eggs",
+                        "light sour cream",
+                        "Dijon mustard",
+                        "paprika",
+                        "chives",
+                        "sharp cheddar cheese",
+                        "smoked Gouda cheese",
+                        "salt",
+                        "ground black pepper",
+                        "olive oil"
+                    ],
+                    "matched_percentage": 54.54545454545454,
+                    "matched_words": [
+                        "olive",
+                        "pepper",
+                        "black",
+                        "oil",
+                        "cheese",
+                        "salt"
+                    ]
+                },
+                {
+                    "id": "290",
+                    "recipe_name": "southwestern frittata",
+                    "ingredients": "1/2 green or red bell pepper, diced,4 fresh mushrooms, sliced (about 1/2 cup),6 egg whites,1/2 cup salsa, reserve 2 tablespoons for garnish,1/2 cup shredded cheddar cheese",
+                    "ingredients_ner": [
+                        "green bell pepper",
+                        "red bell pepper",
+                        "mushrooms",
+                        "egg whites",
+                        "salsa",
+                        "cheddar cheese"
+                    ],
+                    "matched_percentage": 83.33333333333334,
+                    "matched_words": [
+                        "pepper",
+                        "mushrooms",
+                        "egg",
+                        "cheese",
+                        "whites"
+                    ]
+                },
+                {
+                    "id": "295",
+                    "recipe_name": "spinach and mushroom frittata",
+                    "ingredients": "3 cloves of garlic, minced,1 cup chopped onion,1 teaspoon olive oil,1/2 pound fresh mushrooms, sliced,1/2 teaspoon dried thyme,10-ounce bag fresh spinach,1 tablespoon water,Egg substitute equivalent to 10 eggs,1 teaspoon dried dill or 1 tablespoon fresh dill,1/4 teaspoon black pepper,1/4 cup feta cheese",
+                    "ingredients_ner": [
+                        "garlic",
+                        "onion",
+                        "olive oil",
+                        "fresh mushrooms",
+                        "dried thyme",
+                        "fresh spinach",
+                        "water",
+                        "Egg substitute",
+                        "dried dill",
+                        "fresh dill",
+                        "black pepper",
+                        "feta cheese"
+                    ],
+                    "matched_percentage": 75.0,
+                    "matched_words": [
+                        "fresh",
+                        "spinach",
+                        "olive",
+                        "pepper",
+                        "feta",
+                        "mushrooms",
+                        "black",
+                        "oil",
+                        "cheese"
+                    ]
+                },
+                {
+                    "id": "297",
+                    "recipe_name": "spinach frittata",
+                    "ingredients": "1 teaspoon olive oil,1 garlic clove, minced,3 cups baby spinach leaves,3 whole eggs, plus 4 egg whites,1/4 teaspoon freshly ground black pepper,1/2 yellow onion, chopped (about 1/2 cup),1/4 cup minced red bell pepper,2 waxy red or white potatoes, about 3/4 pound total weight, peeled and shredded,2 tablespoons chopped fresh basil,1/4 cup shredded part-skim mozzarella or provolone cheese",
+                    "ingredients_ner": [
+                        "olive oil",
+                        "garlic clove",
+                        "baby spinach leaves",
+                        "whole eggs",
+                        "egg whites",
+                        "black pepper",
+                        "yellow onion",
+                        "red bell pepper",
+                        "potatoes",
+                        "fresh basil",
+                        "mozzarella cheese",
+                        "provolone cheese"
+                    ],
+                    "matched_percentage": 75.0,
+                    "matched_words": [
+                        "fresh",
+                        "spinach",
+                        "olive",
+                        "pepper",
+                        "black",
+                        "whites",
+                        "oil",
+                        "cheese",
+                        "egg"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "1",
+            "recipe_name": "veggie-packed frittata",
+            "ingredients": "6 large eggs, 1/4 cup skim milk, 1/2 cup diced bell peppers, 1/2 cup diced onions, 1 cup chopped spinach, 1/2 cup chopped mushrooms, 1/4 cup crumbled feta cheese, 1/4 teaspoon salt, 1/4 teaspoon ground black pepper, 2 tablespoons olive oil",
+            "ingredients_ner": [
+                "eggs",
+                "skim milk",
+                "bell peppers",
+                "onions",
+                "chopped spinach",
+                "chopped mushrooms",
+                "crumbled feta cheese",
+                "salt",
+                "ground black pepper",
+                "olive oil"
+            ],
+            "matched_recipes": [
+                {
+                    "id": "286",
+                    "recipe_name": "smoky frittata",
+                    "ingredients": "1 small head cauliflower, cut into medium florets,6 eggs,1/4 cup light sour cream,2 tablespoons Dijon mustard,2 teaspoons paprika,3 tablespoons finely chopped chives,1/4 cup shredded 2% sharp cheddar cheese,1/2 cup shredded smoked Gouda cheese,1/4 teaspoon salt,1/4 teaspoon ground black pepper,1 teaspoon olive oil",
+                    "ingredients_ner": [
+                        "cauliflower",
+                        "eggs",
+                        "light sour cream",
+                        "Dijon mustard",
+                        "paprika",
+                        "chives",
+                        "sharp cheddar cheese",
+                        "smoked Gouda cheese",
+                        "salt",
+                        "ground black pepper",
+                        "olive oil"
+                    ],
+                    "matched_percentage": 72.72727272727273,
+                    "matched_words": [
+                        "olive",
+                        "pepper",
+                        "ground",
+                        "black",
+                        "oil",
+                        "eggs",
+                        "cheese",
+                        "salt"
+                    ]
+                },
+                {
+                    "id": "290",
+                    "recipe_name": "southwestern frittata",
+                    "ingredients": "1/2 green or red bell pepper, diced,4 fresh mushrooms, sliced (about 1/2 cup),6 egg whites,1/2 cup salsa, reserve 2 tablespoons for garnish,1/2 cup shredded cheddar cheese",
+                    "ingredients_ner": [
+                        "green bell pepper",
+                        "red bell pepper",
+                        "mushrooms",
+                        "egg whites",
+                        "salsa",
+                        "cheddar cheese"
+                    ],
+                    "matched_percentage": 66.66666666666666,
+                    "matched_words": [
+                        "pepper",
+                        "mushrooms",
+                        "bell",
+                        "cheese"
+                    ]
+                },
+                {
+                    "id": "295",
+                    "recipe_name": "spinach and mushroom frittata",
+                    "ingredients": "3 cloves of garlic, minced,1 cup chopped onion,1 teaspoon olive oil,1/2 pound fresh mushrooms, sliced,1/2 teaspoon dried thyme,10-ounce bag fresh spinach,1 tablespoon water,Egg substitute equivalent to 10 eggs,1 teaspoon dried dill or 1 tablespoon fresh dill,1/4 teaspoon black pepper,1/4 cup feta cheese",
+                    "ingredients_ner": [
+                        "garlic",
+                        "onion",
+                        "olive oil",
+                        "fresh mushrooms",
+                        "dried thyme",
+                        "fresh spinach",
+                        "water",
+                        "Egg substitute",
+                        "dried dill",
+                        "fresh dill",
+                        "black pepper",
+                        "feta cheese"
+                    ],
+                    "matched_percentage": 66.66666666666666,
+                    "matched_words": [
+                        "spinach",
+                        "olive",
+                        "pepper",
+                        "feta",
+                        "mushrooms",
+                        "black",
+                        "oil",
+                        "cheese"
+                    ]
+                },
+                {
+                    "id": "297",
+                    "recipe_name": "spinach frittata",
+                    "ingredients": "1 teaspoon olive oil,1 garlic clove, minced,3 cups baby spinach leaves,3 whole eggs, plus 4 egg whites,1/4 teaspoon freshly ground black pepper,1/2 yellow onion, chopped (about 1/2 cup),1/4 cup minced red bell pepper,2 waxy red or white potatoes, about 3/4 pound total weight, peeled and shredded,2 tablespoons chopped fresh basil,1/4 cup shredded part-skim mozzarella or provolone cheese",
+                    "ingredients_ner": [
+                        "olive oil",
+                        "garlic clove",
+                        "baby spinach leaves",
+                        "whole eggs",
+                        "egg whites",
+                        "black pepper",
+                        "yellow onion",
+                        "red bell pepper",
+                        "potatoes",
+                        "fresh basil",
+                        "mozzarella cheese",
+                        "provolone cheese"
+                    ],
+                    "matched_percentage": 66.66666666666666,
+                    "matched_words": [
+                        "spinach",
+                        "olive",
+                        "pepper",
+                        "eggs",
+                        "black",
+                        "oil",
+                        "bell",
+                        "cheese"
+                    ]
+                }
+            ]
+        }
+    ]
+}

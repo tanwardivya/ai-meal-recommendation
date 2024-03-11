@@ -1,0 +1,114 @@
+{
+    "recipes": [
+        {
+            "id": "8",
+            "recipe_name": "Chicken and Avocado Salad",
+            "ingredients": "2 cups cooked chicken breast, diced, 1 ripe avocado, diced, 1 medium cucumber, diced, 1 cup cherry tomatoes, halved, 1/4 cup diced red onion, 2 tablespoons chopped cilantro, Juice of 1 lime, 2 tablespoons extra virgin olive oil, 1/2 teaspoon cumin, Salt and pepper to taste, 1/4 teaspoon chili flakes (optional)",
+            "directions": "In a large bowl, combine the diced chicken, avocado, cucumber, cherry tomatoes, and red onion. Sprinkle with chopped cilantro, In a small bowl, whisk together lime juice, olive oil, cumin, salt, pepper, and chili flakes if using. Pour the dressing over the salad and gently toss to coat all the ingredients evenly. Adjust seasoning to taste, Serve immediately or chill in the refrigerator for 30 minutes before serving for flavors to meld.",
+            "nutrition": {
+                "fat": "18g",
+                "protein": "22g",
+                "carbohydrate": "8g"
+            }
+        },
+        {
+            "id": "9",
+            "recipe_name": "Stuffed Bell Peppers",
+            "ingredients": "4 large bell peppers (any color), 1 cup quinoa (uncooked), 2 cups low-sodium vegetable broth, 1 tablespoon olive oil, 1 medium onion, chopped, 2 cloves garlic, minced, 1 zucchini, diced, 1 cup black beans, drained and rinsed, 1 cup corn kernels, fresh or frozen and thawed, 1 teaspoon chili powder, 1 teaspoon cumin, 1/2 teaspoon paprika, Salt and pepper, to taste, 1/2 cup grated low-fat cheddar cheese, Fresh cilantro or parsley for garnish",
+            "directions": "Preheat oven to 375°F (190°C). Cut the tops off peppers and remove seeds and membranes. Bring the vegetable broth to a boil in a medium pot. Stir in quinoa, cover, and reduce heat to low. Cook for 15 minutes or until liquid is absorbed. Remove from heat and set aside,  Meanwhile, heat olive oil in a large skillet over medium heat. Add onion and garlic and sauté until translucent. Add zucchini, black beans, and corn and cook for another 5 minutes. Add the cooked quinoa to the skillet and mix in chili powder, cumin, paprika, salt, and pepper. Stir well to combine,  Stuff each bell pepper with the quinoa mixture and place in a baking dish. Cover with aluminum foil and bake for 25 minutes. Remove foil, sprinkle each pepper with cheese, and bake uncovered for another 10 minutes, or until the cheese is melted and the peppers are tender. Garnish with fresh cilantro or parsley before serving.",
+            "nutrition": {
+                "fat": "8g",
+                "protein": "14g",
+                "carbohydrate": "45g"
+            }
+        },
+        {
+            "id": "10",
+            "recipe_name": "Almond Flour Pancakes",
+            "ingredients": "1 cup almond flour, 2 large eggs, 1/4 cup water (for thinner pancakes, you can add more), 1 tablespoon oil (coconut or olive oil), 1 teaspoon baking powder, 1/4 teaspoon salt, 1 teaspoon vanilla extract, 2 tablespoons granulated sweetener of choice (e.g., erythritol or monk fruit for a low glycemic impact), Non-stick cooking spray or additional oil for cooking, Fresh berries or sugar-free syrup for serving (optional)",
+            "directions": "In a medium mixing bowl, whisk together the almond flour, baking powder, sweetener, and salt. In another bowl, beat the eggs, then add the water, oil, and vanilla extract and mix well. Combine the wet and dry ingredients until you achieve a smooth batter, Heat a non-stick skillet or griddle over medium heat and lightly coat with cooking spray or a little oil. Pour 1/4 cup of the batter onto the skillet for each pancake. Cook until the edges are set and bubbles form on the surface, about 2 to 3 minutes, then flip and cook the other side for an additional 1 to 2 minutes or until golden brown and cooked through. Serve warm with your choice of diabetic-friendly toppings like fresh berries or sugar-free syrup.",
+            "nutrition": {
+                "fat": "16g",
+                "protein": "7g",
+                "carbohydrate": "5g"
+            }
+        },
+        {
+            "id": "4",
+            "recipe_name": "Spinach and Mushroom Frittata",
+            "ingredients": "8 large eggs, 1/2 cup milk (preferably almond or skim), 2 cups baby spinach, 1 cup sliced mushrooms, 1 medium onion, diced, 1/2 teaspoon salt, 1/4 teaspoon ground black pepper, 1/2 teaspoon dried oregano, 1/4 cup grated Parmesan cheese, 1 tablespoon olive oil",
+            "directions": "Preheat the oven to 375 degrees F (190 degrees C). In a medium bowl, whisk together eggs, milk, salt, pepper, and oregano. Set aside, Heat olive oil in a 10-inch ovenproof skillet over medium heat. Add onions and mushrooms and cook for 5 minutes, or until vegetables are soft. Add spinach and cook until wilted, about 1-2 minutes, Pour the egg mixture over the vegetables in the skillet. Cook for a couple of minutes just until the edges start to set, Sprinkle the top with grated Parmesan cheese, Transfer the skillet to the oven and bake for 8-10 minutes or until the center is set and the top is slightly golden brown, Remove from oven and let the frittata sit for a couple of minutes. Cut into wedges and serve.",
+            "nutrition": {
+                "fat": "11g",
+                "protein": "12g",
+                "carbohydrate": "4g"
+            }
+        },
+        {
+            "id": "5",
+            "recipe_name": "Chickpea Salad Wraps",
+            "ingredients": "1 can (15 ounces) chickpeas, rinsed and drained, 1/2 cup diced cucumber, 1/2 cup diced red bell pepper, 1/4 cup chopped red onion, 1/4 cup crumbled feta cheese (optional for vegan diets), 2 tablespoons chopped fresh parsley, 2 tablespoons olive oil, 1 tablespoon lemon juice, 1 teaspoon dried oregano, Salt and pepper to taste, 4 whole-grain or low-carb tortillas",
+            "directions": "In a large bowl, combine chickpeas, cucumber, bell pepper, red onion, and feta cheese if using. In a small bowl, whisk together olive oil, lemon juice, oregano, salt, and pepper. Pour the dressing over the chickpea mixture and toss until evenly coated. Spread the chickpea salad onto the center of each tortilla, distributing evenly. Fold in the sides of the tortilla and roll it up tightly to enclose the filling. Wrap the prepared wraps in foil or parchment paper for easy on-the-go lunch options. Store in the refrigerator until ready to eat.",
+            "nutrition": {
+                "fat": "9g",
+                "protein": "11g",
+                "carbohydrate": "39g"
+            }
+        },
+        {
+            "id": "7",
+            "recipe_name": "Spinach and Mushroom Egg White Frittata",
+            "ingredients": "1 cup fresh spinach, chopped, 1 cup mushrooms, sliced, 1/2 cup onions, diced, 1 teaspoon olive oil, 4 egg whites, 1/4 cup low-fat milk, 1/4 teaspoon salt, Ground black pepper, to taste, 1/4 cup reduced-fat feta cheese, crumbled, Fresh herbs (such as parsley or chives), for garnish",
+            "directions": "Preheat the oven to 375 degrees F (190 degrees C). In a non-stick, oven-proof skillet, heat olive oil over medium heat. Add onions and mushrooms, and cook until the onions are translucent and the mushrooms have released their moisture, about 5-7 minutes, Stir in the chopped spinach and cook until wilted, about 2 minutes, In a bowl, whisk together the egg whites, milk, salt, and pepper. Pour this mixture over the sautéed vegetables in the skillet, Sprinkle the top with crumbled feta cheese, Place the skillet in the oven and bake for 8-10 minutes, or until the frittata is set and the cheese has melted, Remove from the oven, garnish with fresh herbs, slice, and serve while warm.",
+            "nutrition": {
+                "fat": "6g",
+                "protein": "18g",
+                "carbohydrate": "8g"
+            }
+        },
+        {
+            "id": "6",
+            "recipe_name": "Grilled Lemon-Herb Chicken",
+            "ingredients": "4 boneless, skinless chicken breasts, 1/4 cup fresh lemon juice, 2 tablespoons olive oil, 3 cloves garlic, minced, 1 tablespoon fresh rosemary, finely chopped, 1 tablespoon fresh thyme, finely chopped, 1 tablespoon fresh parsley, finely chopped, 1/2 teaspoon salt, 1/4 teaspoon freshly ground black pepper, Lemon wedges for garnish",
+            "directions": "In a small bowl, whisk together lemon juice, olive oil, minced garlic, rosemary, thyme, parsley, salt, and black pepper to create the marinade. Place chicken breasts in a large zip-top plastic bag and pour the marinade over the chicken. Seal the bag and ensure that chicken is well coated. Refrigerate for at least 1 hour, or up to 4 hours, turning the bag occasionally, Preheat the grill to medium-high heat. Remove the chicken from the marinade and discard the excess marinade. Grill the chicken until it is cooked through and internal temperature reaches 165°F, about 5-7 minutes per side, depending on thickness, Serve the grilled chicken breasts with lemon wedges on the side. Garnish with additional fresh herbs, if desired.",
+            "nutrition": {
+                "fat": "7g",
+                "protein": "36g",
+                "carbohydrate": "2g"
+            }
+        },
+        {
+            "id": "2",
+            "recipe_name": "Grilled Chicken Salad with Avocado Dressing",
+            "ingredients": "2 boneless, skinless chicken breasts, 1 tablespoon olive oil, 1 teaspoon smoked paprika, Salt and pepper, to taste, 6 cups mixed salad greens, 1 cucumber, sliced, 1 cup cherry tomatoes, halved, 1/2 red onion, thinly sliced, 1 avocado, 1/4 cup Greek yogurt, 2 tablespoons lime juice, 1 clove garlic, minced, 1 tablespoon fresh cilantro, chopped, 2 tablespoons water, to thin",
+            "directions": "Preheat grill or grill pan over medium-high heat. Rub the chicken breasts with olive oil, smoked paprika, salt, and pepper. Grill the chicken for 6-7 minutes on each side or until fully cooked. Let it rest for a few minutes, then slice, In a blender, combine avocado, Greek yogurt, lime juice, garlic, cilantro, and water. Blend until smooth, adding more water if necessary to reach a dressing-like consistency. Season the dressing with salt and pepper to taste, Arrange the mixed greens, cucumber, cherry tomatoes, and red onion on plates. Top with the grilled chicken slices. Drizzle with the avocado dressing and serve immediately.",
+            "nutrition": {
+                "fat": "13g",
+                "protein": "26g",
+                "carbohydrate": "13g"
+            }
+        },
+        {
+            "id": "3",
+            "recipe_name": "Grilled Lemon-Herb Chicken and Veggie Kabobs",
+            "ingredients": "1 pound boneless, skinless chicken breast, cut into 1 1/2-inch pieces, 2 zucchinis, cut into 1-inch slices, 2 bell peppers, any color, cut into 1-inch pieces, 1 large red onion, cut into 1-inch pieces, 2 tablespoons olive oil, Juice of 1 lemon, 2 cloves garlic, minced, 1 teaspoon dried oregano, 1 teaspoon dried thyme, 1/2 teaspoon dried rosemary, Salt and pepper, to taste, Fresh parsley, chopped for garnish, Lemon wedges, to serve",
+            "directions": "In a small bowl, whisk together the olive oil, lemon juice, garlic, oregano, thyme, rosemary, salt, and pepper. Place the chicken pieces in a bowl and pour half of the marinade over the chicken. Toss to coat and let it marinate in the refrigerator for at least 30 minutes. Reserve the remaining marinade for vegetables, Preheat grill to medium-high heat. Thread the marinated chicken, zucchini, bell peppers, and red onion onto skewers, alternating chicken and vegetables. Brush the vegetable parts of the skewers with the reserved marinade, Place the skewers on the grill and cook for approximately 10-15 minutes, turning occasionally, until the chicken is cooked through and the vegetables are tender and lightly charred, Remove from grill, sprinkle with chopped parsley, and serve with lemon wedges on the side.",
+            "nutrition": {
+                "fat": "9g",
+                "protein": "27g",
+                "carbohydrate": "15g"
+            }
+        },
+        {
+            "id": "1",
+            "recipe_name": "Veggie-Packed Frittata",
+            "ingredients": "6 large eggs, 1/4 cup skim milk, 1/2 cup diced bell peppers, 1/2 cup diced onions, 1 cup chopped spinach, 1/2 cup chopped mushrooms, 1/4 cup crumbled feta cheese, 1/4 teaspoon salt, 1/4 teaspoon ground black pepper, 2 tablespoons olive oil",
+            "directions": "Preheat the oven to 375 degrees F (190 degrees C). In a large mixing bowl, whisk together eggs, milk, salt, and pepper until well combined. Stir in bell peppers, onions, spinach, mushrooms, and feta cheese. Heat olive oil in a 10-inch oven-safe skillet over medium heat. Add the egg mixture to the skillet and cook for 5-7 minutes until the edges begin to firm up. Transfer the skillet to the preheated oven and bake for 15-20 minutes, or until the frittata is fully set and the top is lightly golden. Remove from oven, let it cool for a few minutes, then slice and serve.",
+            "nutrition": {
+                "fat": "10g",
+                "protein": "12g",
+                "carbohydrate": "4g"
+            }
+        }
+    ]
+}
