@@ -1,0 +1,2106 @@
+[
+    {
+        "recipe_name": "Artichoke dip",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/artichoke-dip/rcp-20049969"
+    },
+    {
+        "recipe_name": "Artichoke, spinach and white bean dip",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/artichoke-spinach-white-bean-dip/rcp-20152939"
+    },
+    {
+        "recipe_name": "Artichokes alla Romana",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/artichokes-alla-romana/rcp-20049865"
+    },
+    {
+        "recipe_name": "Avocado dip",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/avocado-dip/rcp-20049634"
+    },
+    {
+        "recipe_name": "Baba ghanoush",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/baba-ghanoush/rcp-20049954"
+    },
+    {
+        "recipe_name": "Basil pesto stuffed mushrooms",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/basil-pesto-stuffed-mushrooms/rcp-20197676"
+    },
+    {
+        "recipe_name": "Black bean and corn relish",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/black-bean-and-corn-relish/rcp-20049744"
+    },
+    {
+        "recipe_name": "Chicken and zucchini quesadilla",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/chicken-and-zucchini-quesadilla/rcp-20197689"
+    },
+    {
+        "recipe_name": "Chickpea polenta with olives",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/chickpea-polenta-with-olives/rcp-20049900"
+    },
+    {
+        "recipe_name": "Chipotle spiced shrimp",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/chipotle-spiced-shrimp/rcp-20049652"
+    },
+    {
+        "recipe_name": "Coconut shrimp",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/coconut-shrimp/rcp-20197697"
+    },
+    {
+        "recipe_name": "Crispy potato skins",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/crispy-potato-skins/rcp-20049658"
+    },
+    {
+        "recipe_name": "Fresh fruit kebabs",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/fresh-fruit-kebabs-with-lemon-lime-dip/rcp-20049779"
+    },
+    {
+        "recipe_name": "Fresh tomato crostini",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/fresh-tomato-crostini/rcp-20049939"
+    },
+    {
+        "recipe_name": "Fruit salsa and sweet chips",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/fruit-salsa-n-sweet-chips/rcp-20049952"
+    },
+    {
+        "recipe_name": "Ginger-marinated grilled portobello mushrooms",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/ginger-marinated-grilled-portobello-mushrooms/rcp-20049663"
+    },
+    {
+        "recipe_name": "Gluten-free hummus",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/chickpea-hummus/rcp-20049903"
+    },
+    {
+        "recipe_name": "Grilled pineapple",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/grilled-pineapple/rcp-20049611"
+    },
+    {
+        "recipe_name": "Hummus",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/hummus/rcp-20049675"
+    },
+    {
+        "recipe_name": "Marinated portobello mushrooms with provolone",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/marinated-portobello-mushrooms-with-provolone/rcp-20049812"
+    },
+    {
+        "recipe_name": "Peanut butter hummus",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/peanut-butter-hummus/rcp-20197732"
+    },
+    {
+        "recipe_name": "Pickled asparagus",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/pickled-asparagus/rcp-20049991"
+    },
+    {
+        "recipe_name": "Roasted butternut squash fries",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/roasted-butternut-squash-fries/rcp-20197740"
+    },
+    {
+        "recipe_name": "Roasted potatoes with garlic and herbs",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/roasted-potatoes-with-garlic-and-herbs/rcp-20049702"
+    },
+    {
+        "recipe_name": "Roasted red pepper hummus",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/roasted-red-pepper-hummus/rcp-20197743"
+    },
+    {
+        "recipe_name": "Shrimp ceviche",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/shrimp-ceviche/rcp-20135305"
+    },
+    {
+        "recipe_name": "Shrimp marinated in lime juice and Dijon mustard",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/shrimp-marinated-in-lime-juice-and-dijon-mustard/rcp-20049819"
+    },
+    {
+        "recipe_name": "Shrimp spring rolls",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/fresh-spring-rolls-with-shrimp/rcp-20049608"
+    },
+    {
+        "recipe_name": "Smoked trout spread",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/smoked-trout-spread/rcp-20049911"
+    },
+    {
+        "recipe_name": "Southwestern potato skins",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/southwestern-potato-skins/rcp-20049824"
+    },
+    {
+        "recipe_name": "Sweet and spicy snack mix",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/sweet-and-spicy-snack-mix/rcp-20049721"
+    },
+    {
+        "recipe_name": "Tomato basil bruschetta",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/tomato-basil-bruschetta/rcp-20049992"
+    },
+    {
+        "recipe_name": "White bean dip",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/white-bean-dip/rcp-20049728"
+    },
+    {
+        "recipe_name": "Blackberry iced tea with cinnamon and ginger",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/blackberry-iced-tea-with-cinnamon-and-ginger/rcp-20049643"
+    },
+    {
+        "recipe_name": "Blueberry lavender lemonade",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/blueberry-lavender-lemonade/rcp-20197680"
+    },
+    {
+        "recipe_name": "Champagne fooler",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/champagne-fooler/rcp-20146132"
+    },
+    {
+        "recipe_name": "Cranberry spritzer",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/cranberry-spritzer/rcp-20049655"
+    },
+    {
+        "recipe_name": "Fresh fruit smoothie",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/fresh-fruit-smoothie/rcp-20049983"
+    },
+    {
+        "recipe_name": "Green smoothie",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/green-smoothie/rcp-20049958"
+    },
+    {
+        "recipe_name": "Hurricane punch",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/hurricane-punch/rcp-20049962"
+    },
+    {
+        "recipe_name": "Iced latte",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/iced-latte/rcp-20049676"
+    },
+    {
+        "recipe_name": "Island chiller",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/island-chiller/rcp-20049677"
+    },
+    {
+        "recipe_name": "Minty-lime iced tea",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/mintylime-iced-tea/rcp-20049681"
+    },
+    {
+        "recipe_name": "Nonalcoholic margarita",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/nonalcoholic-margarita/rcp-20049986"
+    },
+    {
+        "recipe_name": "Orange dream smoothie",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/orange-dream/rcp-20049615"
+    },
+    {
+        "recipe_name": "Orange juice smoothie",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/orange-juice-smoothie/rcp-20049661"
+    },
+    {
+        "recipe_name": "Strawberry banana milkshake",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/strawberry-banana-milkshake/rcp-20049717"
+    },
+    {
+        "recipe_name": "Strawberry mockarita",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/strawberry-mockarita/rcp-20197759"
+    },
+    {
+        "recipe_name": "Watermelon-cranberry agua fresca",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/watermeloncranberry-agua-fresca/rcp-20049628"
+    },
+    {
+        "recipe_name": "Almond and apricot biscotti",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/almond-and-apricot-biscotti/rcp-20049600"
+    },
+    {
+        "recipe_name": "Apple cinnamon muffins",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/apple-cinnamon-muffins/rcp-20197656"
+    },
+    {
+        "recipe_name": "Apple corn muffins",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/apple-corn-muffins/rcp-20049630"
+    },
+    {
+        "recipe_name": "Banana oatmeal pancakes",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/banana-oatmeal-pancakes/rcp-20197673"
+    },
+    {
+        "recipe_name": "Best honey whole-wheat bread",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/best-honey-wholewheat-bread/rcp-20049932"
+    },
+    {
+        "recipe_name": "Buckwheat pancakes",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/buckwheat-pancakes/rcp-20049839"
+    },
+    {
+        "recipe_name": "Carrot and spice quick bread",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/carrot-and-spice-quick-bread/rcp-20049925"
+    },
+    {
+        "recipe_name": "Chickpea polenta with olives",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/chickpea-polenta-with-olives/rcp-20049900"
+    },
+    {
+        "recipe_name": "Cinnamon rolls",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/cinnamon-rolls/rcp-20049765"
+    },
+    {
+        "recipe_name": "Cranberry orange muffins",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/cranberry-orange-muffins/rcp-20197700"
+    },
+    {
+        "recipe_name": "Irish brown bread",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/irish-brown-bread/rcp-20049882"
+    },
+    {
+        "recipe_name": "Muesli breakfast bars",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/muesli-breakfast-bars/rcp-20049614"
+    },
+    {
+        "recipe_name": "Popovers",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/popovers/rcp-20049807"
+    },
+    {
+        "recipe_name": "Pumpkin-hazelnut tea cake",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/pumpkinhazelnut-tea-cake/rcp-20049617"
+    },
+    {
+        "recipe_name": "Raspberry chocolate scones",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/raspberry-chocolate-scones/rcp-20049937"
+    },
+    {
+        "recipe_name": "Rhubarb pecan muffins",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/rhubarb-pecan-muffins/rcp-20049700"
+    },
+    {
+        "recipe_name": "Southwestern cornmeal muffins",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/southwestern-cornmeal-muffins/rcp-20049714"
+    },
+    {
+        "recipe_name": "Spiced carrot raisin tea bread",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/spiced-carrot-raisin-bread/rcp-20049973"
+    },
+    {
+        "recipe_name": "Three-grain raspberry muffins",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/threegrain-raspberry-muffins/rcp-20049625"
+    },
+    {
+        "recipe_name": "Whole-grain banana bread",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/wholegrain-banana-bread/rcp-20049955"
+    },
+    {
+        "recipe_name": "Whole-grain pancakes",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/wholegrain-pancakes/rcp-20049982"
+    },
+    {
+        "recipe_name": "Whole-wheat pretzels",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/wholewheat-pretzel/rcp-20049959"
+    },
+    {
+        "recipe_name": "Whole-wheat soda bread",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/wholewheat-soda-bread/rcp-20049977"
+    },
+    {
+        "recipe_name": "Zucchini bread",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/zucchini-bread/rcp-20049730"
+    },
+    {
+        "recipe_name": "Almond and apricot biscotti",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/almond-and-apricot-biscotti/rcp-20049600"
+    },
+    {
+        "recipe_name": "Ambrosia with coconut and toasted almonds",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/ambrosia-with-coconut-and-toasted-almonds/rcp-20049601"
+    },
+    {
+        "recipe_name": "Apple dumplings",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/apple-dumplings/rcp-20135320"
+    },
+    {
+        "recipe_name": "Apple-berry cobbler",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/apple-berry-cobbler/rcp-20049923"
+    },
+    {
+        "recipe_name": "Apple-blueberry cobbler",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/appleblueberry-cobbler/rcp-20049732"
+    },
+    {
+        "recipe_name": "Apples with dip",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/apples-with-dip/rcp-20049632"
+    },
+    {
+        "recipe_name": "Apricot and almond crisp",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/apricot-almond-crisp/rcp-20152942"
+    },
+    {
+        "recipe_name": "Baked apples with cherries and almonds",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/baked-apples-with-cherries-and-almonds/rcp-20049603"
+    },
+    {
+        "recipe_name": "Berries marinated in balsamic vinegar",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/berries-marinated-in-balsamic-vinegar/rcp-20049742"
+    },
+    {
+        "recipe_name": "Caramelized pear bread pudding",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/caramelized-pear-bread-pudding/rcp-20166400"
+    },
+    {
+        "recipe_name": "Chocolate pudding pies",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/chocolate-pudding-pies/rcp-20049763"
+    },
+    {
+        "recipe_name": "Cookies and cream shake",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/cookies-and-cream-milkshake/rcp-20049768"
+    },
+    {
+        "recipe_name": "Cran-fruit coffeecake with crumb topping",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/cranfruit-coffeecake-with-crumb-topping/rcp-20049656"
+    },
+    {
+        "recipe_name": "Creamy fruit dessert",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/creamy-fruit-dessert/rcp-20049657"
+    },
+    {
+        "recipe_name": "Decadent chocolate cake",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/decadent-chocolate-cake/rcp-20125109"
+    },
+    {
+        "recipe_name": "Fruit and nut bar",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/fruit-and-nut-bar/rcp-20049966"
+    },
+    {
+        "recipe_name": "Fruit compote a la mode",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/fruit-compote-a-la-mode/rcp-20050000"
+    },
+    {
+        "recipe_name": "Fruitcake",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/fruitcake/rcp-20049984"
+    },
+    {
+        "recipe_name": "Fruited rice pudding",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/fruited-rice-pudding/rcp-20049782"
+    },
+    {
+        "recipe_name": "Grapes with lemon sour cream sauce",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/grapes-and-walnuts-with-lemon-sour-cream-sauce/rcp-20049699"
+    },
+    {
+        "recipe_name": "Grilled angel food cake",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/grilled-angel-food-cake/rcp-20049665"
+    },
+    {
+        "recipe_name": "Grilled fruit",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/grilled-fruit-with-balsamic-vinegar-syrup/rcp-20049667"
+    },
+    {
+        "recipe_name": "Grilled pineapple",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/grilled-pineapple/rcp-20049611"
+    },
+    {
+        "recipe_name": "Lemon cheesecake",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/cheesecake/rcp-20049928"
+    },
+    {
+        "recipe_name": "Mixed berry pie",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/mixed-berry-pie/rcp-20049743"
+    },
+    {
+        "recipe_name": "Mixed berry whole-grain coffeecake",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/mixed-berry-whole-grain-coffee-cake/rcp-20050002"
+    },
+    {
+        "recipe_name": "New England trifle",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/new-england-trifle/rcp-20049684"
+    },
+    {
+        "recipe_name": "Orange dream smoothie",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/orange-dream/rcp-20049615"
+    },
+    {
+        "recipe_name": "Orange slices with citrus syrup",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/orange-slices-with-citrus-syrup/rcp-20049616"
+    },
+    {
+        "recipe_name": "Peach crumble",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/peach-crumble/rcp-20049692"
+    },
+    {
+        "recipe_name": "Peach floats",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/peach-floats/rcp-20049798"
+    },
+    {
+        "recipe_name": "Peaches a la mode",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/peaches-a-la-mode/rcp-20049800"
+    },
+    {
+        "recipe_name": "Pineapple cream cheese pie with berries",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/pineapple-cream-cheese-pie-with-berries/rcp-20049804"
+    },
+    {
+        "recipe_name": "Poached pears",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/poached-pears/rcp-20049694"
+    },
+    {
+        "recipe_name": "Pumpkin cream cheese dip or spread",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/pumpkin-cream-cheese-dip/rcp-20049947"
+    },
+    {
+        "recipe_name": "Pumpkin-hazelnut tea cake",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/pumpkinhazelnut-tea-cake/rcp-20049617"
+    },
+    {
+        "recipe_name": "Rainbow ice pops",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/rainbow-ice-pops/rcp-20049997"
+    },
+    {
+        "recipe_name": "Red, white and blue parfait",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/red-white-and-blue-parfait/rcp-20049941"
+    },
+    {
+        "recipe_name": "Rhubarb pecan muffins",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/rhubarb-pecan-muffins/rcp-20049700"
+    },
+    {
+        "recipe_name": "Rustic apple-cranberry tart",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/rustic-applecranberry-tart/rcp-20049816"
+    },
+    {
+        "recipe_name": "Sauteed bananas",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/sauteed-bananas/rcp-20049618"
+    },
+    {
+        "recipe_name": "Seasonal fruit palette",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/seasonal-fruit-palette/rcp-20049710"
+    },
+    {
+        "recipe_name": "Spiced carrot raisin tea bread",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/spiced-carrot-raisin-bread/rcp-20049973"
+    },
+    {
+        "recipe_name": "Strawberries and cream",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/strawberries-and-cream/rcp-20049831"
+    },
+    {
+        "recipe_name": "Strawberries and cream cheese crepes",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/strawberries-and-cream-cheese-crepes/rcp-20049832"
+    },
+    {
+        "recipe_name": "Strawberry balsamic sorbet",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/strawberry-balsamic-sorbet/rcp-20049915"
+    },
+    {
+        "recipe_name": "Strawberry shortcake",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/strawberry-shortcake/rcp-20049833"
+    },
+    {
+        "recipe_name": "Summer fruit gratin",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/summer-fruit-gratin/rcp-20049623"
+    },
+    {
+        "recipe_name": "Sweet potato and squash pie",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/sweet-potato-pie/rcp-20166405"
+    },
+    {
+        "recipe_name": "Tasty apple pie",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/tasty-apple-pie/rcp-20049940"
+    },
+    {
+        "recipe_name": "Vanilla poached peaches",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/vanilla-poached-peaches/rcp-20049725"
+    },
+    {
+        "recipe_name": "Wacky chocolate cake",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/wacky-chocolate-cake/rcp-20049951"
+    },
+    {
+        "recipe_name": "Warm chocolate pudding",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/warm-chocolate-pudding/rcp-20146126"
+    },
+    {
+        "recipe_name": "Warm chocolate souffles",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/warm-chocolate-souffles/rcp-20049626"
+    },
+    {
+        "recipe_name": "Watermelon-cranberry agua fresca",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/watermeloncranberry-agua-fresca/rcp-20049628"
+    },
+    {
+        "recipe_name": "Whole-grain banana bread",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/wholegrain-banana-bread/rcp-20049955"
+    },
+    {
+        "recipe_name": "Zucchini bread",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/zucchini-bread/rcp-20049730"
+    },
+    {
+        "recipe_name": "6-grain hot cereal",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/6-grain-hot-cereal/rcp-20197750"
+    },
+    {
+        "recipe_name": "Almond crusted chicken",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/almond-crusted-chicken/rcp-20197655"
+    },
+    {
+        "recipe_name": "Asian pork tenderloin",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/asian-pork-tenderloin/rcp-20049733"
+    },
+    {
+        "recipe_name": "Asparagus, tomato and red pepper French bread pizza",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/asparagus-tomato-and-red-pepper-french-bread-pizza/rcp-20049734"
+    },
+    {
+        "recipe_name": "Baba ghanoush",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/baba-ghanoush/rcp-20049954"
+    },
+    {
+        "recipe_name": "Baked blueberry French toast",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/baked-blueberry-french-toast/rcp-20049934"
+    },
+    {
+        "recipe_name": "Baked chicken and wild rice with onion and tarragon",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/baked-chicken-and-wild-rice-with-onion-and-tarragon/rcp-20049636"
+    },
+    {
+        "recipe_name": "Baked cod with lemon and capers",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/cod-with-lemon-and-capers/rcp-20049653"
+    },
+    {
+        "recipe_name": "Baked macaroni with red sauce",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/baked-macaroni-with-red-sauce/rcp-20049637"
+    },
+    {
+        "recipe_name": "Baked oatmeal",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/baked-oatmeal/rcp-20049931"
+    },
+    {
+        "recipe_name": "Baked salmon with Southeast Asian marinade",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/baked-salmon-with-southeast-asian-marinade/rcp-20049736"
+    },
+    {
+        "recipe_name": "Baked ziti with vegetables",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/baked-ziti-with-vegetables/rcp-20049737"
+    },
+    {
+        "recipe_name": "Balsamic feta chicken",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/balsamic-feta-chicken/rcp-20197661"
+    },
+    {
+        "recipe_name": "Balsamic roast chicken",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/balsamic-roast-chicken/rcp-20049638"
+    },
+    {
+        "recipe_name": "Barbecue chicken pizza",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/barbecue-chicken-pizza/rcp-20049639"
+    },
+    {
+        "recipe_name": "Barbecued pork tenderloin",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/jamaican-barbecued-pork-tenderloin/rcp-20049613"
+    },
+    {
+        "recipe_name": "Barley and roasted tomato risotto",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/barley-and-roasted-tomato-risotto/rcp-20049878"
+    },
+    {
+        "recipe_name": "Bean salad with balsamic vinaigrette",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/bean-salad-with-balsamic-vinaigrette/rcp-20049640"
+    },
+    {
+        "recipe_name": "Beef and vegetable kebabs",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/beef-and-vegetable-kebabs/rcp-20049641"
+    },
+    {
+        "recipe_name": "Beef and vegetable stew",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/beef-stew/rcp-20049978"
+    },
+    {
+        "recipe_name": "Beef brisket",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/beef-brisket/rcp-20154209"
+    },
+    {
+        "recipe_name": "Beef fajitas",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/beef-fajitas/rcp-20049739"
+    },
+    {
+        "recipe_name": "Beef stew with fennel and shallots",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/beef-stew-with-fennel-and-shallots/rcp-20049852"
+    },
+    {
+        "recipe_name": "Beef stroganoff",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/beef-stroganoff/rcp-20049741"
+    },
+    {
+        "recipe_name": "Black bean burgers with chipotle ketchup",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/black-bean-burgers-with-chipotle-ketchup/rcp-20049605"
+    },
+    {
+        "recipe_name": "Black bean quesadillas",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/black-bean-quesadillas/rcp-20197678"
+    },
+    {
+        "recipe_name": "Black bean wrap",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/black-bean-wrap/rcp-20049847"
+    },
+    {
+        "recipe_name": "Blackened sole",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/blackened-sole/rcp-20197679"
+    },
+    {
+        "recipe_name": "Braised chicken with mushrooms and pearl onions",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/braised-chicken-with-mushrooms-and-pearl-onions/rcp-20049853"
+    },
+    {
+        "recipe_name": "Breakfast burrito",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/breakfast-burrito/rcp-20049746"
+    },
+    {
+        "recipe_name": "Broccoli cheddar bake",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/broccoli-cheddar-bake/rcp-20049747"
+    },
+    {
+        "recipe_name": "Broccoli, garlic and rigatoni",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/broccoli-garlic-and-rigatoni/rcp-20049646"
+    },
+    {
+        "recipe_name": "Broiled grouper with teriyaki sauce",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/broiled-grouper-with-teriyaki-sauce/rcp-20049748"
+    },
+    {
+        "recipe_name": "Broiled scallops with sweet lime sauce",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/broiled-scallops-with-sweet-lime-sauce/rcp-20049749"
+    },
+    {
+        "recipe_name": "Broiled white sea bass",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/broiled-white-sea-bass/rcp-20049750"
+    },
+    {
+        "recipe_name": "Brown-sugared pork tenderloin stir-fry",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/brown-sugared-pork-tenderloin-stir-fry/rcp-20197682"
+    },
+    {
+        "recipe_name": "Buckwheat pancakes",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/buckwheat-pancakes/rcp-20049839"
+    },
+    {
+        "recipe_name": "Buttermilk waffles",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/buttermilk-waffles/rcp-20049751"
+    },
+    {
+        "recipe_name": "Butternut squash ravioli",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/butternut-squash-ravioli/rcp-20197683"
+    },
+    {
+        "recipe_name": "Caramelized onion chicken pizza",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/caramelized-onion-chicken-pizza/rcp-20197687"
+    },
+    {
+        "recipe_name": "Carne asada",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/carne-asada/rcp-20197688"
+    },
+    {
+        "recipe_name": "Chicken and asparagus tossed with penne",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/chicken-and-asparagus-tossed-with-penne/rcp-20049753"
+    },
+    {
+        "recipe_name": "Chicken and spinach calzones",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/chicken-and-spinach-calzones/rcp-20049752"
+    },
+    {
+        "recipe_name": "Chicken and zucchini quesadilla",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/chicken-and-zucchini-quesadilla/rcp-20197689"
+    },
+    {
+        "recipe_name": "Chicken brats",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/chicken-brats/rcp-20049968"
+    },
+    {
+        "recipe_name": "Chicken cordon bleu",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/chicken-cordon-bleu/rcp-20197690"
+    },
+    {
+        "recipe_name": "Chicken fajitas",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/chicken-fajitas/rcp-20049943"
+    },
+    {
+        "recipe_name": "Chicken Parmesan",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/chicken-parmesan/rcp-20197691"
+    },
+    {
+        "recipe_name": "Chicken quesadillas",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/chicken-quesadillas/rcp-20049758"
+    },
+    {
+        "recipe_name": "Chicken salad with pineapple and balsamic vinaigrette",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/pineapple-chicken-salad-with-balsamic-vinaigrette/rcp-20049803"
+    },
+    {
+        "recipe_name": "Chicken salad with Thai flavors",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/chicken-salad-with-thai-flavors/rcp-20049869"
+    },
+    {
+        "recipe_name": "Chicken sausage meatballs",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/chicken-sausage-meatballs/rcp-20197692"
+    },
+    {
+        "recipe_name": "Chicken stir-fry with eggplant, basil and ginger",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/chicken-stirfry-with-eggplant-and-basil/rcp-20049855"
+    },
+    {
+        "recipe_name": "Chicken strips with honey mustard sauce",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/chicken-strips-with-honey-mustard-sauce/rcp-20049650"
+    },
+    {
+        "recipe_name": "Chicken tamales",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/chicken-tamales/rcp-20152943"
+    },
+    {
+        "recipe_name": "Chicken with braised pineapple",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/oriental-chicken-with-braised-pineapple-ring/rcp-20049688"
+    },
+    {
+        "recipe_name": "Chipotle spiced shrimp",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/chipotle-spiced-shrimp/rcp-20049652"
+    },
+    {
+        "recipe_name": "Cinnamon French toast",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/cinnamon-french-toast/rcp-20049764"
+    },
+    {
+        "recipe_name": "Citrus seared salmon",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/citrus-seared-salmon/rcp-20197695"
+    },
+    {
+        "recipe_name": "Corn tamales with avocado-tomatillo salsa",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/corn-tamales-with-avocadotomatillo-salsa/rcp-20049607"
+    },
+    {
+        "recipe_name": "Cracked wheat chili",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/cracked-wheat-chili/rcp-20197699"
+    },
+    {
+        "recipe_name": "Creamy beef enchiladas",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/beef-enchiladas/rcp-20125121"
+    },
+    {
+        "recipe_name": "Creamy cheesy macaroni",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/creamy-cheesy-macaroni/rcp-20049994"
+    },
+    {
+        "recipe_name": "Creole-style black-eyed peas",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/creolestyle-blackeyed-peas/rcp-20049644"
+    },
+    {
+        "recipe_name": "Crispy baked chicken legs",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/crispy-baked-chicken-legs/rcp-20166398"
+    },
+    {
+        "recipe_name": "Curried pork tenderloin in apple cider",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/curried-pork-tenderloin-in-apple-cider/rcp-20049660"
+    },
+    {
+        "recipe_name": "Easy nacho skillet dinner",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/nacho-skillet-dinner/rcp-20125122"
+    },
+    {
+        "recipe_name": "Easy pizza for two",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/pan-pizza-for-two/rcp-20049821"
+    },
+    {
+        "recipe_name": "Fettuccine with clams, basil, tomato, corn and garlic",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/fettuccine-with-clams-basil-tomato-corn-and-garlic/rcp-20049777"
+    },
+    {
+        "recipe_name": "Fettuccine with Swiss chard and mushrooms",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/fettuccine-with-swiss-chard-and-mushrooms/rcp-20049645"
+    },
+    {
+        "recipe_name": "Fish tacos with tomatillo sauce",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/fish-tacos-with-tomatillo-sauce/rcp-20049956"
+    },
+    {
+        "recipe_name": "Fish Veracruz",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/fish-veracruz/rcp-20125128"
+    },
+    {
+        "recipe_name": "Five-spice pork medallions",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/pork-medallions-with-fivespice-powder/rcp-20049868"
+    },
+    {
+        "recipe_name": "Fresh puttanesca with brown rice",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/fresh-puttanesca-with-brown-rice/rcp-20135111"
+    },
+    {
+        "recipe_name": "Glazed turkey breast with fruit stuffing",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/glazed-turkey-breast-with-fruit-stuffing/rcp-20049946"
+    },
+    {
+        "recipe_name": "Grilled Asian salmon",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/grilled-salmon/rcp-20125129"
+    },
+    {
+        "recipe_name": "Grilled chicken breasts with roasted yellow tomato sauce",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/grilled-chicken-breasts-with-roasted-yellow-tomato-sauce/rcp-20049857"
+    },
+    {
+        "recipe_name": "Grilled chicken salad with olives and oranges",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/grilled-chicken-salad-with-olives-and-oranges/rcp-20049786"
+    },
+    {
+        "recipe_name": "Grilled cod with crispy citrus salad",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/grilled-cod-with-crispy-citrus-salad/rcp-20049981"
+    },
+    {
+        "recipe_name": "Grilled pork fajitas",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/grilled-pork-fajitas/rcp-20049668"
+    },
+    {
+        "recipe_name": "Grilled salmon",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/grilled-salmon/rcp-20197720"
+    },
+    {
+        "recipe_name": "Grilled snapper curry",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/grilled-snapper-curry/rcp-20049988"
+    },
+    {
+        "recipe_name": "Grilled turkey burger",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/grilled-turkey-burger/rcp-20049642"
+    },
+    {
+        "recipe_name": "Grouper with tomato-olive sauce",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/grouper-with-tomatoolive-sauce/rcp-20049612"
+    },
+    {
+        "recipe_name": "Halibut with tomato basil salsa",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/halibut-with-tomato-basil-salsa/rcp-20049671"
+    },
+    {
+        "recipe_name": "Ham, pineapple and asparagus crepes",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/ham-pineapple-and-asparagus-crepes/rcp-20049787"
+    },
+    {
+        "recipe_name": "Hawaiian calzone",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/hawaiian-calzone/rcp-20049788"
+    },
+    {
+        "recipe_name": "Hearty chicken bowl",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/hearty-chicken-bowl/rcp-20152940"
+    },
+    {
+        "recipe_name": "Hearty turkey chili",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/hearty-turkey-chili/rcp-20049789"
+    },
+    {
+        "recipe_name": "Herb-crusted baked cod",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/herb-crusted-baked-cod/rcp-20049672"
+    },
+    {
+        "recipe_name": "Herb-rubbed turkey au jus",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/herbrubbed-turkey-au-jus/rcp-20049919"
+    },
+    {
+        "recipe_name": "Honey crusted chicken",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/honey-crusted-chicken/rcp-20049790"
+    },
+    {
+        "recipe_name": "Hummus",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/hummus/rcp-20049675"
+    },
+    {
+        "recipe_name": "Italian chicken and vegetable packet",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/italian-chicken-and-vegetable-packet/rcp-20135324"
+    },
+    {
+        "recipe_name": "Italian meatballs",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/italian-meatballs/rcp-20197724"
+    },
+    {
+        "recipe_name": "Lasagna",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/lasagna/rcp-20049792"
+    },
+    {
+        "recipe_name": "Linguine with garbanzo beans and arugula",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/linguine-with-garbanzo-beans-and-arugula/rcp-20135326"
+    },
+    {
+        "recipe_name": "Linguine with roasted butternut squash sauce",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/linguine-with-roasted-butternut-squash-sauce/rcp-20135330"
+    },
+    {
+        "recipe_name": "Macaroni and cheese",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/macaroni-and-cheese/rcp-20049976"
+    },
+    {
+        "recipe_name": "Mango salsa pizza",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/mango-salsa-pizza/rcp-20049679"
+    },
+    {
+        "recipe_name": "Mediterranean-style grilled salmon",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/mediterraneanstyle-grilled-salmon/rcp-20049781"
+    },
+    {
+        "recipe_name": "New York strip steak with whiskey-mushroom sauce",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/new-york-strip-steak-with-whiskeymushroom-sauce/rcp-20049794"
+    },
+    {
+        "recipe_name": "Orange roughy with lemon and thyme",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/orange-roughy-with-lemon-and-thyme/rcp-20049795"
+    },
+    {
+        "recipe_name": "Orange-rosemary roasted chicken",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/orange-rosemary-roasted-chicken/rcp-20049687"
+    },
+    {
+        "recipe_name": "Paella with chicken, leeks and tarragon",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/paella-with-chicken-leeks-and-tarragon/rcp-20049689"
+    },
+    {
+        "recipe_name": "Pasta primavera",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/pasta-primavera/rcp-20049690"
+    },
+    {
+        "recipe_name": "Pasta salad with mixed vegetables",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/pasta-salad-with-mixed-vegetables/rcp-20049830"
+    },
+    {
+        "recipe_name": "Pasta with grilled chicken, white beans and mushrooms",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/pasta-with-grilled-chicken-white-beans-and-mushrooms/rcp-20049796"
+    },
+    {
+        "recipe_name": "Pasta with marinara sauce and grilled vegetables",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/pasta-with-marinara-sauce-and-grilled-vegetables/rcp-20049691"
+    },
+    {
+        "recipe_name": "Pasta with pumpkin sauce",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/pasta-with-pumpkin-sauce/rcp-20146124"
+    },
+    {
+        "recipe_name": "Pasta with spinach, garbanzos and raisins",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/pasta-with-spinach-garbanzos-and-raisins/rcp-20049797"
+    },
+    {
+        "recipe_name": "Pecan-crusted tofu",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/pecan-crusted-tofu/rcp-20197733"
+    },
+    {
+        "recipe_name": "Penne with tomatoes, asparagus and goat cheese",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/penne-tossed-with-cherry-tomatoes-asparagus-and-goat-cheese/rcp-20049693"
+    },
+    {
+        "recipe_name": "Philly steak sandwich",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/philly-steak-sandwich/rcp-20049801"
+    },
+    {
+        "recipe_name": "Pineapple chicken stir-fry",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/pineapple-chicken-stirfry/rcp-20049922"
+    },
+    {
+        "recipe_name": "Polenta with fresh vegetables",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/polenta-with-fresh-vegetables/rcp-20049806"
+    },
+    {
+        "recipe_name": "Polenta with roasted vegetables",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/polenta-with-roasted-mediterranean-vegetables/rcp-20049695"
+    },
+    {
+        "recipe_name": "Pork chops with black currant jam sauce",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/pork-chops-with-black-currant-jam-sauce/rcp-20049696"
+    },
+    {
+        "recipe_name": "Pork medallions with herbes de Provence",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/pork-medallions-with-herbes-de-provence/rcp-20049808"
+    },
+    {
+        "recipe_name": "Pork tenderloin with apples and balsamic vinegar",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/pork-tenderloin-with-apples-and-balsamic-vinegar/rcp-20049809"
+    },
+    {
+        "recipe_name": "Pork tenderloin with apples and blue cheese",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/pork-tenderloin-with-apples-and-blue-cheese/rcp-20049971"
+    },
+    {
+        "recipe_name": "Pork tenderloin with fennel sauce",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/pork-tenderloin-with-fennel-sauce/rcp-20049810"
+    },
+    {
+        "recipe_name": "Portobello and blue cheese salad",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/portobello-and-blue-cheese-salad/rcp-20049811"
+    },
+    {
+        "recipe_name": "Prawns puttanesca",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/prawns-puttanesca/rcp-20049913"
+    },
+    {
+        "recipe_name": "Quiche",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/quiche/rcp-20049698"
+    },
+    {
+        "recipe_name": "Quick bean and tuna salad",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/quick-bean-and-tuna-salad/rcp-20049996"
+    },
+    {
+        "recipe_name": "Quinoa risotto with arugula and Parmesan",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/quinoa-risotto-with-arugula-and-parmesan/rcp-20049874"
+    },
+    {
+        "recipe_name": "Quinoa salad",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/quinoa-salad/rcp-20125126"
+    },
+    {
+        "recipe_name": "Quinoa stuffed peppers",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/stuffed-quinoa-peppers/rcp-20197761"
+    },
+    {
+        "recipe_name": "Rancher's eggs",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/ranchers-eggs/rcp-20122254"
+    },
+    {
+        "recipe_name": "Rice and beans salad",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/rice-and-beans-salad/rcp-20049942"
+    },
+    {
+        "recipe_name": "Rice noodles with spring vegetables",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/rice-noodles-with-spring-vegetables/rcp-20049651"
+    },
+    {
+        "recipe_name": "Roasted Cornish hen",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/roasted-cornish-hen/rcp-20197741"
+    },
+    {
+        "recipe_name": "Roasted red pepper and chicken wrap",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/roasted-red-pepper-and-chicken-wrap/rcp-20049703"
+    },
+    {
+        "recipe_name": "Roasted red snapper",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/roasted-red-snapper/rcp-20049858"
+    },
+    {
+        "recipe_name": "Roasted salmon",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/roasted-salmon/rcp-20049927"
+    },
+    {
+        "recipe_name": "Roasted salmon with maple glaze",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/roasted-salmon-with-maple-glaze/rcp-20049704"
+    },
+    {
+        "recipe_name": "Roasted squash with wild rice and cranberry",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/roasted-squash/rcp-20122247"
+    },
+    {
+        "recipe_name": "Roasted turkey for 12",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/roasted-turkey/rcp-20050006"
+    },
+    {
+        "recipe_name": "Rolled ham and Swiss omelet",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/rolled-ham-and-swiss-omelet/rcp-20049706"
+    },
+    {
+        "recipe_name": "Rotelle pasta with sun-dried tomato and black olive sauce",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/rotelle-pasta-with-sundried-tomato-and-black-olive-sauce/rcp-20049835"
+    },
+    {
+        "recipe_name": "Salad greens with pears, fennel and walnuts",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/salad-greens-with-pears-fennel-and-walnuts/rcp-20049707"
+    },
+    {
+        "recipe_name": "Seafood gumbo",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/seafood-gumbo/rcp-20166406"
+    },
+    {
+        "recipe_name": "Seared scallops",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/seared-scallops/rcp-20049619"
+    },
+    {
+        "recipe_name": "Seared scallops",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/seared-scallops/rcp-20197746"
+    },
+    {
+        "recipe_name": "Seasoned baked cod",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/seasoned-baked-cod/rcp-20049818"
+    },
+    {
+        "recipe_name": "Sesame ginger shrimp",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/sesame-ginger-shrimp/rcp-20197747"
+    },
+    {
+        "recipe_name": "Sesame-crusted tofu",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/sesamecrusted-tofu/rcp-20049620"
+    },
+    {
+        "recipe_name": "Shepherd's pie",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/shepherds-pie/rcp-20146127"
+    },
+    {
+        "recipe_name": "Shepherd's pie",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/shepherds-pie/rcp-20197748"
+    },
+    {
+        "recipe_name": "Shrimp and artichoke pasta",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/shrimp-artichoke-pasta/rcp-20125112"
+    },
+    {
+        "recipe_name": "Shrimp and grits",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/shrimp-and-grits/rcp-20166407"
+    },
+    {
+        "recipe_name": "Shrimp kebabs",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/shrimp-kebabs/rcp-20197749"
+    },
+    {
+        "recipe_name": "Shrimp scampi",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/shrimp-scampi/rcp-20049712"
+    },
+    {
+        "recipe_name": "Smoky bean and mushroom cornucopias",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/smoky-bean-and-mushroom-cornucopias/rcp-20125108"
+    },
+    {
+        "recipe_name": "Smoky frittata",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/smoky-frittata/rcp-20197754"
+    },
+    {
+        "recipe_name": "Soft tacos with vegetables",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/soft-tacos-with-southwestern-vegetables/rcp-20049713"
+    },
+    {
+        "recipe_name": "Southwest chicken and beans",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/southwest-chicken-and-beans/rcp-20125118"
+    },
+    {
+        "recipe_name": "Southwestern chicken and pasta",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/southwestern-chicken-and-pasta/rcp-20049823"
+    },
+    {
+        "recipe_name": "Southwestern frittata",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/southwestern-frittata/rcp-20049715"
+    },
+    {
+        "recipe_name": "Southwestern vegan bowl",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/southwestern-vegan-bowl/rcp-20152941"
+    },
+    {
+        "recipe_name": "Southwestern wraps",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/southwestern-wraps/rcp-20049825"
+    },
+    {
+        "recipe_name": "Spicy beef kebabs",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/spicy-beef-kebabs/rcp-20049622"
+    },
+    {
+        "recipe_name": "Spicy ground turkey tacos",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/spicy-ground-turkey-tacos/rcp-20049740"
+    },
+    {
+        "recipe_name": "Spinach and mushroom frittata",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/spinach-mushroom-frittata/rcp-20049936"
+    },
+    {
+        "recipe_name": "Spinach and mushroom souffle",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/spinach-mushroom-souffle/rcp-20197757"
+    },
+    {
+        "recipe_name": "Spinach frittata",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/spinach-frittata/rcp-20049867"
+    },
+    {
+        "recipe_name": "Spinach-stuffed sole",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/spinachstuffed-sole/rcp-20049829"
+    },
+    {
+        "recipe_name": "Split pea soup",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/split-pea-soup/rcp-20049892"
+    },
+    {
+        "recipe_name": "Steak with chimichurri sauce",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/steak-with-chimichurri-sauce/rcp-20197758"
+    },
+    {
+        "recipe_name": "Stuffed acorn squash",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/stuffed-acorn-squash/rcp-20197760"
+    },
+    {
+        "recipe_name": "Stuffed chicken breasts",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/stuffed-chicken-breasts/rcp-20049834"
+    },
+    {
+        "recipe_name": "Stuffed eggplant",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/stuffed-eggplant/rcp-20049718"
+    },
+    {
+        "recipe_name": "Sun-dried tomato and herb pizza",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/sundried-tomato-thyme-and-basil-pizza/rcp-20049720"
+    },
+    {
+        "recipe_name": "Sweet peppers stuffed with scalloped corn",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/sweet-peppers-stuffed-with-scalloped-corn/rcp-20049836"
+    },
+    {
+        "recipe_name": "Sweet potato souffle",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/sweet-potato-souffle/rcp-20197764"
+    },
+    {
+        "recipe_name": "Sweet potato waffles with blueberry syrup",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/sweet-potato-waffles-with-blueberry-syrup/rcp-20049624"
+    },
+    {
+        "recipe_name": "Swordfish with roasted lemons",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/swordfish-with-roasted-lemons/rcp-20049838"
+    },
+    {
+        "recipe_name": "Thai peanut beef",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/thai-peanut-beef/rcp-20197765"
+    },
+    {
+        "recipe_name": "Tofu triangles with peanut sauce",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/tofu-triangles-with-peanut-sauce/rcp-20049995"
+    },
+    {
+        "recipe_name": "Tofu with bok choy",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/tofu-hoisin-with-baby-bok-choy/rcp-20049904"
+    },
+    {
+        "recipe_name": "Tomato-basil pizza",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/tomato-basil-pizza/rcp-20049805"
+    },
+    {
+        "recipe_name": "Tuna steak sandwiches",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/tuna-steak-sandwiches/rcp-20049724"
+    },
+    {
+        "recipe_name": "Turkey and broccoli crepe",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/turkey-and-broccoli-crepe/rcp-20049844"
+    },
+    {
+        "recipe_name": "Turkey pesto melt",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/turkey-pesto-melt/rcp-20197769"
+    },
+    {
+        "recipe_name": "Turkey with balsamic sauce",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/roasted-turkey-with-balsamic-brown-sugar-sauce/rcp-20049705"
+    },
+    {
+        "recipe_name": "Tuscan white bean stew",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/tuscan-white-bean-stew/rcp-20049889"
+    },
+    {
+        "recipe_name": "Vegetable calzone",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/vegetable-and-garlic-calzone/rcp-20049845"
+    },
+    {
+        "recipe_name": "Vegetable lasagna roll-ups",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/vegetable-lasagna-roll-ups/rcp-20197771"
+    },
+    {
+        "recipe_name": "Vegetable stir-fry",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/vegetable-stir-fry/rcp-20197772"
+    },
+    {
+        "recipe_name": "Vegetable, lentil and garbanzo bean stew",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/vegetable-lentil-garbanzo-bean-stew/rcp-20157577"
+    },
+    {
+        "recipe_name": "Vegetarian chili with tofu",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/vegetarian-chili/rcp-20049726"
+    },
+    {
+        "recipe_name": "Vegetarian kebabs",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/vegetarian-kebabs/rcp-20049727"
+    },
+    {
+        "recipe_name": "Veggie egg bake",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/veggie-egg-bake/rcp-20125130"
+    },
+    {
+        "recipe_name": "Veggie pizza",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/veggie-pizza/rcp-20049950"
+    },
+    {
+        "recipe_name": "Vermicelli with vegetables",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/vermicelli-with-vegetables/rcp-20049848"
+    },
+    {
+        "recipe_name": "White chicken chili",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/white-chicken-chili/rcp-20049849"
+    },
+    {
+        "recipe_name": "White sea bass with dill relish",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/white-sea-bass-with-dill-relish/rcp-20049850"
+    },
+    {
+        "recipe_name": "Whole-grain pancakes",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/wholegrain-pancakes/rcp-20049982"
+    },
+    {
+        "recipe_name": "Whole-wheat blueberry pancakes",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/whole-wheat-blueberry-pancakes/rcp-20122256"
+    },
+    {
+        "recipe_name": "Whole-wheat pizza",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/whole-wheat-pizza/rcp-20049990"
+    },
+    {
+        "recipe_name": "Whole-wheat pumpkin pancakes",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/whole-wheat-pumpkin-pancakes/rcp-20197775"
+    },
+    {
+        "recipe_name": "Yellow lentils with spinach and ginger",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/yellow-lentils-with-spinach-and-ginger/rcp-20049905"
+    },
+    {
+        "recipe_name": "Ambrosia with coconut and toasted almonds",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/ambrosia-with-coconut-and-toasted-almonds/rcp-20049601"
+    },
+    {
+        "recipe_name": "Apple lettuce salad",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/apple-lettuce-salad/rcp-20049999"
+    },
+    {
+        "recipe_name": "Apple salad with figs and almonds",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/apple-salad-with-figs-and-almonds/rcp-20049631"
+    },
+    {
+        "recipe_name": "Apple-fennel slaw",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/applefennel-slaw/rcp-20049776"
+    },
+    {
+        "recipe_name": "Artichokes alla Romana",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/artichokes-alla-romana/rcp-20049865"
+    },
+    {
+        "recipe_name": "Asian vegetable salad",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/asian-vegetable-salad/rcp-20049989"
+    },
+    {
+        "recipe_name": "Avocado salad with ginger-miso dressing",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/avocado-salad-with-gingermiso-dressing/rcp-20049871"
+    },
+    {
+        "recipe_name": "Baby beet and orange salad",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/baby-beet-and-orange-salad/rcp-20049987"
+    },
+    {
+        "recipe_name": "Bean salad with balsamic vinaigrette",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/bean-salad-with-balsamic-vinaigrette/rcp-20049640"
+    },
+    {
+        "recipe_name": "Beet walnut salad",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/beet-walnut-salad/rcp-20049929"
+    },
+    {
+        "recipe_name": "Blue cheese, walnut spinach salad",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/blue-cheese-walnut-spinach-salad/rcp-20049960"
+    },
+    {
+        "recipe_name": "Braised celery root",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/braised-celery-root/rcp-20049866"
+    },
+    {
+        "recipe_name": "Butternut squash and apple salad",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/butternut-squash-and-apple-salad/rcp-20146129"
+    },
+    {
+        "recipe_name": "Caesar salad with grilled chicken",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/caesar-salad-with-grilled-chicken/rcp-20049755"
+    },
+    {
+        "recipe_name": "Chicken salad with pineapple and balsamic vinaigrette",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/pineapple-chicken-salad-with-balsamic-vinaigrette/rcp-20049803"
+    },
+    {
+        "recipe_name": "Chicken salad with Thai flavors",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/chicken-salad-with-thai-flavors/rcp-20049869"
+    },
+    {
+        "recipe_name": "Citrus salad",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/citrus-salad/rcp-20049766"
+    },
+    {
+        "recipe_name": "Couscous salad",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/couscous-salad/rcp-20049998"
+    },
+    {
+        "recipe_name": "Crab salad",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/crab-salad/rcp-20049770"
+    },
+    {
+        "recipe_name": "Cucumber pineapple salad",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/cucumber-pineapple-salad/rcp-20049659"
+    },
+    {
+        "recipe_name": "Dilled pasta salad with spring vegetables",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/dilled-pasta-salad-with-spring-vegetables/rcp-20049773"
+    },
+    {
+        "recipe_name": "Dilled shrimp salad on lettuce leaves",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/dilled-shrimp-salad-on-lettuce-leaves/rcp-20049774"
+    },
+    {
+        "recipe_name": "English cucumber salad with balsamic vinaigrette",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/english-cucumber-salad-with-balsamic-vinaigrette/rcp-20049775"
+    },
+    {
+        "recipe_name": "Fattoush",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/fattoush/rcp-20049872"
+    },
+    {
+        "recipe_name": "French green lentil salad",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/french-green-lentil-salad/rcp-20049902"
+    },
+    {
+        "recipe_name": "Greek salad",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/greek-salad/rcp-20049609"
+    },
+    {
+        "recipe_name": "Grilled chicken salad with buttermilk dressing",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/grilled-chicken-salad-with-buttermilk-dressing/rcp-20049666"
+    },
+    {
+        "recipe_name": "Grilled chicken salad with olives and oranges",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/grilled-chicken-salad-with-olives-and-oranges/rcp-20049786"
+    },
+    {
+        "recipe_name": "Grilled cod with crispy citrus salad",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/grilled-cod-with-crispy-citrus-salad/rcp-20049981"
+    },
+    {
+        "recipe_name": "Mango tango salad",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/mango-tango-salad/rcp-20049935"
+    },
+    {
+        "recipe_name": "Mixed bean salad",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/mixed-bean-salad/rcp-20049682"
+    },
+    {
+        "recipe_name": "Pasta salad with mixed vegetables",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/pasta-salad-with-mixed-vegetables/rcp-20049830"
+    },
+    {
+        "recipe_name": "Pickled onion salad",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/pickled-onion-salad/rcp-20049802"
+    },
+    {
+        "recipe_name": "Portobello and blue cheese salad",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/portobello-and-blue-cheese-salad/rcp-20049811"
+    },
+    {
+        "recipe_name": "Potato salad",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/potato-salad/rcp-20049967"
+    },
+    {
+        "recipe_name": "Quick bean and tuna salad",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/quick-bean-and-tuna-salad/rcp-20049996"
+    },
+    {
+        "recipe_name": "Quinoa salad",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/quinoa-salad/rcp-20125126"
+    },
+    {
+        "recipe_name": "Rice and beans salad",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/rice-and-beans-salad/rcp-20049942"
+    },
+    {
+        "recipe_name": "Roasted red pepper with feta salad",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/roasted-red-pepper-with-feta-salad/rcp-20049815"
+    },
+    {
+        "recipe_name": "Salad greens with pears, fennel and walnuts",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/salad-greens-with-pears-fennel-and-walnuts/rcp-20049707"
+    },
+    {
+        "recipe_name": "Salad greens with squash",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/salad-greens-with-acorn-squash/rcp-20049920"
+    },
+    {
+        "recipe_name": "Seared scallops",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/seared-scallops/rcp-20049619"
+    },
+    {
+        "recipe_name": "Shrimp-apple salad",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/shrimpapple-salad/rcp-20049820"
+    },
+    {
+        "recipe_name": "Spiced melon salad",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/spiced-melon-salad/rcp-20152945"
+    },
+    {
+        "recipe_name": "Spinach berry salad",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/spinach-berry-salad/rcp-20049926"
+    },
+    {
+        "recipe_name": "Steak salad with roasted corn vinaigrette",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/grilled-flank-steak-salad-with-roasted-corn-vinaigrette/rcp-20049873"
+    },
+    {
+        "recipe_name": "Tabbouleh salad",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/tabbouleh-salad-cracked-wheat-salad/rcp-20049723"
+    },
+    {
+        "recipe_name": "Tossed greens with pasta, fruit and balsamic vinaigrette",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/tossed-greens-with-pasta-fruit-and-balsamic-vinaigrette/rcp-20049840"
+    },
+    {
+        "recipe_name": "Tuna pasta salad",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/tuna-pasta-salad/rcp-20049841"
+    },
+    {
+        "recipe_name": "Warm coleslaw with honey dressing",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/warm-coleslaw-with-honey-dressing/rcp-20049627"
+    },
+    {
+        "recipe_name": "Yellow pear and cherry tomato salad",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/yellow-pear-and-cherry-tomato-salad/rcp-20049629"
+    },
+    {
+        "recipe_name": "Beet burgers",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/beet-burgers/rcp-20125133"
+    },
+    {
+        "recipe_name": "Black bean burgers with chipotle ketchup",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/black-bean-burgers-with-chipotle-ketchup/rcp-20049605"
+    },
+    {
+        "recipe_name": "Buffalo chicken salad wrap",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/buffalo-chicken-salad-wrap/rcp-20049975"
+    },
+    {
+        "recipe_name": "Chicken and coleslaw wrap",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/chicken-and-coleslaw-wrap/rcp-20049756"
+    },
+    {
+        "recipe_name": "Chicken burritos",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/chicken-burritos/rcp-20049979"
+    },
+    {
+        "recipe_name": "Chicken Caesar pitas",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/chicken-caesar-pitas/rcp-20049754"
+    },
+    {
+        "recipe_name": "Chicken sliders",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/chicken-sliders/rcp-20049963"
+    },
+    {
+        "recipe_name": "Grilled portobello mushroom burgers",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/grilled-portobello-mushroom-burgers/rcp-20049669"
+    },
+    {
+        "recipe_name": "Grilled salmon on sourdough bread",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/grilled-salmon-on-sourdough-bread/rcp-20049670"
+    },
+    {
+        "recipe_name": "Philly steak sandwich",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/philly-steak-sandwich/rcp-20049801"
+    },
+    {
+        "recipe_name": "Sloppy Joes",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/sloppy-joes/rcp-20049822"
+    },
+    {
+        "recipe_name": "Smoked Gouda and vegetable poached egg sandwich",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/smoked-gouda-and-vegetable-poached-egg-sandwich/rcp-20197751"
+    },
+    {
+        "recipe_name": "Tandoori chicken wrap",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/tandoori-chicken-wrap/rcp-20049974"
+    },
+    {
+        "recipe_name": "Tomato-basil sandwich",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/tomato-basil-sandwich/rcp-20135113"
+    },
+    {
+        "recipe_name": "Tuna pita pockets",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/tuna-pita-pockets/rcp-20049842"
+    },
+    {
+        "recipe_name": "Tuna salad sandwiches",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/tuna-salad-sandwiches/rcp-20049843"
+    },
+    {
+        "recipe_name": "Turkey pesto melt",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/turkey-pesto-melt/rcp-20197769"
+    },
+    {
+        "recipe_name": "Turkey wrap",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/turkey-wrap/rcp-20146131"
+    },
+    {
+        "recipe_name": "Artichoke dip",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/artichoke-dip/rcp-20049969"
+    },
+    {
+        "recipe_name": "Avocado dip",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/avocado-dip/rcp-20049634"
+    },
+    {
+        "recipe_name": "Avocado salsa",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/avocado-salsa/rcp-20197658"
+    },
+    {
+        "recipe_name": "Banana pecan compote",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/banana-pecan-compote/rcp-20197674"
+    },
+    {
+        "recipe_name": "Basil butter and sun-dried tomato sauce",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/basil-butter-and-sundried-tomato-sauce/rcp-20049738"
+    },
+    {
+        "recipe_name": "Black bean and corn relish",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/black-bean-and-corn-relish/rcp-20049744"
+    },
+    {
+        "recipe_name": "Blue cheese dressing",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/blue-cheese-dressing/rcp-20049961"
+    },
+    {
+        "recipe_name": "Caramelized balsamic vinaigrette",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/caramelized-balsamic-vinaigrette/rcp-20197686"
+    },
+    {
+        "recipe_name": "Cilantro lime dressing",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/cilantro-lime-dressing/rcp-20197693"
+    },
+    {
+        "recipe_name": "Citrus remoulade",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/citrus-remoulade/rcp-20197694"
+    },
+    {
+        "recipe_name": "Cranberry orange glaze",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/cranberry-orange-glaze/rcp-20049654"
+    },
+    {
+        "recipe_name": "Grilled mango chutney",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/grilled-mango-chutney/rcp-20049701"
+    },
+    {
+        "recipe_name": "Guacamole with beans",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/guacamole/rcp-20049980"
+    },
+    {
+        "recipe_name": "House ranch dressing",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/house-ranch-dressing/rcp-20197723"
+    },
+    {
+        "recipe_name": "Italian salad dressing",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/italian-salad-dressing/rcp-20135329"
+    },
+    {
+        "recipe_name": "Lemon or lime glaze for chicken, fish or vegetables",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/lemon-or-lime-glaze-for-chicken-fish-or-vegetables/rcp-20049793"
+    },
+    {
+        "recipe_name": "Low-fat turkey gravy",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/turkey-gravy/rcp-20049921"
+    },
+    {
+        "recipe_name": "Mango salsa",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/mango-salsa/rcp-20049985"
+    },
+    {
+        "recipe_name": "Orange basil vinaigrette",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/orange-basil-vinaigrette/rcp-20049685"
+    },
+    {
+        "recipe_name": "Peach honey spread",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/peach-honey-spread/rcp-20049799"
+    },
+    {
+        "recipe_name": "Peanut butter hummus",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/peanut-butter-hummus/rcp-20197732"
+    },
+    {
+        "recipe_name": "Pepper sauce",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/pepper-sauce/rcp-20049965"
+    },
+    {
+        "recipe_name": "Pico de gallo",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/pico-de-gallo/rcp-20197734"
+    },
+    {
+        "recipe_name": "Roasted red bell pepper pineapple salsa",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/roasted-red-pepper-pineapple-salsa/rcp-20197744"
+    },
+    {
+        "recipe_name": "Roasted red pepper pesto",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/red-pepper-pesto/rcp-20197745"
+    },
+    {
+        "recipe_name": "Savory vegetable dip",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/savory-vegetable-dip/rcp-20050001"
+    },
+    {
+        "recipe_name": "Seasoned rice mix",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/seasoned-rice-mix/rcp-20125124"
+    },
+    {
+        "recipe_name": "Sherried mushroom sauce",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/sherried-mushroom-sauce/rcp-20049711"
+    },
+    {
+        "recipe_name": "Spinach dip with mushrooms",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/spinach-dip-with-mushrooms/rcp-20049828"
+    },
+    {
+        "recipe_name": "Tzatziki sauce",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/tzatziki-sauce/rcp-20197770"
+    },
+    {
+        "recipe_name": "Vegetable salsa",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/vegetable-salsa/rcp-20049846"
+    },
+    {
+        "recipe_name": "Acorn squash with apples",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/acorn-squash-with-apples/rcp-20049731"
+    },
+    {
+        "recipe_name": "Artichokes alla Romana",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/artichokes-alla-romana/rcp-20049865"
+    },
+    {
+        "recipe_name": "Asparagus with hazelnut gremolata",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/asparagus-with-hazelnut-gremolata/rcp-20049602"
+    },
+    {
+        "recipe_name": "Baby minted carrots",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/baby-minted-carrots/rcp-20049635"
+    },
+    {
+        "recipe_name": "Baked apples with cherries and almonds",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/baked-apples-with-cherries-and-almonds/rcp-20049603"
+    },
+    {
+        "recipe_name": "Black bean cakes",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/black-bean-cakes/rcp-20049745"
+    },
+    {
+        "recipe_name": "Braised celery root",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/braised-celery-root/rcp-20049866"
+    },
+    {
+        "recipe_name": "Braised kale with cherry tomatoes",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/braised-kale-with-cherry-tomatoes/rcp-20049864"
+    },
+    {
+        "recipe_name": "Broccoli with garlic and lemon",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/broccoli-with-garlic-and-lemon/rcp-20197681"
+    },
+    {
+        "recipe_name": "Brown rice pilaf",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/brown-rice-pilaf-with-asparagus-and-mushrooms/rcp-20049647"
+    },
+    {
+        "recipe_name": "Brown rice pilaf",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/brown-rice-pilaf/rcp-20049876"
+    },
+    {
+        "recipe_name": "Brussels sprouts with shallots and lemon",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/brussels-sprouts-with-shallots-and-lemon/rcp-20049854"
+    },
+    {
+        "recipe_name": "Cauliflower mashed 'potatoes'",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/cauliflower-mashed-potatoes/rcp-20049924"
+    },
+    {
+        "recipe_name": "Cheesy baked zucchini",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/cheesy-baked-zucchini/rcp-20049949"
+    },
+    {
+        "recipe_name": "Chinese-style asparagus",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/chinesestyle-asparagus/rcp-20049762"
+    },
+    {
+        "recipe_name": "Classic Boston baked beans",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/classic-boston-baked-beans/rcp-20049606"
+    },
+    {
+        "recipe_name": "Corn pudding",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/corn-pudding/rcp-20166401"
+    },
+    {
+        "recipe_name": "Creamed Swiss chard",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/creamed-swiss-chard/rcp-20049862"
+    },
+    {
+        "recipe_name": "Creole-style black-eyed peas",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/creolestyle-blackeyed-peas/rcp-20049644"
+    },
+    {
+        "recipe_name": "Eggplant with toasted spices",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/eggplant-with-toasted-spices/rcp-20049861"
+    },
+    {
+        "recipe_name": "Fresh fruit kebabs",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/fresh-fruit-kebabs-with-lemon-lime-dip/rcp-20049779"
+    },
+    {
+        "recipe_name": "Garlic mashed potatoes",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/garlic-mashed-potatoes/rcp-20049783"
+    },
+    {
+        "recipe_name": "Ginger-marinated grilled portobello mushrooms",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/ginger-marinated-grilled-portobello-mushrooms/rcp-20049663"
+    },
+    {
+        "recipe_name": "Glazed root vegetables",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/glazed-root-vegetables/rcp-20049785"
+    },
+    {
+        "recipe_name": "Granola with raisins, apples and cinnamon",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/granola-with-raisins-apples-and-cinnamon/rcp-20049664"
+    },
+    {
+        "recipe_name": "Green beans with red pepper and garlic",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/green-beans-with-red-pepper-and-garlic/rcp-20049610"
+    },
+    {
+        "recipe_name": "Holiday green bean casserole",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/holiday-green-bean-casserole/rcp-20146133"
+    },
+    {
+        "recipe_name": "Honey sage carrots",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/honey-sage-carrots/rcp-20197722"
+    },
+    {
+        "recipe_name": "Honey-glazed sweet potatoes",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/honey-glazed-sweet-potatoes/rcp-20049674"
+    },
+    {
+        "recipe_name": "Lean country-style breakfast sausage",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/lean-countrystyle-breakfast-sausage/rcp-20049769"
+    },
+    {
+        "recipe_name": "Lemon rice with golden raisins and almonds",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/lemon-rice-with-golden-raisins-and-almonds/rcp-20049678"
+    },
+    {
+        "recipe_name": "Lentil ragout",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/lentil-ragout/rcp-20197726"
+    },
+    {
+        "recipe_name": "Polenta with red pepper coulis",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/polenta-with-roasted-red-pepper-coulis/rcp-20049879"
+    },
+    {
+        "recipe_name": "Potato salad",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/potato-salad/rcp-20049967"
+    },
+    {
+        "recipe_name": "Quinoa risotto with arugula and Parmesan",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/quinoa-risotto-with-arugula-and-parmesan/rcp-20049874"
+    },
+    {
+        "recipe_name": "Ratatouille with roasted tomato vinaigrette",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/ratatouille-with-roasted-tomato-vinaigrette/rcp-20049870"
+    },
+    {
+        "recipe_name": "Roasted asparagus and wild mushrooms",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/roasted-asparagus-and-wild-mushrooms/rcp-20049948"
+    },
+    {
+        "recipe_name": "Roasted butternut squash fries",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/roasted-butternut-squash-fries/rcp-20197740"
+    },
+    {
+        "recipe_name": "Roasted green beans",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/roasted-green-beans/rcp-20197742"
+    },
+    {
+        "recipe_name": "Roasted potatoes",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/roasted-potatoes/rcp-20049780"
+    },
+    {
+        "recipe_name": "Roasted potatoes with garlic and herbs",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/roasted-potatoes-with-garlic-and-herbs/rcp-20049702"
+    },
+    {
+        "recipe_name": "Roasted winter squash with wild rice and cranberries",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/roasted-winter-squash-with-wild-rice-and-cranberries/rcp-20146134"
+    },
+    {
+        "recipe_name": "Salad greens with squash",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/salad-greens-with-acorn-squash/rcp-20049920"
+    },
+    {
+        "recipe_name": "Sauteed fresh corn",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/sauteed-fresh-corn/rcp-20049817"
+    },
+    {
+        "recipe_name": "Sauteed zucchini coins",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/sauteed-zucchini-coins/rcp-20049708"
+    },
+    {
+        "recipe_name": "Savory buckwheat pilaf with toasted spices",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/savory-buckwheat-pilaf-with-toasted-spices/rcp-20049877"
+    },
+    {
+        "recipe_name": "Seared Belgian endive",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/seared-endive/rcp-20049709"
+    },
+    {
+        "recipe_name": "Shrimp ceviche",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/shrimp-ceviche/rcp-20135305"
+    },
+    {
+        "recipe_name": "Sichuan broccoli and cauliflower",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/sichuan-broccoli-and-cauliflower/rcp-20049621"
+    },
+    {
+        "recipe_name": "Southwest stuffed zucchini",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/southwest-stuffed-zucchini/rcp-20135306"
+    },
+    {
+        "recipe_name": "Spicy red cabbage",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/spicy-red-cabbage/rcp-20049827"
+    },
+    {
+        "recipe_name": "Spicy snow peas",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/healthy-recipes/rcp-20049826"
+    },
+    {
+        "recipe_name": "Stuffing with cranberries",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/stuffing-with-cranberries/rcp-20049719"
+    },
+    {
+        "recipe_name": "Sweet carrots",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/sweet-carrots/rcp-20049722"
+    },
+    {
+        "recipe_name": "Sweet potatoes and roasted bananas",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/sweet-potatoes-and-roasted-bananas/rcp-20049837"
+    },
+    {
+        "recipe_name": "Tangy green beans",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/tangy-green-beans/rcp-20049933"
+    },
+    {
+        "recipe_name": "Thyme roasted beets",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/thyme-roasted-beets/rcp-20197766"
+    },
+    {
+        "recipe_name": "Wild rice or quinoa stuffing",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/wild-rice-or-quinoa-stuffing/rcp-20049945"
+    },
+    {
+        "recipe_name": "Wild rice pilaf with cranberries and apples",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/wild-rice-pilaf-with-cranberries-and-apples/rcp-20049729"
+    },
+    {
+        "recipe_name": "Beef stew with fennel and shallots",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/beef-stew-with-fennel-and-shallots/rcp-20049852"
+    },
+    {
+        "recipe_name": "Carrot soup",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/carrot-soup/rcp-20049649"
+    },
+    {
+        "recipe_name": "Chicken adobo soup with bok choy",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/chicken-adobo-soup-with-bok-choy/rcp-20049894"
+    },
+    {
+        "recipe_name": "Clam chowder",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/clam-chowder/rcp-20049964"
+    },
+    {
+        "recipe_name": "Cold potato-leek soup (vichyssoise)",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/cold-potatoleek-soup-vichyssoise/rcp-20049767"
+    },
+    {
+        "recipe_name": "Cream of wild rice soup",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/cream-of-wild-rice-soup/rcp-20049972"
+    },
+    {
+        "recipe_name": "Creamy asparagus soup",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/creamy-asparagus-soup/rcp-20049771"
+    },
+    {
+        "recipe_name": "Curried carrot soup",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/curried-carrot-soup/rcp-20049895"
+    },
+    {
+        "recipe_name": "Curried cream of tomato soup with apples",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/curried-cream-of-tomato-soup-with-apples/rcp-20049772"
+    },
+    {
+        "recipe_name": "Easy vegetable stock",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/easy-vegetable-stock/rcp-20049898"
+    },
+    {
+        "recipe_name": "Fire roasted corn soup",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/fire-roasted-corn-soup/rcp-20197716"
+    },
+    {
+        "recipe_name": "French onion soup",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/french-onion-soup/rcp-20197717"
+    },
+    {
+        "recipe_name": "Fresh tomato soup with crispy herb toasts",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/fresh-tomato-soup-with-crispy-herb-toasts/rcp-20049891"
+    },
+    {
+        "recipe_name": "Gazpacho with chickpeas",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/gazpacho-with-garbanzo-beans/rcp-20049662"
+    },
+    {
+        "recipe_name": "Home-style turkey soup",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/homestyle-turkey-soup/rcp-20049673"
+    },
+    {
+        "recipe_name": "Low-sodium chicken stock",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/easy-chicken-stock/rcp-20049897"
+    },
+    {
+        "recipe_name": "Minestrone soup",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/minestrone-soup/rcp-20049680"
+    },
+    {
+        "recipe_name": "Mushroom barley soup",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/mushroom-barley-soup/rcp-20197728"
+    },
+    {
+        "recipe_name": "Potato soup with apples and Brie",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/potato-soup-with-apples-and-brie-cheese/rcp-20049813"
+    },
+    {
+        "recipe_name": "Potato-fennel soup",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/potatofennel-soup/rcp-20049814"
+    },
+    {
+        "recipe_name": "Pumpkin soup",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/pumpkin-soup/rcp-20049697"
+    },
+    {
+        "recipe_name": "Quibebe soup",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/quibebe-soup/rcp-20197738"
+    },
+    {
+        "recipe_name": "Roasted squash soup",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/roasted-squash-soup/rcp-20049957"
+    },
+    {
+        "recipe_name": "Split pea soup",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/split-pea-soup/rcp-20049892"
+    },
+    {
+        "recipe_name": "Steamy salmon chowder",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/salmon-chowder/rcp-20125111"
+    },
+    {
+        "recipe_name": "Summer vegetable soup",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/summer-vegetable-soup/rcp-20049896"
+    },
+    {
+        "recipe_name": "Thai peanut beef",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/thai-peanut-beef/rcp-20197765"
+    },
+    {
+        "recipe_name": "Turkey bean soup",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/turkey-bean-soup/rcp-20146128"
+    },
+    {
+        "recipe_name": "Tuscan white bean stew",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/tuscan-white-bean-stew/rcp-20049889"
+    },
+    {
+        "recipe_name": "Vegetable, lentil and garbanzo bean stew",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/vegetable-lentil-garbanzo-bean-stew/rcp-20157577"
+    },
+    {
+        "recipe_name": "Vegetarian chili",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/vegetarian-chili/rcp-20049993"
+    },
+    {
+        "recipe_name": "White chicken chili",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/white-chicken-chili/rcp-20049849"
+    },
+    {
+        "recipe_name": "Wild rice mushroom soup",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/wild-rice-mushroom-soup/rcp-20049930"
+    },
+    {
+        "recipe_name": "Zesty tomato soup",
+        "source_url": "https://www.mayoclinic.org/healthy-lifestyle/recipes/zesty-tomato-soup/rcp-20049851"
+    }
+]
