@@ -1,0 +1,1 @@
+uvicorn recipe_assistant.server:app --reload
