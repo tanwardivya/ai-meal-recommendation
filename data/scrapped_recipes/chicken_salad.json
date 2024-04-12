@@ -1,0 +1,525 @@
+{
+    "recpies_authenticity": [
+        {
+            "id": "13",
+            "recipe_name": "grilled lemon herb chicken salad",
+            "ingredients": "2 boneless, skinless chicken breasts (6 ounces each),1 tablespoon olive oil,2 tablespoons fresh lemon juice,1 garlic clove, minced,1 teaspoon dried oregano,1/4 teaspoon black pepper,4 cups mixed salad greens,1 cup cherry tomatoes, halved,1 small cucumber, sliced,1/4 red onion, thinly sliced,1/4 cup feta cheese, crumbled,1/4 cup Kalamata olives, pitted,2 tablespoons red wine vinegar,1 tablespoon extra-virgin olive oil,1/2 teaspoon Dijon mustard",
+            "ingredients_ner": [
+                "chicken breasts",
+                "olive oil",
+                "lemon juice",
+                "garlic",
+                "dried oregano",
+                "black pepper",
+                "salad greens",
+                "cherry tomatoes",
+                "cucumber",
+                "red onion",
+                "feta cheese",
+                "Kalamata olives",
+                "red wine vinegar",
+                "extra-virgin olive oil",
+                "Dijon mustard"
+            ],
+            "matched_recipes": [
+                {
+                    "id": "180",
+                    "recipe_name": "chicken salad with pineapple and balsamic vinaigrette",
+                    "ingredients": "4 boneless, skinless chicken breasts, each about 5 ounces,1 tablespoon olive oil,1 can (8 ounces) unsweetened pineapple chunks, drained except for 2 tablespoons juice,2 cups broccoli florets,4 cups fresh baby spinach leaves,1/2 cup thinly sliced red onions,1/4 cup olive oil,2 tablespoons balsamic vinegar,2 teaspoons sugar,1/4 teaspoon ground cinnamon",
+                    "ingredients_ner": [
+                        "chicken breasts",
+                        "olive oil",
+                        "pineapple chunks",
+                        "broccoli florets",
+                        "baby spinach leaves",
+                        "red onions",
+                        "balsamic vinegar",
+                        "sugar",
+                        "ground cinnamon"
+                    ],
+                    "matched_percentage": 40.0,
+                    "matched_words": [
+                        "oil",
+                        "chicken",
+                        "olive",
+                        "vinegar",
+                        "red",
+                        "breasts"
+                    ]
+                },
+                {
+                    "id": "181",
+                    "recipe_name": "chicken salad with thai flavors",
+                    "ingredients": "2 cups low-sodium chicken or vegetable stock or broth,2 stalks lemongrass, bottom 6 inches only, thinly sliced (about 1/3 cup),1/2-inch piece fresh ginger, thinly sliced (about 1 tablespoon),1 green (spring) onion, halved lengthwise, plus 2 green onions, thinly sliced,3 fresh cilantro sprigs, plus 3 tablespoons chopped leaves,1 1/4 pounds skinless, boneless chicken breasts,2 tablespoons fresh lime juice,2 tablespoons rice vinegar,1 tablespoon fish sauce,1 tablespoon low-sodium soy sauce,1 tablespoon minced shallot,1 tablespoon peanut butter,1 garlic clove,3 tablespoons extra-virgin olive oil,1/2 bunch fresh spinach (about 4 cups),1/2 small head green cabbage (about 6 cups),1 large carrot, peeled, halved lengthwise, and thinly sliced on the diagonal,1 tablespoon unsalted dry-roasted peanuts, crushed",
+                    "ingredients_ner": [
+                        "low-sodium chicken",
+                        "vegetable stock",
+                        "broth",
+                        "lemongrass",
+                        "ginger",
+                        "green onion",
+                        "cilantro",
+                        "chicken breasts",
+                        "lime juice",
+                        "rice vinegar",
+                        "fish sauce",
+                        "low-sodium soy sauce",
+                        "shallot",
+                        "peanut butter",
+                        "garlic clove",
+                        "extra-virgin olive oil",
+                        "spinach",
+                        "green cabbage",
+                        "carrot",
+                        "unsalted dry-roasted peanuts"
+                    ],
+                    "matched_percentage": 60.0,
+                    "matched_words": [
+                        "oil",
+                        "chicken",
+                        "juice",
+                        "olive",
+                        "garlic",
+                        "onion",
+                        "vinegar",
+                        "extra-virgin",
+                        "breasts"
+                    ]
+                },
+                {
+                    "id": "208",
+                    "recipe_name": "grilled chicken salad with olives and oranges",
+                    "ingredients": "1/2 cup red wine vinegar,4 garlic cloves, minced,1 tablespoon extra-virgin olive oil,1 tablespoon finely chopped red onion,1 tablespoon finely chopped celery,Cracked black pepper, to taste,4 boneless, skinless chicken breasts, each 4 ounces,2 garlic cloves,8 cups leaf lettuce, washed and dried,16 large ripe (black) olives,2 navel oranges, peeled and sliced",
+                    "ingredients_ner": [
+                        "red wine vinegar",
+                        "extra-virgin olive oil",
+                        "red onion",
+                        "celery",
+                        "Cracked black pepper",
+                        "boneless, skinless chicken breasts",
+                        "leaf lettuce",
+                        "ripe olives",
+                        "navel oranges"
+                    ],
+                    "matched_percentage": 80.0,
+                    "matched_words": [
+                        "oil",
+                        "chicken",
+                        "olive",
+                        "olives",
+                        "onion",
+                        "black",
+                        "wine",
+                        "vinegar",
+                        "pepper",
+                        "extra-virgin",
+                        "red",
+                        "breasts"
+                    ]
+                },
+                {
+                    "id": "348",
+                    "recipe_name": "chicken salad with pineapple and balsamic vinaigrette",
+                    "ingredients": "4 boneless, skinless chicken breasts, each about 5 ounces,1 tablespoon olive oil,1 can (8 ounces) unsweetened pineapple chunks, drained except for 2 tablespoons juice,2 cups broccoli florets,4 cups fresh baby spinach leaves,1/2 cup thinly sliced red onions,1/4 cup olive oil,2 tablespoons balsamic vinegar,2 teaspoons sugar,1/4 teaspoon ground cinnamon",
+                    "ingredients_ner": [
+                        "chicken breasts",
+                        "olive oil",
+                        "pineapple chunks",
+                        "broccoli florets",
+                        "baby spinach leaves",
+                        "red onions",
+                        "balsamic vinegar",
+                        "sugar",
+                        "ground cinnamon"
+                    ],
+                    "matched_percentage": 40.0,
+                    "matched_words": [
+                        "oil",
+                        "chicken",
+                        "olive",
+                        "vinegar",
+                        "red",
+                        "breasts"
+                    ]
+                },
+                {
+                    "id": "349",
+                    "recipe_name": "chicken salad with thai flavors",
+                    "ingredients": "2 cups low-sodium chicken or vegetable stock or broth,2 stalks lemongrass, bottom 6 inches only, thinly sliced (about 1/3 cup),1/2-inch piece fresh ginger, thinly sliced (about 1 tablespoon),1 green (spring) onion, halved lengthwise, plus 2 green onions, thinly sliced,3 fresh cilantro sprigs, plus 3 tablespoons chopped leaves,1 1/4 pounds skinless, boneless chicken breasts,2 tablespoons fresh lime juice,2 tablespoons rice vinegar,1 tablespoon fish sauce,1 tablespoon low-sodium soy sauce,1 tablespoon minced shallot,1 tablespoon peanut butter,1 garlic clove,3 tablespoons extra-virgin olive oil,1/2 bunch fresh spinach (about 4 cups),1/2 small head green cabbage (about 6 cups),1 large carrot, peeled, halved lengthwise, and thinly sliced on the diagonal,1 tablespoon unsalted dry-roasted peanuts, crushed",
+                    "ingredients_ner": [
+                        "low-sodium chicken or vegetable stock or broth",
+                        "lemongrass",
+                        "fresh ginger",
+                        "green onion",
+                        "cilantro",
+                        "skinless, boneless chicken breasts",
+                        "fresh lime juice",
+                        "rice vinegar",
+                        "fish sauce",
+                        "low-sodium soy sauce",
+                        "shallot",
+                        "peanut butter",
+                        "garlic clove",
+                        "extra-virgin olive oil",
+                        "fresh spinach",
+                        "green cabbage",
+                        "carrot",
+                        "unsalted dry-roasted peanuts"
+                    ],
+                    "matched_percentage": 60.0,
+                    "matched_words": [
+                        "oil",
+                        "chicken",
+                        "juice",
+                        "olive",
+                        "garlic",
+                        "onion",
+                        "vinegar",
+                        "extra-virgin",
+                        "breasts"
+                    ]
+                },
+                {
+                    "id": "360",
+                    "recipe_name": "grilled chicken salad with buttermilk dressing",
+                    "ingredients": "1/3 cup fat-free mayonnaise,1/4 cup low-fat buttermilk,2 finely chopped tablespoons fresh dill,1 teaspoon minced garlic,Cracked black pepper, to taste,4 boneless, skinless chicken breasts (4 ounces each),2 teaspoons extra-virgin olive oil,8 cups torn salad greens,1 red bell pepper, sliced,1/2 sweet onion, sliced",
+                    "ingredients_ner": [
+                        "mayonnaise",
+                        "buttermilk",
+                        "dill",
+                        "garlic",
+                        "black pepper",
+                        "chicken breasts",
+                        "olive oil",
+                        "salad greens",
+                        "red bell pepper",
+                        "sweet onion"
+                    ],
+                    "matched_percentage": 73.33333333333333,
+                    "matched_words": [
+                        "oil",
+                        "greens",
+                        "chicken",
+                        "olive",
+                        "garlic",
+                        "black",
+                        "salad",
+                        "onion",
+                        "pepper",
+                        "red",
+                        "breasts"
+                    ]
+                },
+                {
+                    "id": "361",
+                    "recipe_name": "grilled chicken salad with olives and oranges",
+                    "ingredients": "1/2 cup red wine vinegar,4 garlic cloves, minced,1 tablespoon extra-virgin olive oil,1 tablespoon finely chopped red onion,1 tablespoon finely chopped celery,Cracked black pepper, to taste,4 boneless, skinless chicken breasts, each 4 ounces,2 garlic cloves,8 cups leaf lettuce, washed and dried,16 large ripe (black) olives,2 navel oranges, peeled and sliced",
+                    "ingredients_ner": [
+                        "red wine vinegar",
+                        "extra-virgin olive oil",
+                        "red onion",
+                        "celery",
+                        "Cracked black pepper",
+                        "boneless, skinless chicken breasts",
+                        "leaf lettuce",
+                        "ripe olives",
+                        "navel oranges"
+                    ],
+                    "matched_percentage": 80.0,
+                    "matched_words": [
+                        "oil",
+                        "chicken",
+                        "olive",
+                        "olives",
+                        "onion",
+                        "black",
+                        "wine",
+                        "vinegar",
+                        "pepper",
+                        "extra-virgin",
+                        "red",
+                        "breasts"
+                    ]
+                },
+                {
+                    "id": "387",
+                    "recipe_name": "buffalo chicken salad wrap",
+                    "ingredients": "3 4-ounce chicken breasts (12 ounces total),2 whole chipotle peppers,1/4 cup white wine vinegar,1/4 cup low-calorie mayonnaise,2 stalks celery, diced (about 1/2 cup),2 carrots, cut into matchsticks (about 1/2 cup),1 small yellow onion, diced (about 1/2 cup),1/2 cup raw rutabaga or jicama, cut into matchsticks,4 ounces raw spinach, chopped (about 4 cups),2 whole-grain tortillas (12-inch diameter)",
+                    "ingredients_ner": [
+                        "chicken breasts",
+                        "chipotle peppers",
+                        "white wine vinegar",
+                        "low-calorie mayonnaise",
+                        "celery",
+                        "carrots",
+                        "yellow onion",
+                        "rutabaga",
+                        "jicama",
+                        "spinach",
+                        "whole-grain tortillas"
+                    ],
+                    "matched_percentage": 33.33333333333333,
+                    "matched_words": [
+                        "chicken",
+                        "onion",
+                        "wine",
+                        "vinegar",
+                        "breasts"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "recipe_name": "grilled chicken salad with avocado dressing",
+            "ingredients": "2 boneless, skinless chicken breasts, 1 tablespoon olive oil, 1 teaspoon smoked paprika, Salt and pepper, to taste, 6 cups mixed salad greens, 1 cucumber, sliced, 1 cup cherry tomatoes, halved, 1/2 red onion, thinly sliced, 1 avocado, 1/4 cup Greek yogurt, 2 tablespoons lime juice, 1 clove garlic, minced, 1 tablespoon fresh cilantro, chopped, 2 tablespoons water, to thin",
+            "ingredients_ner": [
+                "chicken breasts",
+                "olive oil",
+                "smoked paprika",
+                "salt",
+                "pepper",
+                "mixed salad greens",
+                "cucumber",
+                "cherry tomatoes",
+                "red onion",
+                "avocado",
+                "Greek yogurt",
+                "lime juice",
+                "garlic",
+                "cilantro",
+                "water"
+            ],
+            "matched_recipes": [
+                {
+                    "id": "180",
+                    "recipe_name": "chicken salad with pineapple and balsamic vinaigrette",
+                    "ingredients": "4 boneless, skinless chicken breasts, each about 5 ounces,1 tablespoon olive oil,1 can (8 ounces) unsweetened pineapple chunks, drained except for 2 tablespoons juice,2 cups broccoli florets,4 cups fresh baby spinach leaves,1/2 cup thinly sliced red onions,1/4 cup olive oil,2 tablespoons balsamic vinegar,2 teaspoons sugar,1/4 teaspoon ground cinnamon",
+                    "ingredients_ner": [
+                        "chicken breasts",
+                        "olive oil",
+                        "pineapple chunks",
+                        "broccoli florets",
+                        "baby spinach leaves",
+                        "red onions",
+                        "balsamic vinegar",
+                        "sugar",
+                        "ground cinnamon"
+                    ],
+                    "matched_percentage": 33.33333333333333,
+                    "matched_words": [
+                        "oil",
+                        "chicken",
+                        "olive",
+                        "red",
+                        "breasts"
+                    ]
+                },
+                {
+                    "id": "181",
+                    "recipe_name": "chicken salad with thai flavors",
+                    "ingredients": "2 cups low-sodium chicken or vegetable stock or broth,2 stalks lemongrass, bottom 6 inches only, thinly sliced (about 1/3 cup),1/2-inch piece fresh ginger, thinly sliced (about 1 tablespoon),1 green (spring) onion, halved lengthwise, plus 2 green onions, thinly sliced,3 fresh cilantro sprigs, plus 3 tablespoons chopped leaves,1 1/4 pounds skinless, boneless chicken breasts,2 tablespoons fresh lime juice,2 tablespoons rice vinegar,1 tablespoon fish sauce,1 tablespoon low-sodium soy sauce,1 tablespoon minced shallot,1 tablespoon peanut butter,1 garlic clove,3 tablespoons extra-virgin olive oil,1/2 bunch fresh spinach (about 4 cups),1/2 small head green cabbage (about 6 cups),1 large carrot, peeled, halved lengthwise, and thinly sliced on the diagonal,1 tablespoon unsalted dry-roasted peanuts, crushed",
+                    "ingredients_ner": [
+                        "low-sodium chicken or vegetable stock or broth",
+                        "lemongrass",
+                        "fresh ginger",
+                        "green onion",
+                        "cilantro",
+                        "skinless, boneless chicken breasts",
+                        "fresh lime juice",
+                        "rice vinegar",
+                        "fish sauce",
+                        "low-sodium soy sauce",
+                        "shallot",
+                        "peanut butter",
+                        "garlic clove",
+                        "extra-virgin olive oil",
+                        "fresh spinach",
+                        "green cabbage",
+                        "carrot",
+                        "unsalted dry-roasted peanuts"
+                    ],
+                    "matched_percentage": 60.0,
+                    "matched_words": [
+                        "oil",
+                        "chicken",
+                        "juice",
+                        "olive",
+                        "garlic",
+                        "cilantro",
+                        "onion",
+                        "lime",
+                        "breasts"
+                    ]
+                },
+                {
+                    "id": "208",
+                    "recipe_name": "grilled chicken salad with olives and oranges",
+                    "ingredients": "1/2 cup red wine vinegar,4 garlic cloves, minced,1 tablespoon extra-virgin olive oil,1 tablespoon finely chopped red onion,1 tablespoon finely chopped celery,Cracked black pepper, to taste,4 boneless, skinless chicken breasts, each 4 ounces,2 garlic cloves,8 cups leaf lettuce, washed and dried,16 large ripe (black) olives,2 navel oranges, peeled and sliced",
+                    "ingredients_ner": [
+                        "red wine vinegar",
+                        "extra-virgin olive oil",
+                        "red onion",
+                        "celery",
+                        "Cracked black pepper",
+                        "boneless, skinless chicken breasts",
+                        "leaf lettuce",
+                        "ripe olives",
+                        "navel oranges"
+                    ],
+                    "matched_percentage": 46.666666666666664,
+                    "matched_words": [
+                        "oil",
+                        "chicken",
+                        "olive",
+                        "onion",
+                        "pepper",
+                        "red",
+                        "breasts"
+                    ]
+                },
+                {
+                    "id": "348",
+                    "recipe_name": "chicken salad with pineapple and balsamic vinaigrette",
+                    "ingredients": "4 boneless, skinless chicken breasts, each about 5 ounces,1 tablespoon olive oil,1 can (8 ounces) unsweetened pineapple chunks, drained except for 2 tablespoons juice,2 cups broccoli florets,4 cups fresh baby spinach leaves,1/2 cup thinly sliced red onions,1/4 cup olive oil,2 tablespoons balsamic vinegar,2 teaspoons sugar,1/4 teaspoon ground cinnamon",
+                    "ingredients_ner": [
+                        "chicken breasts",
+                        "olive oil",
+                        "pineapple chunks",
+                        "broccoli florets",
+                        "baby spinach leaves",
+                        "red onions",
+                        "balsamic vinegar",
+                        "sugar",
+                        "ground cinnamon"
+                    ],
+                    "matched_percentage": 33.33333333333333,
+                    "matched_words": [
+                        "oil",
+                        "chicken",
+                        "olive",
+                        "red",
+                        "breasts"
+                    ]
+                },
+                {
+                    "id": "349",
+                    "recipe_name": "chicken salad with thai flavors",
+                    "ingredients": "2 cups low-sodium chicken or vegetable stock or broth,2 stalks lemongrass, bottom 6 inches only, thinly sliced (about 1/3 cup),1/2-inch piece fresh ginger, thinly sliced (about 1 tablespoon),1 green (spring) onion, halved lengthwise, plus 2 green onions, thinly sliced,3 fresh cilantro sprigs, plus 3 tablespoons chopped leaves,1 1/4 pounds skinless, boneless chicken breasts,2 tablespoons fresh lime juice,2 tablespoons rice vinegar,1 tablespoon fish sauce,1 tablespoon low-sodium soy sauce,1 tablespoon minced shallot,1 tablespoon peanut butter,1 garlic clove,3 tablespoons extra-virgin olive oil,1/2 bunch fresh spinach (about 4 cups),1/2 small head green cabbage (about 6 cups),1 large carrot, peeled, halved lengthwise, and thinly sliced on the diagonal,1 tablespoon unsalted dry-roasted peanuts, crushed",
+                    "ingredients_ner": [
+                        "low-sodium chicken or vegetable stock or broth",
+                        "lemongrass",
+                        "fresh ginger",
+                        "green onion",
+                        "cilantro",
+                        "skinless, boneless chicken breasts",
+                        "fresh lime juice",
+                        "rice vinegar",
+                        "fish sauce",
+                        "low-sodium soy sauce",
+                        "shallot",
+                        "peanut butter",
+                        "garlic clove",
+                        "extra-virgin olive oil",
+                        "fresh spinach",
+                        "green cabbage",
+                        "carrot",
+                        "unsalted dry-roasted peanuts"
+                    ],
+                    "matched_percentage": 60.0,
+                    "matched_words": [
+                        "oil",
+                        "chicken",
+                        "juice",
+                        "olive",
+                        "garlic",
+                        "cilantro",
+                        "onion",
+                        "lime",
+                        "breasts"
+                    ]
+                },
+                {
+                    "id": "360",
+                    "recipe_name": "grilled chicken salad with buttermilk dressing",
+                    "ingredients": "1/3 cup fat-free mayonnaise,1/4 cup low-fat buttermilk,2 finely chopped tablespoons fresh dill,1 teaspoon minced garlic,Cracked black pepper, to taste,4 boneless, skinless chicken breasts (4 ounces each),2 teaspoons extra-virgin olive oil,8 cups torn salad greens,1 red bell pepper, sliced,1/2 sweet onion, sliced",
+                    "ingredients_ner": [
+                        "mayonnaise",
+                        "buttermilk",
+                        "dill",
+                        "garlic",
+                        "black pepper",
+                        "chicken breasts",
+                        "olive oil",
+                        "salad greens",
+                        "red bell pepper",
+                        "sweet onion"
+                    ],
+                    "matched_percentage": 66.66666666666666,
+                    "matched_words": [
+                        "oil",
+                        "greens",
+                        "chicken",
+                        "olive",
+                        "garlic",
+                        "onion",
+                        "salad",
+                        "pepper",
+                        "red",
+                        "breasts"
+                    ]
+                },
+                {
+                    "id": "361",
+                    "recipe_name": "grilled chicken salad with olives and oranges",
+                    "ingredients": "1/2 cup red wine vinegar,4 garlic cloves, minced,1 tablespoon extra-virgin olive oil,1 tablespoon finely chopped red onion,1 tablespoon finely chopped celery,Cracked black pepper, to taste,4 boneless, skinless chicken breasts, each 4 ounces,2 garlic cloves,8 cups leaf lettuce, washed and dried,16 large ripe (black) olives,2 navel oranges, peeled and sliced",
+                    "ingredients_ner": [
+                        "red wine vinegar",
+                        "extra-virgin olive oil",
+                        "red onion",
+                        "celery",
+                        "Cracked black pepper",
+                        "boneless, skinless chicken breasts",
+                        "leaf lettuce",
+                        "ripe olives",
+                        "navel oranges"
+                    ],
+                    "matched_percentage": 46.666666666666664,
+                    "matched_words": [
+                        "oil",
+                        "chicken",
+                        "olive",
+                        "onion",
+                        "pepper",
+                        "red",
+                        "breasts"
+                    ]
+                },
+                {
+                    "id": "387",
+                    "recipe_name": "buffalo chicken salad wrap",
+                    "ingredients": "3 4-ounce chicken breasts (12 ounces total),2 whole chipotle peppers,1/4 cup white wine vinegar,1/4 cup low-calorie mayonnaise,2 stalks celery, diced (about 1/2 cup),2 carrots, cut into matchsticks (about 1/2 cup),1 small yellow onion, diced (about 1/2 cup),1/2 cup raw rutabaga or jicama, cut into matchsticks,4 ounces raw spinach, chopped (about 4 cups),2 whole-grain tortillas (12-inch diameter)",
+                    "ingredients_ner": [
+                        "chicken breasts",
+                        "chipotle peppers",
+                        "white wine vinegar",
+                        "low-calorie mayonnaise",
+                        "celery",
+                        "carrots",
+                        "yellow onion",
+                        "rutabaga",
+                        "jicama",
+                        "spinach",
+                        "whole-grain tortillas"
+                    ],
+                    "matched_percentage": 20.0,
+                    "matched_words": [
+                        "chicken",
+                        "onion",
+                        "breasts"
+                    ]
+                }
+            ]
+        }
+    ]
+}

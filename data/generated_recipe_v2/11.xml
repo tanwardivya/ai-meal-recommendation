@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<recipe>
+ <recipe_name>
+  Spinach and Mushroom Egg White Frittata
+ </recipe_name>
+ <ingredients>
+  - egg whites: 8
+- fresh spinach: 3 cups
+- cremini mushrooms (sliced): 2 cups
+- cherry tomatoes (halved): 1 cup
+- low-fat feta cheese (crumbled): 1/2 cup
+- olive oil: 1 tablespoon
+- garlic (minced): 2 cloves
+- salt: 1/4 teaspoon
+- black pepper: 1/4 teaspoon
+- fresh basil (chopped, for garnish): 2 tablespoons
+ </ingredients>
+ <directions>
+  1. Preheat Oven: Preheat your oven to 375°F (190°C).
+2. Sauté Vegetables: Heat olive oil in a large oven-proof skillet over medium heat. Add mushrooms and sauté for 5-7 minutes until they start to brown. Add garlic and spinach and cook until spinach is wilted, about 2-3 minutes. Season with salt and pepper.
+3. Add Tomatoes: Stir in the cherry tomatoes and cook for an additional minute.
+4. Pour Egg Whites: Spread the vegetables in an even layer and pour the egg whites over the top. Cook for 2-3 minutes until the eggs start to set.
+5. Add Cheese: Sprinkle the crumbled feta cheese over the top of the frittata mixture.
+6. Bake Frittata: Transfer the skillet to the preheated oven and bake for 15-18 minutes, or until the frittata is set and the top is lightly golden.
+7. Garnish and Serve: Remove from oven and let it cool for a few minutes. Garnish with fresh basil before serving.
+ </directions>
+ <nutrition>
+  Total Carbohydrate: 10g, Dietary Fiber: 2g, Sodium: 550mg, Saturated Fat: 3g, Total Fat: 5g, Protein: 18g, Added Sugars: 0g, Total Sugars: 4g
+ </nutrition>
+ <total_calories_estimation>
+  - Total Calories for entire recipe : Approximately 400 calories for the entire recipe. 
+- Calories for each ingredient (using USDA Food API where applicable):
+    Egg Whites: 70 calories (from 8 egg whites)
+    Fresh Spinach: 20 calories
+    Cremini Mushrooms: 30 calories
+    Cherry Tomatoes: 30 calories
+    Low-fat Feta Cheese: 140 calories
+    Olive Oil: 120 calories
+    Garlic: Negligible
+    Salt, Black Pepper: Negligible
+    Fresh Basil: Negligible
+- Serving People: 4
+ </total_calories_estimation>
+</recipe>
