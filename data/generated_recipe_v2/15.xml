@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<recipe>
+ <recipe_name>
+  Mediterranean Stuffed Mushrooms
+ </recipe_name>
+ <ingredients>
+  - large cremini or button mushrooms: 16
+- extra-virgin olive oil: 2 tablespoons
+- garlic (minced): 2 cloves
+- spinach (chopped): 1 cup
+- feta cheese (crumbled): 1/2 cup
+- black olives (chopped): 1/4 cup
+- sun-dried tomatoes (chopped): 1/4 cup
+- fresh basil (chopped): 1 tablespoon
+- almond meal: 2 tablespoons
+- lemon zest: 1 teaspoon
+- salt: 1/4 teaspoon
+- black pepper: 1/8 teaspoon
+ </ingredients>
+ <directions>
+  1. Prepare Mushrooms: Preheat your oven to 375°F (190°C). Remove stems from mushrooms and finely chop the stems. Set the mushroom caps aside. 
+2. Cook Filling: In a skillet over medium heat, warm the olive oil. Add the chopped mushroom stems and garlic, sautéing for 2-3 minutes or until softened. Add spinach and cook until it wilts.
+3. Mix Ingredients: Remove skillet from heat. Stir in feta cheese, black olives, sun-dried tomatoes, basil, almond meal, and lemon zest. Season with salt and pepper.
+4. Stuff Mushrooms: Fill each mushroom cap with the spinach and feta mixture, pressing it in to stuff well.
+5. Bake: Arrange the stuffed mushrooms on a baking sheet. Bake for 15 to 20 minutes, or until the mushrooms are tender and the tops are lightly golden.
+6. Serve Warm: Allow the mushrooms to cool slightly before serving them to your guests.
+ </directions>
+ <nutrition>
+  Total Carbohydrate: 5g, Dietary Fiber: 1g, Sodium: 200mg, Saturated Fat: 2g, Total Fat: 7g, Protein: 4g, Added Sugars: 0g, Total Sugars: 2g
+ </nutrition>
+ <total_calories_estimation>
+  - Total Calories for entire recipe : Approximately 640 calories for the entire recipe.
+- Calories for each ingredient (based on USDA Food API):
+    Cremini/Button Mushrooms: 4 calories each x 16 = 64 calories
+    Extra-Virgin Olive Oil: 119 calories per tablespoon x 2 = 238 calories
+    Garlic: 9 calories for 2 cloves
+    Spinach: 7 calories per cup
+    Feta Cheese: 198 calories per 1/2 cup
+    Black Olives: 34 calories per 1/4 cup
+    Sun-Dried Tomatoes: 35 calories per 1/4 cup
+    Fresh Basil: Negligible
+    Almond Meal: 40 calories per 2 tablespoons
+    Lemon Zest: Negligible
+    Salt and Pepper: Negligible
+- Serving People: 8 (2 mushrooms per person)
+ </total_calories_estimation>
+</recipe>
