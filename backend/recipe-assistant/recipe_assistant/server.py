@@ -1,7 +1,9 @@
+import time
+import os
+
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
-
-import time
+import motor.motor_asyncio
 
 from recipe_assistant.routers import users
 
@@ -19,6 +21,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 app.include_router(users.router)
+client = motor.motor_asyncio.AsyncIOMotorClient(os.environ.get("MONGODB_CONNECTION_STRING"))
+db = client.agent
+user_collection = db.get_collection("users")
+
 
 
 @app.middleware("http")
