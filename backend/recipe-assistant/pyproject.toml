@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools >= 61.0","wheel>=0.42.0"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "recipe_assistant"
+requires-python = ">= 3.11.3"
+version = "0.1.0"
+description = "A Python package for managing and suggesting recipes."
+authors = [
+    { name = "Divya Tanwar", email = "divya.tanwar@outlook.com" },
+]
+readme = "README.md"
+keywords = ["recipes", "cooking", "food"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    # List your project dependencies here
+    # For example: "requests>=2.25.1",
+    "fastapi>=0.110.0",
+    "uvicorn>=0.28.0",
+    "python-multipart>=0.0.9",
+    "PyJWT>=2.8.0",
+    "pymongo[srv]==4.5.0",
+    "certifi==2024.2.2",
+    "motor==3.3.1",
+]
+
+[project.urls]
+Homepage = "https://example.com/recipe_assistant"
+Repository = "https://github.com/yourusername/recipe_assistant"
+Documentation = "https://recipe_assistant.readthedocs.io"
