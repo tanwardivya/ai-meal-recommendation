@@ -1,0 +1,97 @@
+{
+    "recpies_authenticity": [
+        {
+            "id": "9",
+            "recipe_name": "stuffed bell peppers",
+            "ingredients": "4 large bell peppers (any color), 1 cup quinoa (uncooked), 2 cups low-sodium vegetable broth, 1 tablespoon olive oil, 1 medium onion, chopped, 2 cloves garlic, minced, 1 zucchini, diced, 1 cup black beans, drained and rinsed, 1 cup corn kernels, fresh or frozen and thawed, 1 teaspoon chili powder, 1 teaspoon cumin, 1/2 teaspoon paprika, Salt and pepper, to taste, 1/2 cup grated low-fat cheddar cheese, Fresh cilantro or parsley for garnish",
+            "ingredients_ner": [
+                "bell peppers",
+                "quinoa",
+                "vegetable broth",
+                "olive oil",
+                "onion",
+                "garlic",
+                "zucchini",
+                "black beans",
+                "corn kernels",
+                "chili powder",
+                "cumin",
+                "paprika",
+                "salt",
+                "pepper",
+                "cheddar cheese",
+                "cilantro",
+                "parsley"
+            ],
+            "matched_recipes": [
+                {
+                    "id": "426",
+                    "recipe_name": "roasted red bell pepper pineapple salsa",
+                    "ingredients": "1/2 cup chopped roasted red bell pepper,1 cup chopped pineapple,1/4 cup finely chopped fresh cilantro,1/4 cup finely chopped red onion,2 tablespoons diced jalapeno pepper,2 teaspoons honey,1/4 teaspoon salt",
+                    "ingredients_ner": [
+                        "roasted red bell pepper",
+                        "pineapple",
+                        "fresh cilantro",
+                        "red onion",
+                        "jalapeno pepper",
+                        "honey",
+                        "salt"
+                    ],
+                    "matched_percentage": 29.411764705882355,
+                    "matched_words": [
+                        "salt",
+                        "onion",
+                        "cilantro",
+                        "pepper",
+                        "bell"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "16",
+            "recipe_name": "stuffed bell peppers with quinoa and black beans",
+            "ingredients": "4 large bell peppers, tops cut away and seeds removed,1 cup uncooked quinoa, rinsed,1 tablespoon olive oil,1 medium onion, diced,2 cloves garlic, minced,1 teaspoon ground cumin,1 teaspoon chili powder,1 can (15 ounces) black beans, drained and rinsed,1 cup frozen corn kernels, thawed,1 cup low-sodium vegetable broth,1/2 cup shredded reduced-fat cheddar cheese,1/4 cup chopped fresh cilantro,Salt and pepper to taste,Lime wedges for serving",
+            "ingredients_ner": [
+                "bell peppers",
+                "quinoa",
+                "olive oil",
+                "onion",
+                "garlic",
+                "ground cumin",
+                "chili powder",
+                "black beans",
+                "corn kernels",
+                "vegetable broth",
+                "cheddar cheese",
+                "cilantro",
+                "Salt",
+                "pepper",
+                "Lime wedges"
+            ],
+            "matched_recipes": [
+                {
+                    "id": "426",
+                    "recipe_name": "roasted red bell pepper pineapple salsa",
+                    "ingredients": "1/2 cup chopped roasted red bell pepper,1 cup chopped pineapple,1/4 cup finely chopped fresh cilantro,1/4 cup finely chopped red onion,2 tablespoons diced jalapeno pepper,2 teaspoons honey,1/4 teaspoon salt",
+                    "ingredients_ner": [
+                        "roasted red bell pepper",
+                        "pineapple",
+                        "fresh cilantro",
+                        "red onion",
+                        "jalapeno pepper",
+                        "honey",
+                        "salt"
+                    ],
+                    "matched_percentage": 26.666666666666668,
+                    "matched_words": [
+                        "onion",
+                        "pepper",
+                        "bell",
+                        "cilantro"
+                    ]
+                }
+            ]
+        }
+    ]
+}

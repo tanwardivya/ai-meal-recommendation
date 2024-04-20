@@ -1,0 +1,119 @@
+{
+    "recpies_authenticity": [
+        {
+            "id": "20",
+            "recipe_name": "almond and blueberry smoothie",
+            "ingredients": "1 cup unsweetened almond milk,1/2 cup Greek yogurt (low-fat, no added sugar),3/4 cup frozen blueberries,1 tablespoon almond butter,1 tablespoon chia seeds,1/2 teaspoon vanilla extract,2 teaspoons erythritol or stevia to taste (optional),Ice cubes (as needed)",
+            "ingredients_ner": [
+                "almond milk",
+                "Greek yogurt",
+                "blueberries",
+                "almond butter",
+                "chia seeds",
+                "vanilla extract",
+                "erythritol",
+                "stevia",
+                "ice cubes"
+            ],
+            "matched_recipes": [
+                {
+                    "id": "38",
+                    "recipe_name": "fresh fruit smoothie",
+                    "ingredients": "1 cup fresh pineapple chunks,1/2 cup cantaloupe or other melon chunks,1 cup fresh strawberries,Juice of 2 oranges,1 cup cold water,1 tablespoon honey",
+                    "ingredients_ner": [
+                        "pineapple",
+                        "cantaloupe",
+                        "melon",
+                        "strawberries",
+                        "oranges",
+                        "water",
+                        "honey"
+                    ],
+                    "matched_percentage": 0.0,
+                    "matched_words": []
+                },
+                {
+                    "id": "39",
+                    "recipe_name": "green smoothie",
+                    "ingredients": "1 banana,Juice of 1 lemon (about 4 tablespoons),1/2 cup strawberries,1/2 cup other berries, such as blackberries or blueberries,2 ounces fresh raw baby spinach (about 2 cups),Fresh mint to taste,1 cup cold water or ice",
+                    "ingredients_ner": [
+                        "banana",
+                        "lemon juice",
+                        "strawberries",
+                        "berries",
+                        "baby spinach",
+                        "mint",
+                        "water",
+                        "ice"
+                    ],
+                    "matched_percentage": 11.11111111111111,
+                    "matched_words": [
+                        "ice"
+                    ]
+                },
+                {
+                    "id": "45",
+                    "recipe_name": "orange dream smoothie",
+                    "ingredients": "1 1/2 cups orange juice, chilled,1 cup light vanilla soy milk, chilled,1/3 cup silken or soft tofu,1 tablespoon dark honey,1 teaspoon grated orange zest,1/2 teaspoon vanilla extract,5 ice cubes,4 peeled orange segments (about half an orange)",
+                    "ingredients_ner": [
+                        "orange juice",
+                        "light vanilla soy milk",
+                        "silken tofu",
+                        "dark honey",
+                        "orange zest",
+                        "vanilla extract",
+                        "ice cubes",
+                        "orange segments"
+                    ],
+                    "matched_percentage": 55.55555555555556,
+                    "matched_words": [
+                        "milk",
+                        "vanilla",
+                        "cubes",
+                        "extract",
+                        "ice"
+                    ]
+                },
+                {
+                    "id": "46",
+                    "recipe_name": "orange juice smoothie",
+                    "ingredients": "1 cup fat-free, no-sugar-added vanilla frozen yogurt,3/4 cup fat-free milk,1/4 cup frozen no-sugar-added orange juice concentrate",
+                    "ingredients_ner": [
+                        "fat-free, no-sugar-added vanilla frozen yogurt",
+                        "fat-free milk",
+                        "frozen no-sugar-added orange juice concentrate"
+                    ],
+                    "matched_percentage": 33.33333333333333,
+                    "matched_words": [
+                        "yogurt",
+                        "milk",
+                        "vanilla"
+                    ]
+                },
+                {
+                    "id": "101",
+                    "recipe_name": "orange dream smoothie",
+                    "ingredients": "1 1/2 cups orange juice, chilled,1 cup light vanilla soy milk, chilled,1/3 cup silken or soft tofu,1 tablespoon dark honey,1 teaspoon grated orange zest,1/2 teaspoon vanilla extract,5 ice cubes,4 peeled orange segments (about half an orange)",
+                    "ingredients_ner": [
+                        "orange juice",
+                        "light vanilla soy milk",
+                        "silken tofu",
+                        "dark honey",
+                        "orange zest",
+                        "vanilla extract",
+                        "ice cubes",
+                        "orange segments"
+                    ],
+                    "matched_percentage": 55.55555555555556,
+                    "matched_words": [
+                        "milk",
+                        "vanilla",
+                        "cubes",
+                        "extract",
+                        "ice"
+                    ]
+                }
+            ]
+        }
+    ]
+}

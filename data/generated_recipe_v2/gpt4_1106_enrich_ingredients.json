@@ -1,0 +1,902 @@
+{
+    "ingredients": [
+        {
+            "recipe_id": 14,
+            "ingredient_unit_portion": [
+                {
+                    "name": "chickpeas (cooked or canned)",
+                    "clean_name": "chickpeas",
+                    "quantity": "2 cups",
+                    "portion": 2.0,
+                    "unit": "cup",
+                    "weight": 360.0
+                },
+                {
+                    "name": "cucumber (diced)",
+                    "clean_name": "cucumber",
+                    "quantity": "1 medium",
+                    "portion": 1.0,
+                    "unit": "medium",
+                    "weight": 200.0
+                },
+                {
+                    "name": "cherry tomatoes (halved)",
+                    "clean_name": "cherry tomatoes",
+                    "quantity": "1 cup",
+                    "portion": 1.0,
+                    "unit": "cup",
+                    "weight": 244.0
+                },
+                {
+                    "name": "red onion (finely chopped)",
+                    "clean_name": "onion",
+                    "quantity": "1/4 cup",
+                    "portion": 0.25,
+                    "unit": "cup",
+                    "weight": 40.0
+                },
+                {
+                    "name": "Kalamata olives (pitted and sliced)",
+                    "clean_name": "olives",
+                    "quantity": "1/4 cup",
+                    "portion": 0.25,
+                    "unit": "cup",
+                    "weight": 33.75
+                },
+                {
+                    "name": "feta cheese (crumbled, optional)",
+                    "clean_name": "feta cheese",
+                    "quantity": "1/2 cup",
+                    "portion": 0.5,
+                    "unit": "cup",
+                    "weight": 75.0
+                },
+                {
+                    "name": "extravirgin olive oil",
+                    "clean_name": "olive oil",
+                    "quantity": "3 tablespoons",
+                    "portion": 3.0,
+                    "unit": "tablespoon",
+                    "weight": 42.0
+                },
+                {
+                    "name": "lemon juice",
+                    "clean_name": "lemon juice",
+                    "quantity": "2 tablespoons",
+                    "portion": 2.0,
+                    "unit": "tablespoon",
+                    "weight": 23.0
+                },
+                {
+                    "name": "fresh parsley (chopped)",
+                    "clean_name": "parsley",
+                    "quantity": "1/4 cup",
+                    "portion": 0.25,
+                    "unit": "cup",
+                    "weight": 15.0
+                },
+                {
+                    "name": "dried oregano",
+                    "clean_name": "dried oregano",
+                    "quantity": "1 teaspoon",
+                    "portion": 1.0,
+                    "unit": "teaspoon",
+                    "weight": 1.8
+                },
+                {
+                    "name": "salt",
+                    "clean_name": "salt",
+                    "quantity": "1/4 teaspoon",
+                    "portion": 0.25,
+                    "unit": "teaspoon",
+                    "weight": 1.5
+                },
+                {
+                    "name": "black pepper",
+                    "clean_name": "pepper",
+                    "quantity": "1/8 teaspoon",
+                    "portion": 0.12,
+                    "unit": "teaspoon",
+                    "weight": 0.348
+                }
+            ]
+        },
+        {
+            "recipe_id": 15,
+            "ingredient_unit_portion": [
+                {
+                    "name": "large cremini or button mushrooms",
+                    "clean_name": "mushrooms",
+                    "quantity": "16",
+                    "portion": 16.0,
+                    "unit": "piece",
+                    "weight": 96.0
+                },
+                {
+                    "name": "extravirgin olive oil",
+                    "clean_name": "olive oil",
+                    "quantity": "2 tablespoons",
+                    "portion": 2.0,
+                    "unit": "tablespoon",
+                    "weight": 28.0
+                },
+                {
+                    "name": "garlic (minced)",
+                    "clean_name": "garlic",
+                    "quantity": "2 cloves",
+                    "portion": 2.0,
+                    "unit": "clove",
+                    "weight": 6.0
+                },
+                {
+                    "name": "spinach (chopped)",
+                    "clean_name": "spinach",
+                    "quantity": "1 cup",
+                    "portion": 1.0,
+                    "unit": "cup",
+                    "weight": 25.0
+                },
+                {
+                    "name": "feta cheese (crumbled)",
+                    "clean_name": "feta cheese",
+                    "quantity": "1/2 cup",
+                    "portion": 0.5,
+                    "unit": "cup",
+                    "weight": 75.0
+                },
+                {
+                    "name": "black olives (chopped)",
+                    "clean_name": "olives",
+                    "quantity": "1/4 cup",
+                    "portion": 0.25,
+                    "unit": "cup",
+                    "weight": 33.75
+                },
+                {
+                    "name": "sundried tomatoes (chopped)",
+                    "clean_name": "sundried tomatoes",
+                    "quantity": "1/4 cup",
+                    "portion": 0.25,
+                    "unit": "cup",
+                    "weight": 13.5
+                },
+                {
+                    "name": "fresh basil (chopped)",
+                    "clean_name": "basil",
+                    "quantity": "1 tablespoon",
+                    "portion": 1.0,
+                    "unit": "tablespoon",
+                    "weight": 2.7
+                },
+                {
+                    "name": "almond meal",
+                    "clean_name": "almond meal",
+                    "quantity": "2 tablespoons",
+                    "portion": 2.0,
+                    "unit": "tablespoon",
+                    "weight": 10.5
+                },
+                {
+                    "name": "lemon zest",
+                    "clean_name": "lemon",
+                    "quantity": "1 teaspoon",
+                    "portion": 1.0,
+                    "unit": "teaspoon",
+                    "weight": 3.8
+                },
+                {
+                    "name": "salt",
+                    "clean_name": "salt",
+                    "quantity": "1/4 teaspoon",
+                    "portion": 0.25,
+                    "unit": "teaspoon",
+                    "weight": 1.5
+                },
+                {
+                    "name": "black pepper",
+                    "clean_name": "pepper",
+                    "quantity": "1/8 teaspoon",
+                    "portion": 0.12,
+                    "unit": "teaspoon",
+                    "weight": 0.348
+                }
+            ]
+        },
+        {
+            "recipe_id": 17,
+            "ingredient_unit_portion": [
+                {
+                    "name": "plain Greek yogurt",
+                    "clean_name": "plain greek yogurt",
+                    "quantity": "1 cup",
+                    "portion": 1.0,
+                    "unit": "cup",
+                    "weight": 245.0
+                },
+                {
+                    "name": "extravirgin olive oil",
+                    "clean_name": "olive oil",
+                    "quantity": "2 tablespoons",
+                    "portion": 2.0,
+                    "unit": "tablespoon",
+                    "weight": 28.0
+                },
+                {
+                    "name": "lemon juice",
+                    "clean_name": "lemon juice",
+                    "quantity": "2 tablespoons",
+                    "portion": 2.0,
+                    "unit": "tablespoon",
+                    "weight": 23.0
+                },
+                {
+                    "name": "garlic (minced)",
+                    "clean_name": "garlic",
+                    "quantity": "1 clove",
+                    "portion": 1.0,
+                    "unit": "clove",
+                    "weight": 3.0
+                },
+                {
+                    "name": "Dijon mustard",
+                    "clean_name": "dijon mustard",
+                    "quantity": "1 teaspoon",
+                    "portion": 1.0,
+                    "unit": "teaspoon",
+                    "weight": 15.0
+                },
+                {
+                    "name": "honey (or a sugar substitute for a lower carb option)",
+                    "clean_name": "honey",
+                    "quantity": "1 teaspoon",
+                    "portion": 1.0,
+                    "unit": "teaspoon",
+                    "weight": 60.0
+                },
+                {
+                    "name": "dried oregano",
+                    "clean_name": "dried oregano",
+                    "quantity": "1/2 teaspoon",
+                    "portion": 0.5,
+                    "unit": "teaspoon",
+                    "weight": 0.9
+                },
+                {
+                    "name": "salt",
+                    "clean_name": "salt",
+                    "quantity": "1/4 teaspoon",
+                    "portion": 0.25,
+                    "unit": "teaspoon",
+                    "weight": 1.5
+                },
+                {
+                    "name": "black pepper",
+                    "clean_name": "pepper",
+                    "quantity": "1/8 teaspoon",
+                    "portion": 0.12,
+                    "unit": "teaspoon",
+                    "weight": 0.348
+                }
+            ]
+        },
+        {
+            "recipe_id": 16,
+            "ingredient_unit_portion": [
+                {
+                    "name": "olive oil",
+                    "clean_name": "olive oil",
+                    "quantity": "1 tablespoon",
+                    "portion": 1.0,
+                    "unit": "tablespoon",
+                    "weight": 14.0
+                },
+                {
+                    "name": "onion (chopped)",
+                    "clean_name": "onion",
+                    "quantity": "1 medium",
+                    "portion": 1.0,
+                    "unit": "medium",
+                    "weight": 148.0
+                },
+                {
+                    "name": "garlic (minced)",
+                    "clean_name": "garlic",
+                    "quantity": "2 cloves",
+                    "portion": 2.0,
+                    "unit": "clove",
+                    "weight": 6.0
+                },
+                {
+                    "name": "carrots (diced)",
+                    "clean_name": "carrots",
+                    "quantity": "2 medium",
+                    "portion": 2.0,
+                    "unit": "medium",
+                    "weight": 120.0
+                },
+                {
+                    "name": "celery stalks (diced)",
+                    "clean_name": "celery",
+                    "quantity": "2",
+                    "portion": 2.0,
+                    "unit": "stalk",
+                    "weight": 80.0
+                },
+                {
+                    "name": "green lentils (rinsed)",
+                    "clean_name": "lentils",
+                    "quantity": "1 cup",
+                    "portion": 1.0,
+                    "unit": "cup",
+                    "weight": 180.0
+                },
+                {
+                    "name": "canned tomatoes (diced)",
+                    "clean_name": "canned tomatoes",
+                    "quantity": "1 can (14.5 ounces)",
+                    "portion": "14.5",
+                    "unit": "ounce",
+                    "weight": 406.0
+                },
+                {
+                    "name": "vegetable broth",
+                    "clean_name": "vegetable broth",
+                    "quantity": "4 cups",
+                    "portion": 4.0,
+                    "unit": "cup",
+                    "weight": 960.0
+                },
+                {
+                    "name": "water",
+                    "clean_name": "water",
+                    "quantity": "2 cups",
+                    "portion": 2.0,
+                    "unit": "cup",
+                    "weight": 472.0
+                },
+                {
+                    "name": "spinach (fresh, chopped)",
+                    "clean_name": "spinach",
+                    "quantity": "2 cups",
+                    "portion": 2.0,
+                    "unit": "cup",
+                    "weight": 50.0
+                },
+                {
+                    "name": "thyme (dried)",
+                    "clean_name": "thyme",
+                    "quantity": "1 teaspoon",
+                    "portion": 1.0,
+                    "unit": "teaspoon",
+                    "weight": 1.4
+                },
+                {
+                    "name": "rosemary (dried)",
+                    "clean_name": "rosemary",
+                    "quantity": "1/2 teaspoon",
+                    "portion": 0.5,
+                    "unit": "teaspoon",
+                    "weight": 0.35
+                },
+                {
+                    "name": "salt",
+                    "clean_name": "salt",
+                    "quantity": "1 teaspoon",
+                    "portion": 1.0,
+                    "unit": "teaspoon",
+                    "weight": 6.0
+                },
+                {
+                    "name": "black pepper",
+                    "clean_name": "pepper",
+                    "quantity": "1/2 teaspoon",
+                    "portion": 0.5,
+                    "unit": "teaspoon",
+                    "weight": 1.45
+                },
+                {
+                    "name": "lemon (juiced)",
+                    "clean_name": "lemon",
+                    "quantity": "1/2",
+                    "portion": 0.5,
+                    "unit": "lemon",
+                    "weight": 32.5
+                }
+            ]
+        },
+        {
+            "recipe_id": 12,
+            "ingredient_unit_portion": [
+                {
+                    "name": "chickpeas (rinsed and drained)",
+                    "clean_name": "chickpeas",
+                    "quantity": "1 can (15 ounces)",
+                    "portion": "15",
+                    "unit": "ounce",
+                    "weight": 420.0
+                },
+                {
+                    "name": "cucumber (diced)",
+                    "clean_name": "cucumber",
+                    "quantity": "1 medium",
+                    "portion": 1.0,
+                    "unit": "medium",
+                    "weight": 200.0
+                },
+                {
+                    "name": "cherry tomatoes (halved)",
+                    "clean_name": "cherry tomatoes",
+                    "quantity": "1 cup",
+                    "portion": 1.0,
+                    "unit": "cup",
+                    "weight": 244.0
+                },
+                {
+                    "name": "red onion (finely chopped)",
+                    "clean_name": "onion",
+                    "quantity": "1/4 cup",
+                    "portion": 0.25,
+                    "unit": "cup",
+                    "weight": 40.0
+                },
+                {
+                    "name": "Kalamata olives (pitted and sliced)",
+                    "clean_name": "olives",
+                    "quantity": "1/2 cup",
+                    "portion": 0.5,
+                    "unit": "cup",
+                    "weight": 67.5
+                },
+                {
+                    "name": "feta cheese (crumbled, optional)",
+                    "clean_name": "feta cheese",
+                    "quantity": "1/2 cup",
+                    "portion": 0.5,
+                    "unit": "cup",
+                    "weight": 75.0
+                },
+                {
+                    "name": "parsley (chopped)",
+                    "clean_name": "parsley",
+                    "quantity": "1/4 cup",
+                    "portion": 0.25,
+                    "unit": "cup",
+                    "weight": 15.0
+                },
+                {
+                    "name": "lemon juice",
+                    "clean_name": "lemon juice",
+                    "quantity": "3 tablespoons",
+                    "portion": 3.0,
+                    "unit": "tablespoon",
+                    "weight": 34.5
+                },
+                {
+                    "name": "olive oil",
+                    "clean_name": "olive oil",
+                    "quantity": "2 tablespoons",
+                    "portion": 2.0,
+                    "unit": "tablespoon",
+                    "weight": 28.0
+                },
+                {
+                    "name": "garlic (minced)",
+                    "clean_name": "garlic",
+                    "quantity": "1 clove",
+                    "portion": 1.0,
+                    "unit": "clove",
+                    "weight": 3.0
+                },
+                {
+                    "name": "dried oregano",
+                    "clean_name": "dried oregano",
+                    "quantity": "1 teaspoon",
+                    "portion": 1.0,
+                    "unit": "teaspoon",
+                    "weight": 1.8
+                },
+                {
+                    "name": "salt",
+                    "clean_name": "salt",
+                    "quantity": "1/4 teaspoon",
+                    "portion": 0.25,
+                    "unit": "teaspoon",
+                    "weight": 1.5
+                },
+                {
+                    "name": "black pepper",
+                    "clean_name": "pepper",
+                    "quantity": "1/8 teaspoon",
+                    "portion": 0.12,
+                    "unit": "teaspoon",
+                    "weight": 0.348
+                }
+            ]
+        },
+        {
+            "recipe_id": 13,
+            "ingredient_unit_portion": [
+                {
+                    "name": "spinach",
+                    "clean_name": "spinach",
+                    "quantity": "2 cups",
+                    "portion": 2.0,
+                    "unit": "cup",
+                    "weight": 50.0
+                },
+                {
+                    "name": "cucumber (chopped)",
+                    "clean_name": "cucumber",
+                    "quantity": "1 medium",
+                    "portion": 1.0,
+                    "unit": "medium",
+                    "weight": 200.0
+                },
+                {
+                    "name": "celery stalks",
+                    "clean_name": "celery",
+                    "quantity": "2",
+                    "portion": 2.0,
+                    "unit": "stalk",
+                    "weight": 80.0
+                },
+                {
+                    "name": "green apple (cored and sliced)",
+                    "clean_name": "apple",
+                    "quantity": "1",
+                    "portion": 1.0,
+                    "unit": "medium",
+                    "weight": 200.0
+                },
+                {
+                    "name": "fresh ginger (grated)",
+                    "clean_name": "ginger",
+                    "quantity": "1 teaspoon",
+                    "portion": 1.0,
+                    "unit": "teaspoon",
+                    "weight": 6.0
+                },
+                {
+                    "name": "lemon juice",
+                    "clean_name": "lemon juice",
+                    "quantity": "2 tablespoons",
+                    "portion": 2.0,
+                    "unit": "tablespoon",
+                    "weight": 23.0
+                },
+                {
+                    "name": "almond milk (unsweetened)",
+                    "clean_name": "almond milk",
+                    "quantity": "1 cup",
+                    "portion": 1.0,
+                    "unit": "cup",
+                    "weight": 244.0
+                },
+                {
+                    "name": "chia seeds (optional)",
+                    "clean_name": "chia seeds",
+                    "quantity": "1 tablespoon",
+                    "portion": 1.0,
+                    "unit": "tablespoon",
+                    "weight": 10.5
+                },
+                {
+                    "name": "ice cubes",
+                    "clean_name": "ice cubes",
+                    "quantity": "1/2 cup",
+                    "portion": 0.5,
+                    "unit": "cup",
+                    "weight": 108.5
+                }
+            ]
+        },
+        {
+            "recipe_id": 11,
+            "ingredient_unit_portion": [
+                {
+                    "name": "egg whites",
+                    "clean_name": "egg",
+                    "quantity": "8",
+                    "portion": 8.0,
+                    "unit": "egg",
+                    "weight": 264.0
+                },
+                {
+                    "name": "fresh spinach",
+                    "clean_name": "spinach",
+                    "quantity": "3 cups",
+                    "portion": 3.0,
+                    "unit": "cup",
+                    "weight": 75.0
+                },
+                {
+                    "name": "cremini mushrooms (sliced)",
+                    "clean_name": "mushrooms",
+                    "quantity": "2 cups",
+                    "portion": 2.0,
+                    "unit": "cup",
+                    "weight": 140.0
+                },
+                {
+                    "name": "cherry tomatoes (halved)",
+                    "clean_name": "cherry tomatoes",
+                    "quantity": "1 cup",
+                    "portion": 1.0,
+                    "unit": "cup",
+                    "weight": 244.0
+                },
+                {
+                    "name": "lowfat feta cheese (crumbled)",
+                    "clean_name": "feta cheese",
+                    "quantity": "1/2 cup",
+                    "portion": 0.5,
+                    "unit": "cup",
+                    "weight": 75.0
+                },
+                {
+                    "name": "olive oil",
+                    "clean_name": "olive oil",
+                    "quantity": "1 tablespoon",
+                    "portion": 1.0,
+                    "unit": "tablespoon",
+                    "weight": 14.0
+                },
+                {
+                    "name": "garlic (minced)",
+                    "clean_name": "garlic",
+                    "quantity": "2 cloves",
+                    "portion": 2.0,
+                    "unit": "clove",
+                    "weight": 6.0
+                },
+                {
+                    "name": "salt",
+                    "clean_name": "salt",
+                    "quantity": "1/4 teaspoon",
+                    "portion": 0.25,
+                    "unit": "teaspoon",
+                    "weight": 1.5
+                },
+                {
+                    "name": "black pepper",
+                    "clean_name": "pepper",
+                    "quantity": "1/4 teaspoon",
+                    "portion": 0.25,
+                    "unit": "teaspoon",
+                    "weight": 0.725
+                },
+                {
+                    "name": "fresh basil (chopped, for garnish)",
+                    "clean_name": "basil",
+                    "quantity": "2 tablespoons",
+                    "portion": 2.0,
+                    "unit": "tablespoon",
+                    "weight": 5.4
+                }
+            ]
+        },
+        {
+            "recipe_id": 20,
+            "ingredient_unit_portion": [
+                {
+                    "name": "cucumber",
+                    "clean_name": "cucumber",
+                    "quantity": "1 medium-sized",
+                    "portion": 1.0,
+                    "unit": "medium-sized",
+                    "weight": 200.0
+                },
+                {
+                    "name": "fresh mint leaves",
+                    "clean_name": "mint",
+                    "quantity": "1/4 cup",
+                    "portion": 0.25,
+                    "unit": "cup",
+                    "weight": 2.0
+                },
+                {
+                    "name": "fresh lemon juice",
+                    "clean_name": "lemon juice",
+                    "quantity": "2 tablespoons",
+                    "portion": 2.0,
+                    "unit": "tablespoon",
+                    "weight": 23.0
+                },
+                {
+                    "name": "water",
+                    "clean_name": "water",
+                    "quantity": "8 cups",
+                    "portion": 8.0,
+                    "unit": "cup",
+                    "weight": 1888.0
+                },
+                {
+                    "name": "ice cubes",
+                    "clean_name": "ice cubes",
+                    "quantity": "1 cup (optional)",
+                    "portion": 1.0,
+                    "unit": "cup",
+                    "weight": 217.0
+                },
+                {
+                    "name": "lemon slices (for garnish)",
+                    "clean_name": "lemon",
+                    "quantity": "3-4 slices",
+                    "portion": 3.0,
+                    "unit": "slice",
+                    "weight": 24.0
+                }
+            ]
+        },
+        {
+            "recipe_id": 18,
+            "ingredient_unit_portion": [
+                {
+                    "name": "medium zucchinis",
+                    "clean_name": "zucchini",
+                    "quantity": "4",
+                    "portion": 4.0,
+                    "unit": "medium",
+                    "weight": 784.0
+                },
+                {
+                    "name": "cherry tomatoes",
+                    "clean_name": "cherry tomatoes",
+                    "quantity": "1 cup",
+                    "portion": 1.0,
+                    "unit": "cup",
+                    "weight": 244.0
+                },
+                {
+                    "name": "pine nuts (optional)",
+                    "clean_name": "pine nuts",
+                    "quantity": "1/4 cup",
+                    "portion": 0.25,
+                    "unit": "cup",
+                    "weight": 33.75
+                },
+                {
+                    "name": "garlic",
+                    "clean_name": "garlic",
+                    "quantity": "1 clove",
+                    "portion": 1.0,
+                    "unit": "clove",
+                    "weight": 3.0
+                },
+                {
+                    "name": "fresh basil leaves",
+                    "clean_name": "basil",
+                    "quantity": "1 cup",
+                    "portion": 1.0,
+                    "unit": "cup",
+                    "weight": 24.0
+                },
+                {
+                    "name": "grated Parmesan cheese",
+                    "clean_name": "parmesan cheese",
+                    "quantity": "1/3 cup",
+                    "portion": 0.33,
+                    "unit": "cup",
+                    "weight": 33.0
+                },
+                {
+                    "name": "extra virgin olive oil",
+                    "clean_name": "olive oil",
+                    "quantity": "1/4 cup",
+                    "portion": 0.25,
+                    "unit": "cup",
+                    "weight": 56.0
+                },
+                {
+                    "name": "lemon juice",
+                    "clean_name": "lemon juice",
+                    "quantity": "1 tablespoon",
+                    "portion": 1.0,
+                    "unit": "tablespoon",
+                    "weight": 11.5
+                },
+                {
+                    "name": "salt",
+                    "clean_name": "salt",
+                    "quantity": "to taste",
+                    "portion": 1.0,
+                    "unit": "tablespoon",
+                    "weight": 18.0
+                },
+                {
+                    "name": "black pepper",
+                    "clean_name": "pepper",
+                    "quantity": "to taste",
+                    "portion": 1.0,
+                    "unit": "tablespoon",
+                    "weight": 6.9
+                }
+            ]
+        },
+        {
+            "recipe_id": 19,
+            "ingredient_unit_portion": [
+                {
+                    "name": "zucchini",
+                    "clean_name": "zucchini",
+                    "quantity": "4 medium-sized",
+                    "portion": 4.0,
+                    "unit": "medium-sized",
+                    "weight": 784.0
+                },
+                {
+                    "name": "cherry tomatoes",
+                    "clean_name": "cherry tomatoes",
+                    "quantity": "1 cup",
+                    "portion": 1.0,
+                    "unit": "cup",
+                    "weight": 244.0
+                },
+                {
+                    "name": "pine nuts",
+                    "clean_name": "pine nuts",
+                    "quantity": "1/4 cup",
+                    "portion": 0.25,
+                    "unit": "cup",
+                    "weight": 33.75
+                },
+                {
+                    "name": "garlic",
+                    "clean_name": "garlic",
+                    "quantity": "2 cloves",
+                    "portion": 2.0,
+                    "unit": "clove",
+                    "weight": 6.0
+                },
+                {
+                    "name": "fresh basil leaves",
+                    "clean_name": "basil",
+                    "quantity": "1 cup packed",
+                    "portion": 1.0,
+                    "unit": "cup",
+                    "weight": 24.0
+                },
+                {
+                    "name": "grated Parmesan cheese",
+                    "clean_name": "parmesan cheese",
+                    "quantity": "1/3 cup",
+                    "portion": 0.33,
+                    "unit": "cup",
+                    "weight": 33.0
+                },
+                {
+                    "name": "extravirgin olive oil",
+                    "clean_name": "olive oil",
+                    "quantity": "1/4 cup",
+                    "portion": 0.25,
+                    "unit": "cup",
+                    "weight": 56.0
+                },
+                {
+                    "name": "lemon juice",
+                    "clean_name": "lemon juice",
+                    "quantity": "1 tablespoon",
+                    "portion": 1.0,
+                    "unit": "tablespoon",
+                    "weight": 11.5
+                },
+                {
+                    "name": "salt",
+                    "clean_name": "salt",
+                    "quantity": "1/4 teaspoon",
+                    "portion": 0.25,
+                    "unit": "teaspoon",
+                    "weight": 1.5
+                },
+                {
+                    "name": "black pepper",
+                    "clean_name": "pepper",
+                    "quantity": "1/8 teaspoon",
+                    "portion": 0.12,
+                    "unit": "teaspoon",
+                    "weight": 0.348
+                }
+            ]
+        }
+    ]
+}

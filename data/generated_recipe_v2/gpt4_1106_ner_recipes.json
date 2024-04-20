@@ -6,51 +6,63 @@
             "ingredients": [
                 {
                     "name": "chickpeas (cooked or canned)",
-                    "quantity": "2 cups"
+                    "quantity": "2 cups",
+                    "ner_name": "chickpeas"
                 },
                 {
                     "name": "cucumber (diced)",
-                    "quantity": "1 medium"
+                    "quantity": "1 medium",
+                    "ner_name": "cucumber"
                 },
                 {
                     "name": "cherry tomatoes (halved)",
-                    "quantity": "1 cup"
+                    "quantity": "1 cup",
+                    "ner_name": "cherry tomatoes"
                 },
                 {
                     "name": "red onion (finely chopped)",
-                    "quantity": "1/4 cup"
+                    "quantity": "1/4 cup",
+                    "ner_name": "red onion"
                 },
                 {
                     "name": "Kalamata olives (pitted and sliced)",
-                    "quantity": "1/4 cup"
+                    "quantity": "1/4 cup",
+                    "ner_name": "Kalamata olives"
                 },
                 {
                     "name": "feta cheese (crumbled, optional)",
-                    "quantity": "1/2 cup"
+                    "quantity": "1/2 cup",
+                    "ner_name": "feta cheese"
                 },
                 {
                     "name": "extravirgin olive oil",
-                    "quantity": "3 tablespoons"
+                    "quantity": "3 tablespoons",
+                    "ner_name": "extravirgin olive oil"
                 },
                 {
                     "name": "lemon juice",
-                    "quantity": "2 tablespoons"
+                    "quantity": "2 tablespoons",
+                    "ner_name": "lemon juice"
                 },
                 {
                     "name": "fresh parsley (chopped)",
-                    "quantity": "1/4 cup"
+                    "quantity": "1/4 cup",
+                    "ner_name": "fresh parsley"
                 },
                 {
                     "name": "dried oregano",
-                    "quantity": "1 teaspoon"
+                    "quantity": "1 teaspoon",
+                    "ner_name": "dried oregano"
                 },
                 {
                     "name": "salt",
-                    "quantity": "1/4 teaspoon"
+                    "quantity": "1/4 teaspoon",
+                    "ner_name": "salt"
                 },
                 {
                     "name": "black pepper",
-                    "quantity": "1/8 teaspoon"
+                    "quantity": "1/8 teaspoon",
+                    "ner_name": "black pepper"
                 }
             ],
             "directions": "1. Prepare Vegetables: Dice the cucumber, halve the cherry tomatoes, finely chop the red onion, slice the Kalamata olives, and chop the fresh parsley.\n2. Combine Salad: In a large bowl, mix together chickpeas, diced cucumber, halved cherry tomatoes, chopped red onion, sliced Kalamata olives, and crumbled feta cheese if using.\n3. Make Dressing: In a small bowl, whisk together extra-virgin olive oil, lemon juice, chopped fresh parsley, dried oregano, salt, and black pepper until well combined.\n4. Toss Salad: Pour the dressing over the chickpea mixture and toss until everything is evenly coated.\n5. Marinate: Let the salad sit in the refrigerator for at least 10 minutes to allow the flavors to come together.\n6. Pack and Go: Divide the salad into lunch containers making it a perfect meal to take to work. This salad keeps well and can be eaten chilled or at room temperature.",
@@ -67,51 +79,63 @@
             "ingredients": [
                 {
                     "name": "large cremini or button mushrooms",
-                    "quantity": "16"
+                    "quantity": "16",
+                    "ner_name": "cremini mushrooms"
                 },
                 {
                     "name": "extravirgin olive oil",
-                    "quantity": "2 tablespoons"
+                    "quantity": "2 tablespoons",
+                    "ner_name": "extravirgin olive oil"
                 },
                 {
                     "name": "garlic (minced)",
-                    "quantity": "2 cloves"
+                    "quantity": "2 cloves",
+                    "ner_name": "garlic"
                 },
                 {
                     "name": "spinach (chopped)",
-                    "quantity": "1 cup"
+                    "quantity": "1 cup",
+                    "ner_name": "spinach"
                 },
                 {
                     "name": "feta cheese (crumbled)",
-                    "quantity": "1/2 cup"
+                    "quantity": "1/2 cup",
+                    "ner_name": "feta cheese"
                 },
                 {
                     "name": "black olives (chopped)",
-                    "quantity": "1/4 cup"
+                    "quantity": "1/4 cup",
+                    "ner_name": "black olives"
                 },
                 {
                     "name": "sundried tomatoes (chopped)",
-                    "quantity": "1/4 cup"
+                    "quantity": "1/4 cup",
+                    "ner_name": "sundried tomatoes"
                 },
                 {
                     "name": "fresh basil (chopped)",
-                    "quantity": "1 tablespoon"
+                    "quantity": "1 tablespoon",
+                    "ner_name": "fresh basil"
                 },
                 {
                     "name": "almond meal",
-                    "quantity": "2 tablespoons"
+                    "quantity": "2 tablespoons",
+                    "ner_name": "almond meal"
                 },
                 {
                     "name": "lemon zest",
-                    "quantity": "1 teaspoon"
+                    "quantity": "1 teaspoon",
+                    "ner_name": "lemon zest"
                 },
                 {
                     "name": "salt",
-                    "quantity": "1/4 teaspoon"
+                    "quantity": "1/4 teaspoon",
+                    "ner_name": "salt"
                 },
                 {
                     "name": "black pepper",
-                    "quantity": "1/8 teaspoon"
+                    "quantity": "1/8 teaspoon",
+                    "ner_name": "black pepper"
                 }
             ],
             "directions": "1. Prepare Mushrooms: Preheat your oven to 375°F (190°C). Remove stems from mushrooms and finely chop the stems. Set the mushroom caps aside. \n2. Cook Filling: In a skillet over medium heat, warm the olive oil. Add the chopped mushroom stems and garlic, sautéing for 2-3 minutes or until softened. Add spinach and cook until it wilts.\n3. Mix Ingredients: Remove skillet from heat. Stir in feta cheese, black olives, sun-dried tomatoes, basil, almond meal, and lemon zest. Season with salt and pepper.\n4. Stuff Mushrooms: Fill each mushroom cap with the spinach and feta mixture, pressing it in to stuff well.\n5. Bake: Arrange the stuffed mushrooms on a baking sheet. Bake for 15 to 20 minutes, or until the mushrooms are tender and the tops are lightly golden.\n6. Serve Warm: Allow the mushrooms to cool slightly before serving them to your guests.",
@@ -128,39 +152,48 @@
             "ingredients": [
                 {
                     "name": "plain Greek yogurt",
-                    "quantity": "1 cup"
+                    "quantity": "1 cup",
+                    "ner_name": "plain Greek yogurt"
                 },
                 {
                     "name": "extravirgin olive oil",
-                    "quantity": "2 tablespoons"
+                    "quantity": "2 tablespoons",
+                    "ner_name": "extravirgin olive oil"
                 },
                 {
                     "name": "lemon juice",
-                    "quantity": "2 tablespoons"
+                    "quantity": "2 tablespoons",
+                    "ner_name": "lemon juice"
                 },
                 {
                     "name": "garlic (minced)",
-                    "quantity": "1 clove"
+                    "quantity": "1 clove",
+                    "ner_name": "garlic"
                 },
                 {
                     "name": "Dijon mustard",
-                    "quantity": "1 teaspoon"
+                    "quantity": "1 teaspoon",
+                    "ner_name": "Dijon mustard"
                 },
                 {
                     "name": "honey (or a sugar substitute for a lower carb option)",
-                    "quantity": "1 teaspoon"
+                    "quantity": "1 teaspoon",
+                    "ner_name": "honey"
                 },
                 {
                     "name": "dried oregano",
-                    "quantity": "1/2 teaspoon"
+                    "quantity": "1/2 teaspoon",
+                    "ner_name": "dried oregano"
                 },
                 {
                     "name": "salt",
-                    "quantity": "1/4 teaspoon"
+                    "quantity": "1/4 teaspoon",
+                    "ner_name": "salt"
                 },
                 {
                     "name": "black pepper",
-                    "quantity": "1/8 teaspoon"
+                    "quantity": "1/8 teaspoon",
+                    "ner_name": "black pepper"
                 }
             ],
             "directions": "1. Combine Ingredients: In a small bowl or jar, mix together the Greek yogurt, olive oil, lemon juice, minced garlic, Dijon mustard, honey or sugar substitute, dried oregano, salt, and black pepper.\n2. Blend Well: Whisk the ingredients until they are thoroughly combined and the dressing is smooth in consistency. If using a jar, you can put a lid on it and shake well.\n3. Adjust Seasoning: Taste the dressing and adjust the seasoning if necessary. Add more lemon juice or herbs if desired.\n4. Serve or Store: Use the dressing immediately or store in the refrigerator for up to one week. Give it a good stir or shake before use if it has been stored.",
@@ -177,63 +210,78 @@
             "ingredients": [
                 {
                     "name": "olive oil",
-                    "quantity": "1 tablespoon"
+                    "quantity": "1 tablespoon",
+                    "ner_name": "olive oil"
                 },
                 {
                     "name": "onion (chopped)",
-                    "quantity": "1 medium"
+                    "quantity": "1 medium",
+                    "ner_name": "onion"
                 },
                 {
                     "name": "garlic (minced)",
-                    "quantity": "2 cloves"
+                    "quantity": "2 cloves",
+                    "ner_name": "garlic"
                 },
                 {
                     "name": "carrots (diced)",
-                    "quantity": "2 medium"
+                    "quantity": "2 medium",
+                    "ner_name": "carrots"
                 },
                 {
                     "name": "celery stalks (diced)",
-                    "quantity": "2"
+                    "quantity": "2",
+                    "ner_name": "celery"
                 },
                 {
                     "name": "green lentils (rinsed)",
-                    "quantity": "1 cup"
+                    "quantity": "1 cup",
+                    "ner_name": "green lentils"
                 },
                 {
                     "name": "canned tomatoes (diced)",
-                    "quantity": "1 can (14.5 ounces)"
+                    "quantity": "1 can (14.5 ounces)",
+                    "ner_name": "canned tomatoes"
                 },
                 {
                     "name": "vegetable broth",
-                    "quantity": "4 cups"
+                    "quantity": "4 cups",
+                    "ner_name": "vegetable broth"
                 },
                 {
                     "name": "water",
-                    "quantity": "2 cups"
+                    "quantity": "2 cups",
+                    "ner_name": "water"
                 },
                 {
                     "name": "spinach (fresh, chopped)",
-                    "quantity": "2 cups"
+                    "quantity": "2 cups",
+                    "ner_name": "spinach"
                 },
                 {
                     "name": "thyme (dried)",
-                    "quantity": "1 teaspoon"
+                    "quantity": "1 teaspoon",
+                    "ner_name": "thyme"
                 },
                 {
                     "name": "rosemary (dried)",
-                    "quantity": "1/2 teaspoon"
+                    "quantity": "1/2 teaspoon",
+                    "ner_name": "rosemary"
                 },
                 {
                     "name": "salt",
-                    "quantity": "1 teaspoon"
+                    "quantity": "1 teaspoon",
+                    "ner_name": "salt"
                 },
                 {
                     "name": "black pepper",
-                    "quantity": "1/2 teaspoon"
+                    "quantity": "1/2 teaspoon",
+                    "ner_name": "black pepper"
                 },
                 {
                     "name": "lemon (juiced)",
-                    "quantity": "1/2"
+                    "quantity": "1/2",
+                    "ner_name": "lemon"
                 }
             ],
             "directions": "1. Sauté Vegetables: In a large pot, heat the olive oil over medium heat. Add chopped onions and cook until translucent. Add garlic, carrots, and celery, and sauté for another 5 minutes.\n2. Add Lentils and Liquids: Stir in the green lentils and the can of diced tomatoes (with their juice). Pour in the vegetable broth and water. Increase the heat to bring the mixture to a boil.\n3. Simmer the Soup: Once boiling, reduce the heat to low, and add thyme and rosemary. Cover the pot and simmer for about 25-30 minutes, or until the lentils are tender.\n4. Season and Finish: Add the fresh spinach and cook for an additional 5 minutes until it wilts. Season with salt and black pepper. Squeeze in fresh lemon juice for added zest, and stir.\n5. Serve: Ladle the soup into bowls. For an extra touch, garnish with fresh herbs or a sprinkle of Parmesan cheese (optional for non-vegan diets).",
@@ -250,55 +298,68 @@
             "ingredients": [
                 {
                     "name": "chickpeas (rinsed and drained)",
-                    "quantity": "1 can (15 ounces)"
+                    "quantity": "1 can (15 ounces)",
+                    "ner_name": "chickpeas"
                 },
                 {
                     "name": "cucumber (diced)",
-                    "quantity": "1 medium"
+                    "quantity": "1 medium",
+                    "ner_name": "cucumber"
                 },
                 {
                     "name": "cherry tomatoes (halved)",
-                    "quantity": "1 cup"
+                    "quantity": "1 cup",
+                    "ner_name": "cherry tomatoes"
                 },
                 {
                     "name": "red onion (finely chopped)",
-                    "quantity": "1/4 cup"
+                    "quantity": "1/4 cup",
+                    "ner_name": "red onion"
                 },
                 {
                     "name": "Kalamata olives (pitted and sliced)",
-                    "quantity": "1/2 cup"
+                    "quantity": "1/2 cup",
+                    "ner_name": "Kalamata olives"
                 },
                 {
                     "name": "feta cheese (crumbled, optional)",
-                    "quantity": "1/2 cup"
+                    "quantity": "1/2 cup",
+                    "ner_name": "feta cheese"
                 },
                 {
                     "name": "parsley (chopped)",
-                    "quantity": "1/4 cup"
+                    "quantity": "1/4 cup",
+                    "ner_name": "parsley"
                 },
                 {
                     "name": "lemon juice",
-                    "quantity": "3 tablespoons"
+                    "quantity": "3 tablespoons",
+                    "ner_name": "lemon juice"
                 },
                 {
                     "name": "olive oil",
-                    "quantity": "2 tablespoons"
+                    "quantity": "2 tablespoons",
+                    "ner_name": "olive oil"
                 },
                 {
                     "name": "garlic (minced)",
-                    "quantity": "1 clove"
+                    "quantity": "1 clove",
+                    "ner_name": "garlic"
                 },
                 {
                     "name": "dried oregano",
-                    "quantity": "1 teaspoon"
+                    "quantity": "1 teaspoon",
+                    "ner_name": "dried oregano"
                 },
                 {
                     "name": "salt",
-                    "quantity": "1/4 teaspoon"
+                    "quantity": "1/4 teaspoon",
+                    "ner_name": "salt"
                 },
                 {
                     "name": "black pepper",
-                    "quantity": "1/8 teaspoon"
+                    "quantity": "1/8 teaspoon",
+                    "ner_name": "black pepper"
                 }
             ],
             "directions": "1. Prepare the Vegetables: Dice the cucumber, halve the cherry tomatoes, finely chop the red onion, slice the Kalamata olives, and chop the parsley.\n2. Mix Salad Base: In a large bowl, combine the rinsed and drained chickpeas, cucumber, cherry tomatoes, red onion, Kalamata olives, and parsley.\n3. Add Cheese: If desired, add the crumbled feta cheese to the salad mixture.\n4. Make Dressing: In a small bowl, whisk together the lemon juice, olive oil, minced garlic, oregano, salt, and black pepper until well blended.\n5. Combine: Pour the dressing over the salad ingredients and toss to coat evenly.\n6. Chill and Serve: For best flavor, refrigerate the salad for at least 10 minutes before serving. This allows the flavors to come together.",
@@ -315,39 +376,48 @@
             "ingredients": [
                 {
                     "name": "spinach",
-                    "quantity": "2 cups"
+                    "quantity": "2 cups",
+                    "ner_name": "spinach"
                 },
                 {
                     "name": "cucumber (chopped)",
-                    "quantity": "1 medium"
+                    "quantity": "1 medium",
+                    "ner_name": "cucumber"
                 },
                 {
                     "name": "celery stalks",
-                    "quantity": "2"
+                    "quantity": "2",
+                    "ner_name": "celery stalks"
                 },
                 {
                     "name": "green apple (cored and sliced)",
-                    "quantity": "1"
+                    "quantity": "1",
+                    "ner_name": "green apple"
                 },
                 {
                     "name": "fresh ginger (grated)",
-                    "quantity": "1 teaspoon"
+                    "quantity": "1 teaspoon",
+                    "ner_name": "fresh ginger"
                 },
                 {
                     "name": "lemon juice",
-                    "quantity": "2 tablespoons"
+                    "quantity": "2 tablespoons",
+                    "ner_name": "lemon juice"
                 },
                 {
                     "name": "almond milk (unsweetened)",
-                    "quantity": "1 cup"
+                    "quantity": "1 cup",
+                    "ner_name": "almond milk"
                 },
                 {
                     "name": "chia seeds (optional)",
-                    "quantity": "1 tablespoon"
+                    "quantity": "1 tablespoon",
+                    "ner_name": "chia seeds"
                 },
                 {
                     "name": "ice cubes",
-                    "quantity": "1/2 cup"
+                    "quantity": "1/2 cup",
+                    "ner_name": "ice cubes"
                 }
             ],
             "directions": "1. Prepare Ingredients: Wash the spinach leaves, cucumber, celery, and green apple. Chop the cucumber and celery into chunks that will blend easily. Core and slice the green apple.\n2. Blend Greens: In a high-powered blender, add the spinach, cucumber, celery, and green apple. Blend until the greens are finely chopped and start to become smooth.\n3. Add Flavors and Liquids: Add the grated ginger, lemon juice, almond milk, and chia seeds (if using) to the blender.\n4. Blend Until Smooth: Add ice cubes to the mixture and blend on high speed until you have a smooth consistency. If the smoothie is too thick, you can add a little more almond milk to thin it to your preference.\n5. Serve Immediately: Pour the green veggie smoothie into glasses and enjoy immediately for the best flavor and nutrient value.",
@@ -364,43 +434,53 @@
             "ingredients": [
                 {
                     "name": "egg whites",
-                    "quantity": "8"
+                    "quantity": "8",
+                    "ner_name": "egg whites"
                 },
                 {
                     "name": "fresh spinach",
-                    "quantity": "3 cups"
+                    "quantity": "3 cups",
+                    "ner_name": "fresh spinach"
                 },
                 {
                     "name": "cremini mushrooms (sliced)",
-                    "quantity": "2 cups"
+                    "quantity": "2 cups",
+                    "ner_name": "cremini mushrooms"
                 },
                 {
                     "name": "cherry tomatoes (halved)",
-                    "quantity": "1 cup"
+                    "quantity": "1 cup",
+                    "ner_name": "cherry tomatoes"
                 },
                 {
                     "name": "lowfat feta cheese (crumbled)",
-                    "quantity": "1/2 cup"
+                    "quantity": "1/2 cup",
+                    "ner_name": "lowfat feta cheese"
                 },
                 {
                     "name": "olive oil",
-                    "quantity": "1 tablespoon"
+                    "quantity": "1 tablespoon",
+                    "ner_name": "olive oil"
                 },
                 {
                     "name": "garlic (minced)",
-                    "quantity": "2 cloves"
+                    "quantity": "2 cloves",
+                    "ner_name": "garlic"
                 },
                 {
                     "name": "salt",
-                    "quantity": "1/4 teaspoon"
+                    "quantity": "1/4 teaspoon",
+                    "ner_name": "salt"
                 },
                 {
                     "name": "black pepper",
-                    "quantity": "1/4 teaspoon"
+                    "quantity": "1/4 teaspoon",
+                    "ner_name": "black pepper"
                 },
                 {
                     "name": "fresh basil (chopped, for garnish)",
-                    "quantity": "2 tablespoons"
+                    "quantity": "2 tablespoons",
+                    "ner_name": "fresh basil"
                 }
             ],
             "directions": "1. Preheat Oven: Preheat your oven to 375°F (190°C).\n2. Sauté Vegetables: Heat olive oil in a large oven-proof skillet over medium heat. Add mushrooms and sauté for 5-7 minutes until they start to brown. Add garlic and spinach and cook until spinach is wilted, about 2-3 minutes. Season with salt and pepper.\n3. Add Tomatoes: Stir in the cherry tomatoes and cook for an additional minute.\n4. Pour Egg Whites: Spread the vegetables in an even layer and pour the egg whites over the top. Cook for 2-3 minutes until the eggs start to set.\n5. Add Cheese: Sprinkle the crumbled feta cheese over the top of the frittata mixture.\n6. Bake Frittata: Transfer the skillet to the preheated oven and bake for 15-18 minutes, or until the frittata is set and the top is lightly golden.\n7. Garnish and Serve: Remove from oven and let it cool for a few minutes. Garnish with fresh basil before serving.",
@@ -417,27 +497,33 @@
             "ingredients": [
                 {
                     "name": "cucumber",
-                    "quantity": "1 medium-sized"
+                    "quantity": "1 medium-sized",
+                    "ner_name": "cucumber"
                 },
                 {
                     "name": "fresh mint leaves",
-                    "quantity": "1/4 cup"
+                    "quantity": "1/4 cup",
+                    "ner_name": "fresh mint leaves"
                 },
                 {
                     "name": "fresh lemon juice",
-                    "quantity": "2 tablespoons"
+                    "quantity": "2 tablespoons",
+                    "ner_name": "fresh lemon juice"
                 },
                 {
                     "name": "water",
-                    "quantity": "8 cups"
+                    "quantity": "8 cups",
+                    "ner_name": "water"
                 },
                 {
                     "name": "ice cubes",
-                    "quantity": "1 cup (optional)"
+                    "quantity": "1 cup (optional)",
+                    "ner_name": "ice cubes"
                 },
                 {
                     "name": "lemon slices (for garnish)",
-                    "quantity": "3-4 slices"
+                    "quantity": "3-4 slices",
+                    "ner_name": "lemon slices"
                 }
             ],
             "directions": "1. Prepare Ingredients: Thinly slice the cucumber and roughly chop the mint leaves.\n2. Combine in Pitcher: Place the cucumber slices, mint leaves, and lemon slices (if using) in a large pitcher.\n3. Add Water: Pour water into the pitcher and stir gently.\n4. Infuse: Add the fresh lemon juice and stir again. If you want a colder beverage instantly, add ice cubes to the pitcher.\n5. Chill and Infuse: Refrigerate the infused water for at least 2 hours, allowing the flavors to meld. For a stronger infusion, refrigerate overnight.\n6. Serve: Pour the infused water into glasses, making sure to include a few cucumber and lemon slices, as well as some mint leaves for garnish and added flavor.",
@@ -454,43 +540,53 @@
             "ingredients": [
                 {
                     "name": "medium zucchinis",
-                    "quantity": "4"
+                    "quantity": "4",
+                    "ner_name": "zucchinis"
                 },
                 {
                     "name": "cherry tomatoes",
-                    "quantity": "1 cup"
+                    "quantity": "1 cup",
+                    "ner_name": "cherry tomatoes"
                 },
                 {
                     "name": "pine nuts (optional)",
-                    "quantity": "1/4 cup"
+                    "quantity": "1/4 cup",
+                    "ner_name": "pine nuts"
                 },
                 {
                     "name": "garlic",
-                    "quantity": "1 clove"
+                    "quantity": "1 clove",
+                    "ner_name": "garlic"
                 },
                 {
                     "name": "fresh basil leaves",
-                    "quantity": "1 cup"
+                    "quantity": "1 cup",
+                    "ner_name": "fresh basil leaves"
                 },
                 {
                     "name": "grated Parmesan cheese",
-                    "quantity": "1/3 cup"
+                    "quantity": "1/3 cup",
+                    "ner_name": "grated Parmesan cheese"
                 },
                 {
                     "name": "extra virgin olive oil",
-                    "quantity": "1/4 cup"
+                    "quantity": "1/4 cup",
+                    "ner_name": "extra virgin olive oil"
                 },
                 {
                     "name": "lemon juice",
-                    "quantity": "1 tablespoon"
+                    "quantity": "1 tablespoon",
+                    "ner_name": "lemon juice"
                 },
                 {
                     "name": "salt",
-                    "quantity": "to taste"
+                    "quantity": "to taste",
+                    "ner_name": "salt"
                 },
                 {
                     "name": "black pepper",
-                    "quantity": "to taste"
+                    "quantity": "to taste",
+                    "ner_name": "black pepper"
                 }
             ],
             "directions": "1. Prepare the Zucchini Noodles: Wash the zucchinis and use a spiralizer to create noodles. Set aside in a colander to drain any excess moisture.\n2. Make the Pesto: In a food processor or blender, combine the basil leaves, garlic, Parmesan cheese, pine nuts (if using), lemon juice, and salt and pepper. Pulse until coarsely chopped. While processing, slowly add the olive oil in a steady stream until the pesto comes together into a thick paste.\n3. Toast Pine Nuts (if using): Place pine nuts in a dry skillet over medium heat and cook, stirring often, until golden and fragrant. Set aside to cool.\n4. Combine the Dish: In a large bowl, toss the zucchini noodles with the pesto until they are well coated. Gently stir in the cherry tomatoes and toasted pine nuts.\n5. Serve: Serve immediately or chill in the refrigerator for an hour to allow flavors to meld. Adjust seasoning with more salt and pepper if needed.",
@@ -507,43 +603,53 @@
             "ingredients": [
                 {
                     "name": "zucchini",
-                    "quantity": "4 medium-sized"
+                    "quantity": "4 medium-sized",
+                    "ner_name": "zucchini"
                 },
                 {
                     "name": "cherry tomatoes",
-                    "quantity": "1 cup"
+                    "quantity": "1 cup",
+                    "ner_name": "cherry tomatoes"
                 },
                 {
                     "name": "pine nuts",
-                    "quantity": "1/4 cup"
+                    "quantity": "1/4 cup",
+                    "ner_name": "pine nuts"
                 },
                 {
                     "name": "garlic",
-                    "quantity": "2 cloves"
+                    "quantity": "2 cloves",
+                    "ner_name": "garlic"
                 },
                 {
                     "name": "fresh basil leaves",
-                    "quantity": "1 cup packed"
+                    "quantity": "1 cup packed",
+                    "ner_name": "fresh basil leaves"
                 },
                 {
                     "name": "grated Parmesan cheese",
-                    "quantity": "1/3 cup"
+                    "quantity": "1/3 cup",
+                    "ner_name": "grated Parmesan cheese"
                 },
                 {
                     "name": "extravirgin olive oil",
-                    "quantity": "1/4 cup"
+                    "quantity": "1/4 cup",
+                    "ner_name": "extravirgin olive oil"
                 },
                 {
                     "name": "lemon juice",
-                    "quantity": "1 tablespoon"
+                    "quantity": "1 tablespoon",
+                    "ner_name": "lemon juice"
                 },
                 {
                     "name": "salt",
-                    "quantity": "1/4 teaspoon"
+                    "quantity": "1/4 teaspoon",
+                    "ner_name": "salt"
                 },
                 {
                     "name": "black pepper",
-                    "quantity": "1/8 teaspoon"
+                    "quantity": "1/8 teaspoon",
+                    "ner_name": "black pepper"
                 }
             ],
             "directions": "1. Make Zucchini Noodles: Using a spiralizer, turn the zucchini into noodles. Pat dry with paper towels to remove excess moisture.\n2. Prepare Pesto: In a food processor, blend the basil leaves, pine nuts, garlic, Parmesan cheese, lemon juice, salt, and black pepper until smooth. Gradually add the olive oil while continuing to blend until a creamy consistency is reached.\n3. Toast Pine Nuts: In a dry skillet, toast the pine nuts over medium heat until golden brown, stirring frequently to prevent burning.\n4. Combine Noodles with Pesto: Toss the zucchini noodles with the prepared pesto in a large bowl until well coated.\n5. Serve: Top with toasted pine nuts and halved cherry tomatoes. Serve immediately or chilled.",

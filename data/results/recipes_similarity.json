@@ -1,0 +1,82 @@
+[
+    {
+        "id": "8",
+        "recipe_name": "Chicken sausage meatballs",
+        "ingredients_similarity": 0.7161328085151216,
+        "directions_similarity": 0.7943078842526824,
+        "gpt4_1106_recipe_total_calories": 338,
+        "original_recpie_total_calories": 164
+    },
+    {
+        "id": "9",
+        "recipe_name": "Fresh fruit kebabs",
+        "ingredients_similarity": 0.7238454735188806,
+        "directions_similarity": 0.6465537884564339,
+        "gpt4_1106_recipe_total_calories": 68,
+        "original_recpie_total_calories": 190
+    },
+    {
+        "id": "11",
+        "recipe_name": "Fresh fruit smoothie",
+        "ingredients_similarity": 0.6768980136244416,
+        "directions_similarity": 0.6383649117491097,
+        "gpt4_1106_recipe_total_calories": 155,
+        "original_recpie_total_calories": 72
+    },
+    {
+        "id": "10",
+        "recipe_name": "Chicken fajitas",
+        "ingredients_similarity": 0.8784677705722508,
+        "directions_similarity": 0.7477178166483159,
+        "gpt4_1106_recipe_total_calories": 251,
+        "original_recpie_total_calories": 220
+    },
+    {
+        "id": "4",
+        "recipe_name": "Baked oatmeal",
+        "ingredients_similarity": 0.7632123793456949,
+        "directions_similarity": 0.7165955266288173,
+        "gpt4_1106_recipe_total_calories": 217,
+        "original_recpie_total_calories": 204
+    },
+    {
+        "id": "5",
+        "recipe_name": "Beef and vegetable kebabs",
+        "ingredients_similarity": 0.7461063943261325,
+        "directions_similarity": 0.7761033414820444,
+        "gpt4_1106_recipe_total_calories": 237,
+        "original_recpie_total_calories": 324
+    },
+    {
+        "id": "7",
+        "recipe_name": "Beef fajitas",
+        "ingredients_similarity": 0.7378353021388255,
+        "directions_similarity": 0.663151765610114,
+        "gpt4_1106_recipe_total_calories": 287,
+        "original_recpie_total_calories": 242
+    },
+    {
+        "id": "6",
+        "recipe_name": "Black bean quesadillas",
+        "ingredients_similarity": 0.7880972928553996,
+        "directions_similarity": 0.8618781042905922,
+        "gpt4_1106_recipe_total_calories": 246,
+        "original_recpie_total_calories": 292
+    },
+    {
+        "id": "2",
+        "recipe_name": "Almond crusted chicken",
+        "ingredients_similarity": 0.8316892728304685,
+        "directions_similarity": 0.8603262661150781,
+        "gpt4_1106_recipe_total_calories": 323,
+        "original_recpie_total_calories": 247
+    },
+    {
+        "id": "3",
+        "recipe_name": "Balsamic feta chicken",
+        "ingredients_similarity": 0.8453849064393726,
+        "directions_similarity": 0.7269703306329909,
+        "gpt4_1106_recipe_total_calories": 237,
+        "original_recpie_total_calories": 271
+    }
+]
