@@ -1,0 +1,201 @@
+{
+    "recpies_authenticity": [
+        {
+            "id": "10",
+            "recipe_name": "almond flour pancakes",
+            "ingredients": "1 cup almond flour, 2 large eggs, 1/4 cup water (for thinner pancakes, you can add more), 1 tablespoon oil (coconut or olive oil), 1 teaspoon baking powder, 1/4 teaspoon salt, 1 teaspoon vanilla extract, 2 tablespoons granulated sweetener of choice (e.g., erythritol or monk fruit for a low glycemic impact), Non-stick cooking spray or additional oil for cooking, Fresh berries or sugar-free syrup for serving (optional)",
+            "ingredients_ner": [
+                "almond flour",
+                "eggs",
+                "water",
+                "oil",
+                "baking powder",
+                "salt",
+                "vanilla extract",
+                "granulated sweetener",
+                "cooking spray",
+                "berries",
+                "sugar-free syrup"
+            ],
+            "matched_recipes": [
+                {
+                    "id": "53",
+                    "recipe_name": "banana oatmeal pancakes",
+                    "ingredients": "1/2 cup old-fashioned rolled oats,1 cup hot water or boiling water,2 tablespoons canola oil,2 tablespoons brown sugar,1/2 cup whole-wheat flour,1/2 cup all-purpose flour,1 1/2 teaspoons baking powder,1/4 teaspoon baking soda,1/4 teaspoon salt,1/4 teaspoon ground cinnamon,1/2 cup skim milk,1/4 cup fat-free plain yogurt,1 mashed banana,1 egg",
+                    "ingredients_ner": [
+                        "old-fashioned rolled oats",
+                        "canola oil",
+                        "brown sugar",
+                        "whole-wheat flour",
+                        "all-purpose flour",
+                        "baking powder",
+                        "baking soda",
+                        "salt",
+                        "ground cinnamon",
+                        "skim milk",
+                        "fat-free plain yogurt",
+                        "mashed banana",
+                        "egg"
+                    ],
+                    "matched_percentage": 45.45454545454545,
+                    "matched_words": [
+                        "baking",
+                        "powder",
+                        "flour",
+                        "salt",
+                        "oil"
+                    ]
+                },
+                {
+                    "id": "55",
+                    "recipe_name": "buckwheat pancakes",
+                    "ingredients": "2 egg whites,1 tablespoon canola oil,1/2 cup fat-free milk,1/2 cup all-purpose (plain) flour,1/2 cup buckwheat flour,1 tablespoon baking powder,1 tablespoon sugar,1/2 cup sparkling water,3 cups sliced fresh strawberries",
+                    "ingredients_ner": [
+                        "egg whites",
+                        "canola oil",
+                        "fat-free milk",
+                        "all-purpose flour",
+                        "buckwheat flour",
+                        "baking powder",
+                        "sugar",
+                        "sparkling water",
+                        "sliced fresh strawberries"
+                    ],
+                    "matched_percentage": 45.45454545454545,
+                    "matched_words": [
+                        "baking",
+                        "powder",
+                        "flour",
+                        "water",
+                        "oil"
+                    ]
+                },
+                {
+                    "id": "70",
+                    "recipe_name": "whole-grain pancakes",
+                    "ingredients": "1 cup whole-wheat flour,1/4 cup millet flour,1/2 cup barley flour,2 tablespoons flaxseed flour,1/4 cup rolled oats,1 1/2 tablespoons baking powder,3 tablespoons honey,1 tablespoon oil,2 1/4 cups soy milk,3 large egg whites, beaten",
+                    "ingredients_ner": [
+                        "whole-wheat flour",
+                        "millet flour",
+                        "barley flour",
+                        "flaxseed flour",
+                        "rolled oats",
+                        "baking powder",
+                        "honey",
+                        "oil",
+                        "soy milk",
+                        "egg whites"
+                    ],
+                    "matched_percentage": 36.36363636363637,
+                    "matched_words": [
+                        "baking",
+                        "oil",
+                        "flour",
+                        "powder"
+                    ]
+                },
+                {
+                    "id": "167",
+                    "recipe_name": "buckwheat pancakes",
+                    "ingredients": "2 egg whites,1 tablespoon canola oil,1/2 cup fat-free milk,1/2 cup all-purpose (plain) flour,1/2 cup buckwheat flour,1 tablespoon baking powder,1 tablespoon sugar,1/2 cup sparkling water,3 cups sliced fresh strawberries",
+                    "ingredients_ner": [
+                        "egg whites",
+                        "canola oil",
+                        "fat-free milk",
+                        "all-purpose flour",
+                        "buckwheat flour",
+                        "baking powder",
+                        "sugar",
+                        "sparkling water",
+                        "sliced fresh strawberries"
+                    ],
+                    "matched_percentage": 45.45454545454545,
+                    "matched_words": [
+                        "baking",
+                        "powder",
+                        "flour",
+                        "water",
+                        "oil"
+                    ]
+                },
+                {
+                    "id": "329",
+                    "recipe_name": "whole-grain pancakes",
+                    "ingredients": "1 cup whole-wheat flour,1/4 cup millet flour,1/2 cup barley flour,2 tablespoons flaxseed flour,1/4 cup rolled oats,1 1/2 tablespoons baking powder,3 tablespoons honey,1 tablespoon oil,2 1/4 cups soy milk,3 large egg whites, beaten",
+                    "ingredients_ner": [
+                        "whole-wheat flour",
+                        "millet flour",
+                        "barley flour",
+                        "flaxseed flour",
+                        "rolled oats",
+                        "baking powder",
+                        "honey",
+                        "oil",
+                        "soy milk",
+                        "egg whites"
+                    ],
+                    "matched_percentage": 36.36363636363637,
+                    "matched_words": [
+                        "baking",
+                        "oil",
+                        "flour",
+                        "powder"
+                    ]
+                },
+                {
+                    "id": "330",
+                    "recipe_name": "whole-wheat blueberry pancakes",
+                    "ingredients": "1 1/3 cup white whole-wheat flour,2 teaspoons baking powder,1 tablespoon sugar,1/2 teaspoon cinnamon,1 1/3 cups skim milk,1 egg, lightly beaten,1 tablespoon canola oil,1 cup fresh or frozen blueberries",
+                    "ingredients_ner": [
+                        "white whole-wheat flour",
+                        "baking powder",
+                        "sugar",
+                        "cinnamon",
+                        "skim milk",
+                        "egg",
+                        "canola oil",
+                        "blueberries"
+                    ],
+                    "matched_percentage": 36.36363636363637,
+                    "matched_words": [
+                        "baking",
+                        "oil",
+                        "flour",
+                        "powder"
+                    ]
+                },
+                {
+                    "id": "332",
+                    "recipe_name": "whole-wheat pumpkin pancakes",
+                    "ingredients": "1 cup Greek fat-free plain yogurt,1 cup water,3 eggs,3/4 cup pumpkin puree,2 tablespoons canola oil,2 teaspoons vanilla extract,2 cups whole-wheat flour,1/3 cup brown sugar,2 tablespoons sucralose (Splenda),2 tablespoons baking powder,1/2 teaspoon cinnamon,1/2 teaspoon salt",
+                    "ingredients_ner": [
+                        "Greek fat-free plain yogurt",
+                        "water",
+                        "eggs",
+                        "pumpkin puree",
+                        "canola oil",
+                        "vanilla extract",
+                        "whole-wheat flour",
+                        "brown sugar",
+                        "sucralose (Splenda)",
+                        "baking powder",
+                        "cinnamon",
+                        "salt"
+                    ],
+                    "matched_percentage": 81.81818181818183,
+                    "matched_words": [
+                        "vanilla",
+                        "baking",
+                        "powder",
+                        "water",
+                        "flour",
+                        "salt",
+                        "extract",
+                        "oil",
+                        "eggs"
+                    ]
+                }
+            ]
+        }
+    ]
+}

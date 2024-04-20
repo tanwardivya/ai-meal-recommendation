@@ -1,0 +1,38 @@
+[
+    {
+        "id": "63",
+        "name": "Low-Cholesterol Vanilla Ice Cream",
+        "usda_calorie_estimation": 1804.44,
+        "gpt4_calorie_estimation": 1334
+    },
+    {
+        "id": "62",
+        "name": "Mediterranean Veggie Delight",
+        "usda_calorie_estimation": 728.44,
+        "gpt4_calorie_estimation": 633
+    },
+    {
+        "id": "64",
+        "name": "Refreshing Garden Juice",
+        "usda_calorie_estimation": 390.77,
+        "gpt4_calorie_estimation": 318
+    },
+    {
+        "id": "29",
+        "name": "Zesty Lemon Herb Carrot Salad",
+        "usda_calorie_estimation": 254.78,
+        "gpt4_calorie_estimation": 236
+    },
+    {
+        "id": "27",
+        "name": "Hearty Low-Sodium Vegetable Soup",
+        "usda_calorie_estimation": 461.67,
+        "gpt4_calorie_estimation": 367
+    },
+    {
+        "id": "31",
+        "name": "Cinnamon-Spiced Baked Apples",
+        "usda_calorie_estimation": 689.81,
+        "gpt4_calorie_estimation": 656
+    }
+]

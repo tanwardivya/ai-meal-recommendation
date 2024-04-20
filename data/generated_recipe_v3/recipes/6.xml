@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<recipe>
+ <recipe_name>
+  Apple Cinnamon Oatmeal
+ </recipe_name>
+ <ingredients>
+  - oats: 1 cup
+- water: 2 cups
+- chopped apple: 1 medium
+- ground cinnamon: 1 teaspoon
+- vanilla extract: 1/2 teaspoon
+- chopped nuts (walnuts or almonds, optional): 1/4 cup
+- sweetener (stevia or erythritol, optional): according to taste
+ </ingredients>
+ <directions>
+  1. Cook Oats: In a medium saucepan, bring 2 cups of water to a boil. Add oats and reduce heat to low. Simmer for about 10 minutes, stirring occasionally, until the oats are soft.
+2. Add Flavors: Stir in the chopped apple, cinnamon, and vanilla extract. Cook for an additional 5 minutes.
+3. Sweeten and Garnish: If desired, add a suitable amount of sweetener according to your taste preference. Garnish with chopped nuts for added texture and nutrients.
+4. Serve: Serve the oatmeal warm, providing a comforting and healthy start to the day.
+ </directions>
+ <nutrition>
+  Total Carbohydrate: 56g, Dietary Fiber: 8g, Sodium: 10mg, Saturated Fat: 1g, Total Fat: 6g (excluding the optional nuts), Protein: 6g, Added Sugars: 0g, Total Sugars: 10g
+ </nutrition>
+ <total_calories_estimation>
+  - Total Calories for entire recipe : Approximately 305 calories for the entire recipe. 
+- Calories for each ingredient:
+    Oats: 154 calories for 1 cup
+    Water: 0 calories 
+    Apple: 95 calories per medium apple
+    Cinnamon: Negligible
+    Vanilla Extract: Negligible
+    Nuts (optional): 56 calories per 1/4 cup (walnuts)
+    Sweetener (optional): Typically 0 calories
+- Serving People: 2
+ </total_calories_estimation>
+</recipe>

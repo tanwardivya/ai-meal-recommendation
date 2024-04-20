@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<recipe>
+ <recipe_name>
+  Oatmeal Banana Smoothie
+ </recipe_name>
+ <ingredients>
+  - oats: 1/2 cup
+- banana: 1 medium
+- almond milk (unsweetened): 1 cup
+- Greek yogurt (non-fat): 1/2 cup
+- honey: 1 tablespoon
+- ground cinnamon: 1/4 teaspoon
+- ice cubes: 1/2 cup
+ </ingredients>
+ <directions>
+  1. Prepare Oats: Place the oats in a blender and blend until they are ground into a fine powder.
+2. Blend Ingredients: In the blender with the ground oats, add banana, almond milk, Greek yogurt, honey, cinnamon, and ice cubes.
+3. Puree until Smooth: Blend all the ingredients on high until smooth and creamy.
+4. Serve: Pour the smoothie into a glass and enjoy immediately for a refreshing and healthy start to your day.
+ </directions>
+ <nutrition>
+  Total Carbohydrate: 60g, Dietary Fiber: 7g, Sodium: 80mg, Saturated Fat: 0g, Total Fat: 3g, Protein: 10g, Added Sugars: 17g, Total Sugars: 29g, Cholesterol: 0mg
+ </nutrition>
+ <total_calories_estimation>
+  - Total Calories for entire recipe : Approximately 353 calories for the entire smoothie. 
+- Calories for each ingredient:
+    Oats: 150 calories for 1/2 cup
+    Banana: 105 calories
+    Almond Milk: 30 calories per cup
+    Greek Yogurt: 59 calories per 1/2 cup
+    Honey: 64 calories per tablespoon
+    Cinnamon: Negligible
+    Ice Cubes: Negligible
+- Serving People: 1
+ </total_calories_estimation>
+</recipe>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<recipe>
+ <recipe_name>
+  Mediterranean Veggie Omelette
+ </recipe_name>
+ <ingredients>
+  - eggs: 4 large
+- spinach: 1 cup (fresh)
+- cherry tomatoes: 1/2 cup (halved)
+- feta cheese: 1/4 cup (crumbled)
+- black olives (sliced): 1/4 cup
+- olive oil: 1 tablespoon
+- salt: 1/4 teaspoon
+- black pepper: 1/8 teaspoon
+ </ingredients>
+ <directions>
+  1. Prep Ingredients: Wash and chop the spinach. Halve the cherry tomatoes and slice the black olives.
+2. Heat Skillet: In a non-stick skillet, heat olive oil over medium heat.
+3. Cook Eggs: In a bowl, whisk the eggs with salt and pepper. Pour into the skillet and cook for 1-2 minutes until the edges begin to set.
+4. Add Veggies and Cheese: Sprinkle the spinach, cherry tomatoes, black olives, and feta cheese over half of the omelette.
+5. Fold and Cook: Fold the omelette in half over the filling. Continue cooking for another 2-3 minutes, or until the eggs are fully set.
+6. Serve: Carefully slide the omelette onto a plate and serve hot.
+ </directions>
+ <nutrition>
+  Total Carbohydrate: 10g, Dietary Fiber: 3g, Sodium: 620mg, Saturated Fat: 5g, Total Fat: 23g, Protein: 22g, Cholesterol: 390mg, Total Sugars: 4g
+ </nutrition>
+ <total_calories_estimation>
+  - Total Calories for entire recipe : Approximately 560 calories for the entire recipe. 
+- Calories for each ingredient:
+    Eggs: 286 calories for 4 large eggs
+    Spinach: 7 calories per cup
+    Cherry Tomatoes: 16 calories per 1/2 cup
+    Feta Cheese: 80 calories per 1/4 cup
+    Black Olives: 40 calories per 1/4 cup
+    Olive Oil: 119 calories per tablespoon
+    Salt, Black Pepper: Negligible
+- Serving People: 2
+ </total_calories_estimation>
+</recipe>

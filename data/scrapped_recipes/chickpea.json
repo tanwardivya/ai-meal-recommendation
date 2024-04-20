@@ -1,0 +1,490 @@
+{
+    "recpies_authenticity": [
+        {
+            "id": "15",
+            "recipe_name": "quinoa  chickpea salad jars",
+            "ingredients": "1 cup quinoa, rinsed,2 cups water,1 can (15 oz) chickpeas, drained and rinsed,1 medium cucumber, diced,1 red bell pepper, diced,1/4 cup red onion, finely chopped,1 cup cherry tomatoes, halved,1/4 cup chopped fresh parsley,1/4 cup lemon juice,2 tablespoons olive oil,1 garlic clove, minced,1/2 teaspoon ground cumin,Salt and pepper to taste,4 wide-mouth pint-sized mason jars",
+            "ingredients_ner": [
+                "quinoa",
+                "water",
+                "chickpeas",
+                "cucumber",
+                "red bell pepper",
+                "red onion",
+                "cherry tomatoes",
+                "fresh parsley",
+                "lemon juice",
+                "olive oil",
+                "garlic clove",
+                "ground cumin",
+                "mason jars"
+            ],
+            "matched_recipes": [
+                {
+                    "id": "9",
+                    "recipe_name": "chickpea polenta with olives",
+                    "ingredients": "1 3/4 cups chickpea flour,2 cups plain soy milk,1 cup chicken stock, vegetable stock or broth,1/2 tablespoon extra-virgin olive oil,3 cloves garlic, chopped,1 tablespoon chopped fresh thyme, oregano or basil, or 1 teaspoon dried,1 teaspoon dry mustard,1/4 teaspoon freshly ground black pepper,3 egg whites,1/2 tablespoon extra-virgin olive oil,1/2 yellow onion, minced,1/4 cup coarsely chopped pitted Kalamata olives,1/4 cup dry-packed sun-dried tomatoes, soaked in water to rehydrate, drained and chopped,2 tablespoons grated Parmesan cheese,2 tablespoons finely chopped fresh flat-leaf (Italian) parsley",
+                    "ingredients_ner": [
+                        "chickpea flour",
+                        "soy milk",
+                        "chicken stock",
+                        "vegetable stock",
+                        "broth",
+                        "extra-virgin olive oil",
+                        "garlic",
+                        "thyme",
+                        "oregano",
+                        "basil",
+                        "dry mustard",
+                        "black pepper",
+                        "egg whites",
+                        "yellow onion",
+                        "Kalamata olives",
+                        "sun-dried tomatoes",
+                        "Parmesan cheese",
+                        "flat-leaf parsley"
+                    ],
+                    "matched_percentage": 53.84615384615385,
+                    "matched_words": [
+                        "olive",
+                        "garlic",
+                        "tomatoes",
+                        "parsley",
+                        "onion",
+                        "oil",
+                        "pepper"
+                    ]
+                },
+                {
+                    "id": "57",
+                    "recipe_name": "chickpea polenta with olives",
+                    "ingredients": "1 3/4 cups chickpea flour,2 cups plain soy milk,1 cup chicken stock, vegetable stock or broth,1/2 tablespoon extra-virgin olive oil,3 cloves garlic, chopped,1 tablespoon chopped fresh thyme, oregano or basil, or 1 teaspoon dried,1 teaspoon dry mustard,1/4 teaspoon freshly ground black pepper,3 egg whites,1/2 tablespoon extra-virgin olive oil,1/2 yellow onion, minced,1/4 cup coarsely chopped pitted Kalamata olives,1/4 cup dry-packed sun-dried tomatoes, soaked in water to rehydrate, drained and chopped,2 tablespoons grated Parmesan cheese,2 tablespoons finely chopped fresh flat-leaf (Italian) parsley",
+                    "ingredients_ner": [
+                        "chickpea flour",
+                        "soy milk",
+                        "chicken stock",
+                        "vegetable stock",
+                        "broth",
+                        "extra-virgin olive oil",
+                        "garlic",
+                        "thyme",
+                        "oregano",
+                        "basil",
+                        "dry mustard",
+                        "black pepper",
+                        "egg whites",
+                        "yellow onion",
+                        "Kalamata olives",
+                        "sun-dried tomatoes",
+                        "Parmesan cheese",
+                        "flat-leaf parsley"
+                    ],
+                    "matched_percentage": 53.84615384615385,
+                    "matched_words": [
+                        "olive",
+                        "garlic",
+                        "tomatoes",
+                        "parsley",
+                        "onion",
+                        "oil",
+                        "pepper"
+                    ]
+                },
+                {
+                    "id": "505",
+                    "recipe_name": "gazpacho with chickpeas",
+                    "ingredients": "1 can (15 ounces) chickpeas (also called garbanzo beans), rinsed and drained,6 cups unsalted vegetable juice,1 cup (about 16) cherry tomatoes, quartered,1/2 cup chopped, seeded cucumber,1/4 cup chopped red onion,1/4 cup chopped fresh cilantro or parsley,1/4 teaspoon hot pepper sauce,1 to 3 garlic cloves, minced,1/4 cup lime juice,6 lime wedges",
+                    "ingredients_ner": [
+                        "chickpeas",
+                        "vegetable juice",
+                        "cherry tomatoes",
+                        "cucumber",
+                        "red onion",
+                        "cilantro",
+                        "parsley",
+                        "hot pepper sauce",
+                        "garlic cloves",
+                        "lime juice",
+                        "lime wedges"
+                    ],
+                    "matched_percentage": 76.92307692307693,
+                    "matched_words": [
+                        "cherry",
+                        "juice",
+                        "garlic",
+                        "chickpeas",
+                        "tomatoes",
+                        "cucumber",
+                        "red",
+                        "parsley",
+                        "onion",
+                        "pepper"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "12",
+            "recipe_name": "mediterranean chickpea salad",
+            "ingredients": "2 cups chickpeas, drained and rinsed,1 cup cherry tomatoes, halved,1 cucumber, diced,1/2 red onion, finely chopped,1/4 cup kalamata olives, sliced,1/4 cup feta cheese, crumbled,2 tablespoons extra virgin olive oil,1 tablespoon red wine vinegar,1/2 teaspoon dried oregano,1/2 teaspoon dried basil,Salt and pepper to taste,1 tablespoon fresh parsley, chopped",
+            "ingredients_ner": [
+                "chickpeas",
+                "cherry tomatoes",
+                "cucumber",
+                "red onion",
+                "kalamata olives",
+                "feta cheese",
+                "extra virgin olive oil",
+                "red wine vinegar",
+                "dried oregano",
+                "dried basil",
+                "salt",
+                "pepper",
+                "fresh parsley"
+            ],
+            "matched_recipes": [
+                {
+                    "id": "9",
+                    "recipe_name": "chickpea polenta with olives",
+                    "ingredients": "1 3/4 cups chickpea flour,2 cups plain soy milk,1 cup chicken stock, vegetable stock or broth,1/2 tablespoon extra-virgin olive oil,3 cloves garlic, chopped,1 tablespoon chopped fresh thyme, oregano or basil, or 1 teaspoon dried,1 teaspoon dry mustard,1/4 teaspoon freshly ground black pepper,3 egg whites,1/2 tablespoon extra-virgin olive oil,1/2 yellow onion, minced,1/4 cup coarsely chopped pitted Kalamata olives,1/4 cup dry-packed sun-dried tomatoes, soaked in water to rehydrate, drained and chopped,2 tablespoons grated Parmesan cheese,2 tablespoons finely chopped fresh flat-leaf (Italian) parsley",
+                    "ingredients_ner": [
+                        "chickpea flour",
+                        "soy milk",
+                        "chicken stock",
+                        "vegetable stock",
+                        "broth",
+                        "extra-virgin olive oil",
+                        "garlic",
+                        "thyme",
+                        "oregano",
+                        "basil",
+                        "dry mustard",
+                        "black pepper",
+                        "egg whites",
+                        "yellow onion",
+                        "Kalamata olives",
+                        "sun-dried tomatoes",
+                        "Parmesan cheese",
+                        "flat-leaf parsley"
+                    ],
+                    "matched_percentage": 76.92307692307693,
+                    "matched_words": [
+                        "olive",
+                        "tomatoes",
+                        "olives",
+                        "cheese",
+                        "parsley",
+                        "basil",
+                        "onion",
+                        "oil",
+                        "pepper",
+                        "oregano"
+                    ]
+                },
+                {
+                    "id": "57",
+                    "recipe_name": "chickpea polenta with olives",
+                    "ingredients": "1 3/4 cups chickpea flour,2 cups plain soy milk,1 cup chicken stock, vegetable stock or broth,1/2 tablespoon extra-virgin olive oil,3 cloves garlic, chopped,1 tablespoon chopped fresh thyme, oregano or basil, or 1 teaspoon dried,1 teaspoon dry mustard,1/4 teaspoon freshly ground black pepper,3 egg whites,1/2 tablespoon extra-virgin olive oil,1/2 yellow onion, minced,1/4 cup coarsely chopped pitted Kalamata olives,1/4 cup dry-packed sun-dried tomatoes, soaked in water to rehydrate, drained and chopped,2 tablespoons grated Parmesan cheese,2 tablespoons finely chopped fresh flat-leaf (Italian) parsley",
+                    "ingredients_ner": [
+                        "chickpea flour",
+                        "soy milk",
+                        "chicken stock",
+                        "vegetable stock",
+                        "broth",
+                        "extra-virgin olive oil",
+                        "garlic",
+                        "thyme",
+                        "oregano",
+                        "basil",
+                        "dry mustard",
+                        "black pepper",
+                        "egg whites",
+                        "yellow onion",
+                        "Kalamata olives",
+                        "sun-dried tomatoes",
+                        "Parmesan cheese",
+                        "flat-leaf parsley"
+                    ],
+                    "matched_percentage": 76.92307692307693,
+                    "matched_words": [
+                        "olive",
+                        "tomatoes",
+                        "olives",
+                        "cheese",
+                        "parsley",
+                        "basil",
+                        "onion",
+                        "oil",
+                        "pepper",
+                        "oregano"
+                    ]
+                },
+                {
+                    "id": "505",
+                    "recipe_name": "gazpacho with chickpeas",
+                    "ingredients": "1 can (15 ounces) chickpeas (also called garbanzo beans), rinsed and drained,6 cups unsalted vegetable juice,1 cup (about 16) cherry tomatoes, quartered,1/2 cup chopped, seeded cucumber,1/4 cup chopped red onion,1/4 cup chopped fresh cilantro or parsley,1/4 teaspoon hot pepper sauce,1 to 3 garlic cloves, minced,1/4 cup lime juice,6 lime wedges",
+                    "ingredients_ner": [
+                        "chickpeas",
+                        "vegetable juice",
+                        "cherry tomatoes",
+                        "cucumber",
+                        "red onion",
+                        "cilantro",
+                        "parsley",
+                        "hot pepper sauce",
+                        "garlic cloves",
+                        "lime juice",
+                        "lime wedges"
+                    ],
+                    "matched_percentage": 61.53846153846154,
+                    "matched_words": [
+                        "cherry",
+                        "chickpeas",
+                        "tomatoes",
+                        "cucumber",
+                        "red",
+                        "parsley",
+                        "onion",
+                        "pepper"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "18",
+            "recipe_name": "tuna and chickpea salad",
+            "ingredients": "1 can (15 ounces) chickpeas, drained and rinsed,1 can (5 ounces) tuna in water, drained,1 medium red bell pepper, diced,1/2 cucumber, diced,1/4 red onion, thinly sliced,2 tablespoons chopped fresh parsley,1 tablespoon extra virgin olive oil,1 tablespoon fresh lemon juice,1/2 teaspoon dried oregano,Salt and pepper to taste",
+            "ingredients_ner": [
+                "chickpeas",
+                "tuna",
+                "red bell pepper",
+                "cucumber",
+                "red onion",
+                "fresh parsley",
+                "extra virgin olive oil",
+                "fresh lemon juice",
+                "dried oregano",
+                "salt",
+                "pepper"
+            ],
+            "matched_recipes": [
+                {
+                    "id": "9",
+                    "recipe_name": "chickpea polenta with olives",
+                    "ingredients": "1 3/4 cups chickpea flour,2 cups plain soy milk,1 cup chicken stock, vegetable stock or broth,1/2 tablespoon extra-virgin olive oil,3 cloves garlic, chopped,1 tablespoon chopped fresh thyme, oregano or basil, or 1 teaspoon dried,1 teaspoon dry mustard,1/4 teaspoon freshly ground black pepper,3 egg whites,1/2 tablespoon extra-virgin olive oil,1/2 yellow onion, minced,1/4 cup coarsely chopped pitted Kalamata olives,1/4 cup dry-packed sun-dried tomatoes, soaked in water to rehydrate, drained and chopped,2 tablespoons grated Parmesan cheese,2 tablespoons finely chopped fresh flat-leaf (Italian) parsley",
+                    "ingredients_ner": [
+                        "chickpea flour",
+                        "soy milk",
+                        "chicken stock",
+                        "vegetable stock",
+                        "broth",
+                        "extra-virgin olive oil",
+                        "garlic",
+                        "thyme",
+                        "oregano",
+                        "basil",
+                        "dry mustard",
+                        "black pepper",
+                        "egg whites",
+                        "yellow onion",
+                        "Kalamata olives",
+                        "sun-dried tomatoes",
+                        "Parmesan cheese",
+                        "flat-leaf parsley"
+                    ],
+                    "matched_percentage": 54.54545454545454,
+                    "matched_words": [
+                        "olive",
+                        "parsley",
+                        "onion",
+                        "oil",
+                        "pepper",
+                        "oregano"
+                    ]
+                },
+                {
+                    "id": "57",
+                    "recipe_name": "chickpea polenta with olives",
+                    "ingredients": "1 3/4 cups chickpea flour,2 cups plain soy milk,1 cup chicken stock, vegetable stock or broth,1/2 tablespoon extra-virgin olive oil,3 cloves garlic, chopped,1 tablespoon chopped fresh thyme, oregano or basil, or 1 teaspoon dried,1 teaspoon dry mustard,1/4 teaspoon freshly ground black pepper,3 egg whites,1/2 tablespoon extra-virgin olive oil,1/2 yellow onion, minced,1/4 cup coarsely chopped pitted Kalamata olives,1/4 cup dry-packed sun-dried tomatoes, soaked in water to rehydrate, drained and chopped,2 tablespoons grated Parmesan cheese,2 tablespoons finely chopped fresh flat-leaf (Italian) parsley",
+                    "ingredients_ner": [
+                        "chickpea flour",
+                        "soy milk",
+                        "chicken stock",
+                        "vegetable stock",
+                        "broth",
+                        "extra-virgin olive oil",
+                        "garlic",
+                        "thyme",
+                        "oregano",
+                        "basil",
+                        "dry mustard",
+                        "black pepper",
+                        "egg whites",
+                        "yellow onion",
+                        "Kalamata olives",
+                        "sun-dried tomatoes",
+                        "Parmesan cheese",
+                        "flat-leaf parsley"
+                    ],
+                    "matched_percentage": 54.54545454545454,
+                    "matched_words": [
+                        "olive",
+                        "parsley",
+                        "onion",
+                        "oil",
+                        "pepper",
+                        "oregano"
+                    ]
+                },
+                {
+                    "id": "505",
+                    "recipe_name": "gazpacho with chickpeas",
+                    "ingredients": "1 can (15 ounces) chickpeas (also called garbanzo beans), rinsed and drained,6 cups unsalted vegetable juice,1 cup (about 16) cherry tomatoes, quartered,1/2 cup chopped, seeded cucumber,1/4 cup chopped red onion,1/4 cup chopped fresh cilantro or parsley,1/4 teaspoon hot pepper sauce,1 to 3 garlic cloves, minced,1/4 cup lime juice,6 lime wedges",
+                    "ingredients_ner": [
+                        "chickpeas",
+                        "vegetable juice",
+                        "cherry tomatoes",
+                        "cucumber",
+                        "red onion",
+                        "cilantro",
+                        "parsley",
+                        "hot pepper sauce",
+                        "garlic cloves",
+                        "lime juice",
+                        "lime wedges"
+                    ],
+                    "matched_percentage": 63.63636363636363,
+                    "matched_words": [
+                        "juice",
+                        "chickpeas",
+                        "cucumber",
+                        "red",
+                        "parsley",
+                        "onion",
+                        "pepper"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "5",
+            "recipe_name": "chickpea salad wraps",
+            "ingredients": "1 can (15 ounces) chickpeas, rinsed and drained, 1/2 cup diced cucumber, 1/2 cup diced red bell pepper, 1/4 cup chopped red onion, 1/4 cup crumbled feta cheese (optional for vegan diets), 2 tablespoons chopped fresh parsley, 2 tablespoons olive oil, 1 tablespoon lemon juice, 1 teaspoon dried oregano, Salt and pepper to taste, 4 whole-grain or low-carb tortillas",
+            "ingredients_ner": [
+                "chickpeas",
+                "cucumber",
+                "red bell pepper",
+                "red onion",
+                "feta cheese",
+                "fresh parsley",
+                "olive oil",
+                "lemon juice",
+                "dried oregano",
+                "salt",
+                "pepper",
+                "whole-grain tortillas",
+                "low-carb tortillas"
+            ],
+            "matched_recipes": [
+                {
+                    "id": "9",
+                    "recipe_name": "chickpea polenta with olives",
+                    "ingredients": "1 3/4 cups chickpea flour,2 cups plain soy milk,1 cup chicken stock, vegetable stock or broth,1/2 tablespoon extra-virgin olive oil,3 cloves garlic, chopped,1 tablespoon chopped fresh thyme, oregano or basil, or 1 teaspoon dried,1 teaspoon dry mustard,1/4 teaspoon freshly ground black pepper,3 egg whites,1/2 tablespoon extra-virgin olive oil,1/2 yellow onion, minced,1/4 cup coarsely chopped pitted Kalamata olives,1/4 cup dry-packed sun-dried tomatoes, soaked in water to rehydrate, drained and chopped,2 tablespoons grated Parmesan cheese,2 tablespoons finely chopped fresh flat-leaf (Italian) parsley",
+                    "ingredients_ner": [
+                        "chickpea flour",
+                        "soy milk",
+                        "chicken stock",
+                        "vegetable stock",
+                        "broth",
+                        "extra-virgin olive oil",
+                        "garlic",
+                        "thyme",
+                        "oregano",
+                        "basil",
+                        "dry mustard",
+                        "black pepper",
+                        "egg whites",
+                        "yellow onion",
+                        "Kalamata olives",
+                        "sun-dried tomatoes",
+                        "Parmesan cheese",
+                        "flat-leaf parsley"
+                    ],
+                    "matched_percentage": 53.84615384615385,
+                    "matched_words": [
+                        "olive",
+                        "cheese",
+                        "parsley",
+                        "onion",
+                        "oil",
+                        "pepper",
+                        "oregano"
+                    ]
+                },
+                {
+                    "id": "57",
+                    "recipe_name": "chickpea polenta with olives",
+                    "ingredients": "1 3/4 cups chickpea flour,2 cups plain soy milk,1 cup chicken stock, vegetable stock or broth,1/2 tablespoon extra-virgin olive oil,3 cloves garlic, chopped,1 tablespoon chopped fresh thyme, oregano or basil, or 1 teaspoon dried,1 teaspoon dry mustard,1/4 teaspoon freshly ground black pepper,3 egg whites,1/2 tablespoon extra-virgin olive oil,1/2 yellow onion, minced,1/4 cup coarsely chopped pitted Kalamata olives,1/4 cup dry-packed sun-dried tomatoes, soaked in water to rehydrate, drained and chopped,2 tablespoons grated Parmesan cheese,2 tablespoons finely chopped fresh flat-leaf (Italian) parsley",
+                    "ingredients_ner": [
+                        "chickpea flour",
+                        "soy milk",
+                        "chicken stock",
+                        "vegetable stock",
+                        "broth",
+                        "extra-virgin olive oil",
+                        "garlic",
+                        "thyme",
+                        "oregano",
+                        "basil",
+                        "dry mustard",
+                        "black pepper",
+                        "egg whites",
+                        "yellow onion",
+                        "Kalamata olives",
+                        "sun-dried tomatoes",
+                        "Parmesan cheese",
+                        "flat-leaf parsley"
+                    ],
+                    "matched_percentage": 53.84615384615385,
+                    "matched_words": [
+                        "olive",
+                        "cheese",
+                        "parsley",
+                        "onion",
+                        "oil",
+                        "pepper",
+                        "oregano"
+                    ]
+                },
+                {
+                    "id": "505",
+                    "recipe_name": "gazpacho with chickpeas",
+                    "ingredients": "1 can (15 ounces) chickpeas (also called garbanzo beans), rinsed and drained,6 cups unsalted vegetable juice,1 cup (about 16) cherry tomatoes, quartered,1/2 cup chopped, seeded cucumber,1/4 cup chopped red onion,1/4 cup chopped fresh cilantro or parsley,1/4 teaspoon hot pepper sauce,1 to 3 garlic cloves, minced,1/4 cup lime juice,6 lime wedges",
+                    "ingredients_ner": [
+                        "chickpeas",
+                        "vegetable juice",
+                        "cherry tomatoes",
+                        "cucumber",
+                        "red onion",
+                        "cilantro",
+                        "parsley",
+                        "hot pepper sauce",
+                        "garlic cloves",
+                        "lime juice",
+                        "lime wedges"
+                    ],
+                    "matched_percentage": 53.84615384615385,
+                    "matched_words": [
+                        "juice",
+                        "chickpeas",
+                        "cucumber",
+                        "red",
+                        "parsley",
+                        "onion",
+                        "pepper"
+                    ]
+                }
+            ]
+        }
+    ]
+}
