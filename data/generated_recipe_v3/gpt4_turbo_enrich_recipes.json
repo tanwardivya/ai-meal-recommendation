@@ -1,0 +1,694 @@
+{
+    "recipes": [
+        {
+            "id": "63",
+            "recipe_name": "Low-Cholesterol Vanilla Ice Cream",
+            "ingredients": [
+                {
+                    "name": "unsweetened almond milk",
+                    "quantity": "2 cups",
+                    "ner_name": "unsweetened almond milk",
+                    "usda_food_ingredient": {
+                        "fdc_id": 2479376,
+                        "name": "\"unsweetened almond milk\"",
+                        "nutrition_id": 1008,
+                        "energy": 12.0,
+                        "unit": "KCAL"
+                    }
+                },
+                {
+                    "name": "coconut cream",
+                    "quantity": "1 cup",
+                    "ner_name": "coconut cream",
+                    "usda_food_ingredient": {
+                        "fdc_id": 170171,
+                        "name": "\"coconut cream\"",
+                        "nutrition_id": 1008,
+                        "energy": 357.0,
+                        "unit": "KCAL"
+                    }
+                },
+                {
+                    "name": "pure vanilla extract",
+                    "quantity": "2 teaspoons",
+                    "ner_name": "vanilla extract",
+                    "usda_food_ingredient": {
+                        "fdc_id": 173471,
+                        "name": "\"vanilla extract\"",
+                        "nutrition_id": 1008,
+                        "energy": 288.0,
+                        "unit": "KCAL"
+                    }
+                },
+                {
+                    "name": "maple syrup",
+                    "quantity": "1/2 cup",
+                    "ner_name": "maple syrup",
+                    "usda_food_ingredient": {
+                        "fdc_id": 2665764,
+                        "name": "\"maple syrup\"",
+                        "nutrition_id": 1008,
+                        "energy": 367.0,
+                        "unit": "KCAL"
+                    }
+                },
+                {
+                    "name": "cornstarch",
+                    "quantity": "2 tablespoons",
+                    "ner_name": "cornstarch",
+                    "usda_food_ingredient": {
+                        "fdc_id": 169698,
+                        "name": "\"cornstarch\"",
+                        "nutrition_id": 1008,
+                        "energy": 381.0,
+                        "unit": "KCAL"
+                    }
+                },
+                {
+                    "name": "salt",
+                    "quantity": "1/4 teaspoon",
+                    "ner_name": "salt",
+                    "usda_food_ingredient": {
+                        "fdc_id": 173410,
+                        "name": "\"salt\"",
+                        "nutrition_id": 1008,
+                        "energy": 717.0,
+                        "unit": "KCAL"
+                    }
+                }
+            ],
+            "directions": "1. Mix Ingredients: In a medium saucepan, combine the almond milk, coconut cream, maple syrup, cornstarch, and salt. Whisk them together until the cornstarch is fully dissolved.\n2. Cook: Place the saucepan over medium heat. Cook the mixture, stirring constantly, until it begins to thicken slightly and just begins to bubble. Then remove from heat and stir in vanilla extract.\n3. Chill: Transfer the mixture to a bowl and cover it with plastic wrap, pressing the wrap directly onto the surface to prevent a skin from forming. Chill in the refrigerator for at least 4 hours, until very cold.\n4. Process: Pour the chilled mixture into an ice cream maker and churn according to the manufacturer's instructions until it reaches the consistency of soft-serve ice cream.\n5. Freeze: Transfer the ice cream to an airtight container and freeze for at least 2 hours or until firm.\n6. Serve: Scoop and enjoy the Low-Cholesterol Vanilla Ice Cream.",
+            "nutrition": {
+                "fat": "11g",
+                "protein": "1g",
+                "carbohydrate": "13g"
+            },
+            "total_calories_estimation": "- Total Calories for entire recipe : Approximately 1040 calories for the entire batch.\n- Calories for each ingredient:\n    Unsweetened Almond Milk: 60 calories per 2 cups\n    Coconut Cream: 792 calories per cup\n    Pure Vanilla Extract: Negligible\n    Maple Syrup: 420 calories per 1/2 cup\n    Cornstarch: 62 calories per 2 tablespoons\n    Salt: Negligible\n- Serving People: 8"
+        },
+        {
+            "id": "62",
+            "recipe_name": "Mediterranean Veggie Delight",
+            "ingredients": [
+                {
+                    "name": "zucchini",
+                    "quantity": "2 (sliced)",
+                    "ner_name": "zucchini",
+                    "usda_food_ingredient": {
+                        "fdc_id": 168565,
+                        "name": "\"zucchini\"",
+                        "nutrition_id": 1008,
+                        "energy": 21.0,
+                        "unit": "KCAL"
+                    }
+                },
+                {
+                    "name": "eggplant",
+                    "quantity": "1 (sliced)",
+                    "ner_name": "eggplant",
+                    "usda_food_ingredient": {
+                        "fdc_id": 169892,
+                        "name": "\"eggplant\"",
+                        "nutrition_id": 1008,
+                        "energy": 49.0,
+                        "unit": "KCAL"
+                    }
+                },
+                {
+                    "name": "yellow bell pepper",
+                    "quantity": "1 (sliced)",
+                    "ner_name": "yellow bell pepper",
+                    "usda_food_ingredient": {
+                        "fdc_id": 2079108,
+                        "name": "\"bell pepper\"",
+                        "nutrition_id": 1008,
+                        "energy": 18.0,
+                        "unit": "KCAL"
+                    }
+                },
+                {
+                    "name": "red onion",
+                    "quantity": "1 (sliced)",
+                    "ner_name": "red onion",
+                    "usda_food_ingredient": {
+                        "fdc_id": 2345315,
+                        "name": "\"red onion\"",
+                        "nutrition_id": 1008,
+                        "energy": 38.0,
+                        "unit": "KCAL"
+                    }
+                },
+                {
+                    "name": "cherry tomatoes",
+                    "quantity": "1 cup",
+                    "ner_name": "cherry tomatoes",
+                    "usda_food_ingredient": {
+                        "fdc_id": 2543214,
+                        "name": "\"cherry tomatoes\"",
+                        "nutrition_id": 1008,
+                        "energy": 22.0,
+                        "unit": "KCAL"
+                    }
+                },
+                {
+                    "name": "garlic cloves",
+                    "quantity": "3 (minced)",
+                    "ner_name": "garlic cloves",
+                    "usda_food_ingredient": {
+                        "fdc_id": 2017403,
+                        "name": "\"garlic cloves\"",
+                        "nutrition_id": 1008,
+                        "energy": 100.0,
+                        "unit": "KCAL"
+                    }
+                },
+                {
+                    "name": "olive oil",
+                    "quantity": "3 tablespoons",
+                    "ner_name": "olive oil",
+                    "usda_food_ingredient": {
+                        "fdc_id": 171443,
+                        "name": "\"olive oil\"",
+                        "nutrition_id": 1008,
+                        "energy": 361.0,
+                        "unit": "KCAL"
+                    }
+                },
+                {
+                    "name": "balsamic vinegar",
+                    "quantity": "2 tablespoons",
+                    "ner_name": "balsamic vinegar",
+                    "usda_food_ingredient": {
+                        "fdc_id": 2412174,
+                        "name": "\"balsamic vinegar\"",
+                        "nutrition_id": 1008,
+                        "energy": 300.0,
+                        "unit": "KCAL"
+                    }
+                },
+                {
+                    "name": "dried oregano",
+                    "quantity": "1 teaspoon",
+                    "ner_name": "dried oregano",
+                    "usda_food_ingredient": {
+                        "fdc_id": 2597536,
+                        "name": "\"dried oregano\"",
+                        "nutrition_id": 1008,
+                        "energy": 0.0,
+                        "unit": "KCAL"
+                    }
+                },
+                {
+                    "name": "dried basil",
+                    "quantity": "1 teaspoon",
+                    "ner_name": "dried basil",
+                    "usda_food_ingredient": {
+                        "fdc_id": 2158003,
+                        "name": "\"dried basil\"",
+                        "nutrition_id": 1008,
+                        "energy": 0.0,
+                        "unit": "KCAL"
+                    }
+                },
+                {
+                    "name": "black pepper",
+                    "quantity": "1/2 teaspoon",
+                    "ner_name": "black pepper",
+                    "usda_food_ingredient": {
+                        "fdc_id": 2438022,
+                        "name": "\"black pepper\"",
+                        "nutrition_id": 1008,
+                        "energy": 113.0,
+                        "unit": "KCAL"
+                    }
+                },
+                {
+                    "name": "feta cheese (crumbled, optional)",
+                    "quantity": "1/4 cup",
+                    "ner_name": "feta cheese",
+                    "usda_food_ingredient": {
+                        "fdc_id": 2345760,
+                        "name": "\"feta cheese\"",
+                        "nutrition_id": 1008,
+                        "energy": 240.0,
+                        "unit": "KCAL"
+                    }
+                }
+            ],
+            "directions": "1. Preheat Oven: Preheat your oven to 400°F (200°C).\n2. Prepare Vegetables: In a large mixing bowl, combine the sliced zucchini, eggplant, yellow bell pepper, red onion, and cherry tomatoes. Add the minced garlic.\n3. Season and Mix: Drizzle olive oil and balsamic vinegar over the vegetables. Sprinkle dried oregano, dried basil, and black pepper. Toss all the ingredients together until the vegetables are evenly coated.\n4. Roast Vegetables: Spread the vegetables out in a single layer on a baking sheet. Roast in the oven for about 20-25 minutes, until the vegetables are tender and have caramelized edges.\n5. Add Cheese: Remove from the oven and sprinkle crumbled feta cheese over the hot vegetables (optional).\n6. Serve: Serve warm as a delightful and hearty dinner.",
+            "nutrition": {
+                "fat": "15g",
+                "protein": "5g",
+                "carbohydrate": "18g"
+            },
+            "total_calories_estimation": "- Total Calories for entire recipe : Approximately 510 calories for the entire recipe. \n- Calories for each ingredient:\n    Zucchini: 66 calories for 2 medium\n    Eggplant: 55 calories for 1 medium\n    Yellow Bell Pepper: 50 calories for 1 large\n    Red Onion: 44 calories for 1 medium\n    Cherry Tomatoes: 27 calories per cup\n    Garlic: 13 calories for 3 cloves\n    Olive Oil: 251 calories for 3 tablespoons\n    Balsamic Vinegar: 28 calories for 2 tablespoons\n    Feta Cheese: 99 calories per 1/4 cup\n- Serving People: 4"
+        },
+        {
+            "id": "64",
+            "recipe_name": "Refreshing Garden Juice",
+            "ingredients": [
+                {
+                    "name": "carrots",
+                    "quantity": "4 medium",
+                    "ner_name": "carrots",
+                    "usda_food_ingredient": {
+                        "fdc_id": 2258587,
+                        "name": "\"carrots\"",
+                        "nutrition_id": 2047,
+                        "energy": 40.8,
+                        "unit": "KCAL"
+                    }
+                },
+                {
+                    "name": "celery stalks",
+                    "quantity": "4",
+                    "ner_name": "celery stalks",
+                    "usda_food_ingredient": {
+                        "fdc_id": 2346405,
+                        "name": "\"celery\"",
+                        "nutrition_id": 2047,
+                        "energy": 16.7,
+                        "unit": "KCAL"
+                    }
+                },
+                {
+                    "name": "apples (green or red)",
+                    "quantity": "2 medium",
+                    "ner_name": "apples",
+                    "usda_food_ingredient": {
+                        "fdc_id": 1750340,
+                        "name": "\"apples\"",
+                        "nutrition_id": 2047,
+                        "energy": 64.7,
+                        "unit": "KCAL"
+                    }
+                },
+                {
+                    "name": "lemon juice",
+                    "quantity": "1 tablespoon",
+                    "ner_name": "lemon juice",
+                    "usda_food_ingredient": {
+                        "fdc_id": 167747,
+                        "name": "\"lemon juice\"",
+                        "nutrition_id": 1008,
+                        "energy": 22.0,
+                        "unit": "KCAL"
+                    }
+                },
+                {
+                    "name": "fresh ginger (optional)",
+                    "quantity": "1 inch piece",
+                    "ner_name": "ginger",
+                    "usda_food_ingredient": {
+                        "fdc_id": 169231,
+                        "name": "\"ginger\"",
+                        "nutrition_id": 1008,
+                        "energy": 80.0,
+                        "unit": "KCAL"
+                    }
+                }
+            ],
+            "directions": "1. Prepare Ingredients: Wash all the vegetables and fruits thoroughly. Peel the carrots and ginger, and core the apples.\n2. Juice Ingredients: Using a juicer, feed carrots, celery stalks, apples, and ginger (if using) into the juicer. Alternate between the types of produce to ensure maximum juice extraction.\n3. Add Lemon: Stir in the tablespoon of lemon juice into the freshly extracted juice. This adds a vibrant, tangy taste and helps preserve the color.\n4. Serve Immediately: Pour the juice into glasses and serve immediately to enjoy the maximum nutritional benefits. If desired, you can chill the juice for about 30 minutes before serving.",
+            "nutrition": {
+                "fat": "0.5g",
+                "protein": "2g",
+                "carbohydrate": "28g"
+            },
+            "total_calories_estimation": "- Total Calories for entire recipe : Approximately 215 calories for the entire recipe. \n- Calories for each ingredient:\n    Carrots: 100 calories for 4 medium\n    Celery Stalks: 24 calories for 4 stalks\n    Apples: 190 calories for 2 medium apples\n    Lemon Juice: 4 calories per 1 tablespoon\n    Ginger: Negligible\n- Serving People: 2"
+        },
+        {
+            "id": "29",
+            "recipe_name": "Zesty Lemon Herb Carrot Salad",
+            "ingredients": [
+                {
+                    "name": "carrots (grated)",
+                    "quantity": "4 medium",
+                    "ner_name": "carrots",
+                    "usda_food_ingredient": {
+                        "fdc_id": 2258587,
+                        "name": "\"carrots\"",
+                        "nutrition_id": 2047,
+                        "energy": 40.8,
+                        "unit": "KCAL"
+                    }
+                },
+                {
+                    "name": "fresh parsley (chopped)",
+                    "quantity": "1/4 cup",
+                    "ner_name": "parsley",
+                    "usda_food_ingredient": {
+                        "fdc_id": 170416,
+                        "name": "\"parsley\"",
+                        "nutrition_id": 1008,
+                        "energy": 36.0,
+                        "unit": "KCAL"
+                    }
+                },
+                {
+                    "name": "fresh dill (chopped)",
+                    "quantity": "2 tablespoons",
+                    "ner_name": "dill",
+                    "usda_food_ingredient": {
+                        "fdc_id": 324653,
+                        "name": "\"dill\"",
+                        "nutrition_id": 1008,
+                        "energy": 12.0,
+                        "unit": "KCAL"
+                    }
+                },
+                {
+                    "name": "lemon zest",
+                    "quantity": "1 teaspoon",
+                    "ner_name": "lemon zest",
+                    "usda_food_ingredient": {
+                        "fdc_id": 167802,
+                        "name": "\"lemon\"",
+                        "nutrition_id": 1008,
+                        "energy": 17.0,
+                        "unit": "KCAL"
+                    }
+                },
+                {
+                    "name": "lemon juice",
+                    "quantity": "3 tablespoons",
+                    "ner_name": "lemon juice",
+                    "usda_food_ingredient": {
+                        "fdc_id": 167747,
+                        "name": "\"lemon juice\"",
+                        "nutrition_id": 1008,
+                        "energy": 22.0,
+                        "unit": "KCAL"
+                    }
+                },
+                {
+                    "name": "olive oil",
+                    "quantity": "2 tablespoons",
+                    "ner_name": "olive oil",
+                    "usda_food_ingredient": {
+                        "fdc_id": 171443,
+                        "name": "\"olive oil\"",
+                        "nutrition_id": 1008,
+                        "energy": 361.0,
+                        "unit": "KCAL"
+                    }
+                },
+                {
+                    "name": "garlic (minced)",
+                    "quantity": "1 clove",
+                    "ner_name": "garlic",
+                    "usda_food_ingredient": {
+                        "fdc_id": 1104647,
+                        "name": "\"garlic\"",
+                        "nutrition_id": 1008,
+                        "energy": 143.0,
+                        "unit": "KCAL"
+                    }
+                },
+                {
+                    "name": "black pepper",
+                    "quantity": "1/4 teaspoon",
+                    "ner_name": "black pepper",
+                    "usda_food_ingredient": {
+                        "fdc_id": 2438022,
+                        "name": "\"black pepper\"",
+                        "nutrition_id": 1008,
+                        "energy": 113.0,
+                        "unit": "KCAL"
+                    }
+                }
+            ],
+            "directions": "1. Prepare Carrots: Peel and grate the carrots. Place them in a large mixing bowl.\n2. Add Herbs: To the grated carrots, add chopped parsley and dill.\n3. Make Dressing: In a small bowl, combine lemon zest, lemon juice, olive oil, minced garlic, and black pepper. Whisk together until well mixed.\n4. Toss and Chill: Pour the dressing over the carrot and herb mixture and toss until the carrots are evenly coated. Refrigerate the salad for at least 20 minutes to let the flavors blend.\n5. Serve: Serve chilled as a refreshing and flavorful side dish or appetizer.",
+            "nutrition": {
+                "fat": "7g",
+                "protein": "1g",
+                "carbohydrate": "12g"
+            },
+            "total_calories_estimation": "- Total Calories for entire recipe: Approximately 272 calories for the entire recipe.\n- Calories for each ingredient:\n    Carrots: 100 calories (4 medium carrots)\n    Parsley: Negligible\n    Dill: Negligible\n    Lemon zest: Negligible\n    Lemon juice: 12 calories\n    Olive oil: 120 calories for 2 tablespoons\n    Garlic: 4 calories for 1 clove\n    Black Pepper: Negligible\n- Serving People: 4"
+        },
+        {
+            "id": "27",
+            "recipe_name": "Hearty Low-Sodium Vegetable Soup",
+            "ingredients": [
+                {
+                    "name": "olive oil",
+                    "quantity": "1 tablespoon",
+                    "ner_name": "olive oil",
+                    "usda_food_ingredient": {
+                        "fdc_id": 171443,
+                        "name": "\"olive oil\"",
+                        "nutrition_id": 1008,
+                        "energy": 361.0,
+                        "unit": "KCAL"
+                    }
+                },
+                {
+                    "name": "onion (chopped)",
+                    "quantity": "1 medium",
+                    "ner_name": "onion",
+                    "usda_food_ingredient": {
+                        "fdc_id": 790577,
+                        "name": "\"onion\"",
+                        "nutrition_id": 1008,
+                        "energy": 44.0,
+                        "unit": "KCAL"
+                    }
+                },
+                {
+                    "name": "garlic (minced)",
+                    "quantity": "2 cloves",
+                    "ner_name": "garlic",
+                    "usda_food_ingredient": {
+                        "fdc_id": 1104647,
+                        "name": "\"garlic\"",
+                        "nutrition_id": 1008,
+                        "energy": 143.0,
+                        "unit": "KCAL"
+                    }
+                },
+                {
+                    "name": "carrots (sliced)",
+                    "quantity": "2",
+                    "ner_name": "carrots",
+                    "usda_food_ingredient": {
+                        "fdc_id": 2258587,
+                        "name": "\"carrots\"",
+                        "nutrition_id": 2047,
+                        "energy": 40.8,
+                        "unit": "KCAL"
+                    }
+                },
+                {
+                    "name": "zucchini (sliced)",
+                    "quantity": "1 large",
+                    "ner_name": "zucchini",
+                    "usda_food_ingredient": {
+                        "fdc_id": 168565,
+                        "name": "\"zucchini\"",
+                        "nutrition_id": 1008,
+                        "energy": 21.0,
+                        "unit": "KCAL"
+                    }
+                },
+                {
+                    "name": "green beans (chopped)",
+                    "quantity": "1 cup",
+                    "ner_name": "green beans",
+                    "usda_food_ingredient": {
+                        "fdc_id": 169049,
+                        "name": "\"green beans\"",
+                        "nutrition_id": 1008,
+                        "energy": 51.0,
+                        "unit": "KCAL"
+                    }
+                },
+                {
+                    "name": "celery (sliced)",
+                    "quantity": "2 stalks",
+                    "ner_name": "celery",
+                    "usda_food_ingredient": {
+                        "fdc_id": 2346405,
+                        "name": "\"celery\"",
+                        "nutrition_id": 2047,
+                        "energy": 16.7,
+                        "unit": "KCAL"
+                    }
+                },
+                {
+                    "name": "lowsodium vegetable broth",
+                    "quantity": "4 cups",
+                    "ner_name": "vegetable broth",
+                    "usda_food_ingredient": {
+                        "fdc_id": 171180,
+                        "name": "\"vegetable broth\"",
+                        "nutrition_id": 1008,
+                        "energy": 6.0,
+                        "unit": "KCAL"
+                    }
+                },
+                {
+                    "name": "canned diced tomatoes (no salt added)",
+                    "quantity": "1 can (14.5 ounces)",
+                    "ner_name": "diced tomatoes",
+                    "usda_food_ingredient": {
+                        "fdc_id": 2543214,
+                        "name": "\"diced tomatoes\"",
+                        "nutrition_id": 1008,
+                        "energy": 22.0,
+                        "unit": "KCAL"
+                    }
+                },
+                {
+                    "name": "thyme (dried)",
+                    "quantity": "1 teaspoon",
+                    "ner_name": "thyme",
+                    "usda_food_ingredient": {
+                        "fdc_id": 173470,
+                        "name": "\"thyme\"",
+                        "nutrition_id": 1008,
+                        "energy": 101.0,
+                        "unit": "KCAL"
+                    }
+                },
+                {
+                    "name": "black pepper",
+                    "quantity": "1/2 teaspoon",
+                    "ner_name": "black pepper",
+                    "usda_food_ingredient": {
+                        "fdc_id": 2438022,
+                        "name": "\"black pepper\"",
+                        "nutrition_id": 1008,
+                        "energy": 113.0,
+                        "unit": "KCAL"
+                    }
+                },
+                {
+                    "name": "spinach (chopped)",
+                    "quantity": "1 cup",
+                    "ner_name": "spinach",
+                    "usda_food_ingredient": {
+                        "fdc_id": 1999632,
+                        "name": "\"spinach\"",
+                        "nutrition_id": 2047,
+                        "energy": 26.6,
+                        "unit": "KCAL"
+                    }
+                }
+            ],
+            "directions": "1. Sauté Vegetables: In a large pot, heat olive oil over medium heat. Add onions and garlic, and cook until onions are translucent.\n2. Add Vegetables: Stir in carrots, zucchini, green beans, and celery. Cook for about 5 minutes, stirring occasionally.\n3. Add Liquids and Season: Pour in the low-sodium vegetable broth and diced tomatoes. Season with thyme and black pepper. Bring to a boil, then reduce heat and simmer for about 20 minutes.\n4. Add Greens: Stir in spinach during the last 5 minutes of cooking.\n5. Serve: Serve hot. Optionally, you can garnish with fresh herbs like parsley or basil before serving.",
+            "nutrition": {
+                "fat": "3.5g",
+                "protein": "3g",
+                "carbohydrate": "18g"
+            },
+            "total_calories_estimation": "- Total Calories for entire recipe : Approximately 255 calories for the entire recipe. \n- Calories for each ingredient:\n    Olive Oil: 119 calories per tablespoon\n    Onion: 45 calories\n    Garlic: 9 calories\n    Carrots: 50 calories for two carrots\n    Zucchini: 33 calories\n    Green Beans: 34 calories per cup\n    Celery: 12 calories for two stalks\n    Vegetable Broth: 17 calories for 4 cups\n    Diced Tomatoes: 41 calories per can\n    Spinach: 7 calories per cup\n- Serving People: 4"
+        },
+        {
+            "id": "31",
+            "recipe_name": "Cinnamon-Spiced Baked Apples",
+            "ingredients": [
+                {
+                    "name": "large apples",
+                    "quantity": "4 (such as Granny Smith or Honeycrisp)",
+                    "ner_name": "apples",
+                    "usda_food_ingredient": {
+                        "fdc_id": 1750340,
+                        "name": "\"apples\"",
+                        "nutrition_id": 2047,
+                        "energy": 64.7,
+                        "unit": "KCAL"
+                    }
+                },
+                {
+                    "name": "ground cinnamon",
+                    "quantity": "2 teaspoons",
+                    "ner_name": "ground cinnamon",
+                    "usda_food_ingredient": {
+                        "fdc_id": 171849,
+                        "name": "\"cinnamon\"",
+                        "nutrition_id": 1008,
+                        "energy": 253.0,
+                        "unit": "KCAL"
+                    }
+                },
+                {
+                    "name": "nutmeg",
+                    "quantity": "1/2 teaspoon",
+                    "ner_name": "nutmeg",
+                    "usda_food_ingredient": {
+                        "fdc_id": 172335,
+                        "name": "\"nutmeg\"",
+                        "nutrition_id": 1008,
+                        "energy": 884.0,
+                        "unit": "KCAL"
+                    }
+                },
+                {
+                    "name": "ground ginger",
+                    "quantity": "1/2 teaspoon",
+                    "ner_name": "ground ginger",
+                    "usda_food_ingredient": {
+                        "fdc_id": 169231,
+                        "name": "\"ginger\"",
+                        "nutrition_id": 1008,
+                        "energy": 80.0,
+                        "unit": "KCAL"
+                    }
+                },
+                {
+                    "name": "fresh lemon juice",
+                    "quantity": "1 tablespoon",
+                    "ner_name": "lemon juice",
+                    "usda_food_ingredient": {
+                        "fdc_id": 167747,
+                        "name": "\"lemon juice\"",
+                        "nutrition_id": 1008,
+                        "energy": 22.0,
+                        "unit": "KCAL"
+                    }
+                },
+                {
+                    "name": "water",
+                    "quantity": "1/4 cup",
+                    "ner_name": "water",
+                    "usda_food_ingredient": {
+                        "fdc_id": 174158,
+                        "name": "\"water\"",
+                        "nutrition_id": 1008,
+                        "energy": 0.0,
+                        "unit": "KCAL"
+                    }
+                },
+                {
+                    "name": "chopped walnuts (optional)",
+                    "quantity": "1/4 cup",
+                    "ner_name": "walnuts",
+                    "usda_food_ingredient": {
+                        "fdc_id": 2346394,
+                        "name": "\"walnuts\"",
+                        "nutrition_id": 2047,
+                        "energy": 730.0,
+                        "unit": "KCAL"
+                    }
+                },
+                {
+                    "name": "golden raisins (optional)",
+                    "quantity": "1/4 cup",
+                    "ner_name": "golden raisins",
+                    "usda_food_ingredient": {
+                        "fdc_id": 2166530,
+                        "name": "\"golden raisins\"",
+                        "nutrition_id": 1008,
+                        "energy": 0.0,
+                        "unit": "KCAL"
+                    }
+                }
+            ],
+            "directions": "1. Preheat Oven: Preheat oven to 350°F (175°C).\n2. Prepare Apples: Core the apples and make a small well in the center. Place them in a shallow baking dish.\n3. Spice Mixture: In a small bowl, mix together cinnamon, nutmeg, ginger, lemon juice, walnuts, and raisins.\n4. Fill Apples: Spoon the spice mixture into the center of each apple evenly.\n5. Add Water: Pour water into the baking dish around the apples.\n6. Bake: Cover the dish with foil and bake for 40-45 minutes, or until the apples are tender.\n7. Serve: Serve warm, using the juices in the dish as a sauce over the apples.",
+            "nutrition": {
+                "fat": "3g",
+                "protein": "1g",
+                "carbohydrate": "30g"
+            },
+            "total_calories_estimation": "- Total Calories for entire recipe: Approximately 560 calories for the entire recipe. \n- Calories for each ingredient:\n    Apples: 380 calories (95 calories per apple)\n    Cinnamon, Nutmeg, Ground Ginger: Negligible\n    Lemon Juice: 4 calories per tablespoon\n    Water: 0 calories\n    Walnuts: 164 calories per 1/4 cup (if added)\n    Golden Raisins: 108 calories per 1/4 cup (if added)\n- Serving People: 4"
+        }
+    ]
+}

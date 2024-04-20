@@ -1,0 +1,56 @@
+[
+    {
+        "id": "14",
+        "name": "Mediterranean Chickpea Salad",
+        "usda_calorie_estimation": 1921.6,
+        "gpt4_calorie_estimation": 1400
+    },
+    {
+        "id": "15",
+        "name": "Mediterranean Stuffed Mushrooms",
+        "usda_calorie_estimation": 503.92,
+        "gpt4_calorie_estimation": 625
+    },
+    {
+        "id": "17",
+        "name": "Tangy Greek Yogurt Dressing",
+        "usda_calorie_estimation": 480.66,
+        "gpt4_calorie_estimation": 368
+    },
+    {
+        "id": "16",
+        "name": "Hearty Vegetable Lentil Soup",
+        "usda_calorie_estimation": 1045.53,
+        "gpt4_calorie_estimation": 1055
+    },
+    {
+        "id": "13",
+        "name": "Green Veggie Diabetic-Friendly Smoothie",
+        "usda_calorie_estimation": 295.84,
+        "gpt4_calorie_estimation": 264
+    },
+    {
+        "id": "11",
+        "name": "Spinach and Mushroom Egg White Frittata",
+        "usda_calorie_estimation": 533.33,
+        "gpt4_calorie_estimation": 410
+    },
+    {
+        "id": "20",
+        "name": "Cucumber Mint Infused Water",
+        "usda_calorie_estimation": 49.58,
+        "gpt4_calorie_estimation": 53
+    },
+    {
+        "id": "18",
+        "name": "Zucchini Noodles with Pesto and Cherry Tomatoes",
+        "usda_calorie_estimation": 918.1,
+        "gpt4_calorie_estimation": 944
+    },
+    {
+        "id": "19",
+        "name": "Zucchini Noodles with Pesto and Cherry Tomatoes",
+        "usda_calorie_estimation": 802.58,
+        "gpt4_calorie_estimation": 851
+    }
+]
