@@ -11,7 +11,7 @@ class TestMongoDB(unittest.TestCase):
 
     def test_mongodb_connection(self):
         try:
-            database_name = 'sample_mflix'
+            database_name = 'agent'
             client.admin.command('ping')
             print("Pinged your deployment. You successfully connected to MongoDB!")
             self.assertEqual(client.get_database().name, database_name)

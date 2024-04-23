@@ -1,26 +1,65 @@
-from fastapi import APIRouter, Request
-from recipe_assistant.models.users import LoginHttpResponse, RegisterHttpRequest,LoginHttpRequest, RegisterHttpResponse, UserProfile
+import logging
+from fastapi import APIRouter, Request, status
+from fastapi.exceptions import HTTPException
+from loguru import logger
+from recipe_assistant.models.users import LoginHttpResponse, LoginHttpRequest, RegisterHttpResponse, UserProfile, ErrorHttpResponse
 from recipe_assistant.token_service import issue_token
+from recipe_assistant.models.db.users import UserModel
+from recipe_assistant.utils.db import DatabaseStore
+from passlib.context import CryptContext
 
 router = APIRouter()
+pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
+
+def verify_password(plain_password, hashed_password):
+    return pwd_context.verify(plain_password, hashed_password)
+
+
+def get_password_hash(password):
+    return pwd_context.hash(password)
 
 @router.post("/users/register", tags=["users"], response_model=RegisterHttpResponse)
 async def register_user(request: Request):
     form_data = await request.form()
-    return RegisterHttpResponse(message='successful registration', username='john_doe')
+    hash_password = get_password_hash(str(form_data.get('password')))
+    user_model = UserModel(
+        firstname=str(form_data.get("firstname")),
+        lastname=str(form_data.get("lastname")),
+        email=str(form_data.get("email")),
+        dietary_preference=str(form_data.get("dietary_preference")),
+        location=str(form_data.get("location")),
+        password=hash_password
+    )
+    user_collection = DatabaseStore.get_user_collection()
+    existing_user = await DatabaseStore.find_user(user_model.email, user_collection)
+    if existing_user:
+        raise HTTPException(detail=f'User with email:{user_model.email} already exists', status_code=status.HTTP_400_BAD_REQUEST)
+
+    new_user = await user_collection.insert_one(user_model.model_dump(by_alias=True, exclude=set(['id'])))
+    created_user = await user_collection.find_one(
+        {"_id": new_user.inserted_id}
+    )
+    logging.info('User registration complete')
+    return RegisterHttpResponse(message='successful registration', username='_'.join([user_model.firstname.lower(), user_model.lastname.lower()]), id = str(created_user['_id'])) #type:ignore
 
 @router.post("/users/login", tags=["users"],response_model=LoginHttpResponse)
 async def login_user(login_request: LoginHttpRequest):
-    token = issue_token(user_id="john_doe", email="johndoe@email.com")
+    user_collection = DatabaseStore.get_user_collection()
+    existing_user = await DatabaseStore.find_user(login_request.email, user_collection)
+
+    if not existing_user:
+        raise HTTPException(status_code=404, detail=f"User with email {login_request.email} not found")
+    if not verify_password(plain_password=login_request.password, hashed_password=existing_user['password']):
+        raise HTTPException(detail=f'invalid password', status_code=status.HTTP_400_BAD_REQUEST)
+
+    user_id = '_'.join([existing_user['firstname'].lower(),existing_user['lastname'].lower()])
+    token = issue_token(user_id=user_id, email=login_request.email)
     login_response = LoginHttpResponse(
         user=UserProfile(
-            username="john_doe",
-            firstname="John",
-            lastname="Doe",
-            email="johndoe@email.com"),
+            username=user_id,
+            firstname=existing_user['firstname'],
+            lastname=existing_user['lastname'],
+            email=login_request.email),
         token=token)
+    logger.info('Login is successfull')
     return login_response
-
-@router.get("/users/profile/{username}", tags=["users"])
-async def user_profile(username: str):
-    return {"username": username}
