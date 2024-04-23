@@ -1,18 +1,27 @@
 import time
 import os
+from contextlib import asynccontextmanager
 
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
-import motor.motor_asyncio
+from fastapi.middleware.gzip import GZipMiddleware
 
-from recipe_assistant.routers import users
 
+from recipe_assistant.routers import users, chat
+from recipe_assistant.utils.db import DatabaseStore
 origins = [
     "http://localhost",
     "http://localhost:5173",
 ]
 
-app = FastAPI()
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    await DatabaseStore.startup()
+    yield
+    await DatabaseStore.shutdown()
+
+app = FastAPI(lifespan=lifespan)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
@@ -20,11 +29,10 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-app.include_router(users.router)
-client = motor.motor_asyncio.AsyncIOMotorClient(os.environ.get("MONGODB_CONNECTION_STRING"))
-db = client.agent
-user_collection = db.get_collection("users")
+app.add_middleware(GZipMiddleware, minimum_size=1000)
 
+app.include_router(users.router)
+app.include_router(chat.router)
 
 
 @app.middleware("http")

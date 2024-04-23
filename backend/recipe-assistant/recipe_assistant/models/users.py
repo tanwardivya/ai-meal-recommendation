@@ -15,6 +15,8 @@ class SuccessHttpResponse(BaseModel):
 
 class RegisterHttpResponse(SuccessHttpResponse):
     username: str
+    message: str
+    id: str
    
 
 class ErrorHttpResponse(BaseModel):
