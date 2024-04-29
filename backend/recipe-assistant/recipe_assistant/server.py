@@ -9,6 +9,8 @@ from fastapi.middleware.gzip import GZipMiddleware
 
 from recipe_assistant.routers import users, chat
 from recipe_assistant.utils.db import DatabaseStore
+from recipe_assistant.utils.openai_client import OpenAIClient
+from recipe_assistant.utils.cache import InMemoryCache
 origins = [
     "http://localhost",
     "http://localhost:5173",
@@ -18,8 +20,11 @@ origins = [
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     await DatabaseStore.startup()
+    OpenAIClient.startup()
+    InMemoryCache.startup()
     yield
     await DatabaseStore.shutdown()
+    OpenAIClient.shutdown()
 
 app = FastAPI(lifespan=lifespan)
 app.add_middleware(
