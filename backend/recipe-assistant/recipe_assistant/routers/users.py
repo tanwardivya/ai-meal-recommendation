@@ -65,12 +65,18 @@ async def login_user(login_request: LoginHttpRequest):
     if not verify_password(plain_password=login_request.password, hashed_password=existing_user['password']):
         raise HTTPException(detail=f'invalid password', status_code=status.HTTP_400_BAD_REQUEST)
     assistant_id = existing_user['assistant_id']
-    thread = create_thread(client=OpenAIClient.client)
+    thread_id = None
     chat_collection = DatabaseStore.get_chat_collection()
-    chat_model = ChatModel(assistant_id=assistant_id,thread_id=thread.id)
-    new_chat = await chat_collection.insert_one(chat_model.model_dump(by_alias=True, exclude=set(['id'])))
-    logger.info('Succesfully created chat in database')
-    InMemoryCache.create(key=existing_user['email'], value = ChatMetadata(assistant_id=assistant_id, thread_id=thread.id))
+    existing_chat = await DatabaseStore.find_chat(assistant_id=existing_user['assistant_id'], chat_collection=chat_collection)    
+    if existing_chat is None:
+        thread = create_thread(client=OpenAIClient.client)
+        thread_id = thread.id
+        chat_model = ChatModel(assistant_id=assistant_id,thread_id=thread_id)
+        new_chat = await chat_collection.insert_one(chat_model.model_dump(by_alias=True, exclude=set(['id'])))  
+        logger.info('Succesfully created chat in database')
+    else:
+        thread_id = existing_chat['thread_id']
+    InMemoryCache.create(key=existing_user['email'], value = ChatMetadata(assistant_id=assistant_id, thread_id=thread_id))
     user_id = '_'.join([existing_user['firstname'].lower(),existing_user['lastname'].lower()])
     token = issue_token(user_id=user_id, email=login_request.email)
     login_response = LoginHttpResponse(

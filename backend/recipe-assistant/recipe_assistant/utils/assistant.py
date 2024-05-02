@@ -1,5 +1,6 @@
 from loguru import logger
 from typing_extensions import override
+import openai
 from openai import OpenAI
 from openai import AssistantEventHandler
 import time
@@ -42,8 +43,9 @@ def get_assistant_instruction() -> str:
     '''
     nutrients='''Total Carbohydrate: 50g, Dietary Fiber: 15g, Sodium: 300mg, Saturated Fat: 2g, Total Fat: 17g, Protein: 12g, Added Sugars: 0g, Total Sugars: 5g'''
     total_calorie_estimation='''
-    - Total Calories for entire recipe : Approximately 610 calories for the entire recipe. 
-    - Calories by Ingredient:
+    Approximately 610 calories for the entire recipe. 
+    '''
+    calories_per_ingredient='''
     
     | Ingredient        | Amount             | Calories               |
     |-------------------|--------------------|------------------------|
@@ -56,15 +58,15 @@ def get_assistant_instruction() -> str:
     | Breadcrumbs       | 1/2 cup            | 200 calories           |
     | Parmesan Cheese   | 1/4 cup            | 50 calories            |
     | Black Pepper      | -                  | Negligible calories    |
-
-    - Serving Details:
-        - Number of People Served: 5
-        - Servings per Person: 4 mushrooms each
-        - Calories per Serving: The total calorie content of 610 divided by 5 people gives approximately 122 calories per serving.
+    '''
+    serving_details= '''
+    - Number of People Served: 5
+    - Servings per Person: 4 mushrooms each
+    - Calories per Serving: The total calorie content of 610 divided by 5 people gives approximately 122 calories per serving.
     '''
     ASSISTANT_INSTRUCTION = f'''
+        - Always remember to format the result in markdown.
         - You are helpful health-friendly recipe assistant who give different recipe each time when user ask. Recipe can be for vegetarian, vegan, and non-vegeterian diets.
-        - Always use below format, give the total calorie estimation. Clean the response to dispaly in chat, use markdown format to give the recipe.
         Example:
         Give me recipe for Zesty Herb-Stuffed Mushrooms
         {recipe_name}
@@ -76,6 +78,10 @@ def get_assistant_instruction() -> str:
         {nutrients}
         Total Calories Estimation:
         {total_calorie_estimation}
+        Calories per ingredient:
+        {calories_per_ingredient}
+        Serving Details:
+        {serving_details}
         '''
     return ASSISTANT_INSTRUCTION
 
@@ -89,9 +95,21 @@ def create_assistant(client:OpenAI,assistant_name: str, model_name:str):
     return assistant
 
 def submit_message(client:OpenAI,assistant_id, thread_id, user_message):
-    client.beta.threads.messages.create(
-        thread_id=thread_id, role="user", content=user_message
-    )
+    try:
+        client.beta.threads.messages.create(
+            thread_id=thread_id, role="user", content=user_message
+        )
+    except openai.BadRequestError:
+        logger.error('Creating new thread and adding message')
+        thread = create_thread(client)
+        client.beta.threads.messages.create(
+            thread_id=thread.id, role="user", content=user_message
+        )
+        return client.beta.threads.runs.create(
+            thread_id=thread.id,
+            assistant_id=assistant_id,
+        )
+
     return client.beta.threads.runs.create(
         thread_id=thread_id,
         assistant_id=assistant_id,

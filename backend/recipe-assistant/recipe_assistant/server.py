@@ -14,6 +14,11 @@ from recipe_assistant.utils.cache import InMemoryCache
 origins = [
     "http://localhost",
     "http://localhost:5173",
+    "http://0.0.0.0:5173",
+    "http://localhost:8080",
+    "http://0.0.0.0:8080",
+    "http://127.0.0.1:8080",
+    "https://recipe-agent-frontend.greenmeadow-35e3d21d.westus3.azurecontainerapps.io"
 ]
 
 

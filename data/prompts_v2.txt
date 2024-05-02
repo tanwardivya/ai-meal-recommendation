@@ -16,7 +16,7 @@ Suggest a low-sodium, vegetable-heavy dinner recipe ideal for older adults.
 Create a fun, diabetic-friendly smoothie bowl recipe for a nutritious breakfast.
 What is a quick and easy low-cholesterol snack that can be made with yogurt and nuts?
 Provide a recipe for a low-sodium, meat-free dinner that uses beans as the main protein source.
-Can you suggest a diabetic-friendly meal that includes chicken and vegetables for a family dinner?
+Can you suggest a diabetic-friendly meal that includes chicken and vegetables for a family dinner, give me calories per ingredient in table format?
 I'm looking for a low-cholesterol, fish-based recipe suitable for a heart-healthy diet.
 What is a diabetic-friendly ice cream recipe that uses natural sweeteners and fresh strawberries?
 Can you provide a recipe for a low-sodium chocolate ice cream that's easy to make at home?
