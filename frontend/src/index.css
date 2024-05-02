@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Montserrat:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root,
+.app {
+  height: 100%;
+  width: 100%;
+  font-family: "DM Sans","Rubik", sans-serif;
+  @apply text-gray-500;
+}
+
+/* App.css */
+
+.markdown-content ol, .markdown-content ul {
+  list-style-position: inside;
+  padding-left: 20px; /* Adjust padding to ensure visibility */
+}
+
+.markdown-content li {
+  margin-bottom: 10px; /* Space out list items */
+  font-size: "1.2rem",
+}
+
+.markdown-content table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 20px 0; /* Adds some spacing around the table */
+}
+
+.markdown-content th, .markdown-content td {
+  border: 1px solid #4d75a2; /* Light grey border */
+  padding: 8px; /* Padding inside cells */
+  text-align: left; /* Align text to the left in cells */
+  font-size: medium;
+}
+
+.markdown-content th {
+  background-color: #709cd6; /* Light grey background for headers */
+}
