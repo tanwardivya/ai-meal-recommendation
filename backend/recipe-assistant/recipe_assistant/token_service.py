@@ -1,3 +1,4 @@
+from typing import Any, Dict
 import jwt
 import os
 
@@ -14,3 +15,8 @@ def issue_token(user_id:str, email:str)->str:
     )
     return token
     
+
+def decode_token(token: str) -> Dict[str, Any]:
+
+    payload = jwt.decode(jwt=token, key= SECRET, algorithms=["HS256"])
+    return payload
