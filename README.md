@@ -9,24 +9,12 @@ This project is submmitted as part of course CPSC-597 Project. In this project, 
 
 ### Quantative Evaluation of AI generated recipes
 
- <table style="border: 1px solid white;">
-  <tr>
-    <th style="border: 1px solid white;">Experiment</th>
-    <th style="border: 1px solid white;">Notebook Link</th>
-  </tr>
-  <tr>
-    <td style="border: 1px solid white;">Recipe Comparison</td>
-    <td style="border: 1px solid white;"><a href="notebooks/gpt4_1106_recipe_diabetic.ipynb">Notebook</a></td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid white;">Recipe Authenticity</td>
-    <td style="border: 1px solid white;"><a href="notebooks/gpt_authenticity_recipe_scrapped_data.ipynb">Notebook</a></td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid white;">Recipe Total Calories Estimation</td>
-    <td style="border: 1px solid white;"><a href="notebooks/gpt4_turbo_recipe_generation.ipynb">Notebook1</a>, <a href="notebooks/gpt4_turbo_recipe_aggregation.ipynb">Notebook2</a>, <a href="notebooks/total_calorie_estimation.ipynb">Notebook3</a></td>
-  </tr>
- </table>
+| Experiment                       | Notebook Link |
+|----------------------------------|---------------|
+| Recipe Comparison                | [Notebook](./notebooks/gpt4_1106_recipe_diabetic.ipynb) |
+| Recipe Authenticity              | [Notebook](./notebooks/gpt_authenticity_recipe_scrapped_data.ipynb) |
+| Recipe Total Calories Estimation | [Notebook1](./notebooks/gpt4_turbo_recipe_generation.ipynb), [Notebook2](./notebooks/gpt4_turbo_recipe_aggregation.ipynb), [Notebook3](./notebooks/total_calorie_estimation.ipynb) |
+
 
 ### Frontend ReactJS based application
 
