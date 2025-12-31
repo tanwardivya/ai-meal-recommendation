@@ -171,25 +171,89 @@ jobs:
           PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
           PULUMI_PYTHON_CMD: ${{ github.workspace }}/infrastructure/.venv/bin/python
 
-      - name: Generate Image Tag
-        id: image-tag
-        run: |
-          IMAGE_TAG="${GITHUB_SHA::8}"
-          echo "image_tag=$IMAGE_TAG" >> $GITHUB_OUTPUT
-          echo "Generated image tag: $IMAGE_TAG"
-
       - name: Login to Amazon ECR
         id: login-ecr
         uses: aws-actions/amazon-ecr-login@v2
 
-      - name: Build and Push Docker Image
+      - name: Determine Image Tag
+        id: image-tag
+        run: |
+          COMMIT_SHA="${GITHUB_SHA::8}"
+          
+          # Try to find existing image from PR build
+          # Format: pr-<PR_NUMBER>-<COMMIT_SHA> or just <COMMIT_SHA>
+          PR_NUMBER=""
+          if [ -n "${{ github.event.pull_request.number }}" ]; then
+            PR_NUMBER="${{ github.event.pull_request.number }}"
+            IMAGE_TAG="pr-${PR_NUMBER}-${COMMIT_SHA}"
+          else
+            # For direct commits or manual triggers, use commit SHA
+            IMAGE_TAG="${COMMIT_SHA}"
+          fi
+          
+          echo "image_tag=$IMAGE_TAG" >> $GITHUB_OUTPUT
+          echo "commit_sha=$COMMIT_SHA" >> $GITHUB_OUTPUT
+          echo "pr_number=$PR_NUMBER" >> $GITHUB_OUTPUT
+          echo "Generated/Reusing image tag: $IMAGE_TAG"
+
+      - name: Check if Image Exists in ECR
+        id: check-image
+        env:
+          ECR_REPO_NAME: ${{ steps.outputs.outputs.ecr_repo_name }}
+          IMAGE_TAG: ${{ steps.image-tag.outputs.image_tag }}
+          COMMIT_SHA: ${{ steps.image-tag.outputs.commit_sha }}
+          PR_NUMBER: ${{ steps.image-tag.outputs.pr_number }}
+          AWS_REGION: ${{ env.AWS_REGION }}
+        run: |
+          echo "Checking if image exists in ECR..."
+          
+          # Try to find the image - check multiple possible tags
+          IMAGE_FOUND=false
+          POSSIBLE_TAGS=()
+          
+          # Add possible tags based on what we have
+          if [ -n "$PR_NUMBER" ] && [ "$PR_NUMBER" != "null" ]; then
+            POSSIBLE_TAGS+=("pr-${PR_NUMBER}-${COMMIT_SHA}")
+            POSSIBLE_TAGS+=("pr-${PR_NUMBER}")
+          fi
+          POSSIBLE_TAGS+=("$COMMIT_SHA")
+          POSSIBLE_TAGS+=("$IMAGE_TAG")
+          
+          EXISTING_TAG=""
+          for TAG in "${POSSIBLE_TAGS[@]}"; do
+            if [ -n "$TAG" ] && [ "$TAG" != "null" ] && [ "$TAG" != "" ]; then
+              echo "Checking tag: $TAG"
+              if aws ecr describe-images \
+                --repository-name "$ECR_REPO_NAME" \
+                --image-ids imageTag="$TAG" \
+                --region "$AWS_REGION" \
+                --query 'imageDetails[0].imageTags' \
+                --output text 2>/dev/null | grep -q "$TAG"; then
+                echo "✅ Found existing image with tag: $TAG"
+                echo "image_exists=true" >> $GITHUB_OUTPUT
+                echo "existing_tag=$TAG" >> $GITHUB_OUTPUT
+                IMAGE_FOUND=true
+                EXISTING_TAG="$TAG"
+                break
+              fi
+            fi
+          done
+          
+          if [ "$IMAGE_FOUND" = false ]; then
+            echo "⚠️  Image not found in ECR. Will build new image."
+            echo "image_exists=false" >> $GITHUB_OUTPUT
+            echo "existing_tag=$IMAGE_TAG" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Build and Push Docker Image (if not exists)
+        if: steps.check-image.outputs.image_exists != 'true'
         env:
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
           ECR_REPOSITORY: ${{ steps.outputs.outputs.ecr_repo_name }}
           IMAGE_TAG: ${{ steps.image-tag.outputs.image_tag }}
           AWS_REGION: ${{ env.AWS_REGION }}
         run: |
-          echo "Building Docker image with tag: $IMAGE_TAG"
+          echo "Building new Docker image with tag: $IMAGE_TAG"
           cd frontend
           docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
 
@@ -204,13 +268,25 @@ jobs:
 
           echo "✅ Image built and pushed successfully with tag: $IMAGE_TAG"
 
+      - name: Use Existing Image
+        if: steps.check-image.outputs.image_exists == 'true'
+        run: |
+          echo "✅ Reusing existing image from PR build"
+          echo "Image Tag: ${{ steps.check-image.outputs.existing_tag }}"
+          echo "No rebuild needed - saving time and resources!"
+
       - name: Create Elastic Beanstalk Application Version
         id: create-version
         run: |
           EB_APP_NAME="${{ steps.outputs.outputs.eb_app_name }}"
           EB_ENV_NAME="${{ steps.outputs.outputs.eb_env_name }}"
           ECR_REPO_URL="${{ steps.outputs.outputs.ecr_repo_url }}"
-          IMAGE_TAG="${{ steps.image-tag.outputs.image_tag }}"
+          # Use existing tag if found, otherwise use the generated tag
+          if [ "${{ steps.check-image.outputs.image_exists }}" = "true" ]; then
+            IMAGE_TAG="${{ steps.check-image.outputs.existing_tag }}"
+          else
+            IMAGE_TAG="${{ steps.image-tag.outputs.image_tag }}"
+          fi
           AWS_REGION="${{ env.AWS_REGION }}"
 
           # Create a Dockerrun.aws.json with the ECR image URL

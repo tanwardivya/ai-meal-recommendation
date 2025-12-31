@@ -1,0 +1,151 @@
+name: Build Frontend Docker Image (PR)
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    branches:
+      - main
+    paths:
+      - "frontend/**"
+      - ".github/workflows/build-frontend-pr.yml"
+
+env:
+  AWS_REGION: us-east-1
+  PULUMI_STACK: test
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    concurrency:
+      group: build-pr-${{ github.event.pull_request.number }}
+      cancel-in-progress: true
+
+    permissions:
+      id-token: write
+      contents: read
+      pull-requests: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v3
+        with:
+          version: "latest"
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Pulumi dependencies
+        working-directory: infrastructure
+        run: |
+          uv venv
+          source .venv/bin/activate
+          uv pip install -e ".[dev]"
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_TEST_ROLE_ARN || secrets.AWS_ROLE_ARN }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Setup Pulumi
+        uses: pulumi/actions@v4
+        with:
+          pulumi-version: latest
+
+      - name: Get ECR Repository URL
+        id: ecr-info
+        working-directory: infrastructure
+        run: |
+          source .venv/bin/activate
+          ECR_REPO_URL=$(pulumi stack output ecr_repository_url --stack ${{ env.PULUMI_STACK }} 2>/dev/null || echo "")
+          ECR_REPO_NAME=$(pulumi stack output ecr_repository_name --stack ${{ env.PULUMI_STACK }} 2>/dev/null || echo "")
+          
+          if [ -z "$ECR_REPO_URL" ] || [ "$ECR_REPO_URL" = "null" ]; then
+            echo "⚠️  ECR repository not found. Infrastructure may need to be created first."
+            echo "ℹ️  Run 'pulumi up' to create the ECR repository, then re-run this workflow."
+            exit 1
+          fi
+          
+          echo "ecr_repo_url=$ECR_REPO_URL" >> $GITHUB_OUTPUT
+          echo "ecr_repo_name=$ECR_REPO_NAME" >> $GITHUB_OUTPUT
+          echo "✅ ECR Repository: $ECR_REPO_URL"
+        env:
+          PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
+          PULUMI_PYTHON_CMD: ${{ github.workspace }}/infrastructure/.venv/bin/python
+
+      - name: Generate Image Tag
+        id: image-tag
+        run: |
+          # Use PR number and commit SHA for unique tagging
+          PR_NUMBER="${{ github.event.pull_request.number }}"
+          COMMIT_SHA="${GITHUB_SHA::8}"
+          IMAGE_TAG="pr-${PR_NUMBER}-${COMMIT_SHA}"
+          echo "image_tag=$IMAGE_TAG" >> $GITHUB_OUTPUT
+          echo "pr_number=$PR_NUMBER" >> $GITHUB_OUTPUT
+          echo "commit_sha=$COMMIT_SHA" >> $GITHUB_OUTPUT
+          echo "Generated image tag: $IMAGE_TAG"
+
+      - name: Login to Amazon ECR
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@v2
+
+      - name: Build and Push Docker Image
+        env:
+          ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+          ECR_REPOSITORY: ${{ steps.ecr-info.outputs.ecr_repo_name }}
+          IMAGE_TAG: ${{ steps.image-tag.outputs.image_tag }}
+          AWS_REGION: ${{ env.AWS_REGION }}
+        run: |
+          echo "Building Docker image with tag: $IMAGE_TAG"
+          cd frontend
+          docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
+          
+          # Also tag with PR number for easy reference
+          docker tag $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG $ECR_REGISTRY/$ECR_REPOSITORY:pr-${{ steps.image-tag.outputs.pr_number }}
+          
+          echo "Pushing image with tag: $IMAGE_TAG"
+          docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+          docker push $ECR_REGISTRY/$ECR_REPOSITORY:pr-${{ steps.image-tag.outputs.pr_number }}
+          
+          echo "✅ Image built and pushed successfully"
+          echo "Image: $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"
+
+      - name: Comment on PR
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const imageTag = '${{ steps.image-tag.outputs.image_tag }}';
+            const ecrRepo = '${{ steps.ecr-info.outputs.ecr_repo_url }}';
+            const commitSha = '${{ steps.image-tag.outputs.commit_sha }}';
+            
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `## 🐳 Docker Image Built Successfully
+              
+              **Image Tag:** \`${imageTag}\`
+              **ECR Repository:** \`${ecrRepo}\`
+              **Commit:** \`${commitSha}\`
+              
+              This image will be reused during deployment (no rebuild needed).
+              
+              To deploy this image, use the deployment workflow and reference commit: \`${commitSha}\``
+            });
+
+      - name: Build Summary
+        run: |
+          echo "=========================================="
+          echo "✅ Docker Image Build Complete"
+          echo "=========================================="
+          echo "Image Tag: ${{ steps.image-tag.outputs.image_tag }}"
+          echo "ECR Repository: ${{ steps.ecr-info.outputs.ecr_repo_url }}"
+          echo "Commit SHA: ${{ steps.image-tag.outputs.commit_sha }}"
+          echo ""
+          echo "This image will be reused during deployment."
+          echo "=========================================="
+
