@@ -14,3 +14,4 @@ class ECRConfig:
     max_image_count: int = 10  # Keep last N images
     tags: Optional[dict] = None
 
+

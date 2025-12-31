@@ -122,3 +122,4 @@ echo "   - AWS_PROD_ROLE_ARN = $ROLE_ARN"
 echo ""
 echo -e "${GREEN}========================================${NC}"
 
+

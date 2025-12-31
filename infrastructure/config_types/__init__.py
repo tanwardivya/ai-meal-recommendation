@@ -1,2 +1,3 @@
 """Configuration type definitions."""
 
+

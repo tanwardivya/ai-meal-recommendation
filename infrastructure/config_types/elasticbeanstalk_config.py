@@ -19,3 +19,4 @@ class ElasticBeanstalkConfig:
     public_subnet_ids: Optional[List[str]] = None
     tags: Optional[dict] = None
 
+

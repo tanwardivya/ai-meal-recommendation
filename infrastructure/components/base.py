@@ -9,3 +9,4 @@ class BaseComponent(pulumi.ComponentResource):
         super().__init__(component_type, name, {}, opts)
         self.name = name
 
+

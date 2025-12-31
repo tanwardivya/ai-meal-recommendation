@@ -70,11 +70,17 @@ jobs:
         run: |
           source .venv/bin/activate
           echo "📋 Running Pulumi preview to show infrastructure changes..."
-          pulumi preview --stack ${{ env.PULUMI_STACK }} --diff || PREVIEW_EXIT=$?
-          if [ "${PREVIEW_EXIT:-0}" -eq 1 ]; then
+          set +e  # Don't exit on error, we'll handle it
+          pulumi preview --stack ${{ env.PULUMI_STACK }} --diff
+          PREVIEW_EXIT=$?
+          set -e  # Re-enable exit on error
+          if [ "$PREVIEW_EXIT" -eq 0 ]; then
+            echo "✅ Preview completed: No changes detected"
+          elif [ "$PREVIEW_EXIT" -eq 1 ]; then
             echo "📝 Preview completed: Changes detected (this is normal)"
-          elif [ "${PREVIEW_EXIT:-0}" -eq 2 ]; then
-            exit ${PREVIEW_EXIT}
+          else
+            echo "❌ Preview failed with exit code $PREVIEW_EXIT"
+            exit $PREVIEW_EXIT
           fi
         env:
           PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}

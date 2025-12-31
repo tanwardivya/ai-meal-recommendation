@@ -19,14 +19,15 @@ class ElasticBeanstalkComponent(BaseComponent):
         super().__init__(name, "custom:components:ElasticBeanstalk", opts)
         
         # Create Elastic Beanstalk application
+        # Note: appversion_lifecycle requires service_role
+        # We'll create the application first, then update it with appversion_lifecycle if service_role is provided
+        # Or create without appversion_lifecycle initially
         self.application = aws.elasticbeanstalk.Application(
             f"{name}-app",
             name=config.application_name,
             description=f"Elastic Beanstalk application for {name}",
-            appversion_lifecycle=aws.elasticbeanstalk.ApplicationAppversionLifecycleArgs(
-                max_count=10,
-                delete_source_from_s3=True,
-            ),
+            # appversion_lifecycle will be set via separate resource if needed
+            # For now, create without it to avoid circular dependency
             tags=config.tags or {},
             opts=pulumi.ResourceOptions(parent=self)
         )

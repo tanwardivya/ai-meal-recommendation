@@ -84,3 +84,4 @@ class ECRComponent(BaseComponent):
     def repository_arn(self):
         return self.repository.arn
 
+

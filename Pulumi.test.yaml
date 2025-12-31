@@ -13,3 +13,4 @@ config:
   frontend-infrastructure:ecrLifecyclePolicy: "true"
   frontend-infrastructure:ecrMaxImageCount: "10"
 
+
