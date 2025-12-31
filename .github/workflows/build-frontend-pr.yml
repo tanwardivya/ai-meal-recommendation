@@ -56,28 +56,92 @@ jobs:
         with:
           pulumi-version: latest
 
-      - name: Get ECR Repository URL (from existing infrastructure)
+      - name: Select or Initialize Pulumi Stack
+        working-directory: infrastructure
+        run: |
+          source .venv/bin/activate
+          if ! pulumi stack select ${{ env.PULUMI_STACK }} 2>/dev/null; then
+            echo "Initializing Pulumi stack '${{ env.PULUMI_STACK }}'..."
+            pulumi stack init ${{ env.PULUMI_STACK }}
+          fi
+        env:
+          PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
+          PULUMI_PYTHON_CMD: ${{ github.workspace }}/infrastructure/.venv/bin/python
+
+      - name: Check if ECR Repository Exists
+        id: check-ecr
+        working-directory: infrastructure
+        run: |
+          source .venv/bin/activate
+          ECR_REPO_URL=$(pulumi stack output ecr_repository_url --stack ${{ env.PULUMI_STACK }} 2>/dev/null || echo "")
+          ECR_REPO_NAME=$(pulumi stack output ecr_repository_name --stack ${{ env.PULUMI_STACK }} 2>/dev/null || echo "")
+          
+          if [ -n "$ECR_REPO_URL" ] && [ "$ECR_REPO_URL" != "null" ] && [ "$ECR_REPO_URL" != "" ]; then
+            echo "✅ ECR repository exists"
+            echo "ecr_exists=true" >> $GITHUB_OUTPUT
+            echo "ecr_repo_url=$ECR_REPO_URL" >> $GITHUB_OUTPUT
+            echo "ecr_repo_name=$ECR_REPO_NAME" >> $GITHUB_OUTPUT
+          else
+            echo "⚠️  ECR repository not found. Will create ECR only."
+            echo "ecr_exists=false" >> $GITHUB_OUTPUT
+          fi
+        env:
+          PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
+          PULUMI_PYTHON_CMD: ${{ github.workspace }}/infrastructure/.venv/bin/python
+
+      - name: Create ECR Repository Only (if needed)
+        if: steps.check-ecr.outputs.ecr_exists != 'true'
+        working-directory: infrastructure
+        run: |
+          source .venv/bin/activate
+          echo "Creating ECR repository only (minimal infrastructure)..."
+          
+          # Use AWS CLI to create ECR repository directly (faster than full Pulumi)
+          ECR_REPO_NAME="frontend-test"
+          AWS_REGION="${{ env.AWS_REGION }}"
+          
+          # Check if repo exists via AWS CLI
+          if aws ecr describe-repositories --repository-names "$ECR_REPO_NAME" --region "$AWS_REGION" 2>/dev/null | grep -q "$ECR_REPO_NAME"; then
+            echo "✅ ECR repository already exists in AWS"
+            ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
+            ECR_REPO_URL="${ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/${ECR_REPO_NAME}"
+            echo "ecr_repo_url=$ECR_REPO_URL" >> $GITHUB_OUTPUT
+            echo "ecr_repo_name=$ECR_REPO_NAME" >> $GITHUB_OUTPUT
+          else
+            echo "Creating ECR repository: $ECR_REPO_NAME"
+            aws ecr create-repository \
+              --repository-name "$ECR_REPO_NAME" \
+              --region "$AWS_REGION" \
+              --image-scanning-configuration scanOnPush=true \
+              --encryption-configuration encryptionType=AES256
+            
+            ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
+            ECR_REPO_URL="${ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/${ECR_REPO_NAME}"
+            echo "ecr_repo_url=$ECR_REPO_URL" >> $GITHUB_OUTPUT
+            echo "ecr_repo_name=$ECR_REPO_NAME" >> $GITHUB_OUTPUT
+            echo "✅ ECR repository created: $ECR_REPO_URL"
+          fi
+        env:
+          AWS_REGION: ${{ env.AWS_REGION }}
+
+      - name: Get ECR Repository URL
         id: ecr-info
         working-directory: infrastructure
         run: |
           source .venv/bin/activate
           
-          # Check if stack exists
-          if ! pulumi stack select ${{ env.PULUMI_STACK }} 2>/dev/null; then
-            echo "❌ Pulumi stack '${{ env.PULUMI_STACK }}' does not exist."
-            echo "ℹ️  Infrastructure must be created first via manual deployment workflow."
-            echo "ℹ️  Go to Actions → 'Deploy Frontend to Test Environment' → Run workflow"
-            exit 1
-          fi
-          
-          # Get ECR repository info (infrastructure must already exist)
+          # Try to get from Pulumi outputs first
           ECR_REPO_URL=$(pulumi stack output ecr_repository_url --stack ${{ env.PULUMI_STACK }} 2>/dev/null || echo "")
           ECR_REPO_NAME=$(pulumi stack output ecr_repository_name --stack ${{ env.PULUMI_STACK }} 2>/dev/null || echo "")
           
+          # If not in Pulumi, use the values from previous step
           if [ -z "$ECR_REPO_URL" ] || [ "$ECR_REPO_URL" = "null" ] || [ "$ECR_REPO_URL" = "" ]; then
-            echo "❌ ECR repository not found in infrastructure."
-            echo "ℹ️  Infrastructure must be created first via manual deployment workflow."
-            echo "ℹ️  Go to Actions → 'Deploy Frontend to Test Environment' → Run workflow"
+            ECR_REPO_URL="${{ steps.check-ecr.outputs.ecr_repo_url }}"
+            ECR_REPO_NAME="${{ steps.check-ecr.outputs.ecr_repo_name }}"
+          fi
+          
+          if [ -z "$ECR_REPO_URL" ] || [ "$ECR_REPO_URL" = "null" ] || [ "$ECR_REPO_URL" = "" ]; then
+            echo "❌ Failed to get ECR repository URL"
             exit 1
           fi
           
