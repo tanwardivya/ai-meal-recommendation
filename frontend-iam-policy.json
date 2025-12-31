@@ -70,12 +70,17 @@
         "iam:ListRolePolicies",
         "iam:ListAttachedRolePolicies",
         "iam:PassRole",
+        "iam:TagRole",
+        "iam:UntagRole",
+        "iam:ListRoleTags",
         "iam:CreateInstanceProfile",
         "iam:DeleteInstanceProfile",
         "iam:GetInstanceProfile",
         "iam:ListInstanceProfiles",
         "iam:AddRoleToInstanceProfile",
         "iam:RemoveRoleFromInstanceProfile",
+        "iam:TagInstanceProfile",
+        "iam:UntagInstanceProfile",
         "iam:CreatePolicy",
         "iam:DeletePolicy",
         "iam:GetPolicy",
@@ -83,7 +88,9 @@
         "iam:CreatePolicyVersion",
         "iam:DeletePolicyVersion",
         "iam:ListPolicyVersions",
-        "iam:SetDefaultPolicyVersion"
+        "iam:SetDefaultPolicyVersion",
+        "iam:TagPolicy",
+        "iam:UntagPolicy"
       ],
       "Resource": [
         "arn:aws:iam::928618160741:role/test-*",

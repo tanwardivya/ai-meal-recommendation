@@ -56,70 +56,28 @@ jobs:
         with:
           pulumi-version: latest
 
-      - name: Pulumi Preview (Infrastructure)
-        working-directory: infrastructure
-        run: |
-          source .venv/bin/activate
-          echo "📋 Running Pulumi preview to show infrastructure changes..."
-          set +e
-          pulumi preview --stack ${{ env.PULUMI_STACK }} --diff || true
-          set -e
-        env:
-          PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
-          PULUMI_PYTHON_CMD: ${{ github.workspace }}/infrastructure/.venv/bin/python
-
-      - name: Select Pulumi Stack
-        working-directory: infrastructure
-        run: |
-          source .venv/bin/activate
-          pulumi stack select ${{ env.PULUMI_STACK }} || pulumi stack init ${{ env.PULUMI_STACK }}
-        env:
-          PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
-          PULUMI_PYTHON_CMD: ${{ github.workspace }}/infrastructure/.venv/bin/python
-
-      - name: Check if ECR Repository Exists
-        id: check-ecr
-        working-directory: infrastructure
-        run: |
-          source .venv/bin/activate
-          ECR_REPO_URL=$(pulumi stack output ecr_repository_url --stack ${{ env.PULUMI_STACK }} 2>/dev/null || echo "")
-          ECR_REPO_NAME=$(pulumi stack output ecr_repository_name --stack ${{ env.PULUMI_STACK }} 2>/dev/null || echo "")
-          
-          if [ -n "$ECR_REPO_URL" ] && [ "$ECR_REPO_URL" != "null" ] && [ "$ECR_REPO_URL" != "" ]; then
-            echo "✅ ECR repository exists"
-            echo "ecr_exists=true" >> $GITHUB_OUTPUT
-            echo "ecr_repo_url=$ECR_REPO_URL" >> $GITHUB_OUTPUT
-            echo "ecr_repo_name=$ECR_REPO_NAME" >> $GITHUB_OUTPUT
-          else
-            echo "⚠️  ECR repository not found. Will create infrastructure."
-            echo "ecr_exists=false" >> $GITHUB_OUTPUT
-          fi
-        env:
-          PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
-          PULUMI_PYTHON_CMD: ${{ github.workspace }}/infrastructure/.venv/bin/python
-
-      - name: Create Infrastructure (if needed)
-        if: steps.check-ecr.outputs.ecr_exists != 'true'
-        working-directory: infrastructure
-        run: |
-          source .venv/bin/activate
-          echo "Creating infrastructure (ECR repository)..."
-          pulumi up --yes --stack ${{ env.PULUMI_STACK }}
-          echo "✅ Infrastructure created"
-        env:
-          PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
-          PULUMI_PYTHON_CMD: ${{ github.workspace }}/infrastructure/.venv/bin/python
-
-      - name: Get ECR Repository URL
+      - name: Get ECR Repository URL (from existing infrastructure)
         id: ecr-info
         working-directory: infrastructure
         run: |
           source .venv/bin/activate
-          ECR_REPO_URL=$(pulumi stack output ecr_repository_url --stack ${{ env.PULUMI_STACK }})
-          ECR_REPO_NAME=$(pulumi stack output ecr_repository_name --stack ${{ env.PULUMI_STACK }})
           
-          if [ -z "$ECR_REPO_URL" ] || [ "$ECR_REPO_URL" = "null" ]; then
-            echo "❌ Failed to get ECR repository URL after creation"
+          # Check if stack exists
+          if ! pulumi stack select ${{ env.PULUMI_STACK }} 2>/dev/null; then
+            echo "❌ Pulumi stack '${{ env.PULUMI_STACK }}' does not exist."
+            echo "ℹ️  Infrastructure must be created first via manual deployment workflow."
+            echo "ℹ️  Go to Actions → 'Deploy Frontend to Test Environment' → Run workflow"
+            exit 1
+          fi
+          
+          # Get ECR repository info (infrastructure must already exist)
+          ECR_REPO_URL=$(pulumi stack output ecr_repository_url --stack ${{ env.PULUMI_STACK }} 2>/dev/null || echo "")
+          ECR_REPO_NAME=$(pulumi stack output ecr_repository_name --stack ${{ env.PULUMI_STACK }} 2>/dev/null || echo "")
+          
+          if [ -z "$ECR_REPO_URL" ] || [ "$ECR_REPO_URL" = "null" ] || [ "$ECR_REPO_URL" = "" ]; then
+            echo "❌ ECR repository not found in infrastructure."
+            echo "ℹ️  Infrastructure must be created first via manual deployment workflow."
+            echo "ℹ️  Go to Actions → 'Deploy Frontend to Test Environment' → Run workflow"
             exit 1
           fi
           
