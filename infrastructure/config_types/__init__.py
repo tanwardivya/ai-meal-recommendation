@@ -1,0 +1,2 @@
+"""Configuration type definitions."""
+
