@@ -11,7 +11,6 @@ on:
 
 env:
   AWS_REGION: us-east-1
-  PULUMI_STACK: test
 
 jobs:
   build-and-push:
@@ -28,120 +27,36 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install uv
-        uses: astral-sh/setup-uv@v3
-        with:
-          version: "latest"
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
-
-      - name: Install Pulumi dependencies
-        working-directory: infrastructure
-        run: |
-          uv venv
-          source .venv/bin/activate
-          uv pip install -e ".[dev]"
-
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
           role-to-assume: ${{ secrets.AWS_TEST_ROLE_ARN || secrets.AWS_ROLE_ARN }}
           aws-region: ${{ env.AWS_REGION }}
 
-      - name: Setup Pulumi
-        uses: pulumi/actions@v4
-        with:
-          pulumi-version: latest
-
-      - name: Select or Initialize Pulumi Stack
-        working-directory: infrastructure
+      - name: Get ECR Repository from Secrets
+        id: ecr-info
         run: |
-          source .venv/bin/activate
-          if ! pulumi stack select ${{ env.PULUMI_STACK }} 2>/dev/null; then
-            echo "Initializing Pulumi stack '${{ env.PULUMI_STACK }}'..."
-            pulumi stack init ${{ env.PULUMI_STACK }}
-          fi
-        env:
-          PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
-          PULUMI_PYTHON_CMD: ${{ github.workspace }}/infrastructure/.venv/bin/python
-
-      - name: Check if ECR Repository Exists
-        id: check-ecr
-        working-directory: infrastructure
-        run: |
-          source .venv/bin/activate
-          ECR_REPO_URL=$(pulumi stack output ecr_repository_url --stack ${{ env.PULUMI_STACK }} 2>/dev/null || echo "")
-          ECR_REPO_NAME=$(pulumi stack output ecr_repository_name --stack ${{ env.PULUMI_STACK }} 2>/dev/null || echo "")
-          
-          if [ -n "$ECR_REPO_URL" ] && [ "$ECR_REPO_URL" != "null" ] && [ "$ECR_REPO_URL" != "" ]; then
-            echo "✅ ECR repository exists"
-            echo "ecr_exists=true" >> $GITHUB_OUTPUT
-            echo "ecr_repo_url=$ECR_REPO_URL" >> $GITHUB_OUTPUT
-            echo "ecr_repo_name=$ECR_REPO_NAME" >> $GITHUB_OUTPUT
-          else
-            echo "⚠️  ECR repository not found. Will create ECR only."
-            echo "ecr_exists=false" >> $GITHUB_OUTPUT
-          fi
-        env:
-          PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
-          PULUMI_PYTHON_CMD: ${{ github.workspace }}/infrastructure/.venv/bin/python
-
-      - name: Create ECR Repository Only (if needed)
-        if: steps.check-ecr.outputs.ecr_exists != 'true'
-        working-directory: infrastructure
-        run: |
-          source .venv/bin/activate
-          echo "Creating ECR repository only (minimal infrastructure)..."
-          
-          # Use AWS CLI to create ECR repository directly (faster than full Pulumi)
-          ECR_REPO_NAME="frontend-test"
+          # Get ECR repository name from GitHub secrets
+          # If ECR_REPO_NAME secret is set, use it; otherwise use default
+          ECR_REPO_NAME="${{ secrets.ECR_REPO_NAME || 'frontend-test' }}"
           AWS_REGION="${{ env.AWS_REGION }}"
           
-          # Check if repo exists via AWS CLI
-          if aws ecr describe-repositories --repository-names "$ECR_REPO_NAME" --region "$AWS_REGION" 2>/dev/null | grep -q "$ECR_REPO_NAME"; then
-            echo "✅ ECR repository already exists in AWS"
-            ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
-            ECR_REPO_URL="${ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/${ECR_REPO_NAME}"
-            echo "ecr_repo_url=$ECR_REPO_URL" >> $GITHUB_OUTPUT
-            echo "ecr_repo_name=$ECR_REPO_NAME" >> $GITHUB_OUTPUT
+          # If ECR_REPO_URL secret is set, use it directly
+          if [ -n "${{ secrets.ECR_REPO_URL }}" ]; then
+            ECR_REPO_URL="${{ secrets.ECR_REPO_URL }}"
+            echo "✅ Using ECR URL from secret: $ECR_REPO_URL"
           else
-            echo "Creating ECR repository: $ECR_REPO_NAME"
-            aws ecr create-repository \
-              --repository-name "$ECR_REPO_NAME" \
-              --region "$AWS_REGION" \
-              --image-scanning-configuration scanOnPush=true \
-              --encryption-configuration encryptionType=AES256
-            
+            # Construct ECR URL from account ID and repository name
             ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
             ECR_REPO_URL="${ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/${ECR_REPO_NAME}"
-            echo "ecr_repo_url=$ECR_REPO_URL" >> $GITHUB_OUTPUT
-            echo "ecr_repo_name=$ECR_REPO_NAME" >> $GITHUB_OUTPUT
-            echo "✅ ECR repository created: $ECR_REPO_URL"
-          fi
-        env:
-          AWS_REGION: ${{ env.AWS_REGION }}
-
-      - name: Get ECR Repository URL
-        id: ecr-info
-        working-directory: infrastructure
-        run: |
-          source .venv/bin/activate
-          
-          # Try to get from Pulumi outputs first
-          ECR_REPO_URL=$(pulumi stack output ecr_repository_url --stack ${{ env.PULUMI_STACK }} 2>/dev/null || echo "")
-          ECR_REPO_NAME=$(pulumi stack output ecr_repository_name --stack ${{ env.PULUMI_STACK }} 2>/dev/null || echo "")
-          
-          # If not in Pulumi, use the values from previous step
-          if [ -z "$ECR_REPO_URL" ] || [ "$ECR_REPO_URL" = "null" ] || [ "$ECR_REPO_URL" = "" ]; then
-            ECR_REPO_URL="${{ steps.check-ecr.outputs.ecr_repo_url }}"
-            ECR_REPO_NAME="${{ steps.check-ecr.outputs.ecr_repo_name }}"
+            echo "✅ Constructed ECR URL: $ECR_REPO_URL"
           fi
           
-          if [ -z "$ECR_REPO_URL" ] || [ "$ECR_REPO_URL" = "null" ] || [ "$ECR_REPO_URL" = "" ]; then
-            echo "❌ Failed to get ECR repository URL"
+          # Verify ECR repository exists
+          if ! aws ecr describe-repositories --repository-names "$ECR_REPO_NAME" --region "$AWS_REGION" &>/dev/null; then
+            echo "❌ ECR repository '$ECR_REPO_NAME' not found in AWS"
+            echo "ℹ️  Please create the ECR repository first:"
+            echo "   aws ecr create-repository --repository-name $ECR_REPO_NAME --region $AWS_REGION"
             exit 1
           fi
           
@@ -149,8 +64,7 @@ jobs:
           echo "ecr_repo_name=$ECR_REPO_NAME" >> $GITHUB_OUTPUT
           echo "✅ ECR Repository: $ECR_REPO_URL"
         env:
-          PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
-          PULUMI_PYTHON_CMD: ${{ github.workspace }}/infrastructure/.venv/bin/python
+          AWS_REGION: ${{ env.AWS_REGION }}
 
       - name: Generate Image Tag
         id: image-tag
