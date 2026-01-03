@@ -1,0 +1,10 @@
+name: frontend-infrastructure
+runtime:
+  name: python
+  options:
+    toolchain: uv
+    virtualenv: infrastructure/.venv
+    root: infrastructure
+description: AWS infrastructure for frontend deployment using Elastic Beanstalk
+
+

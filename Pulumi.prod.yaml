@@ -1,0 +1,16 @@
+config:
+  aws:region: us-east-1
+  frontend-infrastructure:environment: prod
+  frontend-infrastructure:projectName: ai-meal-recommendation
+  frontend-infrastructure:ecrRepositoryName: frontend-prod
+  frontend-infrastructure:ebApplicationName: frontend-prod
+  frontend-infrastructure:ebEnvironmentName: frontend-prod-env
+  frontend-infrastructure:ebInstanceType: t3.medium
+  frontend-infrastructure:ebMinSize: 2
+  frontend-infrastructure:ebMaxSize: 4
+  frontend-infrastructure:ebDesiredCapacity: 2
+  frontend-infrastructure:ecrImageScanning: "true"
+  frontend-infrastructure:ecrLifecyclePolicy: "true"
+  frontend-infrastructure:ecrMaxImageCount: "20"
+
+

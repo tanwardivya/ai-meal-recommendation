@@ -1,0 +1,16 @@
+config:
+  aws:region: us-east-1
+  frontend-infrastructure:environment: test
+  frontend-infrastructure:projectName: ai-meal-recommendation
+  frontend-infrastructure:ecrRepositoryName: frontend-test
+  frontend-infrastructure:ebApplicationName: frontend-test
+  frontend-infrastructure:ebEnvironmentName: frontend-test-env
+  frontend-infrastructure:ebInstanceType: t3.small
+  frontend-infrastructure:ebMinSize: 1
+  frontend-infrastructure:ebMaxSize: 2
+  frontend-infrastructure:ebDesiredCapacity: 1
+  frontend-infrastructure:ecrImageScanning: "true"
+  frontend-infrastructure:ecrLifecyclePolicy: "true"
+  frontend-infrastructure:ecrMaxImageCount: "10"
+
+

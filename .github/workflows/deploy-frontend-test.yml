@@ -1,0 +1,333 @@
+name: Deploy Frontend to Test Environment
+
+on:
+  # Deploy only via manual trigger
+  # Preview is now handled by build-frontend-pr.yml workflow
+  workflow_dispatch:
+
+env:
+  AWS_REGION: us-east-1
+  PULUMI_STACK: test
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    concurrency:
+      group: deploy-test-${{ github.ref }}
+      cancel-in-progress: true
+
+    permissions:
+      id-token: write
+      contents: read
+
+    environment:
+      name: test
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 0
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v3
+        with:
+          version: "latest"
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Pulumi dependencies
+        working-directory: infrastructure
+        run: |
+          uv venv
+          source .venv/bin/activate
+          uv pip install -e ".[dev]"
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_TEST_ROLE_ARN || secrets.AWS_ROLE_ARN }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Setup Pulumi
+        uses: pulumi/actions@v4
+        with:
+          pulumi-version: latest
+
+      - name: Select Pulumi Stack
+        working-directory: infrastructure
+        run: |
+          source .venv/bin/activate
+          pulumi stack select ${{ env.PULUMI_STACK }}
+        env:
+          PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
+          PULUMI_PYTHON_CMD: ${{ github.workspace }}/infrastructure/.venv/bin/python
+
+      - name: Pulumi Up (Create/Update Infrastructure)
+        working-directory: infrastructure
+        run: |
+          source .venv/bin/activate
+          pulumi up --yes --stack ${{ env.PULUMI_STACK }}
+        env:
+          PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
+          PULUMI_PYTHON_CMD: ${{ github.workspace }}/infrastructure/.venv/bin/python
+
+      - name: Get Pulumi outputs
+        id: outputs
+        working-directory: infrastructure
+        run: |
+          source .venv/bin/activate
+          ECR_REPO_URL=$(pulumi stack output ecr_repository_url --stack ${{ env.PULUMI_STACK }})
+          ECR_REPO_NAME=$(pulumi stack output ecr_repository_name --stack ${{ env.PULUMI_STACK }})
+          EB_APP_NAME=$(pulumi stack output eb_application_name --stack ${{ env.PULUMI_STACK }})
+          EB_ENV_NAME=$(pulumi stack output eb_environment_name --stack ${{ env.PULUMI_STACK }})
+          echo "ecr_repo_url=$ECR_REPO_URL" >> $GITHUB_OUTPUT
+          echo "ecr_repo_name=$ECR_REPO_NAME" >> $GITHUB_OUTPUT
+          echo "eb_app_name=$EB_APP_NAME" >> $GITHUB_OUTPUT
+          echo "eb_env_name=$EB_ENV_NAME" >> $GITHUB_OUTPUT
+        env:
+          PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
+          PULUMI_PYTHON_CMD: ${{ github.workspace }}/infrastructure/.venv/bin/python
+
+      - name: Login to Amazon ECR
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@v2
+
+      - name: Determine Image Tag
+        id: image-tag
+        run: |
+          COMMIT_SHA="${GITHUB_SHA::8}"
+          
+          # Try to find existing image from PR build
+          # Format: pr-<PR_NUMBER>-<COMMIT_SHA> or just <COMMIT_SHA>
+          PR_NUMBER=""
+          if [ -n "${{ github.event.pull_request.number }}" ]; then
+            PR_NUMBER="${{ github.event.pull_request.number }}"
+            IMAGE_TAG="pr-${PR_NUMBER}-${COMMIT_SHA}"
+          else
+            # For direct commits or manual triggers, use commit SHA
+            IMAGE_TAG="${COMMIT_SHA}"
+          fi
+          
+          echo "image_tag=$IMAGE_TAG" >> $GITHUB_OUTPUT
+          echo "commit_sha=$COMMIT_SHA" >> $GITHUB_OUTPUT
+          echo "pr_number=$PR_NUMBER" >> $GITHUB_OUTPUT
+          echo "Generated/Reusing image tag: $IMAGE_TAG"
+
+      - name: Check if Image Exists in ECR
+        id: check-image
+        env:
+          ECR_REPO_NAME: ${{ steps.outputs.outputs.ecr_repo_name }}
+          IMAGE_TAG: ${{ steps.image-tag.outputs.image_tag }}
+          COMMIT_SHA: ${{ steps.image-tag.outputs.commit_sha }}
+          PR_NUMBER: ${{ steps.image-tag.outputs.pr_number }}
+          AWS_REGION: ${{ env.AWS_REGION }}
+        run: |
+          echo "Checking if image exists in ECR..."
+          
+          # Try to find the image - check multiple possible tags
+          IMAGE_FOUND=false
+          POSSIBLE_TAGS=()
+          
+          # Add possible tags based on what we have
+          if [ -n "$PR_NUMBER" ] && [ "$PR_NUMBER" != "null" ]; then
+            POSSIBLE_TAGS+=("pr-${PR_NUMBER}-${COMMIT_SHA}")
+            POSSIBLE_TAGS+=("pr-${PR_NUMBER}")
+          fi
+          POSSIBLE_TAGS+=("$COMMIT_SHA")
+          POSSIBLE_TAGS+=("$IMAGE_TAG")
+          
+          EXISTING_TAG=""
+          for TAG in "${POSSIBLE_TAGS[@]}"; do
+            if [ -n "$TAG" ] && [ "$TAG" != "null" ] && [ "$TAG" != "" ]; then
+              echo "Checking tag: $TAG"
+              if aws ecr describe-images \
+                --repository-name "$ECR_REPO_NAME" \
+                --image-ids imageTag="$TAG" \
+                --region "$AWS_REGION" \
+                --query 'imageDetails[0].imageTags' \
+                --output text 2>/dev/null | grep -q "$TAG"; then
+                echo "✅ Found existing image with tag: $TAG"
+                echo "image_exists=true" >> $GITHUB_OUTPUT
+                echo "existing_tag=$TAG" >> $GITHUB_OUTPUT
+                IMAGE_FOUND=true
+                EXISTING_TAG="$TAG"
+                break
+              fi
+            fi
+          done
+          
+          if [ "$IMAGE_FOUND" = false ]; then
+            echo "⚠️  Image not found in ECR. Will build new image."
+            echo "image_exists=false" >> $GITHUB_OUTPUT
+            echo "existing_tag=$IMAGE_TAG" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Build and Push Docker Image (if not exists)
+        if: steps.check-image.outputs.image_exists != 'true'
+        env:
+          ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+          ECR_REPOSITORY: ${{ steps.outputs.outputs.ecr_repo_name }}
+          IMAGE_TAG: ${{ steps.image-tag.outputs.image_tag }}
+          AWS_REGION: ${{ env.AWS_REGION }}
+        run: |
+          echo "Building new Docker image with tag: $IMAGE_TAG"
+          cd frontend
+          docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
+
+          # Tag for fallback
+          docker tag $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG $ECR_REGISTRY/$ECR_REPOSITORY:latest
+          docker tag $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG $ECR_REGISTRY/$ECR_REPOSITORY:test
+
+          echo "Pushing image with tag: $IMAGE_TAG"
+          docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+          docker push $ECR_REGISTRY/$ECR_REPOSITORY:latest
+          docker push $ECR_REGISTRY/$ECR_REPOSITORY:test
+
+          echo "✅ Image built and pushed successfully with tag: $IMAGE_TAG"
+
+      - name: Use Existing Image
+        if: steps.check-image.outputs.image_exists == 'true'
+        run: |
+          echo "✅ Reusing existing image from PR build"
+          echo "Image Tag: ${{ steps.check-image.outputs.existing_tag }}"
+          echo "No rebuild needed - saving time and resources!"
+
+      - name: Create Elastic Beanstalk Application Version
+        id: create-version
+        run: |
+          EB_APP_NAME="${{ steps.outputs.outputs.eb_app_name }}"
+          EB_ENV_NAME="${{ steps.outputs.outputs.eb_env_name }}"
+          ECR_REPO_URL="${{ steps.outputs.outputs.ecr_repo_url }}"
+          # Use existing tag if found, otherwise use the generated tag
+          if [ "${{ steps.check-image.outputs.image_exists }}" = "true" ]; then
+            IMAGE_TAG="${{ steps.check-image.outputs.existing_tag }}"
+          else
+            IMAGE_TAG="${{ steps.image-tag.outputs.image_tag }}"
+          fi
+          AWS_REGION="${{ env.AWS_REGION }}"
+
+          # Create a Dockerrun.aws.json with the ECR image URL
+          cat > /tmp/Dockerrun.aws.json << EOF
+          {
+            "AWSEBDockerrunVersion": "1",
+            "Image": {
+              "Name": "${ECR_REPO_URL}:${IMAGE_TAG}",
+              "Update": "true"
+            },
+            "Ports": [
+              {
+                "ContainerPort": "80"
+              }
+            ]
+          }
+          EOF
+
+          # Create S3 bucket for EB source bundles (if needed)
+          S3_BUCKET="eb-deployments-${AWS_REGION}-$(aws sts get-caller-identity --query Account --output text)"
+          aws s3 mb s3://$S3_BUCKET --region $AWS_REGION 2>/dev/null || true
+
+          # Create source bundle
+          VERSION_LABEL="v${IMAGE_TAG}-$(date +%s)"
+          cd /tmp
+          zip -r source-bundle.zip Dockerrun.aws.json
+          aws s3 cp source-bundle.zip s3://$S3_BUCKET/source-bundles/$VERSION_LABEL.zip
+
+          # Create application version
+          aws elasticbeanstalk create-application-version \
+            --application-name "$EB_APP_NAME" \
+            --version-label "$VERSION_LABEL" \
+            --source-bundle S3Bucket="$S3_BUCKET",S3Key="source-bundles/$VERSION_LABEL.zip" \
+            --region "$AWS_REGION"
+
+          echo "version_label=$VERSION_LABEL" >> $GITHUB_OUTPUT
+          echo "✅ Created application version: $VERSION_LABEL"
+        env:
+          AWS_REGION: ${{ env.AWS_REGION }}
+
+      - name: Deploy to Elastic Beanstalk Environment
+        run: |
+          EB_APP_NAME="${{ steps.outputs.outputs.eb_app_name }}"
+          EB_ENV_NAME="${{ steps.outputs.outputs.eb_env_name }}"
+          VERSION_LABEL="${{ steps.create-version.outputs.version_label }}"
+          AWS_REGION="${{ env.AWS_REGION }}"
+
+          echo "Deploying version $VERSION_LABEL to environment $EB_ENV_NAME"
+
+          aws elasticbeanstalk update-environment \
+            --application-name "$EB_APP_NAME" \
+            --environment-name "$EB_ENV_NAME" \
+            --version-label "$VERSION_LABEL" \
+            --region "$AWS_REGION"
+
+          echo "✅ Deployment initiated. Environment update in progress..."
+
+      - name: Wait for Deployment
+        run: |
+          EB_ENV_NAME="${{ steps.outputs.outputs.eb_env_name }}"
+          AWS_REGION="${{ env.AWS_REGION }}"
+
+          echo "Waiting for deployment to complete..."
+          MAX_WAIT=600  # 10 minutes
+          ELAPSED=0
+
+          while [ $ELAPSED -lt $MAX_WAIT ]; do
+            STATUS=$(aws elasticbeanstalk describe-environments \
+              --environment-names "$EB_ENV_NAME" \
+              --region "$AWS_REGION" \
+              --query 'Environments[0].Status' \
+              --output text)
+            
+            HEALTH=$(aws elasticbeanstalk describe-environments \
+              --environment-names "$EB_ENV_NAME" \
+              --region "$AWS_REGION" \
+              --query 'Environments[0].Health' \
+              --output text)
+            
+            echo "Status: $STATUS, Health: $HEALTH (${ELAPSED}s/${MAX_WAIT}s)"
+            
+            if [ "$STATUS" = "Ready" ] && [ "$HEALTH" = "Ok" ]; then
+              echo "✅ Deployment completed successfully!"
+              break
+            elif [ "$STATUS" = "Ready" ] && [ "$HEALTH" != "Ok" ]; then
+              echo "⚠️ Environment is Ready but Health is $HEALTH"
+              break
+            fi
+            
+            sleep 10
+            ELAPSED=$((ELAPSED + 10))
+          done
+
+          if [ $ELAPSED -ge $MAX_WAIT ]; then
+            echo "⚠️ Deployment timeout. Check AWS console for status."
+          fi
+
+      - name: Get Environment URL
+        id: env-url
+        run: |
+          EB_ENV_NAME="${{ steps.outputs.outputs.eb_env_name }}"
+          AWS_REGION="${{ env.AWS_REGION }}"
+
+          ENV_URL=$(aws elasticbeanstalk describe-environments \
+            --environment-names "$EB_ENV_NAME" \
+            --region "$AWS_REGION" \
+            --query 'Environments[0].CNAME' \
+            --output text)
+
+          echo "environment_url=$ENV_URL" >> $GITHUB_OUTPUT
+          echo "✅ Environment URL: $ENV_URL"
+
+      - name: Deployment Summary
+        run: |
+          echo "=========================================="
+          echo "✅ Deployment Complete"
+          echo "=========================================="
+          echo "ECR Repository: ${{ steps.outputs.outputs.ecr_repo_url }}"
+          echo "Image Tag: ${{ steps.image-tag.outputs.image_tag }}"
+          echo "EB Application: ${{ steps.outputs.outputs.eb_app_name }}"
+          echo "EB Environment: ${{ steps.outputs.outputs.eb_env_name }}"
+          echo "Environment URL: ${{ steps.env-url.outputs.environment_url }}"
+          echo "=========================================="
