@@ -45,6 +45,14 @@ class ElasticBeanstalkComponent(BaseComponent):
             value=config.instance_type,
         ))
         
+        # Enable launch templates (required for new environments as of Oct 2024)
+        # Setting RootVolumeType to gp3 enables launch templates
+        settings.append(aws.elasticbeanstalk.EnvironmentSettingArgs(
+            namespace="aws:autoscaling:launchconfiguration",
+            name="RootVolumeType",
+            value="gp3",
+        ))
+        
         # Auto Scaling settings
         settings.append(aws.elasticbeanstalk.EnvironmentSettingArgs(
             namespace="aws:autoscaling:asg",
