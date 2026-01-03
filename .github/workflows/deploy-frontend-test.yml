@@ -101,6 +101,16 @@ jobs:
           PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
           PULUMI_PYTHON_CMD: ${{ github.workspace }}/infrastructure/.venv/bin/python
 
+      - name: Refresh Pulumi State
+        working-directory: infrastructure
+        run: |
+          source .venv/bin/activate
+          echo "🔄 Refreshing Pulumi state to detect deleted resources..."
+          pulumi refresh --yes --stack ${{ env.PULUMI_STACK }} || true
+        env:
+          PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
+          PULUMI_PYTHON_CMD: ${{ github.workspace }}/infrastructure/.venv/bin/python
+
       - name: Pulumi Up (Create/Update Infrastructure)
         working-directory: infrastructure
         run: |

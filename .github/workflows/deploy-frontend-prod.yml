@@ -85,14 +85,14 @@ jobs:
           SOLUTION_STACK=$(aws elasticbeanstalk list-available-solution-stacks --region ${{ env.AWS_REGION }} \
             --query 'SolutionStacks[?contains(@, `Docker`) && contains(@, `Amazon Linux 2`)] | [0]' \
             --output text)
-          
+
           if [ -z "$SOLUTION_STACK" ]; then
             echo "⚠️ No Amazon Linux 2 Docker stack found, trying Amazon Linux 2023..."
             SOLUTION_STACK=$(aws elasticbeanstalk list-available-solution-stacks --region ${{ env.AWS_REGION }} \
               --query 'SolutionStacks[?contains(@, `Docker`) && contains(@, `Amazon Linux 2023`)] | [0]' \
               --output text)
           fi
-          
+
           if [ -z "$SOLUTION_STACK" ]; then
             echo "❌ No Docker solution stack found!"
             echo "Available Docker stacks:"
@@ -101,10 +101,10 @@ jobs:
               --output table
             exit 1
           fi
-          
+
           echo "✅ Found solution stack: $SOLUTION_STACK"
           echo "solution_stack=$SOLUTION_STACK" >> $GITHUB_OUTPUT
-          
+
           # Set Pulumi config
           cd infrastructure
           source .venv/bin/activate
@@ -118,6 +118,16 @@ jobs:
         run: |
           source .venv/bin/activate
           pulumi preview --stack ${{ env.PULUMI_STACK }}
+        env:
+          PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
+          PULUMI_PYTHON_CMD: ${{ github.workspace }}/infrastructure/.venv/bin/python
+
+      - name: Refresh Pulumi State
+        working-directory: infrastructure
+        run: |
+          source .venv/bin/activate
+          echo "🔄 Refreshing Pulumi state to detect deleted resources..."
+          pulumi refresh --yes --stack ${{ env.PULUMI_STACK }} || true
         env:
           PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
           PULUMI_PYTHON_CMD: ${{ github.workspace }}/infrastructure/.venv/bin/python
@@ -173,16 +183,16 @@ jobs:
           echo "Building Docker image with tag: $IMAGE_TAG"
           cd frontend
           docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
-          
+
           # Tag for fallback
           docker tag $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG $ECR_REGISTRY/$ECR_REPOSITORY:latest
           docker tag $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG $ECR_REGISTRY/$ECR_REPOSITORY:prod
-          
+
           echo "Pushing image with tag: $IMAGE_TAG"
           docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
           docker push $ECR_REGISTRY/$ECR_REPOSITORY:latest
           docker push $ECR_REGISTRY/$ECR_REPOSITORY:prod
-          
+
           echo "✅ Image built and pushed successfully with tag: $IMAGE_TAG"
 
       - name: Create Elastic Beanstalk Application Version
@@ -193,7 +203,7 @@ jobs:
           ECR_REPO_URL="${{ steps.outputs.outputs.ecr_repo_url }}"
           IMAGE_TAG="${{ steps.image-tag.outputs.image_tag }}"
           AWS_REGION="${{ env.AWS_REGION }}"
-          
+
           # Create a Dockerrun.aws.json with the ECR image URL
           cat > /tmp/Dockerrun.aws.json << EOF
           {
@@ -209,24 +219,24 @@ jobs:
             ]
           }
           EOF
-          
+
           # Create S3 bucket for EB source bundles (if needed)
           S3_BUCKET="eb-deployments-${AWS_REGION}-$(aws sts get-caller-identity --query Account --output text)"
           aws s3 mb s3://$S3_BUCKET --region $AWS_REGION 2>/dev/null || true
-          
+
           # Create source bundle
           VERSION_LABEL="v${IMAGE_TAG}-$(date +%s)"
           cd /tmp
           zip -r source-bundle.zip Dockerrun.aws.json
           aws s3 cp source-bundle.zip s3://$S3_BUCKET/source-bundles/$VERSION_LABEL.zip
-          
+
           # Create application version
           aws elasticbeanstalk create-application-version \
             --application-name "$EB_APP_NAME" \
             --version-label "$VERSION_LABEL" \
             --source-bundle S3Bucket="$S3_BUCKET",S3Key="source-bundles/$VERSION_LABEL.zip" \
             --region "$AWS_REGION"
-          
+
           echo "version_label=$VERSION_LABEL" >> $GITHUB_OUTPUT
           echo "✅ Created application version: $VERSION_LABEL"
         env:
@@ -238,26 +248,26 @@ jobs:
           EB_ENV_NAME="${{ steps.outputs.outputs.eb_env_name }}"
           VERSION_LABEL="${{ steps.create-version.outputs.version_label }}"
           AWS_REGION="${{ env.AWS_REGION }}"
-          
+
           echo "Deploying version $VERSION_LABEL to environment $EB_ENV_NAME"
-          
+
           aws elasticbeanstalk update-environment \
             --application-name "$EB_APP_NAME" \
             --environment-name "$EB_ENV_NAME" \
             --version-label "$VERSION_LABEL" \
             --region "$AWS_REGION"
-          
+
           echo "✅ Deployment initiated. Environment update in progress..."
 
       - name: Wait for Deployment
         run: |
           EB_ENV_NAME="${{ steps.outputs.outputs.eb_env_name }}"
           AWS_REGION="${{ env.AWS_REGION }}"
-          
+
           echo "Waiting for deployment to complete..."
           MAX_WAIT=900  # 15 minutes for production
           ELAPSED=0
-          
+
           while [ $ELAPSED -lt $MAX_WAIT ]; do
             STATUS=$(aws elasticbeanstalk describe-environments \
               --environment-names "$EB_ENV_NAME" \
@@ -284,7 +294,7 @@ jobs:
             sleep 15
             ELAPSED=$((ELAPSED + 15))
           done
-          
+
           if [ $ELAPSED -ge $MAX_WAIT ]; then
             echo "⚠️ Deployment timeout. Check AWS console for status."
             exit 1
@@ -295,13 +305,13 @@ jobs:
         run: |
           EB_ENV_NAME="${{ steps.outputs.outputs.eb_env_name }}"
           AWS_REGION="${{ env.AWS_REGION }}"
-          
+
           ENV_URL=$(aws elasticbeanstalk describe-environments \
             --environment-names "$EB_ENV_NAME" \
             --region "$AWS_REGION" \
             --query 'Environments[0].CNAME' \
             --output text)
-          
+
           echo "environment_url=$ENV_URL" >> $GITHUB_OUTPUT
           echo "✅ Environment URL: $ENV_URL"
 
@@ -316,4 +326,3 @@ jobs:
           echo "EB Environment: ${{ steps.outputs.outputs.eb_env_name }}"
           echo "Environment URL: ${{ steps.env-url.outputs.environment_url }}"
           echo "=========================================="
-
