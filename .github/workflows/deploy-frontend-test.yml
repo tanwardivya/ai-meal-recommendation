@@ -137,6 +137,27 @@ jobs:
           PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
           PULUMI_PYTHON_CMD: ${{ github.workspace }}/infrastructure/.venv/bin/python
 
+      - name: Verify ECR Repository Exists
+        run: |
+          ECR_REPO_NAME="${{ steps.outputs.outputs.ecr_repo_name }}"
+          AWS_REGION="${{ env.AWS_REGION }}"
+          
+          echo "Verifying ECR repository exists: $ECR_REPO_NAME"
+          
+          # Check if repository exists
+          if aws ecr describe-repositories --repository-names "$ECR_REPO_NAME" --region "$AWS_REGION" &>/dev/null; then
+            echo "✅ ECR repository '$ECR_REPO_NAME' exists"
+          else
+            echo "⚠️  ECR repository '$ECR_REPO_NAME' not found. This should have been created by Pulumi."
+            echo "Creating it now as a fallback..."
+            aws ecr create-repository \
+              --repository-name "$ECR_REPO_NAME" \
+              --region "$AWS_REGION" \
+              --image-scanning-configuration scanOnPush=true \
+              --encryption-configuration encryptionType=AES256
+            echo "✅ ECR repository '$ECR_REPO_NAME' created"
+          fi
+
       - name: Login to Amazon ECR
         id: login-ecr
         uses: aws-actions/amazon-ecr-login@v2
