@@ -84,6 +84,7 @@
         "iam:CreatePolicy",
         "iam:DeletePolicy",
         "iam:GetPolicy",
+        "iam:GetPolicyVersion",
         "iam:ListPolicies",
         "iam:CreatePolicyVersion",
         "iam:DeletePolicyVersion",
