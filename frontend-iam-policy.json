@@ -59,7 +59,13 @@
         "autoscaling:*",
         "elasticloadbalancing:*",
         "cloudformation:*",
-        "logs:*"
+        "logs:*",
+        "cloudwatch:PutMetricAlarm",
+        "cloudwatch:DeleteAlarms",
+        "cloudwatch:DescribeAlarms",
+        "cloudwatch:GetMetricStatistics",
+        "cloudwatch:ListMetrics",
+        "cloudwatch:PutMetricData"
       ],
       "Resource": "*"
     },
