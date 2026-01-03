@@ -35,12 +35,8 @@ class ElasticBeanstalkComponent(BaseComponent):
         # Build setting list for environment
         settings = []
         
-        # Solution stack name
-        settings.append(aws.elasticbeanstalk.EnvironmentSettingArgs(
-            namespace="aws:elasticbeanstalk:platform",
-            name="Platform",
-            value=config.solution_stack_name,
-        ))
+        # Note: solution_stack_name is set directly on the Environment resource
+        # No need to set it as a setting
         
         # Instance type
         settings.append(aws.elasticbeanstalk.EnvironmentSettingArgs(

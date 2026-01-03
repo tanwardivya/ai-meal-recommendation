@@ -8,7 +8,7 @@ class ElasticBeanstalkConfig:
     """Configuration for Elastic Beanstalk component."""
     application_name: str
     environment_name: str
-    solution_stack_name: str = "64bit Amazon Linux 2023 v4.3.0 running Docker"
+    solution_stack_name: str = "Docker running on 64bit Amazon Linux 2"
     instance_type: str = "t3.small"
     min_size: int = 1
     max_size: int = 4

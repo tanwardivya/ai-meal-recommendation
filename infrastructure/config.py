@@ -42,7 +42,7 @@ def get_config():
     eb_config = ElasticBeanstalkConfig(
         application_name=eb_application_name,
         environment_name=eb_environment_name,
-        solution_stack_name=config.get("ebSolutionStack") or "64bit Amazon Linux 2 v3.5.0 running Docker",
+        solution_stack_name=config.get("ebSolutionStack") or "Docker running on 64bit Amazon Linux 2",
         instance_type=config.get("ebInstanceType") or "t3.small",
         min_size=config.get_int("ebMinSize") or 1,
         max_size=config.get_int("ebMaxSize") or 4,
