@@ -111,129 +111,6 @@ jobs:
           PULUMI_PYTHON_CMD: ${{ github.workspace }}/infrastructure/.venv/bin/python
         continue-on-error: true
 
-      - name: Terminate Elastic Beanstalk Environment
-        if: steps.outputs.outputs.eb_env_name != ''
-        run: |
-          EB_ENV_NAME="${{ steps.outputs.outputs.eb_env_name }}"
-          AWS_REGION="${{ env.AWS_REGION }}"
-
-          echo "🗑️  Terminating Elastic Beanstalk environment: $EB_ENV_NAME"
-
-          # Check if environment exists
-          ENV_STATUS=$(aws elasticbeanstalk describe-environments \
-            --environment-names "$EB_ENV_NAME" \
-            --region "$AWS_REGION" \
-            --query 'Environments[0].Status' \
-            --output text 2>/dev/null || echo "None")
-
-          if [ "$ENV_STATUS" != "None" ] && [ -n "$ENV_STATUS" ]; then
-            echo "Current status: $ENV_STATUS"
-            
-            if [ "$ENV_STATUS" != "Terminated" ]; then
-              echo "Terminating environment..."
-              aws elasticbeanstalk terminate-environment \
-                --environment-name "$EB_ENV_NAME" \
-                --region "$AWS_REGION" \
-                --force-terminate
-              
-              echo "⏳ Waiting for environment to terminate..."
-              MAX_WAIT=600  # 10 minutes
-              ELAPSED=0
-              
-              while [ $ELAPSED -lt $MAX_WAIT ]; do
-                STATUS=$(aws elasticbeanstalk describe-environments \
-                  --environment-names "$EB_ENV_NAME" \
-                  --region "$AWS_REGION" \
-                  --query 'Environments[0].Status' \
-                  --output text 2>/dev/null || echo "None")
-                
-                if [ "$STATUS" == "None" ] || [ "$STATUS" == "Terminated" ]; then
-                  echo "✅ Environment terminated"
-                  break
-                fi
-                
-                echo "   Status: $STATUS (waiting...)"
-                sleep 10
-                ELAPSED=$((ELAPSED + 10))
-              done
-            else
-              echo "✅ Environment already terminated"
-            fi
-          else
-            echo "ℹ️  Environment not found (may already be deleted)"
-          fi
-
-      - name: Delete Elastic Beanstalk Application
-        if: steps.outputs.outputs.eb_app_name != ''
-        run: |
-          EB_APP_NAME="${{ steps.outputs.outputs.eb_app_name }}"
-          AWS_REGION="${{ env.AWS_REGION }}"
-
-          echo "🗑️  Deleting Elastic Beanstalk application: $EB_APP_NAME"
-
-          # Check if application exists
-          if aws elasticbeanstalk describe-applications \
-            --application-names "$EB_APP_NAME" \
-            --region "$AWS_REGION" &>/dev/null; then
-            echo "Deleting application..."
-            aws elasticbeanstalk delete-application \
-              --application-name "$EB_APP_NAME" \
-              --region "$AWS_REGION" \
-              --terminate-env-by-force
-            echo "✅ Application deleted"
-          else
-            echo "ℹ️  Application not found (may already be deleted)"
-          fi
-
-      - name: Delete ECR Repository Images
-        if: steps.outputs.outputs.ecr_repo_name != ''
-        run: |
-          ECR_REPO_NAME="${{ steps.outputs.outputs.ecr_repo_name }}"
-          AWS_REGION="${{ env.AWS_REGION }}"
-
-          echo "🗑️  Deleting all images from ECR repository: $ECR_REPO_NAME"
-
-          # Check if repository exists
-          if aws ecr describe-repositories \
-            --repository-names "$ECR_REPO_NAME" \
-            --region "$AWS_REGION" &>/dev/null; then
-            # Get all image tags
-            IMAGE_TAGS=$(aws ecr list-images \
-              --repository-name "$ECR_REPO_NAME" \
-              --region "$AWS_REGION" \
-              --query 'imageIds[*].imageTag' \
-              --output text 2>/dev/null || echo "")
-            
-            if [ -n "$IMAGE_TAGS" ] && [ "$IMAGE_TAGS" != "None" ]; then
-              echo "Found images with tags: $IMAGE_TAGS"
-              # Delete all images
-              aws ecr batch-delete-image \
-                --repository-name "$ECR_REPO_NAME" \
-                --region "$AWS_REGION" \
-                --image-ids imageTag=$(echo "$IMAGE_TAGS" | tr ' ' ',') || true
-              
-              # Also try to delete by digest (for untagged images)
-              IMAGE_DIGESTS=$(aws ecr list-images \
-                --repository-name "$ECR_REPO_NAME" \
-                --region "$AWS_REGION" \
-                --query 'imageIds[*].imageDigest' \
-                --output text 2>/dev/null || echo "")
-              
-              if [ -n "$IMAGE_DIGESTS" ] && [ "$IMAGE_DIGESTS" != "None" ]; then
-                aws ecr batch-delete-image \
-                  --repository-name "$ECR_REPO_NAME" \
-                  --region "$AWS_REGION" \
-                  --image-ids imageDigest=$(echo "$IMAGE_DIGESTS" | tr ' ' ',') || true
-              fi
-              
-              echo "✅ Images deleted"
-            else
-              echo "ℹ️  No images found in repository"
-            fi
-          else
-            echo "ℹ️  Repository not found (may already be deleted)"
-          fi
-
       - name: Destroy Pulumi Infrastructure
         working-directory: infrastructure
         run: |
@@ -248,36 +125,21 @@ jobs:
           PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
           PULUMI_PYTHON_CMD: ${{ github.workspace }}/infrastructure/.venv/bin/python
 
-      - name: Delete ECR Repository
-        if: steps.outputs.outputs.ecr_repo_name != ''
-        run: |
-          ECR_REPO_NAME="${{ steps.outputs.outputs.ecr_repo_name }}"
-          AWS_REGION="${{ env.AWS_REGION }}"
-
-          echo "🗑️  Deleting ECR repository: $ECR_REPO_NAME"
-
-          # Check if repository still exists
-          if aws ecr describe-repositories \
-            --repository-names "$ECR_REPO_NAME" \
-            --region "$AWS_REGION" &>/dev/null; then
-            # Delete repository (force delete even if it has images)
-            aws ecr delete-repository \
-              --repository-name "$ECR_REPO_NAME" \
-              --region "$AWS_REGION" \
-              --force || true
-            echo "✅ ECR repository deleted"
-          else
-            echo "ℹ️  Repository not found (may already be deleted by Pulumi)"
-          fi
-
-      - name: Cleanup S3 Buckets
+      - name: Cleanup S3 Buckets (Not Managed by Pulumi)
         run: |
           AWS_REGION="${{ env.AWS_REGION }}"
           ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
 
           echo "🗑️  Cleaning up Elastic Beanstalk S3 buckets..."
+          echo "ℹ️  These buckets are NOT managed by Pulumi"
+          echo "ℹ️  They are created automatically by Elastic Beanstalk service"
+          echo "ℹ️  Pulumi destroy will NOT delete them, so we clean them up manually"
 
           # List and delete EB deployment buckets
+          # These are created by EB service for storing:
+          # - Application versions
+          # - Deployment bundles (Dockerrun.aws.json, etc.)
+          # - Logs and artifacts
           BUCKETS=$(aws s3 ls | grep -E "eb-deployments-|elasticbeanstalk-" | awk '{print $3}' || echo "")
 
           if [ -n "$BUCKETS" ]; then
@@ -292,6 +154,7 @@ jobs:
           else
             echo "ℹ️  No EB S3 buckets found"
           fi
+        continue-on-error: true
 
       - name: Verify Destruction
         run: |
@@ -357,12 +220,16 @@ jobs:
           echo "=========================================="
           echo ""
           echo "Environment: ${{ inputs.environment }}"
-          echo "All resources have been deleted:"
-          echo "  - Elastic Beanstalk environment"
-          echo "  - Elastic Beanstalk application"
-          echo "  - ECR repository and images"
-          echo "  - All Pulumi-managed resources"
-          echo "  - S3 deployment buckets"
+          echo "All Pulumi-managed resources have been deleted:"
+          echo "  - Elastic Beanstalk environment (managed by Pulumi)"
+          echo "  - Elastic Beanstalk application (managed by Pulumi)"
+          echo "  - ECR repository (managed by Pulumi)"
+          echo "  - IAM roles and policies (managed by Pulumi)"
+          echo "  - Instance profiles (managed by Pulumi)"
+          echo "  - All other Pulumi-managed resources"
           echo ""
           echo "Note: Pulumi stack still exists but is empty."
           echo "To remove the stack: pulumi stack rm ${{ inputs.environment }}"
+          echo ""
+          echo "Note: S3 buckets created by Elastic Beanstalk may still exist."
+          echo "These are not managed by Pulumi and were cleaned up separately."
