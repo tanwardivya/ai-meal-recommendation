@@ -33,7 +33,7 @@ jobs:
           role-to-assume: ${{ secrets.AWS_TEST_ROLE_ARN || secrets.AWS_ROLE_ARN }}
           aws-region: ${{ env.AWS_REGION }}
 
-      - name: Get ECR Repository from Secrets
+      - name: Get or Create ECR Repository
         id: ecr-info
         run: |
           # Get ECR repository name from GitHub secrets
@@ -41,28 +41,37 @@ jobs:
           ECR_REPO_NAME="${{ secrets.ECR_REPO_NAME || 'frontend-test' }}"
           AWS_REGION="${{ env.AWS_REGION }}"
           
-          # If ECR_REPO_URL secret is set, use it directly
+          echo "Using ECR repository name: $ECR_REPO_NAME"
+          echo "AWS Region: $AWS_REGION"
+          
+          # Check if repository exists
+          if aws ecr describe-repositories --repository-names "$ECR_REPO_NAME" --region "$AWS_REGION" &>/dev/null; then
+            echo "✅ ECR repository '$ECR_REPO_NAME' already exists"
+          else
+            echo "⚠️  ECR repository '$ECR_REPO_NAME' not found. Creating it..."
+            aws ecr create-repository \
+              --repository-name "$ECR_REPO_NAME" \
+              --region "$AWS_REGION" \
+              --image-scanning-configuration scanOnPush=true \
+              --encryption-configuration encryptionType=AES256
+            echo "✅ ECR repository '$ECR_REPO_NAME' created successfully"
+          fi
+          
+          # Get account ID and construct repository URL
+          ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
+          
+          # If ECR_REPO_URL secret is set, use it; otherwise construct it
           if [ -n "${{ secrets.ECR_REPO_URL }}" ]; then
             ECR_REPO_URL="${{ secrets.ECR_REPO_URL }}"
             echo "✅ Using ECR URL from secret: $ECR_REPO_URL"
           else
-            # Construct ECR URL from account ID and repository name
-            ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
             ECR_REPO_URL="${ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/${ECR_REPO_NAME}"
             echo "✅ Constructed ECR URL: $ECR_REPO_URL"
           fi
           
-          # Verify ECR repository exists
-          if ! aws ecr describe-repositories --repository-names "$ECR_REPO_NAME" --region "$AWS_REGION" &>/dev/null; then
-            echo "❌ ECR repository '$ECR_REPO_NAME' not found in AWS"
-            echo "ℹ️  Please create the ECR repository first:"
-            echo "   aws ecr create-repository --repository-name $ECR_REPO_NAME --region $AWS_REGION"
-            exit 1
-          fi
-          
           echo "ecr_repo_url=$ECR_REPO_URL" >> $GITHUB_OUTPUT
           echo "ecr_repo_name=$ECR_REPO_NAME" >> $GITHUB_OUTPUT
-          echo "✅ ECR Repository: $ECR_REPO_URL"
+          echo "✅ ECR Repository ready: $ECR_REPO_URL"
         env:
           AWS_REGION: ${{ env.AWS_REGION }}
 
