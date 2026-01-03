@@ -78,6 +78,41 @@ jobs:
           PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
           PULUMI_PYTHON_CMD: ${{ github.workspace }}/infrastructure/.venv/bin/python
 
+      - name: Find Elastic Beanstalk Solution Stack
+        id: find-solution-stack
+        run: |
+          echo "Finding available Docker solution stack..."
+          SOLUTION_STACK=$(aws elasticbeanstalk list-available-solution-stacks --region ${{ env.AWS_REGION }} \
+            --query 'SolutionStacks[?contains(@, `Docker`) && contains(@, `Amazon Linux 2`)] | [0]' \
+            --output text)
+          
+          if [ -z "$SOLUTION_STACK" ]; then
+            echo "⚠️ No Amazon Linux 2 Docker stack found, trying Amazon Linux 2023..."
+            SOLUTION_STACK=$(aws elasticbeanstalk list-available-solution-stacks --region ${{ env.AWS_REGION }} \
+              --query 'SolutionStacks[?contains(@, `Docker`) && contains(@, `Amazon Linux 2023`)] | [0]' \
+              --output text)
+          fi
+          
+          if [ -z "$SOLUTION_STACK" ]; then
+            echo "❌ No Docker solution stack found!"
+            echo "Available Docker stacks:"
+            aws elasticbeanstalk list-available-solution-stacks --region ${{ env.AWS_REGION }} \
+              --query 'SolutionStacks[?contains(@, `Docker`)]' \
+              --output table
+            exit 1
+          fi
+          
+          echo "✅ Found solution stack: $SOLUTION_STACK"
+          echo "solution_stack=$SOLUTION_STACK" >> $GITHUB_OUTPUT
+          
+          # Set Pulumi config
+          cd infrastructure
+          source .venv/bin/activate
+          pulumi config set --path frontend-infrastructure:ebSolutionStack "$SOLUTION_STACK"
+        env:
+          PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
+          PULUMI_PYTHON_CMD: ${{ github.workspace }}/infrastructure/.venv/bin/python
+
       - name: Pulumi Preview
         working-directory: infrastructure
         run: |
