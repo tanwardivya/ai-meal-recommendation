@@ -51,10 +51,57 @@ echo ""
 
 # Step 2: Create IAM Policy
 echo -e "${YELLOW}Step 2: Creating IAM Policy...${NC}"
-if aws iam get-policy --policy-arn "arn:aws:iam::${AWS_ACCOUNT_ID}:policy/${POLICY_NAME}" &>/dev/null; then
+POLICY_ARN="arn:aws:iam::${AWS_ACCOUNT_ID}:policy/${POLICY_NAME}"
+
+if aws iam get-policy --policy-arn "$POLICY_ARN" &>/dev/null; then
     echo -e "${YELLOW}⚠️  Policy already exists, updating...${NC}"
+    
+    # Check if we're at the version limit (5 versions max)
+    VERSION_COUNT=$(aws iam list-policy-versions \
+      --policy-arn "$POLICY_ARN" \
+      --query 'length(Versions)' \
+      --output text)
+    
+    if [ "$VERSION_COUNT" -ge 5 ]; then
+        echo -e "${YELLOW}⚠️  Policy has ${VERSION_COUNT} versions (max 5). Deleting oldest non-default version...${NC}"
+        
+        # Get the default version
+        DEFAULT_VERSION=$(aws iam get-policy \
+          --policy-arn "$POLICY_ARN" \
+          --query 'Policy.DefaultVersionId' \
+          --output text)
+        
+        # Find and delete the oldest non-default version
+        OLDEST_VERSION=$(aws iam list-policy-versions \
+          --policy-arn "$POLICY_ARN" \
+          --query "Versions[?VersionId!='${DEFAULT_VERSION}'] | sort_by(@, &CreateDate) | [0].VersionId" \
+          --output text)
+        
+        if [ -n "$OLDEST_VERSION" ] && [ "$OLDEST_VERSION" != "None" ]; then
+            echo "Deleting version: $OLDEST_VERSION"
+            aws iam delete-policy-version \
+              --policy-arn "$POLICY_ARN" \
+              --version-id "$OLDEST_VERSION"
+            echo -e "${GREEN}✅ Deleted old version: ${OLDEST_VERSION}${NC}"
+        else
+            # If all versions are default (shouldn't happen), delete the oldest
+            OLDEST_VERSION=$(aws iam list-policy-versions \
+              --policy-arn "$POLICY_ARN" \
+              --query "Versions | sort_by(@, &CreateDate) | [0].VersionId" \
+              --output text)
+            if [ -n "$OLDEST_VERSION" ] && [ "$OLDEST_VERSION" != "$DEFAULT_VERSION" ]; then
+                echo "Deleting version: $OLDEST_VERSION"
+                aws iam delete-policy-version \
+                  --policy-arn "$POLICY_ARN" \
+                  --version-id "$OLDEST_VERSION"
+                echo -e "${GREEN}✅ Deleted old version: ${OLDEST_VERSION}${NC}"
+            fi
+        fi
+    fi
+    
+    # Now create the new version
     POLICY_VERSION=$(aws iam create-policy-version \
-      --policy-arn "arn:aws:iam::${AWS_ACCOUNT_ID}:policy/${POLICY_NAME}" \
+      --policy-arn "$POLICY_ARN" \
       --policy-document file://frontend-iam-policy.json \
       --set-as-default \
       --query 'PolicyVersion.VersionId' \
@@ -88,7 +135,6 @@ echo ""
 
 # Step 4: Attach Policy to Role
 echo -e "${YELLOW}Step 4: Attaching Policy to Role...${NC}"
-POLICY_ARN="arn:aws:iam::${AWS_ACCOUNT_ID}:policy/${POLICY_NAME}"
 
 # Check if policy is already attached
 if aws iam list-attached-role-policies --role-name "$ROLE_NAME" --query "AttachedPolicies[?PolicyArn=='${POLICY_ARN}']" --output text | grep -q "$POLICY_ARN"; then
