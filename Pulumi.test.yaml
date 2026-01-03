@@ -6,6 +6,7 @@ config:
   frontend-infrastructure:ebApplicationName: frontend-test
   frontend-infrastructure:ebEnvironmentName: frontend-test-env
   frontend-infrastructure:ebInstanceType: t3.small
+  frontend-infrastructure:ebSolutionStack: "64bit Amazon Linux 2023 v4.3.0 running Docker"
   frontend-infrastructure:ebMinSize: 1
   frontend-infrastructure:ebMaxSize: 2
   frontend-infrastructure:ebDesiredCapacity: 1
