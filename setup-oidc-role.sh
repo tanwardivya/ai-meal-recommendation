@@ -65,36 +65,52 @@ if aws iam get-policy --policy-arn "$POLICY_ARN" &>/dev/null; then
     if [ "$VERSION_COUNT" -ge 5 ]; then
         echo -e "${YELLOW}⚠️  Policy has ${VERSION_COUNT} versions (max 5). Deleting oldest non-default version...${NC}"
         
-        # Get the default version
+        # Get the default version (this is the current active version - we MUST keep it)
         DEFAULT_VERSION=$(aws iam get-policy \
           --policy-arn "$POLICY_ARN" \
           --query 'Policy.DefaultVersionId' \
           --output text)
         
-        # Find and delete the oldest non-default version
-        OLDEST_VERSION=$(aws iam list-policy-versions \
-          --policy-arn "$POLICY_ARN" \
-          --query "Versions[?VersionId!='${DEFAULT_VERSION}'] | sort_by(@, &CreateDate) | [0].VersionId" \
-          --output text)
+        echo -e "${GREEN}✅ Current default version: ${DEFAULT_VERSION} (will be preserved)${NC}"
         
-        if [ -n "$OLDEST_VERSION" ] && [ "$OLDEST_VERSION" != "None" ]; then
-            echo "Deleting version: $OLDEST_VERSION"
+        # List all versions and find the oldest non-default one
+        # We need to delete one to make room for the new version
+        ALL_VERSIONS=$(aws iam list-policy-versions \
+          --policy-arn "$POLICY_ARN" \
+          --query "Versions[?VersionId!='${DEFAULT_VERSION}'] | sort_by(@, &CreateDate)" \
+          --output json)
+        
+        # Extract the oldest non-default version ID
+        OLDEST_VERSION=$(echo "$ALL_VERSIONS" | grep -o '"VersionId": "[^"]*"' | head -1 | cut -d'"' -f4)
+        
+        if [ -n "$OLDEST_VERSION" ] && [ "$OLDEST_VERSION" != "None" ] && [ "$OLDEST_VERSION" != "$DEFAULT_VERSION" ]; then
+            echo -e "${YELLOW}Deleting oldest non-default version: ${OLDEST_VERSION}${NC}"
             aws iam delete-policy-version \
               --policy-arn "$POLICY_ARN" \
               --version-id "$OLDEST_VERSION"
             echo -e "${GREEN}✅ Deleted old version: ${OLDEST_VERSION}${NC}"
+            echo -e "${GREEN}✅ Default version ${DEFAULT_VERSION} is preserved${NC}"
         else
-            # If all versions are default (shouldn't happen), delete the oldest
+            echo -e "${RED}⚠️  Warning: Could not find a non-default version to delete${NC}"
+            echo -e "${YELLOW}This should not happen. All versions might be marked as default.${NC}"
+            echo -e "${YELLOW}Attempting to delete the oldest version (excluding current default)...${NC}"
+            
+            # Fallback: get all versions, sort by date, exclude default, take oldest
             OLDEST_VERSION=$(aws iam list-policy-versions \
               --policy-arn "$POLICY_ARN" \
-              --query "Versions | sort_by(@, &CreateDate) | [0].VersionId" \
+              --query "Versions[?VersionId!='${DEFAULT_VERSION}'] | sort_by(@, &CreateDate) | [0].VersionId" \
               --output text)
-            if [ -n "$OLDEST_VERSION" ] && [ "$OLDEST_VERSION" != "$DEFAULT_VERSION" ]; then
-                echo "Deleting version: $OLDEST_VERSION"
+            
+            if [ -n "$OLDEST_VERSION" ] && [ "$OLDEST_VERSION" != "None" ] && [ "$OLDEST_VERSION" != "$DEFAULT_VERSION" ]; then
+                echo -e "${YELLOW}Deleting version: ${OLDEST_VERSION}${NC}"
                 aws iam delete-policy-version \
                   --policy-arn "$POLICY_ARN" \
                   --version-id "$OLDEST_VERSION"
                 echo -e "${GREEN}✅ Deleted old version: ${OLDEST_VERSION}${NC}"
+            else
+                echo -e "${RED}❌ Error: Cannot safely delete a version. Please delete manually.${NC}"
+                echo -e "${YELLOW}Current default version: ${DEFAULT_VERSION}${NC}"
+                exit 1
             fi
         fi
     fi
