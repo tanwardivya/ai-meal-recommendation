@@ -73,14 +73,14 @@ jobs:
           SOLUTION_STACK=$(aws elasticbeanstalk list-available-solution-stacks --region ${{ env.AWS_REGION }} \
             --query 'SolutionStacks[?contains(@, `Docker`) && contains(@, `Amazon Linux 2`)] | [0]' \
             --output text)
-          
+
           if [ -z "$SOLUTION_STACK" ]; then
             echo "⚠️ No Amazon Linux 2 Docker stack found, trying Amazon Linux 2023..."
             SOLUTION_STACK=$(aws elasticbeanstalk list-available-solution-stacks --region ${{ env.AWS_REGION }} \
               --query 'SolutionStacks[?contains(@, `Docker`) && contains(@, `Amazon Linux 2023`)] | [0]' \
               --output text)
           fi
-          
+
           if [ -z "$SOLUTION_STACK" ]; then
             echo "❌ No Docker solution stack found!"
             echo "Available Docker stacks:"
@@ -89,10 +89,10 @@ jobs:
               --output table
             exit 1
           fi
-          
+
           echo "✅ Found solution stack: $SOLUTION_STACK"
           echo "solution_stack=$SOLUTION_STACK" >> $GITHUB_OUTPUT
-          
+
           # Set Pulumi config
           cd infrastructure
           source .venv/bin/activate
@@ -141,9 +141,9 @@ jobs:
         run: |
           ECR_REPO_NAME="${{ steps.outputs.outputs.ecr_repo_name }}"
           AWS_REGION="${{ env.AWS_REGION }}"
-          
+
           echo "Verifying ECR repository exists: $ECR_REPO_NAME"
-          
+
           # Check if repository exists
           if aws ecr describe-repositories --repository-names "$ECR_REPO_NAME" --region "$AWS_REGION" &>/dev/null; then
             echo "✅ ECR repository '$ECR_REPO_NAME' exists"
@@ -166,7 +166,7 @@ jobs:
         id: image-tag
         run: |
           COMMIT_SHA="${GITHUB_SHA::8}"
-          
+
           # Try to find existing image from PR build
           # Format: pr-<PR_NUMBER>-<COMMIT_SHA> or just <COMMIT_SHA>
           PR_NUMBER=""
@@ -177,7 +177,7 @@ jobs:
             # For direct commits or manual triggers, use commit SHA
             IMAGE_TAG="${COMMIT_SHA}"
           fi
-          
+
           echo "image_tag=$IMAGE_TAG" >> $GITHUB_OUTPUT
           echo "commit_sha=$COMMIT_SHA" >> $GITHUB_OUTPUT
           echo "pr_number=$PR_NUMBER" >> $GITHUB_OUTPUT
@@ -193,11 +193,11 @@ jobs:
           AWS_REGION: ${{ env.AWS_REGION }}
         run: |
           echo "Checking if image exists in ECR..."
-          
+
           # Try to find the image - check multiple possible tags
           IMAGE_FOUND=false
           POSSIBLE_TAGS=()
-          
+
           # Add possible tags based on what we have
           if [ -n "$PR_NUMBER" ] && [ "$PR_NUMBER" != "null" ]; then
             POSSIBLE_TAGS+=("pr-${PR_NUMBER}-${COMMIT_SHA}")
@@ -205,7 +205,7 @@ jobs:
           fi
           POSSIBLE_TAGS+=("$COMMIT_SHA")
           POSSIBLE_TAGS+=("$IMAGE_TAG")
-          
+
           EXISTING_TAG=""
           for TAG in "${POSSIBLE_TAGS[@]}"; do
             if [ -n "$TAG" ] && [ "$TAG" != "null" ] && [ "$TAG" != "" ]; then
@@ -225,7 +225,7 @@ jobs:
               fi
             fi
           done
-          
+
           if [ "$IMAGE_FOUND" = false ]; then
             echo "⚠️  Image not found in ECR. Will build new image."
             echo "image_exists=false" >> $GITHUB_OUTPUT

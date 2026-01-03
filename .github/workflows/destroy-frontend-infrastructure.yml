@@ -1,0 +1,368 @@
+name: Destroy Frontend Infrastructure
+
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: "Environment to destroy"
+        required: true
+        type: choice
+        options:
+          - test
+          - prod
+      confirm_destroy:
+        description: 'Type "DESTROY" to confirm (case-sensitive)'
+        required: true
+        type: string
+
+env:
+  AWS_REGION: us-east-1
+
+jobs:
+  destroy:
+    runs-on: ubuntu-latest
+    concurrency:
+      group: destroy-${{ inputs.environment }}-${{ github.ref }}
+      cancel-in-progress: false
+
+    permissions:
+      id-token: write
+      contents: read
+
+    environment:
+      name: ${{ inputs.environment }}
+
+    steps:
+      - name: Validate Confirmation
+        run: |
+          if [ "${{ inputs.confirm_destroy }}" != "DESTROY" ]; then
+            echo "❌ Confirmation failed. You must type 'DESTROY' to proceed."
+            echo "Received: '${{ inputs.confirm_destroy }}'"
+            exit 1
+          fi
+          echo "✅ Confirmation validated"
+
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 0
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v3
+        with:
+          version: "latest"
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Pulumi dependencies
+        working-directory: infrastructure
+        run: |
+          uv venv
+          source .venv/bin/activate
+          uv pip install -e ".[dev]"
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Setup Pulumi
+        uses: pulumi/actions@v4
+        with:
+          pulumi-version: latest
+
+      - name: Select Pulumi Stack
+        working-directory: infrastructure
+        run: |
+          source .venv/bin/activate
+          pulumi stack select ${{ inputs.environment }}
+        env:
+          PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
+          PULUMI_PYTHON_CMD: ${{ github.workspace }}/infrastructure/.venv/bin/python
+
+      - name: Get Pulumi Outputs (Before Destroy)
+        id: outputs
+        working-directory: infrastructure
+        run: |
+          source .venv/bin/activate
+          echo "📋 Getting current infrastructure details..."
+
+          # Get outputs (may fail if stack doesn't exist, that's okay)
+          ECR_REPO_NAME=$(pulumi stack output ecr_repository_name --stack ${{ inputs.environment }} 2>/dev/null || echo "")
+          EB_ENV_NAME=$(pulumi stack output eb_environment_name --stack ${{ inputs.environment }} 2>/dev/null || echo "")
+          EB_APP_NAME=$(pulumi stack output eb_application_name --stack ${{ inputs.environment }} 2>/dev/null || echo "")
+
+          echo "ecr_repo_name=${ECR_REPO_NAME}" >> $GITHUB_OUTPUT
+          echo "eb_env_name=${EB_ENV_NAME}" >> $GITHUB_OUTPUT
+          echo "eb_app_name=${EB_APP_NAME}" >> $GITHUB_OUTPUT
+
+          if [ -n "$ECR_REPO_NAME" ]; then
+            echo "✅ Found ECR repository: $ECR_REPO_NAME"
+          fi
+          if [ -n "$EB_ENV_NAME" ]; then
+            echo "✅ Found EB environment: $EB_ENV_NAME"
+          fi
+        env:
+          PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
+          PULUMI_PYTHON_CMD: ${{ github.workspace }}/infrastructure/.venv/bin/python
+        continue-on-error: true
+
+      - name: Terminate Elastic Beanstalk Environment
+        if: steps.outputs.outputs.eb_env_name != ''
+        run: |
+          EB_ENV_NAME="${{ steps.outputs.outputs.eb_env_name }}"
+          AWS_REGION="${{ env.AWS_REGION }}"
+
+          echo "🗑️  Terminating Elastic Beanstalk environment: $EB_ENV_NAME"
+
+          # Check if environment exists
+          ENV_STATUS=$(aws elasticbeanstalk describe-environments \
+            --environment-names "$EB_ENV_NAME" \
+            --region "$AWS_REGION" \
+            --query 'Environments[0].Status' \
+            --output text 2>/dev/null || echo "None")
+
+          if [ "$ENV_STATUS" != "None" ] && [ -n "$ENV_STATUS" ]; then
+            echo "Current status: $ENV_STATUS"
+            
+            if [ "$ENV_STATUS" != "Terminated" ]; then
+              echo "Terminating environment..."
+              aws elasticbeanstalk terminate-environment \
+                --environment-name "$EB_ENV_NAME" \
+                --region "$AWS_REGION" \
+                --force-terminate
+              
+              echo "⏳ Waiting for environment to terminate..."
+              MAX_WAIT=600  # 10 minutes
+              ELAPSED=0
+              
+              while [ $ELAPSED -lt $MAX_WAIT ]; do
+                STATUS=$(aws elasticbeanstalk describe-environments \
+                  --environment-names "$EB_ENV_NAME" \
+                  --region "$AWS_REGION" \
+                  --query 'Environments[0].Status' \
+                  --output text 2>/dev/null || echo "None")
+                
+                if [ "$STATUS" == "None" ] || [ "$STATUS" == "Terminated" ]; then
+                  echo "✅ Environment terminated"
+                  break
+                fi
+                
+                echo "   Status: $STATUS (waiting...)"
+                sleep 10
+                ELAPSED=$((ELAPSED + 10))
+              done
+            else
+              echo "✅ Environment already terminated"
+            fi
+          else
+            echo "ℹ️  Environment not found (may already be deleted)"
+          fi
+
+      - name: Delete Elastic Beanstalk Application
+        if: steps.outputs.outputs.eb_app_name != ''
+        run: |
+          EB_APP_NAME="${{ steps.outputs.outputs.eb_app_name }}"
+          AWS_REGION="${{ env.AWS_REGION }}"
+
+          echo "🗑️  Deleting Elastic Beanstalk application: $EB_APP_NAME"
+
+          # Check if application exists
+          if aws elasticbeanstalk describe-applications \
+            --application-names "$EB_APP_NAME" \
+            --region "$AWS_REGION" &>/dev/null; then
+            echo "Deleting application..."
+            aws elasticbeanstalk delete-application \
+              --application-name "$EB_APP_NAME" \
+              --region "$AWS_REGION" \
+              --terminate-env-by-force
+            echo "✅ Application deleted"
+          else
+            echo "ℹ️  Application not found (may already be deleted)"
+          fi
+
+      - name: Delete ECR Repository Images
+        if: steps.outputs.outputs.ecr_repo_name != ''
+        run: |
+          ECR_REPO_NAME="${{ steps.outputs.outputs.ecr_repo_name }}"
+          AWS_REGION="${{ env.AWS_REGION }}"
+
+          echo "🗑️  Deleting all images from ECR repository: $ECR_REPO_NAME"
+
+          # Check if repository exists
+          if aws ecr describe-repositories \
+            --repository-names "$ECR_REPO_NAME" \
+            --region "$AWS_REGION" &>/dev/null; then
+            # Get all image tags
+            IMAGE_TAGS=$(aws ecr list-images \
+              --repository-name "$ECR_REPO_NAME" \
+              --region "$AWS_REGION" \
+              --query 'imageIds[*].imageTag' \
+              --output text 2>/dev/null || echo "")
+            
+            if [ -n "$IMAGE_TAGS" ] && [ "$IMAGE_TAGS" != "None" ]; then
+              echo "Found images with tags: $IMAGE_TAGS"
+              # Delete all images
+              aws ecr batch-delete-image \
+                --repository-name "$ECR_REPO_NAME" \
+                --region "$AWS_REGION" \
+                --image-ids imageTag=$(echo "$IMAGE_TAGS" | tr ' ' ',') || true
+              
+              # Also try to delete by digest (for untagged images)
+              IMAGE_DIGESTS=$(aws ecr list-images \
+                --repository-name "$ECR_REPO_NAME" \
+                --region "$AWS_REGION" \
+                --query 'imageIds[*].imageDigest' \
+                --output text 2>/dev/null || echo "")
+              
+              if [ -n "$IMAGE_DIGESTS" ] && [ "$IMAGE_DIGESTS" != "None" ]; then
+                aws ecr batch-delete-image \
+                  --repository-name "$ECR_REPO_NAME" \
+                  --region "$AWS_REGION" \
+                  --image-ids imageDigest=$(echo "$IMAGE_DIGESTS" | tr ' ' ',') || true
+              fi
+              
+              echo "✅ Images deleted"
+            else
+              echo "ℹ️  No images found in repository"
+            fi
+          else
+            echo "ℹ️  Repository not found (may already be deleted)"
+          fi
+
+      - name: Destroy Pulumi Infrastructure
+        working-directory: infrastructure
+        run: |
+          source .venv/bin/activate
+          echo "🗑️  Destroying Pulumi infrastructure for ${{ inputs.environment }} environment..."
+          echo "⚠️  This will delete ALL resources managed by Pulumi!"
+
+          pulumi destroy --yes --stack ${{ inputs.environment }}
+
+          echo "✅ Infrastructure destroyed"
+        env:
+          PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
+          PULUMI_PYTHON_CMD: ${{ github.workspace }}/infrastructure/.venv/bin/python
+
+      - name: Delete ECR Repository
+        if: steps.outputs.outputs.ecr_repo_name != ''
+        run: |
+          ECR_REPO_NAME="${{ steps.outputs.outputs.ecr_repo_name }}"
+          AWS_REGION="${{ env.AWS_REGION }}"
+
+          echo "🗑️  Deleting ECR repository: $ECR_REPO_NAME"
+
+          # Check if repository still exists
+          if aws ecr describe-repositories \
+            --repository-names "$ECR_REPO_NAME" \
+            --region "$AWS_REGION" &>/dev/null; then
+            # Delete repository (force delete even if it has images)
+            aws ecr delete-repository \
+              --repository-name "$ECR_REPO_NAME" \
+              --region "$AWS_REGION" \
+              --force || true
+            echo "✅ ECR repository deleted"
+          else
+            echo "ℹ️  Repository not found (may already be deleted by Pulumi)"
+          fi
+
+      - name: Cleanup S3 Buckets
+        run: |
+          AWS_REGION="${{ env.AWS_REGION }}"
+          ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
+
+          echo "🗑️  Cleaning up Elastic Beanstalk S3 buckets..."
+
+          # List and delete EB deployment buckets
+          BUCKETS=$(aws s3 ls | grep -E "eb-deployments-|elasticbeanstalk-" | awk '{print $3}' || echo "")
+
+          if [ -n "$BUCKETS" ]; then
+            for BUCKET in $BUCKETS; do
+              echo "Deleting bucket: $BUCKET"
+              # Delete all objects first
+              aws s3 rm s3://$BUCKET --recursive || true
+              # Delete bucket
+              aws s3 rb s3://$BUCKET --force || true
+            done
+            echo "✅ S3 buckets cleaned up"
+          else
+            echo "ℹ️  No EB S3 buckets found"
+          fi
+
+      - name: Verify Destruction
+        run: |
+          echo "🔍 Verifying all resources are deleted..."
+
+          ENV_NAME="${{ steps.outputs.outputs.eb_env_name }}"
+          APP_NAME="${{ steps.outputs.outputs.eb_app_name }}"
+          REPO_NAME="${{ steps.outputs.outputs.ecr_repo_name }}"
+          AWS_REGION="${{ env.AWS_REGION }}"
+
+          # Check Elastic Beanstalk environment
+          if [ -n "$ENV_NAME" ]; then
+            ENV_EXISTS=$(aws elasticbeanstalk describe-environments \
+              --environment-names "$ENV_NAME" \
+              --region "$AWS_REGION" \
+              --query 'Environments[0].EnvironmentName' \
+              --output text 2>/dev/null || echo "None")
+            
+            if [ "$ENV_EXISTS" != "None" ] && [ -n "$ENV_EXISTS" ]; then
+              echo "⚠️  Warning: Environment $ENV_NAME still exists"
+            else
+              echo "✅ Environment $ENV_NAME deleted"
+            fi
+          fi
+
+          # Check Elastic Beanstalk application
+          if [ -n "$APP_NAME" ]; then
+            APP_EXISTS=$(aws elasticbeanstalk describe-applications \
+              --application-names "$APP_NAME" \
+              --region "$AWS_REGION" \
+              --query 'Applications[0].ApplicationName' \
+              --output text 2>/dev/null || echo "None")
+            
+            if [ "$APP_EXISTS" != "None" ] && [ -n "$APP_EXISTS" ]; then
+              echo "⚠️  Warning: Application $APP_NAME still exists"
+            else
+              echo "✅ Application $APP_NAME deleted"
+            fi
+          fi
+
+          # Check ECR repository
+          if [ -n "$REPO_NAME" ]; then
+            REPO_EXISTS=$(aws ecr describe-repositories \
+              --repository-names "$REPO_NAME" \
+              --region "$AWS_REGION" \
+              --query 'repositories[0].repositoryName' \
+              --output text 2>/dev/null || echo "None")
+            
+            if [ "$REPO_EXISTS" != "None" ] && [ -n "$REPO_EXISTS" ]; then
+              echo "⚠️  Warning: ECR repository $REPO_NAME still exists"
+            else
+              echo "✅ ECR repository $REPO_NAME deleted"
+            fi
+          fi
+
+          echo ""
+          echo "✅ Destruction complete!"
+
+      - name: Summary
+        run: |
+          echo "=========================================="
+          echo "✅ Infrastructure Destruction Complete"
+          echo "=========================================="
+          echo ""
+          echo "Environment: ${{ inputs.environment }}"
+          echo "All resources have been deleted:"
+          echo "  - Elastic Beanstalk environment"
+          echo "  - Elastic Beanstalk application"
+          echo "  - ECR repository and images"
+          echo "  - All Pulumi-managed resources"
+          echo "  - S3 deployment buckets"
+          echo ""
+          echo "Note: Pulumi stack still exists but is empty."
+          echo "To remove the stack: pulumi stack rm ${{ inputs.environment }}"
